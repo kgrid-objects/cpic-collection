@@ -1,8 +1,0 @@
-<rdf:RDF xmlns:ot='http://uofm.org/objectteller/'
- xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
-	<rdf:Description rdf:about='http://uofm.org/objectteller/inputMessage'>
-		<ot:noofparams>0</ot:noofparams>
-	</rdf:Description>
-	<rdf:Description rdf:about='http://uofm.org/objectteller/'>
-	</rdf:Description>
-</rdf:RDF>
