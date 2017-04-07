@@ -33,20 +33,17 @@ def getGuideline(instr):
 		guideline[reccomendationWeightKey] = "N/A"
 
 	elif 'Intermediate' in mr:
-		# print "ITS INTERMEDIATE DAWG"
 		guideline[reccomendationKey] = "Prescribe a lower dose or consider an alternative statin. Consider routine CK surveillance"
 		guideline[implicationsKey] = "Intermediate myopathy risk"
 		guideline[alternativesKey] = ["pravastatin", "rosuvastatin"]
 		guideline[reccomendationWeightKey] = "Strong"
 	elif "Increased" in mr:
-		# print "INCREASED YO"
 		guideline[reccomendationKey] = "No specific reccomendations. Consult a clinical pharmacist"
 		guideline[implicationsKey] = ""
 		guideline[alternativesKey] = []
 		guideline[reccomendationWeightKey] = "Strong"
 
 	elif "Low" in mr:
-		# print "ITS LO DAWG"
 		guideline[reccomendationKey] = "Prescribe a lower dose or consider an alternative statin. Consider routine CK surveillance"
 		guideline[implicationsKey] = "High myopathy risk"
 		guideline[alternativesKey] = ["pravastatin", "rosuvastatin"]
