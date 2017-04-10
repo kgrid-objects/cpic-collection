@@ -1,5 +1,8 @@
 # CPIC gudieline objects
-There are 2 ways you can test the CPIC guideline objects
+This is a collection of objects that focus on dosing guidelines as provided by the CPIC pharmacogenomic guidelines. These objects generally take allele pairs as inputs and return the correct dosing guideline based on a patient's alleles.
+
+## Testing
+There are 2 ways you can run tests on the CPIC knowledge objects
 
 ### Postman method
 There is a Postman collection provided in this repository for running tests on the CPIC knolwedge objects. To use this collection, download the CPIC-guideline-collection.json file from this repository. Then, open Postman and go to file > import and choose the .json file you downloaded. This will create a collection in Postman for you. Once you have the collection, go to Collection > runner and select the CPIC collection. Press the "Start Test" button to run the collection.
