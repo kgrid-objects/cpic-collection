@@ -8,9 +8,8 @@ NC='\033[0m'
 
 echo "${BLUE}GET shelf${NC}"
 
-curl -X GET -H "Content-Type: application/json" -H "Authorization: Basic Z3FtZW5nOlNoOTQyNg==" -H "Cache-Control: no-cache" -H "Postman-Token: 056a3a70-b6cf-ac8e-da17-b27e1c59a2b1" "http://kgrid.med.umich.edu/stack/shelf/" > thing.thing.null.mything
+curl -X GET -H "Content-Type: application/json" -H "Authorization: Basic Z3FtZW5nOlNoOTQyNg==" -H "Cache-Control: no-cache" -H "Postman-Token: 056a3a70-b6cf-ac8e-da17-b27e1c59a2b1" "http://kgrid.med.umich.edu/stack/shelf/" > /dev/null
 
-rm thing.thing.null.mything
 
 echo ""
 echo "${GREEN}Got shelf${NC}"
