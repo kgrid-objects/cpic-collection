@@ -23,7 +23,8 @@ echo ""
 echo "${GREEN}PUT successful${NC}"
 
 echo ""
-echo "${BLUE}POST Simvstatin result${NC}"
+echo "${BLUE}POST Simvstatin${NC}"
+echo "---RESULT---"
 
 curl -X POST -H "Content-Type: application/json" -H "Accept: application/json" -H "Cache-Control: no-cache" -H "Postman-Token: 302a81d8-b9de-e1e7-e0c9-139d5d893d1b" -d '{
 	"allele1": "*10", "allele2": "*15"
@@ -41,8 +42,8 @@ echo ""
 echo "${GREEN}PUT successful${NC}"
 
 echo ""
-echo "${BLUE}POST CYP2D6 object result${NC}"
-
+echo "${BLUE}POST CYP2D6 object${NC}"
+echo "---RESULT---"
 curl -X POST -H "Content-Type: application/json" -H "Accept: application/json" -H "Cache-Control: no-cache" -H "Postman-Token: 744d873a-5c4c-8fa3-eb90-6f81c9658ee3" -d '{
 	"allele1": "*1", "allele2": "*1xN"
 }' "http://kgrid.med.umich.edu/stack/knowledgeObject/ark:/99999/fk4sn0g47p/result" | python -m json.tool
