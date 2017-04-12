@@ -9,11 +9,19 @@ All CPIC guideline objects have a few things in common. All CPIC objects should
     * "metabolic_rate"
     * "activity_score"
     * "implications"
-    * "reccomendations"
+    * "recomendations"
     * "alternatives"
     * "recommendation_classification" 
 
-## Key definitions
+### Key definitions
+The keys in the JSON object returned by the CPIC knowledge objects represent different aspects of the CPIC guideline for the drug and enzyme.
+
+* "metabolic_rate" is the metabolizer status based on the guideline. It should be one of [Ultrarapid, Extensive, Intermediate, Poor]
+* "activity_score" is a number based on the guideline
+* "implications" is a description of the implications of using the specific drug on a patient with the given allele pair
+* "recommendations" is a description of what dose should be given (i.e. "Use label recommended age- or weight-specific dosing.")
+* "alternatives" is a list object containing possible alternative medications (i.e. ["morphine", "non-opioid analgesics", "Tramadol"])
+* "recommendation_classification" is the strength/classification of the recommendation from the guideline. It should be one of [Strong, Moderate, Weak]
 
          
 
