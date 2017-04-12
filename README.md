@@ -117,6 +117,8 @@ To return a JSON object on the Knowledge Grid, cast the `guideline` object as a 
 	return str(guideline)
 ```
 
+__note__: make sure any objects you create include a test suite and other standard knowledge object features. see the [Authoring Manual](https://github.com/kgrid/AuthoringManual) for more information.
+
 ## Testing
 There are 2 ways you can run tests on the CPIC knowledge objects
 
