@@ -54,7 +54,9 @@ It is possible to model this table in the object payload using a 2-dimensional l
 		[NM, NM, NM, NM, NM, NM, NM, NM, NM, NM, NM, EM]
 	]
    ```
+Using this data structure, it is possible to retrieve the metabolizer status of the patient with the given allele pair by mapping alleles to indices of this list structure.
 
+__note__: not every supplement contains a table like this one. Some of them may have the guidelines represented in other ways such as a Microsoft Excel document. You may need to write additional scripts that parse these documents to make a data structure to model the guideline
 # Example
 
          
