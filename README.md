@@ -82,14 +82,10 @@ metabolizerKey = "metabolic_rate"
 	recommendationClassKey = "recommendation_classification"
 
 	guideline = {metabolizerKey: "default_"}
-
-	if rate == NM:
-		guideline[metabolizerKey] = "Normal metabolizer"
-		guideline[activityKey] = "1.0 - 2.0"
-		guideline[implicationsKey] = "Normal morphine formation"
-		guideline[reccomendationKey] = "Use label recommended age or weight specific dosing"
-		guideline[alternativesKey] = []
-		guideline[recommendationClassKey] = "Strong"
+	
+	
+	# Here are a few examples
+	# not every metabolic rate is included here
 	elif rate == PM:
 		guideline[metabolizerKey] = "Poor metabolizer"
 		guideline[activityKey] = "0"
@@ -113,21 +109,6 @@ metabolizerKey = "metabolic_rate"
 		guideline[implicationsKey] = "Normal morphine formation"
 		guideline[reccomendationKey] = "Use label recommended age or weight specific dosing"
 		guideline[alternativesKey] = []
-		guideline[recommendationClassKey] = "Strong"
-
-	elif rate == UM:
-		guideline[metabolizerKey] = "Ultrarapid metabolizer"
-		guideline[activityKey] = ">2.0"
-		guideline[implicationsKey] = "Increased formation of morphine following codeine administration, leading to higher risk of toxicity"
-		guideline[reccomendationKey] = "Avoid codeine use due to potential toxicity"
-		guideline[alternativesKey] = ["morphine", "non-opioid analgesics", "Tramadol"]
-		guideline[recommendationClassKey] = "Strong"
-	elif rate == UorE:
-		guideline[metabolizerKey] = "Ultrarapid or extensive metabollizer"
-		guideline[activityKey] = ">2.0"
-		guideline[implicationsKey] = "Increased formation of morphine following codeine administration, leading to higher risk of toxicity"
-		guideline[reccomendationKey] = "Avoid codeine use due to potential toxicity"
-		guideline[alternativesKey] = ["morphine", "non-opioid analgesics", "Tramadol"]
 		guideline[recommendationClassKey] = "Strong"
 ```
 
