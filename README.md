@@ -71,7 +71,7 @@ To get the metabolizer information from the guideline structure, find the indice
 	# this will give you an integer representing the metabolizer status
 	metabolicRate = guidelineTable[index1][index2] # this will give you guidelineTable[0][2] which is UM
 ```
-From here, use the table information from https://www.pharmgkb.org/guideline/PA166104996 to fill in the rest of the information:
+From here, use the table information from https://www.pharmgkb.org/guideline/PA166104996. At the top of the page are 2 drop down menus to select an allele pair. If you choose an allele pair, it will give you a table representing the dosing guideline. CPIC objects return a JSON object similar to this table. Fill in the rest of the information like so:
 
 ```python
 metabolizerKey = "metabolic_rate"
