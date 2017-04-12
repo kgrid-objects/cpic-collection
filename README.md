@@ -58,8 +58,83 @@ Using this data structure, it is possible to retrieve the metabolizer status of 
 
 __note__: not every supplement contains a table like this one. Some of them may have the guidelines represented in other ways such as a Microsoft Excel document. You may need to write additional scripts that parse these documents to make a data structure to model the guideline
 # Example
+Continuing with the CYP2D6 object example, once you have created the data structure to model the guidline, the next step is retrieving the right information from the structure. for this example allele1 = "*1" and allele2 = "*1xN"In this case, alleles were mapped to indices of the 2-dimensional list using a dictionary strucutre: 
+```python
+	indexOf = {"*1": 0, "*2": 1, "*1xN": 2, "*2xN": 3," *3": 4, "*4": 5, "*4xN": 6, "*5": 7, "*6": 8, 
+				"*10": 9, "*17": 10, "*41": 11}
+```
+To get the metabolizer information from the guideline structure, find the indices of the allele pairs like so:
+```python
+	index1 = indexOf[allele1] # index1 will be 0
+	index2 = indexOf[allele2] # index2 will be 2
+	
+	# this will give you an integer representing the metabolizer status
+	metabolicRate = guidelineTable[index1][index2] # this will give you guidelineTable[0][2] which is UM
+```
+From here, use the table information from https://www.pharmgkb.org/guideline/PA166104996 to fill in the rest of the information:
 
-         
+```python
+metabolizerKey = "metabolic_rate"
+	activityKey = "activity_score"
+	implicationsKey = "implications"
+	reccomendationKey = "reccomendations"
+	alternativesKey = "alternatives"
+	recommendationClassKey = "recommendation_classification"
+
+	guideline = {metabolizerKey: "default_"}
+
+	if rate == NM:
+		guideline[metabolizerKey] = "Normal metabolizer"
+		guideline[activityKey] = "1.0 - 2.0"
+		guideline[implicationsKey] = "Normal morphine formation"
+		guideline[reccomendationKey] = "Use label recommended age or weight specific dosing"
+		guideline[alternativesKey] = []
+		guideline[recommendationClassKey] = "Strong"
+	elif rate == PM:
+		guideline[metabolizerKey] = "Poor metabolizer"
+		guideline[activityKey] = "0"
+		guideline[implicationsKey] = "Greatly reduced morphine formation leading to insufficient pan relief	"
+		guideline[reccomendationKey] = "Avoid codeine due to lack of efficacy"
+		guideline[alternativesKey] = ["morphine", "non-opioid analgesics"]
+		guideline[recommendationClassKey] = "Strong"
+
+	elif rate == IM:
+		guideline[metabolizerKey] = "Intermediate metabolizer"
+		guideline[activityKey] = "0.5"
+		guideline[implicationsKey] = "Reduced morphine formation"
+		guideline[reccomendationKey] = "Use label recommended age or weight specific dosing. If no response, " +\
+										"consider alternative analgesics such as morphine or a non-opioid"
+		guideline[alternativesKey] = ["Monitor tramadol use for response"]
+		guideline[recommendationClassKey] = "Moderate"
+
+	elif rate == EM:
+		guideline[metabolizerKey] = "Extensive metabolizer"
+		guideline[activityKey] = "1.0 - 2.0"
+		guideline[implicationsKey] = "Normal morphine formation"
+		guideline[reccomendationKey] = "Use label recommended age or weight specific dosing"
+		guideline[alternativesKey] = []
+		guideline[recommendationClassKey] = "Strong"
+
+	elif rate == UM:
+		guideline[metabolizerKey] = "Ultrarapid metabolizer"
+		guideline[activityKey] = ">2.0"
+		guideline[implicationsKey] = "Increased formation of morphine following codeine administration, leading to higher risk of toxicity"
+		guideline[reccomendationKey] = "Avoid codeine use due to potential toxicity"
+		guideline[alternativesKey] = ["morphine", "non-opioid analgesics", "Tramadol"]
+		guideline[recommendationClassKey] = "Strong"
+	elif rate == UorE:
+		guideline[metabolizerKey] = "Ultrarapid or extensive metabollizer"
+		guideline[activityKey] = ">2.0"
+		guideline[implicationsKey] = "Increased formation of morphine following codeine administration, leading to higher risk of toxicity"
+		guideline[reccomendationKey] = "Avoid codeine use due to potential toxicity"
+		guideline[alternativesKey] = ["morphine", "non-opioid analgesics", "Tramadol"]
+		guideline[recommendationClassKey] = "Strong"
+```
+
+To return a JSON object on the Knowledge Grid, cast the `guideline` object as a string
+```python
+	return str(guideline)
+```
 
 ## Testing
 There are 2 ways you can run tests on the CPIC knowledge objects
