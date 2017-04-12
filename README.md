@@ -1,6 +1,22 @@
 # CPIC gudieline objects
 This is a collection of objects that focus on dosing guidelines as provided by the CPIC pharmacogenomic guidelines. These objects generally take allele pairs as inputs and return the correct dosing guideline based on a patient's alleles.
 
+# Making CPIC objects
+All CPIC guideline objects have a few things in common. All CPIC objects should
+* Take an allele pair as a parameter
+* Use guidelines provided for specific drug and enzyme from https://www.pharmgkb.org/
+* Have an output that is the dosing guideline in the form of a JSON object with the following keys:
+    * "metabolic_rate"
+    * "activity_score"
+    * "implications"
+    * "reccomendations"
+    * "alternatives"
+    * "recommendation_classification" 
+
+## Key definitions
+
+         
+
 ## Testing
 There are 2 ways you can run tests on the CPIC knowledge objects
 
