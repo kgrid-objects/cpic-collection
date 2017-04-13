@@ -1,5 +1,5 @@
 # CPIC gudieline objects
-This is a collection of objects that focus on dosing guidelines as provided by the CPIC pharmacogenomic guidelines. These objects generally take allele pairs as inputs and return the correct dosing guideline based on a patient's alleles.
+This is a collection of objects that focus on dosing guidelines as provided by the [CPIC pharmacogenomic guidelines] (https://cpicpgx.org/guidelines/). These objects generally take allele pairs as inputs and return the correct dosing guideline based on a patient's alleles.
 
 # Making CPIC objects
 All CPIC guideline objects have a few things in common. All CPIC objects should
