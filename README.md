@@ -58,7 +58,7 @@ Using this data structure, it is possible to retrieve the metabolization status 
 
 __note__: not every supplement contains a table like this one. Some of them may have the guidelines represented in other ways such as a Microsoft Excel document. You may need to write additional scripts that parse these documents to make a data structure to model the guideline
 # Example
-Continuing with the CYP2D6 object example, once you have created the data structure to model the guidline, the next step is retrieving the right information from the structure. for this example allele1 = "*1" and allele2 = "*1xN"In this case, alleles were mapped to indices of the 2-dimensional list using a dictionary strucutre: 
+Continuing with the CYP2D6 object example, once you have created the data structure to model the guidline, the next step is retrieving the right information from the structure. for this example allele1 = "*1" and allele2 = "*1xN". In this case, alleles were mapped to indices of the 2-dimensional list using a dictionary strucutre: 
 ```python
 	indexOf = {"*1": 0, "*2": 1, "*1xN": 2, "*2xN": 3," *3": 4, "*4": 5, "*4xN": 6, "*5": 7, "*6": 8, 
 				"*10": 9, "*17": 10, "*41": 11}
