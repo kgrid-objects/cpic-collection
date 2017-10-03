@@ -2,4 +2,4 @@
 
 def execute(genotypeData):
 
-return genotypeData
+  return genotypeData
