@@ -3,6 +3,8 @@
     "title":"CPIC baseObject"
   },
   "payload":{
-    "content":""
+    "content":"",
+    "engineType":"Python",
+    "functionName":"execute"
   }
 }
