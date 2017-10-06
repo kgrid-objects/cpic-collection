@@ -1,9 +1,12 @@
+#!/usr/bin/env python
+
 # KGrid Team Authoring/Executing Knowledge Objects Tool: Knowledge Object Generator
 # Created January 31, 2017
 # Takes in metadata (json), input rdf (xml), output rdf (xml), and payload (.py) files
 # Uses the metadata (json) as the backbone, adding input, output, and payload, and outputting the knowledge object json file
 
 import json
+import sys
 
 #given inputs
 def build(metadataFile,inputFile,outputFile,payloadFile,KOFile):
@@ -48,9 +51,9 @@ def commandInput():
 
 
 # use testBuild("kog.json") to run hello world example
-def testBuild(files):
+def buildFromSpecification(specFile):
     # load contents on json file
-    inFile = open(files).read()
+    inFile = open(specFile).read()
     content = json.loads(inFile)
 
     metadataFile = content["metadataFile"]
@@ -62,3 +65,6 @@ def testBuild(files):
     output = build(metadataFile,inputFile,outputFile,payloadFile,KOFile)
 
     return output
+
+
+print(buildFromSpecification(sys.argv[1]))

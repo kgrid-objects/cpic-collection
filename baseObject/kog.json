@@ -3,5 +3,5 @@
   "inputFile":"input.xml",
   "outputFile":"output.xml",
   "payloadFile":"CPICbase.py",
-  "KOFile":"CPICbase.json"
+  "KOFile":"/Users/pboisver/activator/shelf/CPIC-base.json"
 }
