@@ -20,6 +20,9 @@ def excel_to_dictionary(path):
 		# .value gets the value stored in the specific cell
 		genotype = table1.cell(i,0).value
 		phenotype = table1.cell(i,1).value
+		# Create dictionary genotype_to_phenotype
+		# Key: genotype
+		# Value: phentoype 
 		genotype_to_phenotype[genotype] = phenotype
 	
 	# Return resulting dictionary 
