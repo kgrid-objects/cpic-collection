@@ -9,22 +9,37 @@
 #input may be '*1/*1' or no stars '1/1'
 #or allele1 *1 or 1 allele2 *1 or 1
 
-def getPhenotype(geno):
+def alleleFormat(geno):
+	""" 
+	The following code will swap the order of alleles to always have the smaller number as allele1 and the larger number as allele2. It will also add '*' to change to star format if previous input was not. 
+	"""
+	if geno['diplotype']:
+		diplotype = geno['diplotype']
+		list_diplotype = diplotype.split('/')
+		# If in starformat, remove. Otherwise it will be left unchanged. 
+		allele1 = int(list_diplotype[0].replace('*',''))
+		allele2 = int(list_diplotype[1].replace('*',''))
+		# If allele1 is greater than allele2, swap the order.
+		if allele1 > allele2:
+			geno['diplotype'] = '*' + str(allele2) + '/' + '*' + str(allele1) 
 
-	# If the user inputs a diplotype without '*', the following lines of code will add '*' to create the proper star allele format.
-	if '*' not in geno['diplotype']:
-		diplotype = geno['diplotype'].split('/')
-		allele1 = diplotype[0]
-		allele2 = diplotype[1]
-		allele1 = '*' + allele1 
-		allele2 = '*' + allele2
-		geno['diplotype'] = allele1 + '/' + allele2
-		
-	# If the user inputs a allele without '*', the following lines of code will add '*' to create the proper star allele format.
-	if '*' not in geno['allele1']:
-		geno['allele1'] = '*' + geno['allele1']
-	if '*' not in geno["allele2"]:
-		geno['allele2'] = '*' + geno['allele2']
+	elif geno['allele1'] and geno['allele2']:
+		# If allele is in starformat, remove. Otherwise it will be left unchanged. 
+		allele1 = int(geno['allele1'].replace('*',''))
+		allele2 = int(geno['allele2'].replace('*',''))
+		# If allele1 is greater than allele2, swap the order.
+		if allele1 > allele2:
+			geno['allele1'] = '*' + str(allele2)
+			geno['allele2'] = '*' + str(allele1)
+
+def getPhenotype(geno):
+	""" The following function will return the phenotype corresponding to the user specified genotype """
+
+	# Dictionary containing Genotype to Phenotype Information  
+	geno_pheno = {'*1/*1': 'UGT1A1 Normal Metabolizer', '*1/*27': 'UGT1A1 Intermediate Metabolizer', '*1/*28': 'UGT1A1 Intermediate Metabolizer', '*1/*36': 'UGT1A1 Normal Metabolizer', '*1/*37': 'UGT1A1 Intermediate Metabolizer', '*1/*6': 'UGT1A1 Intermediate Metabolizer', '*1/*80': 'UGT1A1 Intermediate Metabolizer', '*27/*27': 'UGT1A1 Poor Metazolizer', '*27/*28': 'UGT1A1 Poor Metazolizer', '*27/*36': 'UGT1A1 Intermediate Metabolizer', '*27/*37': 'UGT1A1 Poor Metazolizer', '*27/*80': 'UGT1A1 Poor Metazolizer', '*28/*28': 'UGT1A1 Poor Metazolizer', '*28/*36': 'UGT1A1 Intermediate Metabolizer', '*28/*37': 'UGT1A1 Poor Metazolizer', '*28/*80': 'UGT1A1 Poor Metazolizer', '*36/*36': 'UGT1A1 Normal Metabolizerc', '*36/*37': 'UGT1A1 Intermediate Metabolizer', '*36/*80': 'UGT1A1 Intermediate Metabolizer', '*37/*37': 'UGT1A1 Poor Metazolizer', '*37/*80': 'UGT1A1 Poor Metazolizer', '*6/*27': 'UGT1A1 Poor Metazolizer', '*6/*28': 'UGT1A1 Poor Metazolizer', '*6/*36': 'UGT1A1 Intermediate Metabolizer', '*6/*37': 'UGT1A1 Poor Metazolizer', '*6/*6': 'UGT1A1 Poor Metazolizer', '*6/*80': 'UGT1A1 Poor Metazolizer', '*80/*80': 'UGT1A1 Poor Metazolizer'}
+
+	# Arranging the order so the lower numerical allele is on the left. Also add a star '*' if not in star allele format. 
+	alleleFormat(geno)
 
 	# Get appropriate phenotype corresponding to gene
 	if geno['diplotype']:
@@ -32,67 +47,39 @@ def getPhenotype(geno):
 			# Assign appropriate phenotype pair value for the corresponding key(diplotype) from dictonary geno_pheno
 			geno['phenotype'] = geno_pheno[geno['diplotype']]
 		else:
-			raise Exception("Incorrect input for diplotype")
+		 	raise Exception("Incorrect/invalid input for diplotype")
 
-	elif geno["allele1"] and geno["allele2"]:
+	elif geno['allele1'] and geno['allele2']:
 		# Convert allele to diplotype format
-		combine_allele = geno["allele1"] + '/' + geno["allele2"]
+		combine_allele = geno['allele1'] + '/' + geno['allele2']
 		if combine_allele in geno_pheno:
-			geno["phenotype"] = geno_pheno["combine_allele"]
-		 
-# Dictionary containing Genotype to Phenotype Information  
-geno_pheno = {'*1/*1': 'UGT1A1 Normal Metabolizer', '*1/*27': 'UGT1A1 Intermediate Metabolizer', '*1/*28': 'UGT1A1 Intermediate Metabolizer', '*1/*36': 'UGT1A1 Normal Metabolizer', '*1/*37': 'UGT1A1 Intermediate Metabolizer', '*1/*6': 'UGT1A1 Intermediate Metabolizer', '*1/*80': 'UGT1A1 Intermediate Metabolizer', '*27/*27': 'UGT1A1 Poor Metazolizer', '*27/*28': 'UGT1A1 Poor Metazolizer', '*27/*36': 'UGT1A1 Intermediate Metabolizer', '*27/*37': 'UGT1A1 Poor Metazolizer', '*27/*80': 'UGT1A1 Poor Metazolizer', '*28/*28': 'UGT1A1 Poor Metazolizer', '*28/*36': 'UGT1A1 Intermediate Metabolizer', '*28/*37': 'UGT1A1 Poor Metazolizer', '*28/*80': 'UGT1A1 Poor Metazolizer', '*36/*36': 'UGT1A1 Normal Metabolizerc', '*36/*37': 'UGT1A1 Intermediate Metabolizer', '*36/*80': 'UGT1A1 Intermediate Metabolizer', '*37/*37': 'UGT1A1 Poor Metazolizer', '*37/*80': 'UGT1A1 Poor Metazolizer', '*6/*27': 'UGT1A1 Poor Metazolizer', '*6/*28': 'UGT1A1 Poor Metazolizer', '*6/*36': 'UGT1A1 Intermediate Metabolizer', '*6/*37': 'UGT1A1 Poor Metazolizer', '*6/*6': 'UGT1A1 Poor Metazolizer', '*6/*80': 'UGT1A1 Poor Metazolizer', '*80/*80': 'UGT1A1 Poor Metazolizer'}
+			geno['phenotype'] = geno_pheno[combine_allele]
+		else:
+		 	raise Exception("Incorrect/invalid input for allele")
 
 def Function_Test():
 	""" This function tests to see if functions are behaving as intended """ 
-	geno1 = {"diplotype": "1/1", "allele1": "", "allele2": "", "phenotype", ""}
-	geno2 = {"diplotype": "", "allele1": "1", "allele2": "1", "phenotype", ""}
+	test1 = {'diplotype': '27/1', 'allele1': '', 'allele2': '', 'phenotype': ''}
+	test2 = {'diplotype': '', 'allele1': '27', 'allele2': '1', 'phenotype': ''}
+	test3 = {'diplotype': '*27/*1', 'allele1': '', 'allele2': '', 'phenotype': ''}
+	test4 = {'diplotype': '', 'allele1': '*27', 'allele2': '*1', 'phenotype': ''}
 
-	getPhenotype(geno1)
-	getPhenotype(geno2)
-	print(geno1)
-	print(geno2)
+	# Test that the scenarios work for function alleleFormat
+	# alleleFormat(test1)
+	# alleleFormat(test2)
+	# alleleFormat(test3)
+	# alleleFormat(test4)
+
+	# Test that scenarios work for function genoPheno
+	getPhenotype(test1)
+	getPhenotype(test2)
+	getPhenotype(test3)
+	getPhenotype(test4)
+
+	print(test1)
+	print(test2)
+	print(test3)
+	print(test4)
 
 # Call test
 Function_Test()
-
-
-
-
-#  The following code is being used as a reference. Do not include in the final code. 
-
-	# if instr["phenotype"]:
-	# 	if instr["phenotype"] == "high DPD activity":
-	# 		instr["rec"] = "Use label-recommended dosage and administration"
-	# 	elif instr["phenotype"] == "intermediate DPD activity":
-	# 		instr["rec"] = "Start with at least a 50%% reduction in starting dose, followed by titration of dose based on toxicityb or pharmacokinetic test (if available)"
-	# 	elif instr["phenotype"] == "DPD deficiency":
-	# 		instr["rec"] = "Select alternative drug"
-	# 	else:
-	# 		raise Exception("insufficient data")			
-	elif instr["diplotype"]:
-		if instr["diplotype"] == "*1/*1":
-			instr["phenotype"] = "high DPD activity"
-			instr["rec"] = "Use label-recommended dosage and administration"
-		elif instr["diplotype"] == "*1/2A" or instr["diplotype"] == "*1/*13" or instr["diplotype"] == "*1/rs67376798":
-			instr["phenotype"] = "intermediate DPD activity"
-			instr["rec"] = "Start with at least a 50%% reduction in starting dose, followed by titration of dose based on toxicityb or pharmacokinetic test (if available)"
-		elif instr["diplotype"] == "*2A/*2A" or instr["diplotype"] == "13/*13" or instr["diplotype"] == "rs67376798/rs67376798":
-			instr["phenotype"] = "DPD deficiency"
-			instr["rec"] = "Select alternative drug"
-		else:
-			raise Exception("insufficient data")
-	elif instr["allele1"] and instr["allele2"]:
-		if (instr["allele1"] == instr["allele2"]) and (instr["allele1"] == "*1" or instr["allele1"] == "1"):
-			instr["phenotype"] = "high DPD activity"
-			instr["rec"] = "Use label-recommended dosage and administration"
-		elif (instr["allele1"] == "*1") and (instr["allele2"] == "*2A" or instr["allele2"] == "*13" or instr["allele2"] == "rs67376798"):
-			instr["phenotype"] = "intermediate DPD activity"
-			instr["rec"] = "Start with at least a 50%% reduction in starting dose, followed by titration of dose based on toxicityb or pharmacokinetic test (if available)"
-		elif (instr["allele1"] == instr["allele2"]) and (instr["allele1"] == "*2A" or instr["allele1"] == "*1" or instr["allele1"] == "rs67376798"):
-			instr["phenotype"] = "DPD deficiency"
-			instr["rec"] = "Select alternative drug"
-		else:
-			raise Exception("insufficient data")
-	# else:
-	# 	raise Exception("insufficient data")
