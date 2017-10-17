@@ -3,11 +3,15 @@
 # The following code will be used to convert CPIC genotype-phenotype tables to create dictionaries
 
 import xlrd
+import json
 
 def excel_to_dictionary(path):
 	""" Open and read an excel file and create a dictionary """
 	excel_file = xlrd.open_workbook(path)
-	
+
+	path_name = path.split('/')
+	file_name = path_name[-1]
+        
 	# Get the first worksheet of the excel file
 	table1 = excel_file.sheet_by_index(0)
 	
@@ -20,19 +24,15 @@ def excel_to_dictionary(path):
 		# .value gets the value stored in the specific cell
 		genotype = table1.cell(i,0).value
 		phenotype = table1.cell(i,1).value
-		# Create dictionary genotype_to_phenotype
-		# Key: genotype
-		# Value: phentoype 
 		genotype_to_phenotype[genotype] = phenotype
-	
-	# Return resulting dictionary 
-	return genotype_to_phenotype
 
-def test_function():
-	""" This function will test to see that the excel to dictionary conversion is successful """
-	
+	# Generate a text file 
+	with open('Output_{}.txt'.format(file_name), 'w') as file:
+		file.write(json.dumps(genotype_to_phenotype))
+
+# Run Function
+def text_generator():
 	path = input("Please enter the direct path to the excel file of interest: ")
-	print(excel_to_dictionary(path))
+	excel_to_dictionary(path)
 
-# Call test	
-test_function()
+text_generator()
