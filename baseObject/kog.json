@@ -2,6 +2,6 @@
   "metadataFile":"metadata.json",
   "inputFile":"input.xml",
   "outputFile":"output.xml",
-  "payloadFile":"CPICbase.py",
-  "KOFile":"/Users/pboisver/activator/shelf/CPIC-base.json"
+  "payloadFile":"UTG1A1_geno_pheno-base.py",
+  "KOFile":"/Users/koki/activator/shelf/UTG1A1-base.json"
 }
