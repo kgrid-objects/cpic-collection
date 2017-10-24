@@ -4,7 +4,8 @@
   },
   "payload":{
     "content":"",
-    "engineType":"Python",
-    "functionName":"genoPheno"
-  }
+    "engineType":"PYTHON",
+    "functionName":"getPhenotype"
+  },
+  "url://n2t.net/ark:/CYP2C9/object"
 }

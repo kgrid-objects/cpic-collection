@@ -12,6 +12,6 @@
         </ot:params>
     </rdf:Description>
     <rdf:Description rdf:about="http://uofm.org/objectteller/age/">
-        <ot:datatype>STR</ot:datatype>
+        <ot:datatype>STRING</ot:datatype>
     </rdf:Description>
 </rdf:RDF>

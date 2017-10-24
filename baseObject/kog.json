@@ -3,5 +3,5 @@
   "inputFile":"input.xml",
   "outputFile":"output.xml",
   "payloadFile":"CYP2C9_geno_pheno-base.py",
-  "KOFile":"/Users/koki/activator/shelf/CYP2C9-base.json"
+  "KOFile":"/Users/koki/activator/shelf/CYP2C9-object"
 }

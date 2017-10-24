@@ -34,5 +34,6 @@ def excel_to_dictionary(path):
 def text_generator():
 	path = input("Please enter the direct path to the excel file of interest: ")
 	excel_to_dictionary(path)
+	print("***DONE***")
 
 text_generator()
