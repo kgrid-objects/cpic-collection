@@ -2,6 +2,6 @@
   "metadataFile":"metadata.json",
   "inputFile":"input.xml",
   "outputFile":"output.xml",
-  "payloadFile":"UTG1A1_geno_pheno-base.py",
-  "KOFile":"/Users/koki/activator/shelf/UTG1A1-base.json"
+  "payloadFile":"CYP2C9_geno_pheno-base.py",
+  "KOFile":"/Users/koki/activator/shelf/CYP2C9-base.json"
 }

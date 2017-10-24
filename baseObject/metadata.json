@@ -1,10 +1,10 @@
 {
   "metadata":{
-    "title":"CPIC UTG1A1 geno-to-pheno"
+    "title":"CPIC CYP2C9 geno-to-pheno"
   },
   "payload":{
     "content":"",
     "engineType":"Python",
-    "functionName":"execute"
+    "functionName":"genoPheno"
   }
 }
