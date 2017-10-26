@@ -1,0 +1,17 @@
+<rdf:RDF xmlns:ot="http://uofm.org/objectteller/#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <rdf:Description rdf:about="http://uofm.org/objectteller/inputMessage">
+        <ot:noofparams>4</ot:noofparams>
+        <ot:params>
+            <rdf:Seq>
+                <rdf:li>diplotype</rdf:li>
+                <rdf:li>allele1</rdf:li>
+                <rdf:li>allele2</rdf:li>
+                <rdf:li>phenotype</rdf:li>
+            </rdf:Seq>
+        </ot:params>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://uofm.org/objectteller/age/">
+        <ot:datatype>STRING</ot:datatype>
+    </rdf:Description>
+</rdf:RDF>

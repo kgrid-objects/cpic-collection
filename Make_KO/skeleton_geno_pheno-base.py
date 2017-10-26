@@ -38,7 +38,7 @@ def getPhenotype(geno):
 	# Dictionary containing Genotype to Phenotype Information
 	######### COPY AND PASTE DICTIONARY HERE #########
 	geno_pheno = 
-	
+
 	# Arranging the order so the lower numerical allele is on the left. Also add a star '*' if not in star allele format. 
 	alleleFormat(geno)
 
