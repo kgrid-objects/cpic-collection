@@ -1,10 +1,10 @@
 {
   "metadata":{
-    "title":"CPIC CYP2C19 geno-to-pheno"
+    "title":"some_title"
   },
   "payload":{
     "content":"",
     "engineType":"PYTHON",
-    "functionName":"getPhenotype"
+    "functionName":"some_function"
   }
 }
