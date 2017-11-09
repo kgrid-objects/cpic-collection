@@ -48,7 +48,7 @@ def getPhenotype(geno):
 			# Assign appropriate phenotype pair value for the corresponding key(diplotype) from dictonary geno_pheno
 			geno['phenotype'] = geno_pheno[geno['diplotype']]
 		else:
-		 	raise Exception("Incorrect/invalid input for diplotype")
+		 	return ("Incorrect/invalid input for diplotype")
 
 	elif geno['allele1'] and geno['allele2']:
 		# Convert allele to diplotype format
@@ -56,7 +56,7 @@ def getPhenotype(geno):
 		if combine_allele in geno_pheno:
 			geno['phenotype'] = geno_pheno[combine_allele]
 		else:
-		 	raise Exception("Incorrect/invalid input for allele")
+		 	return ("Incorrect/invalid input for allele")
 
 	return str(geno["phenotype"])
 
