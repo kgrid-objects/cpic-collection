@@ -1,9 +1,11 @@
 # KGrid CPIC guidelines Genotype to Phenotype Payload
 # Koki Sasagawa 
-# Last Updated: 11/9/2017
+# Last Updated: 1/17/2018
+
+# Updated to remove phenotype key value from dictionary. Returns string variable phenotype instead. 
 
 # Accepts input in the following format: 
-# {"diplotype": "", "allele1": "", "allele2": "", "phenotype", ""}
+# {"diplotype": "", "allele1": "", "allele2": ""}
 
 def alleleFormat(geno):
 	""" Swap the order of alleles to have the smaller number as allele1 and the larger number as allele2. Also add '*' to change to star format. """ 
@@ -36,11 +38,14 @@ def getPhenotype(geno):
 	# Arranging the order so the lower numerical allele is on the left. Also add a star '*' if not in star allele format. 
 	alleleFormat(geno)
 
+	# Metabolism Phenotype
+	phenotype = ""
+
 	# Get appropriate phenotype corresponding to gene
 	if geno['diplotype']:
 		if geno['diplotype'] in geno_pheno:
 			# Assign appropriate phenotype pair value for the corresponding key(diplotype) from dictonary geno_pheno
-			geno['phenotype'] = geno_pheno[geno['diplotype']]
+			phenotype = geno_pheno[geno['diplotype']]
 		else:
 		 	return ("Incorrect/invalid input for diplotype.")
 
@@ -48,8 +53,8 @@ def getPhenotype(geno):
 		# Convert allele to diplotype format
 		combine_allele = geno['allele1'] + '/' + geno['allele2']
 		if combine_allele in geno_pheno:
-			geno['phenotype'] = geno_pheno[combine_allele]
+			phenotype = geno_pheno[combine_allele]
 		else:
 		 	return ("Incorrect/invalid input for allele.")
 
-	return str(geno["phenotype"])
+	return phenotype

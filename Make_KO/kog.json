@@ -2,6 +2,6 @@
   "metadataFile":"metadata.json",
   "inputFile":"input.xml",
   "outputFile":"output.xml",
-  "payloadFile":"some_python_file.py",
-  "KOFile":"somepath"
+  "payloadFile":"skeleton_geno_pheno-base.py",
+  "KOFile":"/Users/koki/activator/shelf/test-Object"
 }

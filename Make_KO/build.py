@@ -17,7 +17,7 @@ def build(metadataFile,inputFile,outputFile,payloadFile,KOFile):
 		in_file_input = open(inputFile).read()
 		in_file_output = open(outputFile).read()
 	except IOError:
-		print "No such file or directory"
+		print("No such file or directory")
 		return None
 
 	# loading in files as json
@@ -28,7 +28,7 @@ def build(metadataFile,inputFile,outputFile,payloadFile,KOFile):
 		backbone["payload"]["content"] = in_file_payload
 
 	except ValueError as e:
-		print ('invalid json: %s' % e)
+		print('invalid json: %s' % e)
 		return None
 
 	# dump result into new files
@@ -39,11 +39,11 @@ def build(metadataFile,inputFile,outputFile,payloadFile,KOFile):
 
 # Ask for inputs
 def commandInput():
-	metadataFile = raw_input("Enter Metadata File: ")
-	inputFile = raw_input("Enter Input File: ")
-	outputFile = raw_input("Enter Output File: ")
-	payloadFile = raw_input("Enter Payload File: ")
-	KOFile = raw_input("Knowledge Object Output File: ")
+	metadataFile = input("Enter Metadata File: ")
+	inputFile = input("Enter Input File: ")
+	outputFile = input("Enter Output File: ")
+	payloadFile = input("Enter Payload File: ")
+	KOFile = input("Knowledge Object Output File: ")
 
 	output = build(metadataFile,inputFile,outputFile,payloadFile,KOFile)
 
