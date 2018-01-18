@@ -31,7 +31,7 @@ def alleleFormat(geno):
 			geno['allele1'] = '*' + str(allele2)
 			geno['allele2'] = '*' + str(allele1)
 
-def getPhenotype(geno):
+def execute(geno):
 	""" Return the phenotype corresponding to the user specified genotype. """
 
 	# Dictionary containing Genotype to Phenotype Information
