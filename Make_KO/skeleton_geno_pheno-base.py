@@ -7,6 +7,8 @@
 # Accepts input in the following format: 
 # {"diplotype": "", "allele1": "", "allele2": ""}
 
+###### REMOVE THE ABOVE DESCRIPTION FOR WHEN INCLUDING IT INTO THE WIZARD. #########
+
 def alleleFormat(geno):
 	""" Swap the order of alleles to have the smaller number as allele1 and the larger number as allele2. Also add '*' to change to star format. """ 
 

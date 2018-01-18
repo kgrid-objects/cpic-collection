@@ -41,7 +41,7 @@ EXTENSIONS = ['.xlsx']
 
 
 # KO contents: 
-PAYLOAD = "# KGrid CPIC guidelines Genotype to Phenotype Payload\n# Koki Sasagawa \n# Last Updated: 1/17/2018\n\n# Updated to remove phenotype key value from dictionary. Returns string variable phenotype instead. \n\n# Accepts input in the following format: \n# {\"diplotype\": \"\", \"allele1\": \"\", \"allele2\": \"\"}\n\ndef alleleFormat(geno):\n\t\"\"\" Swap the order of alleles to have the smaller number as allele1 and the larger number as allele2. Also add '*' to change to star format. \"\"\" \n\n\tif geno['diplotype']:\n\t\tdiplotype = geno['diplotype']\n\t\tlist_diplotype = diplotype.split('/')\n\t\t# If in starformat, remove. Otherwise it will be left unchanged. \n\t\tallele1 = int(list_diplotype[0].replace('*',''))\n\t\tallele2 = int(list_diplotype[1].replace('*',''))\n\t\t# If allele1 is greater than allele2, swap the order.\n\t\tif allele1 > allele2:\n\t\t\tgeno['diplotype'] = '*' + str(allele2) + '/' + '*' + str(allele1) \n\n\telif geno['allele1'] and geno['allele2']:\n\t\t# If allele is in starformat, remove. Otherwise it will be left unchanged. \n\t\tallele1 = int(geno['allele1'].replace('*',''))\n\t\tallele2 = int(geno['allele2'].replace('*',''))\n\t\t# If allele1 is greater than allele2, swap the order.\n\t\tif allele1 > allele2:\n\t\t\tgeno['allele1'] = '*' + str(allele2)\n\t\t\tgeno['allele2'] = '*' + str(allele1)\n\ndef getPhenotype(geno):\n\t\"\"\" Return the phenotype corresponding to the user specified genotype. \"\"\"\n\n\t# Dictionary containing Genotype to Phenotype Information\n\tgeno_pheno = {}\n\n\t# Arranging the order so the lower numerical allele is on the left. Also add a star '*' if not in star allele format. \n\talleleFormat(geno)\n\n\t# Metabolism Phenotype\n\tphenotype = \"\"\n\n\t# Get appropriate phenotype corresponding to gene\n\tif geno['diplotype']:\n\t\tif geno['diplotype'] in geno_pheno:\n\t\t\t# Assign appropriate phenotype pair value for the corresponding key(diplotype) from dictonary geno_pheno\n\t\t\tphenotype = geno_pheno[geno['diplotype']]\n\t\telse:\n\t\t \treturn (\"Incorrect/invalid input for diplotype.\")\n\n\telif geno['allele1'] and geno['allele2']:\n\t\t# Convert allele to diplotype format\n\t\tcombine_allele = geno['allele1'] + '/' + geno['allele2']\n\t\tif combine_allele in geno_pheno:\n\t\t\tphenotype = geno_pheno[combine_allele]\n\t\telse:\n\t\t \treturn (\"Incorrect/invalid input for allele.\")\n\n\treturn phenotype"
+PAYLOAD = "def alleleFormat(geno):\n\t\"\"\" Swap the order of alleles to have the smaller number as allele1 and the larger number as allele2. Also add '*' to change to star format. \"\"\" \n\n\tif geno['diplotype']:\n\t\tdiplotype = geno['diplotype']\n\t\tlist_diplotype = diplotype.split('/')\n\t\t# If in starformat, remove. Otherwise it will be left unchanged. \n\t\tallele1 = int(list_diplotype[0].replace('*',''))\n\t\tallele2 = int(list_diplotype[1].replace('*',''))\n\t\t# If allele1 is greater than allele2, swap the order.\n\t\tif allele1 > allele2:\n\t\t\tgeno['diplotype'] = '*' + str(allele2) + '/' + '*' + str(allele1) \n\n\telif geno['allele1'] and geno['allele2']:\n\t\t# If allele is in starformat, remove. Otherwise it will be left unchanged. \n\t\tallele1 = int(geno['allele1'].replace('*',''))\n\t\tallele2 = int(geno['allele2'].replace('*',''))\n\t\t# If allele1 is greater than allele2, swap the order.\n\t\tif allele1 > allele2:\n\t\t\tgeno['allele1'] = '*' + str(allele2)\n\t\t\tgeno['allele2'] = '*' + str(allele1)\n\ndef getPhenotype(geno):\n\t\"\"\" Return the phenotype corresponding to the user specified genotype. \"\"\"\n\n\t# Dictionary containing Genotype to Phenotype Information\n\tgeno_pheno = {}\n\n\t# Arranging the order so the lower numerical allele is on the left. Also add a star '*' if not in star allele format. \n\talleleFormat(geno)\n\n\t# Metabolism Phenotype\n\tphenotype = \"\"\n\n\t# Get appropriate phenotype corresponding to gene\n\tif geno['diplotype']:\n\t\tif geno['diplotype'] in geno_pheno:\n\t\t\t# Assign appropriate phenotype pair value for the corresponding key(diplotype) from dictonary geno_pheno\n\t\t\tphenotype = geno_pheno[geno['diplotype']]\n\t\telse:\n\t\t \treturn (\"Incorrect/invalid input for diplotype.\")\n\n\telif geno['allele1'] and geno['allele2']:\n\t\t# Convert allele to diplotype format\n\t\tcombine_allele = geno['allele1'] + '/' + geno['allele2']\n\t\tif combine_allele in geno_pheno:\n\t\t\tphenotype = geno_pheno[combine_allele]\n\t\telse:\n\t\t \treturn (\"Incorrect/invalid input for allele.\")\n\n\treturn phenotype"
 INPUTXML = "<rdf:RDF xmlns:ot=\"http://uofm.org/objectteller/#\"\n         xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\">\n    <rdf:Description rdf:about=\"http://uofm.org/objectteller/inputMessage\">\n        <ot:noofparams>3</ot:noofparams>\n        <ot:params>\n            <rdf:Seq>\n                <rdf:li>diplotype</rdf:li>\n                <rdf:li>allele1</rdf:li>\n                <rdf:li>allele2</rdf:li>\n            </rdf:Seq>\n        </ot:params>\n    </rdf:Description>\n    <rdf:Description rdf:about=\"http://uofm.org/objectteller/age/\">\n        <ot:datatype>STRING</ot:datatype>\n    </rdf:Description>\n</rdf:RDF>\n"
 OUTPUTXML = "<rdf:RDF xmlns:ot=\"http://uofm.org/objectteller/\"\n  xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\">\n  <rdf:Description rdf:about=\"http://uofm.org/objectteller/outputMessage\">\n    <ot:returntype>STRING</ot:returntype>\n  </rdf:Description>\n</rdf:RDF>\n"
 KOFILE = "/Users/koki/activator/shelf/{}-Object"
@@ -55,7 +55,8 @@ METADATA = {
 		"content":"",
     	"engineType": "PYTHON",
     	"functionName": "execute"
-    	}
+    	},
+    "url": ""
 	}
 
 
@@ -84,7 +85,7 @@ def input_evaluator(sheetIndex, startRow, endRow):
 
 
 def file_name(spSheet):
-	""" Reformat file name to be shorter """
+	""" Reformat file name to be shorter. Assume name starts with gene name """
 	parts = spSheet.split('_')
 	short_name = parts[0]
 	return short_name
@@ -150,10 +151,11 @@ def build(metadata, inputxml, outputxml, payload, KOFile, title):
 
 	# loading in files as json
 	backbone = metadata
-	backbone["metadata"]["title"] = 'CPIC {} Genotype-to-Phenotype'.format(title)
+	backbone["metadata"]["title"] = "CPIC {} Genotype-to-Phenotype".format(title)
 	backbone["inputMessage"] = inputxml
 	backbone["outputMessage"] = outputxml
 	backbone["payload"]["content"] = payload
+	backbone["url"] = "http://n2t.net/ark:/{}/object".format(title)
 
 	# dump result into new files
 	with open(KOFile, 'w') as outfile:
