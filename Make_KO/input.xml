@@ -1,12 +1,11 @@
 <rdf:RDF xmlns:ot="http://uofm.org/objectteller/#"
          xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <rdf:Description rdf:about="http://uofm.org/objectteller/inputMessage">
-        <ot:noofparams>3</ot:noofparams>
+        <ot:noofparams>2</ot:noofparams>
         <ot:params>
             <rdf:Seq>
-                <rdf:li>diplotype</rdf:li>
-                <rdf:li>allele1</rdf:li>
-                <rdf:li>allele2</rdf:li>
+                <rdf:li>phenotype</rdf:li>
+                <rdf:li>choice</rdf:li>
             </rdf:Seq>
         </ot:params>
     </rdf:Description>

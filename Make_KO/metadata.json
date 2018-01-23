@@ -1,10 +1,11 @@
 {
   "metadata":{
-    "title":"some_title"
+    "title":"CPIC UGT1A1 Phenotype-to-Recommendations"
   },
   "payload":{
     "content":"",
     "engineType":"PYTHON",
-    "functionName":"some_function"
-  }
+    "functionName":"execute"
+  },
+  "url": "http://n2t.net/ark:/UGT1A1/object2"
 }

@@ -2,6 +2,6 @@
   "metadataFile":"metadata.json",
   "inputFile":"input.xml",
   "outputFile":"output.xml",
-  "payloadFile":"skeleton_geno_pheno-base.py",
-  "KOFile":"/Users/koki/activator/shelf/test-Object"
+  "payloadFile":"UGT1A1_Pheno_Recom.py",
+  "KOFile":"/Users/koki/activator/shelf/UGT1A1-Object2"
 }
