@@ -1,49 +1,72 @@
-#KGrid CPIC guidelines Phenotype to Recommendation
-#Koki Sasagawa
+# KGrid CPIC guidelines <gene_name> Phenotype to Recommendation Payload
+# Koki Sasagawa 
+# Last Updated: 1/24/2018
 
-#ENGINE TYPE
-#PYTHON
+########## Remove when making KO ##########
+# This is the skeleton code for the phenotype to recommendation KO
 
-#CONTENT
+# Accepts input in the following format: 
+# {"phenotype": "", "choice": ""}
+########## Remove when making KO ##########
 
-# The following input pheno should be formatted as such: {'phenotype': '', 'implication': '', 'recommendation': ''}
-
-def getRecommendation(pheno):
-	""" The following function will return the recommendation corresponding to the specified phenotype """
+def execute(pheno):
+	""" 
+		The following function will return the recommendation 
+		corresponding to the specified phenotype 
+	"""
 
 	# Dictionary containing Phenotype to Recommendation Information
-	######### COPY AND PASTE DICTIONARY HERE #########
-	pheno_recom = {}
+	pheno_recom = {
+		"Normal metabolizer": {
+			"Implications for phenotypic measures": "",
+			"Dosing recommendations": "",
+			"Classification of recommendations": "",
+		},
+		"Intermediate metabolizer": {
+			"Implications for phenotypic measures":"",
+			"Dosing recommendations": "",
+			"Classification of recommendations": "",
+		},
+		"Poor metabolizer": {
+			"Implications for phenotypic measures":"",
+			"Dosing recommendations": "",
+			"Classification of recommendations": "",
+		}
+	}
 
-	# Get appropriate recommendation corresponding to phenotype
-	if pheno['phenotype']:
-		if pheno['phenotype'] in pheno_recom:
-			# Assign appropriate recommendation pair value for the corresponding key(phenotype) from dictionary pheno_recom
-			pheno['recommendation'] = pheno_recom[pheno['phenotype']]
-		elif
+	# Dictionary containing choice of information
+	options = {"0": "Implications for phenotypic measures", "1": "Dosing recommendations", "2": "Classification of recommendations"}
+
+	# Results
+	recommendation = {"Info": "", "Recom": ""}
+
+	# Get select recommendation type
+	if pheno["choice"]:
+		if pheno["choice"] in options:
+			# Assign appropriate recommendation information depending on selection of choice
+			recommendation["Info"] = options[pheno["choice"]]
 		else:
-		 	raise Exception("Incorrect/invalid input for phenotype")
+		 	return ("Incorrect/invalid option.")
 
-	return str(pheno["recommendation"])
+	# Get appropriate recommendation type corresponding to phenotype and choice
+	if pheno["phenotype"]:
+		if pheno["phenotype"] in pheno_recom:
+			# Assign appropriate recommendation pair value for the corresponding key(phenotype) from dictionary pheno_recom
+			recommendation["Recom"] = pheno_recom[pheno["phenotype"]][recommendation["Info"]]
+		else:
+		 	return ("Incorrect/invalid input for phenotype.")
 
-####### The following is text-code that will check to see that the payload is functioning properly. ########
-def Function_Test():
-	""" This function tests to see if functions are behaving as intended """ 
-	test1 = {'phenotype': ''}
-	test2 = {'phenotype': ''}
-	test3 = {'phenotype': ''}
-	test4 = {'phenotype': ''}
+	return str(recommendation["Info"] + ": " + recommendation["Recom"])
 
-	# Test that scenarios work for function 
-	getRecommendation(test1)
-	getRecommendation(test2)
-	getRecommendation(test3)
-	getRecommendation(test4)
-
-	print(test1)
-	print(test2)
-	print(test3)
-	print(test4)
-
-# Call test
-Function_Test()
+########## Remove when making KO ##########
+## Test Cases ##
+# test1 = {"phenotype": "Poor metabolizer", "choice": "1"}
+# test2 = {"phenotype": "Intermediate metabolizer", "choice": "1"}
+# test3 = {"phenotype": "Normal metabolizer", "choice": "1"}
+# print("*** test case 1 ***")
+# print(execute(test1))
+# print("*** test case 2 ***")
+# print(execute(test2))
+# print("*** test case 3 ***")
+# print(execute(test3))
+########## Remove when making KO ##########

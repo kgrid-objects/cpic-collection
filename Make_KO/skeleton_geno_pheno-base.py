@@ -1,35 +1,42 @@
 # KGrid CPIC guidelines Genotype to Phenotype Payload
 # Koki Sasagawa 
-# Last Updated: 1/17/2018
+# Last Updated: 1/24/2018
 
-# Updated to remove phenotype key value from dictionary. Returns string variable phenotype instead. 
-
+########## Remove when making KO ##########
+# Fixed to be able to accept input not in the starallele format. 
 # Accepts input in the following format: 
 # {"diplotype": "", "allele1": "", "allele2": ""}
-
-###### REMOVE THE ABOVE DESCRIPTION FOR WHEN INCLUDING IT INTO THE WIZARD. #########
+########## Remove when making KO ##########
 
 def alleleFormat(geno):
-	""" Swap the order of alleles to have the smaller number as allele1 and the larger number as allele2. Also add '*' to change to star format. """ 
+	""" 
+		Swaps the order of alleles to have the smaller number as allele1 and 
+		the larger number as allele2. Also adds '*' to change to star format. 
+	""" 
 
 	if geno['diplotype']:
 		diplotype = geno['diplotype']
 		list_diplotype = diplotype.split('/')
-		# If in starformat, remove. Otherwise it will be left unchanged. 
+		# If in starformat, remove. Otherwise it will be unchanged. 
 		allele1 = int(list_diplotype[0].replace('*',''))
 		allele2 = int(list_diplotype[1].replace('*',''))
 		# If allele1 is greater than allele2, swap the order.
 		if allele1 > allele2:
-			geno['diplotype'] = '*' + str(allele2) + '/' + '*' + str(allele1) 
+			geno['diplotype'] = '*' + str(allele2) + '/' + '*' + str(allele1)
+		else:
+			geno['diplotype'] = '*' + str(allele1) + '/' + '*' + str(allele2)
 
 	elif geno['allele1'] and geno['allele2']:
-		# If allele is in starformat, remove. Otherwise it will be left unchanged. 
+		# If allele is in starformat, remove. Otherwise it will be unchanged. 
 		allele1 = int(geno['allele1'].replace('*',''))
 		allele2 = int(geno['allele2'].replace('*',''))
 		# If allele1 is greater than allele2, swap the order.
 		if allele1 > allele2:
 			geno['allele1'] = '*' + str(allele2)
 			geno['allele2'] = '*' + str(allele1)
+		else:
+			geno['allele1'] = '*' + str(allele1)
+			geno['allele2'] = '*' + str(allele2)
 
 def execute(geno):
 	""" Return the phenotype corresponding to the user specified genotype. """
@@ -57,6 +64,6 @@ def execute(geno):
 		if combine_allele in geno_pheno:
 			phenotype = geno_pheno[combine_allele]
 		else:
-		 	return ("Incorrect/invalid input for allele.")
+		 	return ("Incorrect/invalid input for alleles.")
 
 	return phenotype
