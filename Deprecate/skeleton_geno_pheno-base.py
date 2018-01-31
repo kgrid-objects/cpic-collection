@@ -1,11 +1,14 @@
 # KGrid CPIC guidelines Genotype to Phenotype Payload
 # Koki Sasagawa 
-# Last Updated: 1/24/2018
+# Last Updated: 1/31/2018
 
 ########## Remove when making KO ##########
+
 # Fixed to be able to accept input not in the starallele format. 
 # Accepts input in the following format: 
 # {"diplotype": "", "allele1": "", "allele2": ""}
+# import unittest # Comment out for actual use
+
 ########## Remove when making KO ##########
 
 def alleleFormat(geno):
@@ -13,7 +16,6 @@ def alleleFormat(geno):
 		Swaps the order of alleles to have the smaller number as allele1 and 
 		the larger number as allele2. Also adds '*' to change to star format. 
 	""" 
-
 	if geno['diplotype']:
 		diplotype = geno['diplotype']
 		list_diplotype = diplotype.split('/')
@@ -67,3 +69,22 @@ def execute(geno):
 		 	return ("Incorrect/invalid input for alleles.")
 
 	return phenotype
+
+########## Remove when making KO ##########
+################# TESTING #################
+######## COMMENT OUT WHEN IN USE ##########
+# class execute_test(unittest.TestCase):
+# 	def test1(self):
+# 		self.assertEqual(execute({"diplotype": "", "allele1": "", "allele2": ""}), , 'Incorrect Phenotype')
+# 	def test2(self):
+# 		self.assertEqual(execute({"diplotype": "", "allele1": "", "allele2": ""}), , 'Incorrect Phenotype')
+# 	def test3(self):
+# 		self.assertEqual(execute({"diplotype": "", "allele1": "", "allele2": ""}), , 'Incorrect Phenotype')
+# 	def test4(self):
+# 		self.assertEqual(execute({"diplotype": "", "allele1": "", "allele2": ""}), , 'Incorrect Phenotype')
+# 	def test5(self):
+# 		self.assertEqual(execute({"diplotype": "", "allele1": "", "allele2": ""}), , 'Incorrect Phenotype')
+
+# if __name__ == '__main__':
+# 	unittest.main(verbosity=2)
+########## Remove when making KO ##########
