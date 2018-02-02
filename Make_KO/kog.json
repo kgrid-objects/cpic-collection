@@ -2,6 +2,6 @@
   "metadataFile":"metadata.json",
   "inputFile":"input.xml",
   "outputFile":"output.xml",
-  "payloadFile":"CYP2D6_Geno_Pheno.py",
-  "KOFile":"/Users/koki/activator/shelf/UGT1A1-TEST"
+  "payloadFile":"CYP2C19_Pheno_Recom-Clopidogrel.py",
+  "KOFile":"/Users/koki/activator/shelf/CYP2C19-Clopidogrel"
 }

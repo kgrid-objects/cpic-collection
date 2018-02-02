@@ -1,11 +1,11 @@
 {
   "metadata":{
-    "title":"CPIC UGT1A1 Phenotype-to-Recommendations"
+    "title":"CPIC CYP2C19 Clopidogrel Recommendations"
   },
   "payload":{
     "content":"",
     "engineType":"PYTHON",
     "functionName":"execute"
   },
-  "url": "http://n2t.net/ark:/UGT1A1/object2"
+  "url": "http://n2t.net/ark:/CYP2C19/Clopidogrel"
 }
