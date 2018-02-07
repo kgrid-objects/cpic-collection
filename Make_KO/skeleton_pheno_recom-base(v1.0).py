@@ -1,6 +1,6 @@
 # KGrid CPIC guidelines <gene_name> Phenotype to Recommendation Payload
 # Koki Sasagawa 
-# Last Updated: 1/24/2018
+# Last Updated: 2/7/2018
 
 ########## Remove when making KO ##########
 # This is the skeleton code for the phenotype to recommendation KO
@@ -16,21 +16,27 @@ def execute(pheno):
 	"""
 
 	# Dictionary containing Phenotype to Recommendation Information
+	# ultrarapid and extensive metabolizer have the same recomendations 
 	pheno_recom = {
+		"Ultrarapid metabolizer": {
+			"0": "",
+			"1": "",
+			"2": "",
+		},
 		"Normal metabolizer": {
-			"Implications for phenotypic measures": "",
-			"Dosing recommendations": "",
-			"Classification of recommendations": "",
+			"0": "",
+			"1": "",
+			"2": "",
 		},
 		"Intermediate metabolizer": {
-			"Implications for phenotypic measures":"",
-			"Dosing recommendations": "",
-			"Classification of recommendations": "",
+			"0": "",
+			"1": "",
+			"2": "",
 		},
 		"Poor metabolizer": {
-			"Implications for phenotypic measures":"",
-			"Dosing recommendations": "",
-			"Classification of recommendations": "",
+			"0": "",
+			"1": "",
+			"2": "",
 		}
 	}
 
@@ -42,17 +48,19 @@ def execute(pheno):
 
 	# Get select recommendation type
 	if pheno["choice"]:
-		if pheno["choice"] in options:
+		choice = pheno["choice"]
+		if choice in options:
 			# Assign appropriate recommendation information depending on selection of choice
-			recommendation["Info"] = options[pheno["choice"]]
+			recommendation["Info"] = options[choice]
 		else:
 		 	return ("Incorrect/invalid option.")
 
 	# Get appropriate recommendation type corresponding to phenotype and choice
 	if pheno["phenotype"]:
-		if pheno["phenotype"] in pheno_recom:
+		phenotype = pheno["phenotype"]
+		if phenotype in pheno_recom:
 			# Assign appropriate recommendation pair value for the corresponding key(phenotype) from dictionary pheno_recom
-			recommendation["Recom"] = pheno_recom[pheno["phenotype"]][recommendation["Info"]]
+			recommendation["Recom"] = pheno_recom[phenotype][choice]
 		else:
 		 	return ("Incorrect/invalid input for phenotype.")
 
