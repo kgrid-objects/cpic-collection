@@ -2,6 +2,6 @@
   "metadataFile":"metadata.json",
   "inputFile":"input.xml",
   "outputFile":"output.xml",
-  "payloadFile":"CYP2C19_Pheno_Recom_Clopidogrel.py",
-  "KOFile":"/Users/koki/activator/shelf/CYP2C19-Clopidogrel"
+  "payloadFile":"CYP2C19_Pheno_Recom_Citalopram_and_Escitalopram.py",
+  "KOFile":"/Users/koki/activator/shelf/CYP2C19-Citalopram-and-Escitalopram"
 }

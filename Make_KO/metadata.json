@@ -1,11 +1,11 @@
 {
   "metadata":{
-    "title":"CPIC CYP2C19 Clopidogrel Recommendations"
+    "title":"CPIC CYP2C19 Citalopram and Escitalopram Recommendations"
   },
   "payload":{
     "content":"",
     "engineType":"PYTHON",
     "functionName":"execute"
   },
-  "url": "http://n2t.net/ark:/CYP2C19/Clopidogrel"
+  "url": "http://n2t.net/ark:/CYP2C19/CEtalopram"
 }
