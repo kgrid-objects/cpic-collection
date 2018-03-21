@@ -46,6 +46,9 @@ __localhost:8080/shelf/__
 6. Now that we know the KO has be detected in the shelf, create a POST request: __localhost:8080/knowledgeObject/ark:/gene_name/object/result__
 7. Go to __Headers__ tab and create a key __Content-Typed__ and value __application/json__.
 8. Go to __Body__ tag and create the following dictionary format request `{"diplotype": "", "allele1": "", "allele2": ""}`. Fill in the pair values with the appropriate genotype information.
+
+EXAMPLE: {"diplotype":"", "allele1":"*3", "allele2":"*3"}
+
 9. Click send. If successful, a phenotype should be returned. 
 
 ### Find-and-Replace
