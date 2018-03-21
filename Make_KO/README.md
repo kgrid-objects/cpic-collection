@@ -30,7 +30,7 @@ The following instructions assumes that you have ran a KO in the past. To procee
 
 ### Step 1: Making the Genotype to Phenotype KO
 1. Go to KGrid's [Make_KO](https://github.com/kgrid/CPIC-objects/tree/master/Make_KO) and download the latest CPIC Wizard file __CPIC_GPWizard.py__ onto your current working directory.
-2. Retrieve and download an official diplotype to phenotype excel table from the [CPIC website](https://cpicpgx.org/genes-drugs/). Scroll down to see a list of genes, and click on the corresponding __Guideline__ link. Find and download the __(drug_name)_diplotype_phenotype_table__ (*NOTE: Not all genes will have this information*). Be sure to save this file in the same directory as the CPIC Wizard.
+2. Retrieve and download an official diplotype to phenotype excel table from the [CPIC website](https://cpicpgx.org/genes-drugs/). Scroll down to see a list of genes, and click on the corresponding __Guideline__ link. Find and download the __drug_name_diplotype_phenotype_table__ (*NOTE: Not all genes will have this information*). Be sure to save this file in the same directory as the CPIC Wizard.
 3. Open the excel file and check that it is formatted correctly. Sometimes special characters like superscripts remain, for example: __Metabolizer<sup>c</sup>__ instead of __Metabolizer__. Remove any extra characters by performing a __find and replace__ in Excel. (*Instructions on performing a find-and-replace in Excel can be found below*)
 4. Open the __CPIC_GPWizard.py__ file and find the global variable called `KOFILE` on line 49. Change the text `name` to the name of your computers home directory.
 5. Open the terminal command line and type the following: `python3 CPIC_GPWizard.py <Excel table of interest>`
