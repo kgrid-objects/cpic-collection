@@ -40,7 +40,7 @@ The following instructions assumes that you have ran a KO in the past. To procee
 1. First we will run the activator. Open the terminal and go to the directory where the activator is stored. Type the following code into the command-line: `java -jar <name_of_activator`.
 2. Once the activator is successfully running, start up postman
 
-![alt text](https://github.com/kgrid/CPIC-objects/blob/master/PostManGraphic.png)
+![alt text](https://github.com/kgrid/CPIC-objects/blob/master/PostManGraphicSmall.png)
 
 3. Check that KO is recognized by the activator by making the following GET request:
 __localhost:8080/shelf/__
