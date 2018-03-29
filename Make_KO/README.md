@@ -31,7 +31,7 @@ The following instructions assumes that you have ran a KO in the past. To procee
 ### Step 1: Making the Genotype to Phenotype KO
 1. Go to KGrid's [Make_KO](https://github.com/kgrid/CPIC-objects/tree/master/Make_KO) and download the latest CPIC Wizard file __CPIC_GPWizard.py__ onto your current working directory.
 2. Retrieve and download an official diplotype to phenotype excel table from the [CPIC website](https://cpicpgx.org/genes-drugs/). Scroll down to see a list of genes, and click on the corresponding __Guideline__ link. Find and download the __drug_name_diplotype_phenotype_table__ (*NOTE: Some genes will not have this information*). Be sure to save this file in the same directory as the CPIC Wizard.
-3. Open the excel file and check that it is formatted correctly. The __CPIC_GPWizard.py__ reads in the first 2 columns of the excel table. These two columns must contain the diplotype information and the corresponding phenotype information. Some tables contain extra columns which can result in non-functional knowledge objects.  
+3. Open the excel file and check that it is formatted correctly. The __CPIC_GPWizard.py__ reads in the first 2 columns of the excel table. These two columns must contain the diplotype information and the corresponding phenotype information. Some tables contain extra columns which can result in non-functional KOs.  
 For example, we see that the CYP2D6 excel file contains a total of 4 columns.  
 ![alt text](https://github.com/kgrid/CPIC-objects/blob/master/Make_KO/images/genetable1.png)
 The first column contains diplotype information, however, the next column over contains the Gaedigk Activity Score and not the phenotype information.  
@@ -49,17 +49,19 @@ Remove any extra characters by performing a __find and replace__ in Excel (*Inst
 1. First we will run the activator. Open the terminal and go to the directory where the activator is stored. Type the following code into the command-line: `java -jar <name_of_activator`.
 2. Once the activator is successfully running, start up postman.  
 ![alt text](https://github.com/kgrid/CPIC-objects/blob/master/Make_KO/images/PostManGraphicSmall.png)
-3. Check that KO is recognized by the activator by making the following GET request:
-__localhost:8080/shelf/__
-4. Go to __Headers__ tab and create a key __Accept__ and value __application/json__. 
-5. Click send. The KO should be returned. 
-6. Now that we know the KO has be detected in the shelf, create a POST request: __localhost:8080/knowledgeObject/ark:/gene_name/object/result__
-7. Go to __Headers__ tab and create a key __Content-Typed__ and value __application/json__.
-8. Go to __Body__ tag and create the following dictionary format request `{"diplotype": "", "allele1": "", "allele2": ""}`. Fill in the pair values with the appropriate genotype information.
-
-EXAMPLE: {"diplotype":"", "allele1":"*3", "allele2":"*3"}
-
-9. Click send. If successful, a phenotype should be returned. 
+3. Check that KO is recognized by the activator by making the following __GET__ request.  
+![alt text](https://github.com/kgrid/CPIC-objects/blob/master/Make_KO/images/getrequest.png)
+4. Go to the __Headers__ tab and create a key __Accept__ and value __application/json__.  
+![alt text](https://github.com/kgrid/CPIC-objects/blob/master/Make_KO/images/keyvalue.png)
+5. Click send. If successful, the contents of the KO will be returned as the output.
+6. Now that we know the KO has be detected in the shelf, create a __POST__ request. The following is a post request for the CYP2D6 KO.  
+![alt text](https://github.com/kgrid/CPIC-objects/blob/master/Make_KO/images/postrequest.png)
+7. Go to the __Headers__ tab and create a key __Content-Type__ and value __application/json__.  
+![alt text](https://github.com/kgrid/CPIC-objects/blob/master/Make_KO/images/contenttype.png)
+8. Go to the __Body__ tag and create the content for the post. It should be structured in the following dictionary format `{"diplotype": "", "allele1": "", "allele2": ""}`. Fill in the pair values with the appropriate genotype information. For example, the following is the post content for CYP2D6 KO.  
+![alt text](https://github.com/kgrid/CPIC-objects/blob/master/Make_KO/images/bodyraw.png)
+9. Click send. If successful, a metabolic phenotype should be returned. Here is a sample output from the previous post request.  
+![alt text](https://github.com/kgrid/CPIC-objects/blob/master/Make_KO/images/postresult.png)
 
 ### Find-and-Replace
 1. Go to the excel menu bar and click __edit__. 
