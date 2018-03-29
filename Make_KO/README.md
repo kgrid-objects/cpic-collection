@@ -33,7 +33,8 @@ The following instructions assumes that you have ran a KO in the past. To procee
 2. Retrieve and download an official diplotype to phenotype excel table from the [CPIC website](https://cpicpgx.org/genes-drugs/). Scroll down to see a list of genes, and click on the corresponding __Guideline__ link. Find and download the __drug_name_diplotype_phenotype_table__ (*NOTE: Some genes will not have this information*). Be sure to save this file in the same directory as the CPIC Wizard.
 3. Open the excel file and check that it is formatted correctly. The __CPIC_GPWizard.py__ reads in the first 2 columns of the excel table. These two columns must contain the diplotype information and the corresponding phenotype information. Some tables contain extra columns which can result in non-functional knowledge objects.  
 For example, we see that the CYP2D6 excel file contains a total of 4 columns.  
-![alt text](https://github.com/kgrid/CPIC-objects/blob/master/Make_KO/images/genetable1.png)  
+![alt text](https://github.com/kgrid/CPIC-objects/blob/master/Make_KO/images/genetable1.png)
+<img src="https://github.com/kgrid/CPIC-objects/blob/master/Make_KO/images/genetable1.png" style="width:500px;height:600px">
 The first column contains diplotype information, however, the next column over contains the Gaedigk Activity Score and not the phenotype information.  
 ![alt text](https://github.com/kgrid/CPIC-objects/blob/master/Make_KO/images/genetable2.png)
 Delete this column.  
