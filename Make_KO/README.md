@@ -54,7 +54,7 @@ Remove any extra characters by performing a __find and replace__ in Excel (*Inst
 4. Go to the __Headers__ tab and create a key __Accept__ and value __application/json__.  
 ![alt text](https://github.com/kgrid/CPIC-objects/blob/master/Make_KO/images/keyvalue.png)
 5. Click send. If successful, the contents of the KO will be returned as the output.
-6. Now that we know the KO has be detected in the shelf, create a __POST__ request. The following is a post request for the CYP2D6 KO.  
+6. Now that we know the KO has been detected in the shelf, we are ready to create a __POST__ request. The following is a post request for the CYP2D6 KO.  
 ![alt text](https://github.com/kgrid/CPIC-objects/blob/master/Make_KO/images/postrequest.png)
 7. Go to the __Headers__ tab and create a key __Content-Type__ and value __application/json__.  
 ![alt text](https://github.com/kgrid/CPIC-objects/blob/master/Make_KO/images/contenttype.png)
