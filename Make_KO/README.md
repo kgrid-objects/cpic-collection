@@ -31,16 +31,24 @@ The following instructions assumes that you have ran a KO in the past. To procee
 ### Step 1: Making the Genotype to Phenotype KO
 1. Go to KGrid's [Make_KO](https://github.com/kgrid/CPIC-objects/tree/master/Make_KO) and download the latest CPIC Wizard file __CPIC_GPWizard.py__ onto your current working directory.
 2. Retrieve and download an official diplotype to phenotype excel table from the [CPIC website](https://cpicpgx.org/genes-drugs/). Scroll down to see a list of genes, and click on the corresponding __Guideline__ link. Find and download the __drug_name_diplotype_phenotype_table__ (*NOTE: Not all genes will have this information*). Be sure to save this file in the same directory as the CPIC Wizard.
-3. Open the excel file and check that it is formatted correctly. The __CPIC_GPWizard.py__ reads in the first 2 columns of the excel table. Some tables may contain extra columns that can result in non-functional knowledge objects. [alt text](https://github.com/kgrid/CPIC-objects/blob/master/Make_KO/images/genetable1.png). Sometimes special characters like superscripts remain, for example: __Metabolizer<sup>c</sup>__ instead of __Metabolizer__. Remove any extra characters by performing a __find and replace__ in Excel. (*Instructions on performing a find-and-replace in Excel can be found below*)
-4. Open the __CPIC_GPWizard.py__ file and find the global variable called `KOFILE` on line 49. Change the text `name` to the name of your computers home directory.
-5. Open the terminal command line and type the following: `python3 CPIC_GPWizard.py <Excel table of interest>`
-6. If successful, the new KO should now reside in your computers activators shelf. Type `cd users/name/activator/shelf` on the command line, then type `ls` to check if new file exists.
+3. Open the excel file and check that it is formatted correctly. The __CPIC_GPWizard.py__ reads in the first 2 columns of the excel table. These two columns must contain the diplotype information and the corresponding phenotype information. Some tables may contain extra columns that can result in non-functional knowledge objects. Here, we see that the excel file for CYP2D6 contains a total of 4 columns.
+![alt text](https://github.com/kgrid/CPIC-objects/blob/master/Make_KO/images/genetable1.png).  
+The first column contain diplotype information, however the next column contains the Gaedigk Activity Score and not the phenotype information.  
+![alt text](https://github.com/kgrid/CPIC-objects/blob/master/Make_KO/images/genetable2.png).
+Delete this column.    
+![alt text](https://github.com/kgrid/CPIC-objects/blob/master/Make_KO/images/genetable3.png).  
+4. Sometimes special characters like superscripts remain. Here, we see that the excel file for UGT1A1 contains a superscript at the end of the word __Metabolizer__.  
+![alt text](https://github.com/kgrid/CPIC-objects/blob/master/Make_KO/images/genetable4.png).  
+__Metabolizer<sup>c</sup>__ instead of __Metabolizer__. Remove any extra characters by performing a __find and replace__ in Excel. Be sure to correct for spelling errors too as in this case Metabolizer is misspelled as metazolizer for some rows. (*Instructions on performing a find-and-replace in Excel can be found below*)
+5. Open the __CPIC_GPWizard.py__ file and find the global variable called `KOFILE` on line 49. Change the text `name` to the name of your computers home directory.
+6. Open the terminal command line and type the following: `python3 CPIC_GPWizard.py <Excel table of interest>`
+7. If successful, the new KO should now reside in your computers activators shelf. Type `cd users/name/activator/shelf` on the command line, then type `ls` to check if new file exists.
 
 ### Step 2: Using the Genotype to Phenotype KO
 1. First we will run the activator. Open the terminal and go to the directory where the activator is stored. Type the following code into the command-line: `java -jar <name_of_activator`.
 2. Once the activator is successfully running, start up postman
 
-![alt text](https://github.com/kgrid/CPIC-objects/blob/master/PostManGraphicSmall.png)
+![alt text](https://github.com/kgrid/CPIC-objects/blob/master/Make_KO/images/PostManGraphicSmall.png)
 
 3. Check that KO is recognized by the activator by making the following GET request:
 __localhost:8080/shelf/__
