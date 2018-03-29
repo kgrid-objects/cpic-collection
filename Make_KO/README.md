@@ -31,7 +31,7 @@ The following instructions assumes that you have ran a KO in the past. To procee
 ### Step 1: Making the Genotype to Phenotype KO
 1. Go to KGrid's [Make_KO](https://github.com/kgrid/CPIC-objects/tree/master/Make_KO) and download the latest CPIC Wizard file __CPIC_GPWizard.py__ onto your current working directory.
 2. Retrieve and download an official diplotype to phenotype excel table from the [CPIC website](https://cpicpgx.org/genes-drugs/). Scroll down to see a list of genes, and click on the corresponding __Guideline__ link. Find and download the __drug_name_diplotype_phenotype_table__ (*NOTE: Some genes will not have this information*). Be sure to save this file in the same directory as the CPIC Wizard.
-3. Open the excel file and check that it is formatted correctly. The __CPIC_GPWizard.py__ reads in the first 2 columns of the excel table. These two columns must contain the diplotype information and the corresponding phenotype information. Some tables contain extra columns which can result in non-functional KOs.  
+3. Open the excel file and check that it is formatted correctly. The __CPIC_GPWizard.py__ reads in the first 2 columns of the excel table. These two columns must contain the diplotype information and the corresponding phenotype information. Some tables contain extra columns which can result in non-functional KOs. (*NOTE: If the first two columns already contain the right information, skip this step.*)    
 For example, we see that the CYP2D6 excel file contains a total of 4 columns.  
 ![alt text](https://github.com/kgrid/CPIC-objects/blob/master/Make_KO/images/genetable1.png)
 The first column contains diplotype information, however, the next column over contains the Gaedigk Activity Score and not the phenotype information.  
@@ -40,7 +40,7 @@ Delete this column.
 ![alt text](https://github.com/kgrid/CPIC-objects/blob/master/Make_KO/images/genetable3.png)
 4. Sometimes special characters like superscripts remain. For example, we see in the UGT1A1 excel file __Metabolizer<sup>c</sup>__ instead of __Metabolizer__.
 ![alt text](https://github.com/kgrid/CPIC-objects/blob/master/Make_KO/images/genetable4.png)
-Remove any extra characters by performing a __find and replace__ in Excel (*Instructions on performing a find-and-replace in Excel can be found below*). Additionally, we see that some rows misspell __Metabolizer__ as __Metazolizer__. Make sure to correct any spelling errors.
+Remove any extra characters by performing a __find and replace__ in Excel (*Instructions on performing a find-and-replace in Excel can be found at the bottom of this document*). Additionally, spelling errors can sometimes exist. In the UGT1A1 excel file, we see that some rows incorrectly spell __Metabolizer__ as __Metazolizer__. Make sure to correct any spelling errors.
 5. Open the __CPIC_GPWizard.py__ file and find the global variable called `KOFILE` on line 46. Change the text `name` to the name of your computers home directory.
 6. Open the terminal command line and type the following: `python3 CPIC_GPWizard.py <drug_name_diplotype_phenotype_table>`
 7. If successful, the new KO should now reside in your computers activators shelf. Type `cd users/name/activator/shelf` on the command line, then type `ls` to check if new file exists.
