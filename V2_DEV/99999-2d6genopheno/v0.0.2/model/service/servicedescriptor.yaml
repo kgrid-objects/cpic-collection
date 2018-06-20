@@ -1,0 +1,85 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: 'CPIC - Genotype to Phenotype for CYP2D6'
+  description: 'KGrid CPIC guidelines Genotype to Phenotype for CYP2D6'
+servers:
+  - url: 'http://localhost:8080'
+paths:
+  /99999/2d6genopheno/v0.0.2:
+    get:
+      description: Retrieve the knowledge object.
+      operationId: getko
+      responses:
+        '200':
+          description: response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/KOView'
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+  /99999/2d6genopheno/v0.0.2/getphenotype:
+    post:
+      description: Determine the pheno type based on the genotype.
+      operationId: pheno
+      requestBody:
+        description: inputs
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/genoinputs'
+      responses:
+        '200':
+          description: response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/phenotypeobj'
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+components:
+  schemas:
+    genoinputs:
+      required:
+        - allele1
+        - allele2
+      properties:
+        allele1:
+          type: string
+          example: '*3'
+        allele2:
+          type: string
+          example: '*3'
+    phenotypeobj:
+      required:
+        - enzym
+        - phenotype
+      properties:
+        enzym:
+          type: string
+          example: 'CYP2D6'
+        phenotype:
+          type: string
+          example: 'Poor metabolizer'
+    KOView:
+      type: object
+    Error:
+      required:
+        - code
+        - message
+      properties:
+        code:
+          type: integer
+          format: int32
+        message:
+          type: string

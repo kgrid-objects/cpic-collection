@@ -1,0 +1,49 @@
+{
+  "template": "kotemplate",
+  "project": "cpic",
+  "objects": [
+    {
+      "id": "99999-2d6codeine",
+      "version": "v0.0.1"
+    },
+    {
+      "id": "99999-2d6genopheno",
+      "version": "v0.0.1"
+    }
+  ],
+  "kodependencies": [],
+  "runtimedependencies": [
+    {
+      "name": "Activator",
+      "version": "0.5.8",
+      "filename": "kgrid-activator-0.5.8.jar",
+      "download_url": "https://github.com/kgrid/kgrid-activator/releases/download/kgrid-activator-0.5.8/",
+      "target": ""
+    },
+    {
+      "name": "JavaScript",
+      "version": "0.5.8",
+      "filename": "javascript-adapter-0.0.1-SNAPSHOT.jar",
+      "download_url": "https://github.com/kgrid/ko-templates/releases/download/0.1/",
+      "target": "adapters/"
+    }
+  ],
+  "devDependencies": {
+    "scripty": "1.7.2"
+  },
+  "scripts": {
+    "test": "mocha -- ./test/**/*.test.js",
+    "prod": "scripty",
+    "dev": "scripty",
+    "package": "scripty"
+  },
+  "scripty": {
+    "path": "scripts",
+    "windowsPath": "scriptswin",
+    "silent": true
+  },
+  "engines": {
+    "node": ">= 4.0.0",
+    "npm": ">= 3.0.0"
+  }
+}

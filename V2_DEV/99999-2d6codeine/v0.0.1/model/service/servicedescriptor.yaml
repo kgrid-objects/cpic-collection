@@ -1,0 +1,81 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: 'CPIC CYP2D6 Codeine Recommendations'
+  description: 'KGrid CPIC guidelines CYP2D6 Phenotype to Recommendation'
+servers:
+  - url: 'http://localhost:8080'
+paths:
+  /99999/2d6codeine/v0.0.1:
+      get:
+        description: Retrieve the knowledge object.
+        operationId: getko
+        responses:
+          '200':
+            description: response
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/KOView'
+          default:
+            description: unexpected error
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/Error'
+  /99999/2d6codeine/v0.0.1/getrecommendation:
+    post:
+      description: Retrieve Dosing Recommendation based on the pheno type.
+      operationId: recomm
+      requestBody:
+        description: inputs
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/phenotypeobj'
+      responses:
+        '200':
+          description: response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/dosingrecouput'
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+components:
+  schemas:
+    phenotypeobj:
+      required:
+        - enzym
+        - phenotype
+      properties:
+        enzym:
+          type: string
+          example: 'CYP2D6'
+        phenotype:
+          type: string
+          example: 'Normal metabolizer'
+    dosingrecouput:
+      required:
+        - result
+      properties:
+        result:
+          type: object
+          example: {'enzym':'CYP2D6','drug':'Codeine','recom':{}}
+    KOView:
+      type: object
+    Error:
+      required:
+        - code
+        - message
+      properties:
+        code:
+          type: integer
+          format: int32
+        message:
+          type: string
