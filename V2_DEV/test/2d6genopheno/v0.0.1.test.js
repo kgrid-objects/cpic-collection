@@ -5,8 +5,8 @@ var testset = [
   {"input":{"allele1": "*97",  "allele2": "*98"},"output":"TBD" },
   {"input":{"allele1": "*1x2",  "allele2": "*41"},"output":"Ultrarapid metabolizer" },
   {"input":{"allele1": "*9",  "allele2": "*20"},"output":"TBD" },
-  {"input":{"allele1": "*2",  "allele2": "*27"},"output":"Normal metabolizer" },
-  {"input":{"allele1": "*3",  "allele2": "*5"},"output":"Poor metabolizer" },
+  {"input":{"allele1": "*2",  "allele2": "*27"},"output":"TBD" },
+  {"input":{"allele1": "*3",  "allele2": "*5"},"output":"TBD" },
   {"input":{"allele1": "*1002",  "allele2": "*27"},"output":"Unknown" }
 ]
 

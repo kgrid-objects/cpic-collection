@@ -29,7 +29,8 @@
     }
   ],
   "devDependencies": {
-    "scripty": "1.7.2"
+    "scripty": "1.7.2",
+    "mocha": "5.2.0"
   },
   "scripts": {
     "test": "mocha -- ./test/**/*.test.js",
