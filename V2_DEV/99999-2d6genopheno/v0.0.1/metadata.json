@@ -21,5 +21,5 @@
   "lastModified": 1529432624164,
   "createdOn": 1529432624163,
   "modelpath": "model",
-  "service":"service/servicedescriptor.yaml"
+  "service":"model/service/servicedescriptor.yaml"
 }
