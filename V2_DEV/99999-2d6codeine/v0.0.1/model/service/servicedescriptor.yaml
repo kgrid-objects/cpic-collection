@@ -4,26 +4,13 @@ info:
   title: 'CPIC CYP2D6 Codeine Recommendations'
   description: 'KGrid CPIC guidelines CYP2D6 Phenotype to Recommendation'
 servers:
-  - url: 'http://localhost:8080'
+  - url: '/99999/2d6codeine/v0.0.1/'
+    description: 'KGrid CPIC guidelines CYP2D6 Phenotype to Recommendation'
+tags:
+  - name: KO Endpoints
+    description: KGrid CPIC guidelines CYP2D6 Phenotype to Recommendation Endpoints
 paths:
-  /99999/2d6codeine/v0.0.1:
-      get:
-        description: Retrieve the knowledge object.
-        operationId: getko
-        responses:
-          '200':
-            description: response
-            content:
-              application/json:
-                schema:
-                  $ref: '#/components/schemas/KOView'
-          default:
-            description: unexpected error
-            content:
-              application/json:
-                schema:
-                  $ref: '#/components/schemas/Error'
-  /99999/2d6codeine/v0.0.1/getrecommendation:
+  /getrecommendation:
     post:
       description: Retrieve Dosing Recommendation based on the pheno type.
       operationId: recomm
@@ -66,9 +53,7 @@ components:
       properties:
         result:
           type: object
-          example: {'enzym':'CYP2D6','drug':'Codeine','recom':{}}
-    KOView:
-      type: object
+          example: {"enzym":"CYP2D6","drug":"Codeine","recom":{}}
     Error:
       required:
         - code

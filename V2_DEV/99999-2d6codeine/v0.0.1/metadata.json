@@ -3,10 +3,7 @@
   "description": "KGrid CPIC guidelines CYP2D6 Phenotype to Codeine Recommendation",
   "arkId": "ark:/99999/2d6codeine",
   "citations": [
-    {
-      "citation_title": "Citation Title ",
-      "citation_at": "https://link"
-    }
+   "https://link"
   ],
   "keywords": "CPIC, CYP2D6, Codeine, Recommendation",
   "owners": "KGRID",
@@ -20,6 +17,6 @@
   "version": "v0.0.1",
   "lastModified": 1529432646535,
   "createdOn": 1529432646535,
-  "modelpath": "model",
+  "model": "model",
   "service":"model/service/servicedescriptor.yaml"
 }

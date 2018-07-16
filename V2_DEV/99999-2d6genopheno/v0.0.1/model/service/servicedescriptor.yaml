@@ -4,26 +4,13 @@ info:
   title: 'CPIC - Genotype to Phenotype for CYP2D6'
   description: 'KGrid CPIC guidelines Genotype to Phenotype for CYP2D6'
 servers:
-  - url: 'http://localhost:8080'
+  - url: '/99999/2d6genopheno/v0.0.1/'
+    description: 'KGrid CPIC guidelines Genotype to Phenotype for CYP2D6'
+tags:
+  - name: KO Endpoints
+    description: KGrid CPIC guidelines Genotype to Phenotype for CYP2D6 Endpoints
 paths:
-  /99999/2d6genopheno/v0.0.1:
-    get:
-      description: Retrieve the knowledge object.
-      operationId: getko
-      responses:
-        '200':
-          description: response
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/KOView'
-        default:
-          description: unexpected error
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error'
-  /99999/2d6genopheno/v0.0.1/getphenotype:
+  /getphenotype:
     post:
       description: Determine the pheno type based on the genotype.
       operationId: pheno
@@ -75,8 +62,6 @@ components:
         phenotype:
           type: string
           example: 'Normal metabolizer'
-    KOView:
-      type: object
     Error:
       required:
         - code

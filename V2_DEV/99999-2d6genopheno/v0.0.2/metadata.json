@@ -3,10 +3,7 @@
   "description": "KGrid CPIC guidelines Genotype to Phenotype for CYP2D6",
   "arkId": "ark:/99999/2d6genopheno",
   "citations": [
-    {
-      "citation_title": "Citation Title ",
-      "citation_at": "https://link"
-    }
+    "https://link"
   ],
   "keywords": "CPIC, CYP2D6, Genotype, Phenotype",
   "owners": "KGRID",
@@ -20,6 +17,6 @@
   "version": "v0.0.2",
   "lastModified": 1529432624164,
   "createdOn": 1529432624163,
-  "modelpath": "model",
+  "model": "model",
   "service":"model/service/servicedescriptor.yaml"
 }

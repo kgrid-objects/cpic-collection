@@ -1,2 +1,2 @@
 @echo off
-java -jar activator/kgrid-activator-0.5.8.jar %*
+java -jar activator/kgrid-activator-0.6.2.jar %*

@@ -15,9 +15,9 @@
   "runtimedependencies": [
     {
       "name": "Activator",
-      "version": "0.5.8",
-      "filename": "kgrid-activator-0.5.8.jar",
-      "download_url": "https://github.com/kgrid/kgrid-activator/releases/download/kgrid-activator-0.5.8/",
+      "version": "0.6.2",
+      "filename": "kgrid-activator-0.6.2.jar",
+      "download_url": "https://github.com/kgrid/kgrid-activator/releases/download/kgrid-activator-0.6.2/",
       "target": ""
     },
     {
