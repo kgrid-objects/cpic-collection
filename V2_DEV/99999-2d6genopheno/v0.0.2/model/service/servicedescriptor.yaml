@@ -4,7 +4,7 @@ info:
   title: 'CPIC - Genotype to Phenotype for CYP2D6'
   description: 'KGrid CPIC guidelines Genotype to Phenotype for CYP2D6'
 servers:
-  - url: '/99999/2d6genopheno/v0.0.1/'
+  - url: '/99999/2d6genopheno/v0.0.2/'
     description: 'KGrid CPIC guidelines Genotype to Phenotype for CYP2D6'
 tags:
   - name: KO Endpoints
