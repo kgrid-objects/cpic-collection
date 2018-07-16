@@ -12,6 +12,8 @@ tags:
 paths:
   /getphenotype:
     post:
+      tags:
+       - KO Endpoints
       description: Determine the pheno type based on the genotype.
       operationId: pheno
       requestBody:

@@ -12,6 +12,8 @@ tags:
 paths:
   /getrecommendation:
     post:
+      tags:
+       - KO Endpoints
       description: Retrieve Dosing Recommendation based on the pheno type.
       operationId: recomm
       requestBody:
