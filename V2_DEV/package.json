@@ -36,7 +36,8 @@
     "test": "mocha -- ./test/**/*.test.js",
     "prod": "scripty",
     "dev": "scripty",
-    "package": "scripty"
+    "package": "scripty",
+    "release": "scripty"
   },
   "scripty": {
     "path": "scripts",
