@@ -15,7 +15,7 @@ As of June 22, 2018, There are two knowledge objects developed for this collecti
   - v0.0.1 Converted from legacy KO in Library2 - ark:/99999/fk4668rz5b;
   - v0.0.2 Converted from legacy KO in Library2 - ark:/99999/fk49z9gr7p;
 
-Additional information about the legacy CPIC Knowledge Objects can be found in the [lagacy readme](legecy_readme.md). 
+Additional information about the legacy CPIC Knowledge Objects can be found in the [legacy readme](legecy_readme.md). 
 There is also in the [etc](etc).
 
 ## Prerequisites
