@@ -12,5 +12,8 @@ for d in * ; do
     zip -r -X "$d.zip" $d -x \"*.DS_Store\"
 done
 
+# create one big zip of all kos
+zip -r -X cpic-all.zip * -x \"*.DS_Store\" "*.zip*"
+
 # clean up only leaving zip files
 rm -r */
