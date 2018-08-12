@@ -1,5 +1,12 @@
 var assert = require('assert');
-var tester =  require('../../99999-2d6codeine/v0.0.1/model/resource/getrecommendationtest.js');
+var rewire = require('rewire');
+
+//Get load in the js
+var javascript = rewire('../../99999-2d6codeine/v0.0.1/model/resource/getrecommendation.js');
+
+//Load in the function
+var getrecommendation = javascript.__get__("getrecommendation");
+
 
 var testset = [
   {"input":{"enzym":"CYP2D6","phenotype": "Ultrarapid metabolizer"},"output":"Implications for phenotypic measures" },
@@ -16,7 +23,7 @@ describe('99999-2d6codeine v0.0.1', function () {
     testset.forEach(function(e, index){
 
       it(e.input.phenotype, function(){
-        var result = tester.getrecommendation(e.input)
+        var result = getrecommendation(e.input)
         assert.equal(true, result.recom[e.output]!=null);
       });
 
@@ -27,22 +34,22 @@ describe('99999-2d6codeine v0.0.1', function () {
   describe('Invalid inputs', function(){
 
     it('fields missing', function(){
-      var result = tester.getrecommendation({})
+      var result = getrecommendation({})
       assert.equal('Incorrect/invalid input.', result);
     })
 
     it('incorrect enzym', function(){
-      var result = tester.getrecommendation({"enzym":"CYP2C9","phenotype": "Ultrarapid metabolizer"})
+      var result = getrecommendation({"enzym":"CYP2C9","phenotype": "Ultrarapid metabolizer"})
       assert.equal(true, result.startsWith('Expecting'));
     })
 
     it('incorrect phenotype', function(){
-      var result = tester.getrecommendation({"enzym":"CYP2D6","phenotype": "Ultrarapid mettabolizer"})
+      var result = getrecommendation({"enzym":"CYP2D6","phenotype": "Ultrarapid mettabolizer"})
       assert.equal('Incorrect/invalid input for phenotype.', result);
     })
 
     it('no input', function(){
-      var result = tester.getrecommendation()
+      var result = getrecommendation()
       assert.equal('Error', result);
     })
 
