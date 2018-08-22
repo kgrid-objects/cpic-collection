@@ -1,5 +1,5 @@
 # CPIC Knowledge Objects
-
+[![GitHub release](https://img.shields.io/github/release/kgrid/cpic-objects.svg)](https://github.com/kgrid/cpic-objects/releases/)
 This is a collection of objects that focus on dosing guidelines as provided by
  the [CPIC pharmacogenomic guidelines](https://cpicpgx.org/guidelines/). These objects generally 
  take allele pairs as inputs and return the corresponding drug selection or dosing guideline 
