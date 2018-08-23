@@ -2,7 +2,7 @@ var assert = require('assert');
 var rewire = require('rewire');
 
 //Get load in the js
-var javascript = rewire('../../99999-2d6genopheno/v0.0.1/model/resource/getphenotypetest');
+var javascript = rewire('../../99999-2d6genopheno/v0.0.1/model/resource/getphenotype');
 
 //Load in the function
 var getphenotype = javascript.__get__("getphenotype");

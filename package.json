@@ -9,16 +9,38 @@
     {
       "id": "99999-2d6genopheno",
       "version": "v0.0.1"
+    },
+    {
+      "id": "99999-2d6genopheno",
+      "version": "v0.0.2"
+    },
+    {
+      "id": "99999-fk4qj7sz2s",
+      "version": "v0.0.2"
     }
   ],
   "kodependencies": [],
   "runtimedependencies": [
     {
       "name": "Activator",
-      "version": "0.6.2",
-      "filename": "kgrid-activator-0.6.2.jar",
-      "download_url": "https://github.com/kgrid/kgrid-activator/releases/download/kgrid-activator-0.6.2/",
+      "version": "0.6.6",
+      "filename": "kgrid-activator-0.6.6.jar",
+      "download_url": "https://github.com/kgrid/kgrid-activator/releases/download/kgrid-activator-0.6.6/",
       "target": ""
+    },
+    {
+      "name": "JavaScript",
+      "version": "0.0.1",
+      "filename": "javascript-adapter-0.0.1-SNAPSHOT.jar",
+      "download_url": "https://github.com/kgrid/ko-templates/releases/download/0.1/",
+      "target": "adapters/"
+    },
+    {
+      "name": "JavaScript",
+      "version": "0.6.2",
+      "filename": "javascript-adapter-0.0.1-SNAPSHOT.jar",
+      "download_url": "https://github.com/kgrid/ko-templates/releases/download/0.1/",
+      "target": "adapters/"
     },
     {
       "name": "JavaScript",

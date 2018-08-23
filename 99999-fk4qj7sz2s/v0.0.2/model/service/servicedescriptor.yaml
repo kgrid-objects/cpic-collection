@@ -1,0 +1,68 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: 'CPIC Gene Drug Table'
+  description: 'CPIC Gene Drug Table'
+servers:
+  - url: '/99999/fk4qj7sz2s/v0.0.2/'
+    description: 'CPIC Gene Drug Table'
+tags:
+  - name: KO Endpoints
+    description: CPIC Gene Drug Table
+paths:
+  /getgenedruglist:
+    post:
+      tags:
+       - KO Endpoints
+      description: Get the filtered gene/drug list.
+      operationId: genedrugtable
+      requestBody:
+        description: inputs
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/input'
+      responses:
+        '200':
+          description: response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/output'
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+components:
+  schemas:
+    input:
+      required:
+        - genelist
+        - druglist
+      properties:
+        genelist:
+          type: string
+          example: 'CYP2D6'
+        druglist:
+          type: string
+          example: '*3'
+    output:
+      required:
+        - result
+      properties:
+        result:
+          type: string
+          example: "{'genelist':[],'druglist':[]}"
+    Error:
+      required:
+        - code
+        - message
+      properties:
+        code:
+          type: integer
+          format: int32
+        message:
+          type: string
