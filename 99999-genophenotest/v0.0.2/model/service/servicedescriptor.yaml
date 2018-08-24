@@ -1,0 +1,76 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: 'CPIC - Genotype to Phenotype for CYP2D6'
+  description: 'KGrid CPIC guidelines Genotype to Phenotype for CYP2D6'
+servers:
+  - url: '/99999/genophenotest/v0.0.2/'
+    description: 'KGrid CPIC guidelines Genotype to Phenotype for CYP2D6'
+tags:
+  - name: KO Endpoints
+    description: KGrid CPIC guidelines Genotype to Phenotype for CYP2D6 Endpoints
+paths:
+  /getphenotype:
+    post:
+      tags:
+       - KO Endpoints
+      description: Determine the pheno type based on the genotype.
+      operationId: pheno
+      requestBody:
+        description: inputs
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/genoinputs'
+      responses:
+        '200':
+          description: response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/phenotypeobj'
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+components:
+  schemas:
+    genoinputs:
+      required:
+        - enzym
+        - allele1
+        - allele2
+      properties:
+        enzym:
+          type: string
+          example: 'CYP2D6'
+        allele1:
+          type: string
+          example: '*3'
+        allele2:
+          type: string
+          example: '*3'
+    phenotypeobj:
+      required:
+        - enzym
+        - phenotype
+      properties:
+        enzym:
+          type: string
+          example: 'CYP2D6'
+        phenotype:
+          type: string
+          example: 'Poor metabolizer'
+    Error:
+      required:
+        - code
+        - message
+      properties:
+        code:
+          type: integer
+          format: int32
+        message:
+          type: string
