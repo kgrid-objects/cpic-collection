@@ -73,6 +73,7 @@
     "npm": ">= 3.0.0"
   },
   "dependencies": {
+    "firstline": "^2.0.2",
     "fs-extra": "^7.0.0"
   }
 }

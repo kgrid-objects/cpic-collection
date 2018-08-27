@@ -1,0 +1,598 @@
+CYP2C19 Diplotype	Coded Diplotype/Phenotype Summarya	EHR Priority Result Notationb
+*1/*1	CYP2C19 Normal Metabolizer 	Normal/Routine/Low Risk
+*1/*2	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*1/*3	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*1/*4A	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*1/*4B	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*1/*5	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*1/*6	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*1/*7	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*1/*8	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*1/*9	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*1/*10	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*1/*11	CYP2C19 Normal Metabolizer 	Normal/Routine/Low Risk
+*1/*12	Indeterminate	None
+*1/*13	CYP2C19 Normal Metabolizer 	Normal/Routine/Low Risk
+*1/*14	Indeterminate	None
+*1/*15	CYP2C19 Normal Metabolizer 	Normal/Routine/Low Risk
+*1/*16	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*1/*17	CYP2C19 Rapid Metabolizer 	Abnormal/Priority/High Risk
+*1/*18	CYP2C19 Normal Metabolizer 	Normal/Routine/Low Risk
+*1/*19	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*1/*22	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*1/*23	Indeterminate	None
+*1/*24	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*1/*25	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*1/*26	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*1/*27	Indeterminate	None
+*1/*28	CYP2C19 Normal Metabolizer 	Normal/Routine/Low Risk
+*1/*29	Indeterminate	None
+*1/*30	Indeterminate	None
+*1/*31	Indeterminate	None
+*1/*32	Indeterminate	None
+*1/*33	Indeterminate	None
+*1/*34	Indeterminate	None
+*1/*35	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*2/*2	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*2/*3	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*2/*4A	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*2/*4B	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*2/*5	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*2/*6	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*2/*7	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*2/*8	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*2/*9	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*2/*10	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*2/*11	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*2/*12	Indeterminate	None
+*2/*13	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*2/*14	Indeterminate	None
+*2/*15	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*2/*16	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*2/*17	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*2/*18	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*2/*19	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*2/*22	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*2/*23	Indeterminate	None
+*2/*24	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*2/*25	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*2/*26	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*2/*27	Indeterminate	None
+*2/*28	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*2/*29	Indeterminate	None
+*2/*30	Indeterminate	None
+*2/*31	Indeterminate	None
+*2/*32	Indeterminate	None
+*2/*33	Indeterminate	None
+*2/*34	Indeterminate	None
+*2/*35	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*3/*3	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*3/*4A	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*3/*4B	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*3/*5	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*3/*6	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*3/*7	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*3/*8	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*3/*9	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*3/*10	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*3/*11	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*3/*12	Indeterminate	None
+*3/*13	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*3/*14	Indeterminate	None
+*3/*15	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*3/*16	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*3/*17	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*3/*18	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*3/*19	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*3/*22	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*3/*23	Indeterminate	None
+*3/*24	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*3/*25	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*3/*26	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*3/*27	Indeterminate	None
+*3/*28	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*3/*29	Indeterminate	None
+*3/*30	Indeterminate	None
+*3/*31	Indeterminate	None
+*3/*32	Indeterminate	None
+*3/*33	Indeterminate	None
+*3/*34	Indeterminate	None
+*3/*35	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*4A/*4A	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*4A/*4B	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*4A/*5	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*4A/*6	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*4A/*7	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*4A/*8	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*4A/*9	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*4A/*10	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*4A/*11	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*4A/*12	Indeterminate	None
+*4A/*13	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*4A/*14	Indeterminate	None
+*4A/*15	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*4A/*16	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*4A/*17	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*4A/*18	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*4A/*19	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*4A/*22	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*4A/*23	Indeterminate	None
+*4A/*24	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*4A/*25	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*4A/*26	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*4A/*27	Indeterminate	None
+*4A/*28	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*4A/*29	Indeterminate	None
+*4A/*30	Indeterminate	None
+*4A/*31	Indeterminate	None
+*4A/*32	Indeterminate	None
+*4A/*33	Indeterminate	None
+*4A/*34	Indeterminate	None
+*4A/*35	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*4B/*4B	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*4B/*5	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*4B/*6	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*4B/*7	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*4B/*8	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*4B/*9	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*4B/*10	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*4B/*11	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*4B/*12	Indeterminate	None
+*4B/*13	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*4B/*14	Indeterminate	None
+*4B/*15	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*4B/*16	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*4B/*17	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*4B/*18	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*4B/*19	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*4B/*22	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*4B/*23	Indeterminate	None
+*4B/*24	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*4B/*25	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*4B/*26	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*4B/*27	Indeterminate	None
+*4B/*28	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*4B/*29	Indeterminate	None
+*4B/*30	Indeterminate	None
+*4B/*31	Indeterminate	None
+*4B/*32	Indeterminate	None
+*4B/*33	Indeterminate	None
+*4B/*34	Indeterminate	None
+*4B/*35	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*5/*5	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*5/*6	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*5/*7	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*5/*8	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*5/*9	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*5/*10	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*5/*11	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*5/*12	Indeterminate	None
+*5/*13	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*5/*14	Indeterminate	None
+*5/*15	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*5/*16	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*5/*17	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*5/*18	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*5/*19	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*5/*22	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*5/*23	Indeterminate	None
+*5/*24	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*5/*25	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*5/*26	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*5/*27	Indeterminate	None
+*5/*28	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*5/*29	Indeterminate	None
+*5/*30	Indeterminate	None
+*5/*31	Indeterminate	None
+*5/*32	Indeterminate	None
+*5/*33	Indeterminate	None
+*5/*34	Indeterminate	None
+*5/*35	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*6/*6	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*6/*7	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*6/*8	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*6/*9	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*6/*10	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*6/*11	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*6/*12	Indeterminate	None
+*6/*13	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*6/*14	Indeterminate	None
+*6/*15	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*6/*16	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*6/*17	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*6/*18	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*6/*19	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*6/*22	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*6/*23	Indeterminate	None
+*6/*24	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*6/*25	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*6/*26	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*6/*27	Indeterminate	None
+*6/*28	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*6/*29	Indeterminate	None
+*6/*30	Indeterminate	None
+*6/*31	Indeterminate	None
+*6/*32	Indeterminate	None
+*6/*33	Indeterminate	None
+*6/*34	Indeterminate	None
+*6/*35	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*7/*7	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*7/*8	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*7/*9	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*7/*10	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*7/*11	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*7/*12	Indeterminate	None
+*7/*13	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*7/*14	Indeterminate	None
+*7/*15	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*7/*16	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*7/*17	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*7/*18	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*7/*19	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*7/*22	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*7/*23	Indeterminate	None
+*7/*24	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*7/*25	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*7/*26	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*7/*27	Indeterminate	None
+*7/*28	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*7/*29	Indeterminate	None
+*7/*30	Indeterminate	None
+*7/*31	Indeterminate	None
+*7/*32	Indeterminate	None
+*7/*33	Indeterminate	None
+*7/*34	Indeterminate	None
+*7/*35	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*8/*8	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*8/*9	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*8/*10	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*8/*11	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*8/*12	Indeterminate	None
+*8/*13	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*8/*14	Indeterminate	None
+*8/*15	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*8/*16	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*8/*17	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*8/*18	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*8/*19	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*8/*22	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*8/*23	Indeterminate	None
+*8/*24	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*8/*25	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*8/*26	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*8/*27	Indeterminate	None
+*8/*28	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*8/*29	Indeterminate	None
+*8/*30	Indeterminate	None
+*8/*31	Indeterminate	None
+*8/*32	Indeterminate	None
+*8/*33	Indeterminate	None
+*8/*34	Indeterminate	None
+*8/*35	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*9/*9	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*9/*10	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*9/*11	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*9/*12	Indeterminate	None
+*9/*13	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*9/*14	Indeterminate	None
+*9/*15	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*9/*16	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*9/*17	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*9/*18	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*9/*19	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*9/*22	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*9/*23	Indeterminate	None
+*9/*24	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*9/*25	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*9/*26	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*9/*27	Indeterminate	None
+*9/*28	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*9/*29	Indeterminate	None
+*9/*30	Indeterminate	None
+*9/*31	Indeterminate	None
+*9/*32	Indeterminate	None
+*9/*33	Indeterminate	None
+*9/*34	Indeterminate	None
+*9/*35	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*10/*10	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*10/*11	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*10/*12	Indeterminate	None
+*10/*13	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*10/*14	Indeterminate	None
+*10/*15	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*10/*16	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*10/*17	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*10/*18	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*10/*19	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*10/*22	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*10/*23	Indeterminate	None
+*10/*24	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*10/*25	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*10/*26	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*10/*27	Indeterminate	None
+*10/*28	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*10/*29	Indeterminate	None
+*10/*30	Indeterminate	None
+*10/*31	Indeterminate	None
+*10/*32	Indeterminate	None
+*10/*33	Indeterminate	None
+*10/*34	Indeterminate	None
+*10/*35	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*11/*11	CYP2C19 Normal Metabolizer 	Normal/Routine/Low Risk
+*11/*12	Indeterminate	None
+*11/*13	CYP2C19 Normal Metabolizer 	Normal/Routine/Low Risk
+*11/*14	Indeterminate	None
+*11/*15	CYP2C19 Normal Metabolizer 	Normal/Routine/Low Risk
+*11/*16	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*11/*17	CYP2C19 Rapid Metabolizer 	Abnormal/Priority/High Risk
+*11/*18	CYP2C19 Normal Metabolizer 	Normal/Routine/Low Risk
+*11/*19	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*11/*22	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*11/*23	Indeterminate	None
+*11/*24	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*11/*25	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*11/*26	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*11/*27	Indeterminate	None
+*11/*28	CYP2C19 Normal Metabolizer 	Normal/Routine/Low Risk
+*11/*29	Indeterminate	None
+*11/*30	Indeterminate	None
+*11/*31	Indeterminate	None
+*11/*32	Indeterminate	None
+*11/*33	Indeterminate	None
+*11/*34	Indeterminate	None
+*11/*35	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*12/*12	Indeterminate	None
+*12/*13	Indeterminate	None
+*12/*14	Indeterminate	None
+*12/*15	Indeterminate	None
+*12/*16	Indeterminate	None
+*12/*17	Indeterminate	None
+*12/*18	Indeterminate	None
+*12/*19	Indeterminate	None
+*12/*22	Indeterminate	None
+*12/*23	Indeterminate	None
+*12/*24	Indeterminate	None
+*12/*25	Indeterminate	None
+*12/*26	Indeterminate	None
+*12/*27	Indeterminate	None
+*12/*28	Indeterminate	None
+*12/*29	Indeterminate	None
+*12/*30	Indeterminate	None
+*12/*31	Indeterminate	None
+*12/*32	Indeterminate	None
+*12/*33	Indeterminate	None
+*12/*34	Indeterminate	None
+*12/*35	Indeterminate	None
+*13/*13	CYP2C19 Normal Metabolizer 	Normal/Routine/Low Risk
+*13/*14	Indeterminate	None
+*13/*15	CYP2C19 Normal Metabolizer 	Normal/Routine/Low Risk
+*13/*16	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*13/*17	CYP2C19 Rapid Metabolizer 	Abnormal/Priority/High Risk
+*13/*18	CYP2C19 Normal Metabolizer 	Normal/Routine/Low Risk
+*13/*19	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*13/*22	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*13/*23	Indeterminate	None
+*13/*24	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*13/*25	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*13/*26	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*13/*27	Indeterminate	None
+*13/*28	CYP2C19 Normal Metabolizer 	Normal/Routine/Low Risk
+*13/*29	Indeterminate	None
+*13/*30	Indeterminate	None
+*13/*31	Indeterminate	None
+*13/*32	Indeterminate	None
+*13/*33	Indeterminate	None
+*13/*34	Indeterminate	None
+*13/*35	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*14/*14	Indeterminate	None
+*14/*15	Indeterminate	None
+*14/*16	Indeterminate	None
+*14/*17	Indeterminate	None
+*14/*18	Indeterminate	None
+*14/*19	Indeterminate	None
+*14/*22	Indeterminate	None
+*14/*23	Indeterminate	None
+*14/*24	Indeterminate	None
+*14/*25	Indeterminate	None
+*14/*26	Indeterminate	None
+*14/*27	Indeterminate	None
+*14/*28	Indeterminate	None
+*14/*29	Indeterminate	None
+*14/*30	Indeterminate	None
+*14/*31	Indeterminate	None
+*14/*32	Indeterminate	None
+*14/*33	Indeterminate	None
+*14/*34	Indeterminate	None
+*14/*35	Indeterminate	None
+*15/*15	CYP2C19 Normal Metabolizer 	Normal/Routine/Low Risk
+*15/*16	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*15/*17	CYP2C19 Rapid Metabolizer 	Abnormal/Priority/High Risk
+*15/*18	CYP2C19 Normal Metabolizer 	Normal/Routine/Low Risk
+*15/*19	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*15/*22	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*15/*23	Indeterminate	None
+*15/*24	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*15/*25	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*15/*26	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*15/*27	Indeterminate	None
+*15/*28	CYP2C19 Normal Metabolizer 	Normal/Routine/Low Risk
+*15/*29	Indeterminate	None
+*15/*30	Indeterminate	None
+*15/*31	Indeterminate	None
+*15/*32	Indeterminate	None
+*15/*33	Indeterminate	None
+*15/*34	Indeterminate	None
+*15/*35	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*16/*16	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*16/*17	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*16/*18	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*16/*19	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*16/*22	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*16/*23	Indeterminate	None
+*16/*24	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*16/*25	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*16/*26	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*16/*27	Indeterminate	None
+*16/*28	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*16/*29	Indeterminate	None
+*16/*30	Indeterminate	None
+*16/*31	Indeterminate	None
+*16/*32	Indeterminate	None
+*16/*33	Indeterminate	None
+*16/*34	Indeterminate	None
+*16/*35	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*17/*17	CYP2C19 Ultrarapid Metabolizer 	Abnormal/Priority/High Risk
+*17/*18	CYP2C19 Rapid Metabolizer 	Abnormal/Priority/High Risk
+*17/*19	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*17/*22	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*17/*23	Indeterminate	None
+*17/*24	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*17/*25	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*17/*26	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*17/*27	Indeterminate	None
+*17/*28	CYP2C19 Rapid Metabolizer 	Abnormal/Priority/High Risk
+*17/*29	Indeterminate	None
+*17/*30	Indeterminate	None
+*17/*31	Indeterminate	None
+*17/*32	Indeterminate	None
+*17/*33	Indeterminate	None
+*17/*34	Indeterminate	None
+*17/*35	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*18/*18	CYP2C19 Normal Metabolizer 	Normal/Routine/Low Risk
+*18/*19	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*18/*22	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*18/*23	Indeterminate	None
+*18/*24	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*18/*25	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*18/*26	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*18/*27	Indeterminate	None
+*18/*28	CYP2C19 Normal Metabolizer 	Normal/Routine/Low Risk
+*18/*29	Indeterminate	None
+*18/*30	Indeterminate	None
+*18/*31	Indeterminate	None
+*18/*32	Indeterminate	None
+*18/*33	Indeterminate	None
+*18/*34	Indeterminate	None
+*18/*35	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*19/*19	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*19/*22	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*19/*23	Indeterminate	None
+*19/*24	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*19/*25	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*19/*26	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*19/*27	Indeterminate	None
+*19/*28	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*19/*29	Indeterminate	None
+*19/*30	Indeterminate	None
+*19/*31	Indeterminate	None
+*19/*32	Indeterminate	None
+*19/*33	Indeterminate	None
+*19/*34	Indeterminate	None
+*19/*35	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*22/*22	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*22/*23	Indeterminate	None
+*22/*24	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*22/*25	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*22/*26	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*22/*27	Indeterminate	None
+*22/*28	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*22/*29	Indeterminate	None
+*22/*30	Indeterminate	None
+*22/*31	Indeterminate	None
+*22/*32	Indeterminate	None
+*22/*33	Indeterminate	None
+*22/*34	Indeterminate	None
+*22/*35	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*23/*23	Indeterminate	None
+*23/*24	Indeterminate	None
+*23/*25	Indeterminate	None
+*23/*26	Indeterminate	None
+*23/*27	Indeterminate	None
+*23/*28	Indeterminate	None
+*23/*29	Indeterminate	None
+*23/*30	Indeterminate	None
+*23/*31	Indeterminate	None
+*23/*32	Indeterminate	None
+*23/*33	Indeterminate	None
+*23/*34	Indeterminate	None
+*23/*35	Indeterminate	None
+*24/*24	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*24/*25	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*24/*26	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*24/*27	Indeterminate	None
+*24/*28	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*24/*29	Indeterminate	None
+*24/*30	Indeterminate	None
+*24/*31	Indeterminate	None
+*24/*32	Indeterminate	None
+*24/*33	Indeterminate	None
+*24/*34	Indeterminate	None
+*24/*35	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+*25/*25	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*25/*26	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*25/*27	Indeterminate	None
+*25/*28	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*25/*29	Indeterminate	None
+*25/*30	Indeterminate	None
+*25/*31	Indeterminate	None
+*25/*32	Indeterminate	None
+*25/*33	Indeterminate	None
+*25/*34	Indeterminate	None
+*25/*35	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*26/*26	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*26/*27	Indeterminate	None
+*26/*28	CYP2C19 Likely Intermediate Metabolizer	Abnormal/Priority/High Risk
+*26/*29	Indeterminate	None
+*26/*30	Indeterminate	None
+*26/*31	Indeterminate	None
+*26/*32	Indeterminate	None
+*26/*33	Indeterminate	None
+*26/*34	Indeterminate	None
+*26/*35	CYP2C19 Likely Poor Metabolizer	Abnormal/Priority/High Risk
+*27/*27	Indeterminate	None
+*27/*28	Indeterminate	None
+*27/*29	Indeterminate	None
+*27/*30	Indeterminate	None
+*27/*31	Indeterminate	None
+*27/*32	Indeterminate	None
+*27/*33	Indeterminate	None
+*27/*34	Indeterminate	None
+*27/*35	Indeterminate	None
+*28/*28	CYP2C19 Normal Metabolizer 	Normal/Routine/Low Risk
+*28/*29	Indeterminate	None
+*28/*30	Indeterminate	None
+*28/*31	Indeterminate	None
+*28/*32	Indeterminate	None
+*28/*33	Indeterminate	None
+*28/*34	Indeterminate	None
+*28/*35	CYP2C19 Intermediate Metabolizer 	Abnormal/Priority/High Risk
+*29/*29	Indeterminate	None
+*29/*30	Indeterminate	None
+*29/*31	Indeterminate	None
+*29/*32	Indeterminate	None
+*29/*33	Indeterminate	None
+*29/*34	Indeterminate	None
+*29/*35	Indeterminate	None
+*30/*30	Indeterminate	None
+*30/*31	Indeterminate	None
+*30/*32	Indeterminate	None
+*30/*33	Indeterminate	None
+*30/*34	Indeterminate	None
+*30/*35	Indeterminate	None
+*31/*31	Indeterminate	None
+*31/*32	Indeterminate	None
+*31/*33	Indeterminate	None
+*31/*34	Indeterminate	None
+*31/*35	Indeterminate	None
+*32/*32	Indeterminate	None
+*32/*33	Indeterminate	None
+*32/*34	Indeterminate	None
+*32/*35	Indeterminate	None
+*33/*33	Indeterminate	None
+*33/*34	Indeterminate	None
+*33/*35	Indeterminate	None
+*34/*34	Indeterminate	None
+*34/*35	Indeterminate	None
+*35/*35	CYP2C19 Poor Metabolizer	Abnormal/Priority/High Risk
+aThe coded diplotype/phenotype summary is used to store an interpretation of the test result.  This is a design decision that may differ among sites		
+bA priority result is defined as a genetic test result that results in a change in drug, drug dose, or drug monitoring		
