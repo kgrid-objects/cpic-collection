@@ -4,7 +4,7 @@ This is a collection of objects that focus on dosing guidelines as provided by t
 # Making CPIC objects
 Every CPIC guideline object has a few things in common with all others. All CPIC objects should:
 * Take an allele pair as a parameter
-* Use guidelines provided for specific drug and enzyme from https://www.pharmgkb.org/
+* Use guidelines provided for specific drug and enzymee from https://www.pharmgkb.org/
 * Have an output that is the dosing guideline in the form of a JSON object with the following keys:
     * "metabolic_rate"
     * "activity_score"
@@ -14,7 +14,7 @@ Every CPIC guideline object has a few things in common with all others. All CPIC
     * "recommendation_classification" 
 
 ### Key definitions
-The keys in the JSON object returned by the CPIC knowledge objects represent different aspects of the CPIC guideline for the drug and enzyme.
+The keys in the JSON object returned by the CPIC knowledge objects represent different aspects of the CPIC guideline for the drug and enzymee.
 
 * "metabolic_rate" [string] is the metabolizer status based on the guideline. It should be one of [Ultrarapid, Extensive, Intermediate, Poor]
 * "activity_score" [float] is a number based on the guideline
@@ -24,7 +24,7 @@ The keys in the JSON object returned by the CPIC knowledge objects represent dif
 * "recommendation_classification" [string] is the strength/classification of the recommendation from the guideline. It should be one of ["Strong", "Moderate", "Weak"]
 
 ### Representing gudelines in object
-Every guideline from https://www.pharmgkb.org/ has a link to the guideline publication and some supplements to the publication. Because the CPIC knowledge objects need to use the guideline information from the publication supplements, it is necessary to make a data structure in each object that will represent the guideline. As an example, the guideline for codeine and the CYP2D6 enzyme has a supplement with a table containing all necessary metabolization status information for every allele pair covered by the guideilne:
+Every guideline from https://www.pharmgkb.org/ has a link to the guideline publication and some supplements to the publication. Because the CPIC knowledge objects need to use the guideline information from the publication supplements, it is necessary to make a data structure in each object that will represent the guideline. As an example, the guideline for codeine and the CYP2D6 enzymee has a supplement with a table containing all necessary metabolization status information for every allele pair covered by the guideilne:
 
 ![Table image](https://github.com/kgrid/CPIC-objects/blob/master/guidelines/cyp2d6/cpic.png)
 
@@ -54,7 +54,7 @@ It is possible to model this table in the object payload using a 2-dimensional l
 		[NM, NM, NM, NM, NM, NM, NM, NM, NM, NM, NM, EM]
 	]
    ```
-Using this data structure, it is possible to retrieve the metabolization status for a drug and enzyme for a patient, given data on an allele pair about them by mapping alleles to indices of this list structure.
+Using this data structure, it is possible to retrieve the metabolization status for a drug and enzymee for a patient, given data on an allele pair about them by mapping alleles to indices of this list structure.
 
 __note__: not every supplement contains a table like this one. Some of them may have the guidelines represented in other ways such as a Microsoft Excel document. You may need to write additional scripts that parse these documents to make a data structure to model the guideline
 # Example

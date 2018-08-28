@@ -40,10 +40,10 @@ components:
   schemas:
     phenotypeobj:
       required:
-        - enzym
+        - enzyme
         - phenotype
       properties:
-        enzym:
+        enzyme:
           type: string
           example: 'UGT1A1'
         phenotype:
@@ -55,7 +55,7 @@ components:
       properties:
         result:
           type: object
-          example: {"enzym":"UGT1A1","drug":"Atazanavir","recom":{}}
+          example: {"enzyme":"UGT1A1","drug":"Atazanavir","recom":{}}
     Error:
       required:
         - code

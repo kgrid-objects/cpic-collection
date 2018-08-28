@@ -40,10 +40,10 @@ components:
   schemas:
     phenotypeobj:
       required:
-        - enzym
+        - enzyme
         - phenotype
       properties:
-        enzym:
+        enzyme:
           type: string
           example: 'CYP2C19'
         phenotype:
@@ -55,7 +55,7 @@ components:
       properties:
         result:
           type: object
-          example: {"enzym":"CYP2C19","drug":"citalopram and escitalopram","recom":{}}
+          example: {"enzyme":"CYP2C19","drug":"citalopram and escitalopram","recom":{}}
     Error:
       required:
         - code

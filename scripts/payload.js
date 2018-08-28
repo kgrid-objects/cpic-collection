@@ -1,13 +1,13 @@
 
 function getphenotype (inputs) {
 var diplotype = ''
-var output = {'enzym': 'CYP2D6', 'phenotype': ''}
+var output = {'enzyme': 'CYP2D6', 'phenotype': ''}
 try {
-var enzym = inputs.enzym || ''
+var enzyme = inputs.enzyme || ''
 var a1 = inputs['allele1'] || ''
 var a2 = inputs['allele2'] || ''
-if ((enzym != '') && (a1 != '') && (a2 != '')) {
- if (enzym == output.enzym) {
+if ((enzyme != '') && (a1 != '') && (a2 != '')) {
+ if (enzyme == output.enzyme) {
 diplotype = a1 + '-' + a2
 var index = list[diplotype]
 if (index == null) {
@@ -24,7 +24,7 @@ output.phenotype = dict[index] + ' metabolizer' }
 }
 return output
 } else {
-return 'Expecting ' + output.enzym + ' as enzym input for this KO.'
+return 'Expecting ' + output.enzyme + ' as enzyme input for this KO.'
 }
 } else {
 return 'Invalid Input'

@@ -40,11 +40,11 @@ components:
   schemas:
     genoinputs:
       required:
-        - enzym
+        - enzyme
         - allele1
         - allele2
       properties:
-        enzym:
+        enzyme:
           type: string
           example: 'CYP2D6'
         allele1:
@@ -55,10 +55,10 @@ components:
           example: '*3'
     phenotypeobj:
       required:
-        - enzym
+        - enzyme
         - phenotype
       properties:
-        enzym:
+        enzyme:
           type: string
           example: 'CYP2D6'
         phenotype:

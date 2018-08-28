@@ -9,9 +9,9 @@ var getrecommendation = javascript.__get__("getrecommendation");
 
 
 var testset = [
-  {"input":{"enzym":"CYP2C19","phenotype": "Ultrarapid metabolizer"},"output":"Implications for phenotypic measures" },
-  {"input":{"enzym":"CYP2C19","phenotype": "Intermediate metabolizer"},"output":"Dosing recommendations" },
-  {"input":{"enzym":"CYP2C19","phenotype": "Poor metabolizer"},"output":"Classification of recommendations" }
+  {"input":{"enzyme":"CYP2C19","phenotype": "Ultrarapid metabolizer"},"output":"Implications for phenotypic measures" },
+  {"input":{"enzyme":"CYP2C19","phenotype": "Intermediate metabolizer"},"output":"Dosing recommendations" },
+  {"input":{"enzyme":"CYP2C19","phenotype": "Poor metabolizer"},"output":"Classification of recommendations" }
 
 ]
 
@@ -37,13 +37,13 @@ describe('99999-fk4bz6hp15 v0.0.2', function () {
       assert.equal('Incorrect/invalid input.', result);
     })
 
-    it('incorrect enzym', function(){
-      var result = getrecommendation({"enzym":"CYP2C9","phenotype": "Ultrarapid metabolizer"})
+    it('incorrect enzyme', function(){
+      var result = getrecommendation({"enzyme":"CYP2C9","phenotype": "Ultrarapid metabolizer"})
       assert.equal(true, result.startsWith('Expecting'));
     })
 
     it('incorrect phenotype', function(){
-      var result = getrecommendation({"enzym":"CYP2C19","phenotype": "Ultrarapid mettabolizer"})
+      var result = getrecommendation({"enzyme":"CYP2C19","phenotype": "Ultrarapid mettabolizer"})
       assert.equal('Incorrect/invalid input for phenotype.', result);
     })
 
