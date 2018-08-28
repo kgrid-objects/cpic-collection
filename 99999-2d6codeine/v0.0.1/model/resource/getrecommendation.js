@@ -1,6 +1,4 @@
 function getrecommendation (inputs) {
-// KGrid CPIC guidelines CYP2D6 Phenotype to Recommendation
-  var recommendation = {'enzym': 'CYP2D6', 'drug':'Codeine','recom': {}}
   try {
     var enzym = inputs.enzym || ''
     var phenotype = inputs.phenotype || ''
@@ -23,6 +21,8 @@ function getrecommendation (inputs) {
   }
 }
 
+// KGrid CPIC guidelines CYP2D6 Phenotype to Codeine Recommendation
+var recommendation = {'enzym': 'CYP2D6', 'drug':'Codeine','recom': {}}
 // # Dictionary containing Phenotype to Recommendation Information
 var pheno_recom = {
   'Ultrarapid metabolizer': {'Implications for phenotypic measures': 'Increased formation of morphine following codeine administration, leading to higher risk of toxicity',
