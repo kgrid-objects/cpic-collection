@@ -1,11 +1,11 @@
 {
-  "title": "CPIC Gene Drug Table",
-  "description": "CPIC Genes-Drug Table, with total of 353 entries, which can be filtered by supplying a list of genes, a list of drugs, or both.",
-  "arkId": "ark:/99999/fk4qj7sz2s",
+  "title": "CPIC Genotype - Phenotype for CYP2D6",
+  "description": "KGrid CPIC guidelines Genotype to Phenotype for CYP2D6",
+  "arkId": "ark:/99999/2d6genopheno",
   "citations": [
-    "https://cpicpgx.org/genes-drugs/"
+    "https://link"
   ],
-  "keywords": "CPIC",
+  "keywords": "CPIC, CYP2D6, Genotype, Phenotype",
   "owners": "KGRID",
   "contributors": "KGRID TEAM",
   "license": {
@@ -14,7 +14,7 @@
   },
   "url": "http://url",
   "published": false,
-  "version": "v0.0.2",
+  "version": "v0.0.4",
   "lastModified": 1529432624164,
   "createdOn": 1529432624163,
   "model": "model",

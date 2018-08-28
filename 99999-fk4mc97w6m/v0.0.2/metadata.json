@@ -1,11 +1,11 @@
 {
-  "title": "CPIC CYP2C19 citalopram and escitalopram recommendations",
-  "description": "CPIC recommendations for citalopram and escitalopram based on CYP2C19 phenotype",
-  "arkId": "ark:/99999/fk4d22836k",
+  "title": "CPIC CYP2D6 Codeine Recommendations",
+  "description": "KGrid CPIC guidelines CYP2D6 Phenotype to Codeine Recommendation",
+  "arkId": "ark:/99999/fk4mc97w6m",
   "citations": [
    "https://link"
   ],
-  "keywords": "CPIC, CYP2C19, citalopram and escitalopram, Recommendation",
+  "keywords": "CPIC, CYP2D6, Codeine, Recommendation",
   "owners": "KGRID",
   "contributors": "KGRID TEAM",
   "license": {
