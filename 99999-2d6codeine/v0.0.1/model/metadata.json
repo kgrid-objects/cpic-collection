@@ -1,8 +1,0 @@
-{
-  "functionName":"getrecommendation",
-  "adapterType":"JAVASCRIPT",
-  "resource":"resource/getrecommendation.js",
-  "adapters":[
-    {"name":"JavaScript","version":"0.6.2","filename":"javascript-adapter-0.0.1-SNAPSHOT.jar","download_url":"https://github.com/kgrid/ko-templates/releases/download/0.1/", "target":"adapters/"}
-  ]
-}
