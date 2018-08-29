@@ -1,5 +1,5 @@
 
-#returns json object containing CPIC guideline table for the cyp2d6 enzyme for codeine along with 
+#returns json object containing CPIC guideline table for the cyp2d6 enzymee for codeine along with 
 # a dictionary that maps alleles to their indices in the table for fast lookup
 def getGuideline(instr):
 

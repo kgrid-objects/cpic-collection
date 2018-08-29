@@ -1,0 +1,76 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: 'CPIC - Genotype to Phenotype for UGT1A1'
+  description: 'KGrid CPIC guidelines Genotype to Phenotype for UGT1A1'
+servers:
+  - url: '/99999/fk47h1x090/v0.0.2/'
+    description: 'KGrid CPIC guidelines Genotype to Phenotype for UGT1A1'
+tags:
+  - name: KO Endpoints
+    description: KGrid CPIC guidelines Genotype to Phenotype for UGT1A1 Endpoints
+paths:
+  /getphenotype:
+    post:
+      tags:
+       - KO Endpoints
+      description: Determine the pheno type based on the genotype.
+      operationId: pheno
+      requestBody:
+        description: inputs
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/genoinputs'
+      responses:
+        '200':
+          description: response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/phenotypeobj'
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+components:
+  schemas:
+    genoinputs:
+      required:
+        - enzyme
+        - allele1
+        - allele2
+      properties:
+        enzyme:
+          type: string
+          example: 'UGT1A1'
+        allele1:
+          type: string
+          example: '*1'
+        allele2:
+          type: string
+          example: '*1'
+    phenotypeobj:
+      required:
+        - enzyme
+        - phenotype
+      properties:
+        enzyme:
+          type: string
+          example: 'CYP2D6'
+        phenotype:
+          type: string
+          example: 'Normal metabolizer'
+    Error:
+      required:
+        - code
+        - message
+      properties:
+        code:
+          type: integer
+          format: int32
+        message:
+          type: string
