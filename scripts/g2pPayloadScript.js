@@ -4,14 +4,16 @@ var infile = 'CYP2D6_table.tsv'
 var fl = require ('firstline')
 var lineone = fl(infile)
 function findCol1(element){
-  return (element = 'Diplotype')
+//  return (element = "Coded Genotype/Phenotype Summar")
+  return element
 }
 
 lineone.then(function(result) {
    console.log(result) //will log results.
    var lineoneArr = result.split('\t')
-   var c1 = lineoneArr.findIndex(findCol1)
-   
+  // var c1 = lineoneArr.findIndex(findCol1)
+  var c1 = lineoneArr.indexOf("EHR Priority Result Notation\r")
+
     console.log(c1)
 })
 var lineReader = require('readline').createInterface({
