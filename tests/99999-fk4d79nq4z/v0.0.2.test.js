@@ -23,7 +23,7 @@ describe('99999-fk4d79nq4z v0.0.1', function () {
 
       it(e.input.phenotype, function(){
         var result = getrecommendation(e.input)
-        assert.equal(true, result.recom[e.output]!=null);
+        assert.equal(true, result.recommendation[e.output]!=null);
       });
 
     })

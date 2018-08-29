@@ -55,7 +55,7 @@ components:
       properties:
         result:
           type: object
-          example: {"enzyme":"CYP2D6","drug":"Codeine","recom":{}}
+          example: {"enzyme":"CYP2D6","drug":"Codeine","recommendation":{}}
     Error:
       required:
         - code

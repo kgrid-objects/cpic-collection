@@ -5,7 +5,7 @@ function getrecommendation (inputs) {
     if ((enzyme!='')&&(phenotype!='')) {
       if(enzyme==recommendation.enzyme){
         if(pheno_recom[phenotype]!=null){
-          recommendation.recom = pheno_recom[phenotype]
+          recommendation.recommendation = pheno_recom[phenotype]
           return recommendation
         } else {
           return "Incorrect/invalid input for phenotype."
@@ -22,7 +22,7 @@ function getrecommendation (inputs) {
 }
 
 // KGrid CPIC guidelines CYP2C19 Phenotype to citalopram and escitalopram Recommendation
-var recommendation = {'enzyme': 'CYP2C19', 'drug':'citalopram and escitalopram','recom': {}}
+var recommendation = {'enzyme': 'CYP2C19', 'drug':'citalopram and escitalopram','recommendation': {}}
 // # Dictionary containing Phenotype to Recommendation Information
 var pheno_recom = {
   'Ultrarapid metabolizer': {'Implications for phenotypic measures': 'Increased metabolism when compared to extensive metabolizers. Lower plasma concentrations will increase probability of pharmacotherapy failure.',

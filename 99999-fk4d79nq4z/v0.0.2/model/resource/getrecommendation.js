@@ -5,7 +5,7 @@ function getrecommendation (inputs) {
     if ((enzyme!='')&&(phenotype!='')) {
       if(enzyme==recommendation.enzyme){
         if(pheno_recom[phenotype]!=null){
-          recommendation.recom = pheno_recom[phenotype]
+          recommendation.recommendation = pheno_recom[phenotype]
           return recommendation
         } else {
           return "Incorrect/invalid input for phenotype."
@@ -22,7 +22,7 @@ function getrecommendation (inputs) {
 }
 
 // KGrid CPIC guidelines CYP2C19 Phenotype to citalopram and escitalopram Recommendation
-var recommendation = {'enzyme': 'UGT1A1', 'drug':'Atazanavir','recom': {}}
+var recommendation = {'enzyme': 'UGT1A1', 'drug':'Atazanavir','recommendation': {}}
 // # Dictionary containing Phenotype to Recommendation Information
 var pheno_recom = {
   'Normal metabolizer': {'Implications for phenotypic measures': 'Reference UGT1A1 activity; very low likelihood of bilirubin-related discontinuation of atazanavir.',

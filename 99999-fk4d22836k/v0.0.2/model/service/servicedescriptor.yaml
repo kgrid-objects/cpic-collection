@@ -55,7 +55,7 @@ components:
       properties:
         result:
           type: object
-          example: {"enzyme":"CYP2C19","drug":"citalopram and escitalopram","recom":{}}
+          example: {"enzyme":"CYP2C19","drug":"citalopram and escitalopram","recommendation":{}}
     Error:
       required:
         - code

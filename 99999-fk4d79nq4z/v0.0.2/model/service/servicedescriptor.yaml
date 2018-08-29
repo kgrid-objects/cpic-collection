@@ -55,7 +55,7 @@ components:
       properties:
         result:
           type: object
-          example: {"enzyme":"UGT1A1","drug":"Atazanavir","recom":{}}
+          example: {"enzyme":"UGT1A1","drug":"Atazanavir","recommendation":{}}
     Error:
       required:
         - code
