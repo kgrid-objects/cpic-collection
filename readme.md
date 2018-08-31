@@ -24,13 +24,29 @@ There are testing and packaging features in this project that require
 
 
 ## Testing CPIC Knowledge
+
+### Unit Tests
+
 There are a set of tests for CPIC Knowledge Objects.  These are very simple tests but show 
 how we could test.  They utilize [Jest](https://jestjs.io/) and  [rewire](https://github.com/jhnns/rewire). 
 Jest provides the testing framework and rewire allows the tests to access the javascript function without the 
-convienace of the export modules (KGrid Javascript adaptor limitation).  The [tests](tests) are in the tests directory.  You can execute the tests via npm
+convince of the export modules (KGrid Javascript adaptor limitation).  The [tests](tests) are in the tests directory.  You can execute the tests via npm
 
 ```
 npm test
+```
+
+### Integration Testing
+
+You can now test the CPIC objects in an activator via a npm script. This script will download the 
+latest released activator and start up the activator using the CPIC repository as it's shelf. 
+
+_This process does utilize [jq](https://stedolan.github.io/jq/) a command-line JSON processor.  You must install [jq](https://stedolan.github.io/jq/) for this script to run._
+  
+Open a terminal window at the root of the cloned repository and run the following command.
+
+```
+npm run dev
 ```
 
 ## Package CPIC Knowledge
