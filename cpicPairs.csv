@@ -1,0 +1,43 @@
+Guideline,(Multiple Items),,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+Count of Guideline,Column Labels,,,,,,,,,,,,,,,
+Row Labels,CFTR,CYP2C19,CYP2C9,CYP2D6,CYP3A5,CYP4F2,DPYD,G6PD,HLA-A,HLA-B,IFNL3,SLCO1B1,TPMT,UGT1A1,VKORC1,Grand Total
+abacavir,,,,,,,,,,1,,,,,,1
+allopurinol,,,,,,,,,,1,,,,,,1
+amitriptyline,,1,,1,,,,,,,,,,,,2
+atazanavir,,,,,,,,,,,,,,1,,1
+azathioprine,,,,,,,,,,,,,1,,,1
+capecitabine,,,,,,,1,,,,,,,,,1
+carbamazepine,,,,,,,,,1,1,,,,,,2
+citalopram,,1,,,,,,,,,,,,,,1
+clomipramine,,1,,1,,,,,,,,,,,,2
+clopidogrel,,1,,,,,,,,,,,,,,1
+codeine,,,,1,,,,,,,,,,,,1
+desipramine,,,,1,,,,,,,,,,,,1
+doxepin,,1,,1,,,,,,,,,,,,2
+escitalopram,,1,,,,,,,,,,,,,,1
+fluorouracil,,,,,,,1,,,,,,,,,1
+fluvoxamine,,,,1,,,,,,,,,,,,1
+imipramine,,1,,1,,,,,,,,,,,,2
+ivacaftor,1,,,,,,,,,,,,,,,1
+mercaptopurine,,,,,,,,,,,,,1,,,1
+nortriptyline,,,,1,,,,,,,,,,,,1
+ondansetron,,,,1,,,,,,,,,,,,1
+oxcarbazepine,,,,,,,,,,1,,,,,,1
+paroxetine,,,,1,,,,,,,,,,,,1
+peginterferon alfa-2a,,,,,,,,,,,1,,,,,1
+peginterferon alfa-2b,,,,,,,,,,,1,,,,,1
+phenytoin,,,1,,,,,,,1,,,,,,2
+rasburicase,,,,,,,,1,,,,,,,,1
+ribavirin,,,,,,,,,,,1,,,,,1
+sertraline,,1,,,,,,,,,,,,,,1
+simvastatin,,,,,,,,,,,,1,,,,1
+tacrolimus,,,,,1,,,,,,,,,,,1
+tamoxifen,,,,1,,,,,,,,,,,,1
+tegafur,,,,,,,1,,,,,,,,,1
+thioguanine,,,,,,,,,,,,,1,,,1
+trimipramine,,1,,1,,,,,,,,,,,,2
+tropisetron,,,,1,,,,,,,,,,,,1
+voriconazole,,1,,,,,,,,,,,,,,1
+warfarin,,,1,,,1,,,,,,,,,1,3
+Grand Total,1,10,2,13,1,1,3,1,1,5,3,1,3,1,1,47
