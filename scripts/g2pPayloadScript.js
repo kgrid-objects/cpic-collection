@@ -1,33 +1,51 @@
-var fs = require('fs-extra')
+var fsextra = require('fs-extra')
 var file = 'payload.js'
 var infile = 'CYP2D6_table.tsv'
 var fl = require ('firstline')
 var lineone = fl(infile)
-function findCol1(element){
-//  return (element = "Coded Genotype/Phenotype Summar")
-  return element
-}
+var list = {}
 
 lineone.then(function(result) {
    console.log(result) //will log results.
    var lineoneArr = result.split('\t')
   // var c1 = lineoneArr.findIndex(findCol1)
-  var c1 = lineoneArr.indexOf("EHR Priority Result Notation\r")
+  var c1 = lineoneArr.indexOf("CYP2D6 Diplotype")
+  var c2 = lineoneArr.indexOf("Coded Genotype/Phenotype Summary")
 
     console.log(c1)
+    console.log(c2)
+    processFile('CYP2D6_table.tsv', c1, c2)
 })
 var lineReader = require('readline').createInterface({
  input: require('fs').createReadStream(infile)
 });
 
+
+function processFile(inputFile,c1,c2) {
+    var fs = require('fs'),
+        readline = require('readline'),
+        instream = fs.createReadStream(inputFile),
+        outstream = new (require('stream'))(),
+        rl = readline.createInterface(instream, outstream);
+
+    rl.on('line', function (line) {
+      var lineArr = line.split('\t')
+
+        var line1 = lineArr[c1].replace('/', '-')
+        list[line1]= lineArr[c2]
+    })
+
+    rl.on('close', function (line) {
+
+
 //lineReader.on('line', function (line) {
 // console.log('Line from file:', line);
 //});
-fs.createFile(file, function(err) {
+fsextra.createFile(file, function(err) {
   console.log(err); //null
   //file has now been created, including the directory it is to be placed in
 })
-fs.writeFile("payload.js", "\n" + ""
+fsextra.writeFile("payload.js", "\n" + ""
 + "function getphenotype (inputs) {" + "\n"
 +"var diplotype = ''" +"\n"
 +"var output = {'enzyme': 'CYP2D6', 'phenotype': ''}" + "\n"
@@ -65,13 +83,18 @@ fs.writeFile("payload.js", "\n" + ""
 +"}" + "\n"
 +"var dict=['TBD','Likely Poor','Poor','Likely Intermediate','Intermediate','Normal','Rapid','Ultrarapid']" + "\n"
 
-+ "var list = {'*3-*3':2,'*3-*3xN':2,'*3-*4':2}" , function(err) {
++ "var list ="+ JSON.stringify(list) , function(err) {
     if(err) {
         return console.log(err);
     }
 
     console.log("The file was saved!");
-});
+})
+
+console.log('done reading file.')
+})
+
+}
 
 
 //console.info("bbb");
