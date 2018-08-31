@@ -1,7 +1,11 @@
 #!/usr/bin/env sh
 
 if [ ! -d "dev" ]; then
+  echo creating dev directory...
   mkdir -p dev
+fi
+
+if [ ! -f dev/kgrid-activator*.jar ]; then
 
   artifacts=($(curl -s https://api.github.com/repos/kgrid/kgrid-activator/releases/latest | jq -r ".assets[] | .browser_download_url "))
 
@@ -10,6 +14,7 @@ if [ ! -d "dev" ]; then
   do
      if [[ $url = *.jar ]]
      then
+        echo downloading jar file $url ...
         curl -Lo dev/kgrid-activator.jar $url
      fi
   done

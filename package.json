@@ -60,6 +60,7 @@
   },
   "dependencies": {
     "firstline": "^2.0.2",
-    "fs-extra": "^7.0.0"
+    "fs-extra": "^7.0.0",
+    "jq-cli-wrapper": "^1.0.2"
   }
 }
