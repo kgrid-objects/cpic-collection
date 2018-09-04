@@ -1,14 +1,14 @@
 openapi: 3.0.0
 info:
   version: 1.0.0
-  title: 'CPIC - Genotype to Phenotype for CYP2D6'
-  description: 'KGrid CPIC guidelines Genotype to Phenotype for CYP2C19'
+  title: 'CPIC - Genotype to Phenotype for UGT1A1'
+  description: 'KGrid CPIC guidelines Genotype to Phenotype for UGT1A1'
 servers:
-  - url: '/99999/fk4mc97w0h/v0.0.3/'
-    description: 'KGrid CPIC guidelines Genotype to Phenotype for CYP2C19'
+  - url: '/99999/fk47h1x090/v0.0.3/'
+    description: 'KGrid CPIC guidelines Genotype to Phenotype for UGT1A1'
 tags:
   - name: KO Endpoints
-    description: KGrid CPIC guidelines Genotype to Phenotype for CYP2C19 Endpoints
+    description: KGrid CPIC guidelines Genotype to Phenotype for UGT1A1 Endpoints
 paths:
   /phenotype:
     post:
@@ -40,16 +40,16 @@ components:
   schemas:
     genotype:
       required:
-        - CYP2C19
+        - UGT1A1
       properties:
-        CYP2C19:
+        UGT1A1:
           type: string
-          example: '*3/*3'
+          example: '*1/*1'
     phenotype:
       required:
-        - CYP2C19
+      - UGT1A1
       properties:
-        CYP2C19:
+        UGT1A1:
           type: string
           example: 'Normal metabolizer'
     Error:

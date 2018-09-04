@@ -1,11 +1,11 @@
 {
-  "title": "CPIC Genotype - Phenotype for CYP2C19",
-  "description": "KGrid CPIC guidelines Genotype to Phenotype for CYP2C19",
-  "arkId": "ark:/99999/fk4mc97w0h",
+  "title": "CPIC Genotype - Phenotype for UGT1A1",
+  "description": "KGrid CPIC guidelines Genotype to Phenotype for UGT1A1",
+  "arkId": "ark:/99999/fk47h1x090",
   "citations": [
     "https://link"
   ],
-  "keywords": "CPIC, CYP2C19, Genotype, Phenotype",
+  "keywords": "CPIC, UGT1A1, Genotype, Phenotype",
   "owners": "KGRID",
   "contributors": "KGRID TEAM",
   "license": {
