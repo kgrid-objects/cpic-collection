@@ -38,7 +38,7 @@ paths:
                 $ref: '#/components/schemas/Error'
 components:
   schemas:
-    phenotypeobj:
+    phenotype:
       required:
         - CYP2C19
       properties:
@@ -51,7 +51,7 @@ components:
       properties:
         result:
           type: object
-          example: {"Codeine":{}}
+          example: {"Clopidogrel":{}}
     Error:
       required:
         - code
