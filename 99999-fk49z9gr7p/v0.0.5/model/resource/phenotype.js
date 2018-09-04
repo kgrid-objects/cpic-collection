@@ -1,4 +1,4 @@
-function getphenotype (inputs) {
+function phenotype (inputs) {
   var output = {}
   var diplotype = inputs[gene]
   try {

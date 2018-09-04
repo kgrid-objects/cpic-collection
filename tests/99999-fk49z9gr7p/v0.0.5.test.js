@@ -2,10 +2,10 @@ var assert = require('assert');
 var rewire = require('rewire');
 
 //Get load in the js
-var javascript = rewire('../../99999-fk49z9gr7p/v0.0.5/model/resource/getphenotype');
+var javascript = rewire('../../99999-fk49z9gr7p/v0.0.5/model/resource/phenotype');
 
 //Load in the function
-var getphenotype = javascript.__get__("getphenotype");
+var getphenotype = javascript.__get__("phenotype");
 
 var testset = [
   {"input":{"CYP2D6":"*3/*3","CYP2C19":"*3/*3"},"output":"Poor metabolizer" }
