@@ -1,15 +1,15 @@
 function phenotype (inputs) {
-  var output = {"UGT1A1": ""}
+  var output = {}
   try {
-    var diplotype = inputs['UGT1A1']
+    var diplotype = inputs[gene]
     var index = list[diplotype]
     if (index == null) {
-      output.UGT1A1 = 'Unknown'
+      output[gene] = 'Unknown'
     } else {
       if (index == 0) {
-        output.UGT1A1 = dict[0]
+        output[gene] = dict[0]
       } else {
-        output.UGT1A1 = dict[index] + ' metabolizer'
+        output[gene] = dict[index] + ' metabolizer'
       }
     }
     return output
@@ -18,6 +18,8 @@ function phenotype (inputs) {
     return 'Error'
   }
 }
+
+var gene = 'UGT1A1'
 
 var dict = ['TBD', 'Poor', 'Likely Poor',  'Likely Intermediate', 'Intermediate', 'Normal', 'Rapid', 'Ultrarapid']
 

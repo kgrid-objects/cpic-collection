@@ -1,15 +1,15 @@
 function phenotype (inputs) {
-  var output = {"CYP2C19": ""}
+  var output = {}
   try {
-    var diplotype = inputs['CYP2C19']
+    var diplotype = inputs[gene]
     var index = list[diplotype]
     if (index == null) {
-      output.CYP2C19 = 'Unknown'
+      output[gene] = 'Unknown'
     } else {
       if (index == 0) {
-        output.CYP2C19 = dict[0]
+        output[gene] = dict[0]
       } else {
-        output.CYP2C19 = dict[index] + ' metabolizer'
+        output[gene] = dict[index] + ' metabolizer'
       }
     }
     return output
@@ -18,6 +18,8 @@ function phenotype (inputs) {
     return 'Error ' + error
   }
 }
+
+var gene = 'CYP2C19'
 
 var dict = ['TBD', 'Poor', 'Likely Poor',  'Likely Intermediate', 'Intermediate', 'Normal', 'Rapid', 'Ultrarapid']
 
