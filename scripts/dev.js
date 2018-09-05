@@ -26,7 +26,7 @@ const jqOptions = { input: 'string', output: 'json'}
           console.log("already have activator");
           executeActivator();
         } else {
-          console.log(cliSpinners.point);
+          console.log("downloading activator");
           download(output,".").then(() => {
             console.log('files downloaded!');
             executeActivator();
