@@ -1,0 +1,22 @@
+{
+  "title": "CPIC - Atazanavir Guideline for UGT1A1",
+  "description": "CPIC recommendations for citalopram and escitalopram based on CYP2C19 phenotype",
+  "arkId": "ark:/99999/fk4d79nq4z",
+  "citations": [
+   "https://cpicpgx.org/guidelines/guideline-for-atazanavir-and-ugt1a1/"
+  ],
+  "keywords": "CPIC, UGT1A1, Atazanavir, Recommendation",
+  "owners": "KGRID",
+  "contributors": "KGRID TEAM",
+  "license": {
+    "licenseName": "",
+    "licenseLink": ""
+  },
+  "url": "http://url",
+  "published": false,
+  "version": "v0.0.3",
+  "lastModified": 1529432646535,
+  "createdOn": 1529432646535,
+  "model": "model",
+  "service":"model/service/servicedescriptor.yaml"
+}

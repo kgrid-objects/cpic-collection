@@ -1,14 +1,14 @@
 openapi: 3.0.0
 info:
   version: 1.0.0
-  title: 'CPIC - Genotype to Phenotype for CYP2D6'
-  description: 'KGrid CPIC guidelines Genotype to Phenotype for CYP2D6'
+  title: 'CPIC - Genotype to Phenotype for UGT1A1'
+  description: 'KGrid CPIC guidelines Genotype to Phenotype for UGT1A1'
 servers:
-  - url: '/99999/fk49z9gr7p/v0.0.5/'
-    description: 'KGrid CPIC guidelines Genotype to Phenotype for CYP2D6'
+  - url: '/99999/fk47h1x090/v0.0.3/'
+    description: 'KGrid CPIC guidelines Genotype to Phenotype for UGT1A1'
 tags:
   - name: KO Endpoints
-    description: KGrid CPIC guidelines Genotype to Phenotype for CYP2D6 Endpoints
+    description: KGrid CPIC guidelines Genotype to Phenotype for UGT1A1 Endpoints
 paths:
   /phenotype:
     post:
@@ -22,14 +22,14 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/genoinputs'
+              $ref: '#/components/schemas/genotype'
       responses:
         '200':
           description: response
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/phenotypeobj'
+                $ref: '#/components/schemas/phenotype'
         default:
           description: unexpected error
           content:
@@ -38,32 +38,20 @@ paths:
                 $ref: '#/components/schemas/Error'
 components:
   schemas:
-    genoinputs:
+    genotype:
       required:
-        - enzyme
-        - allele1
-        - allele2
+        - UGT1A1
       properties:
-        enzyme:
+        UGT1A1:
           type: string
-          example: 'CYP2D6'
-        allele1:
-          type: string
-          example: '*3'
-        allele2:
-          type: string
-          example: '*3'
-    phenotypeobj:
+          example: '*1/*1'
+    phenotype:
       required:
-        - enzyme
-        - phenotype
+      - UGT1A1
       properties:
-        enzyme:
+        UGT1A1:
           type: string
-          example: 'CYP2D6'
-        phenotype:
-          type: string
-          example: 'Poor metabolizer'
+          example: 'Normal metabolizer'
     Error:
       required:
         - code

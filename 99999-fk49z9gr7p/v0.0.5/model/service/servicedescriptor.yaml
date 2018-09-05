@@ -22,14 +22,14 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/genoinputs'
+              $ref: '#/components/schemas/genotype'
       responses:
         '200':
           description: response
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/phenotypeobj'
+                $ref: '#/components/schemas/phenotype'
         default:
           description: unexpected error
           content:
@@ -38,30 +38,18 @@ paths:
                 $ref: '#/components/schemas/Error'
 components:
   schemas:
-    genoinputs:
+    genotype:
       required:
-        - enzyme
-        - allele1
-        - allele2
+      - CYP2D6
       properties:
-        enzyme:
+       CYP2D6:
           type: string
-          example: 'CYP2D6'
-        allele1:
-          type: string
-          example: '*3'
-        allele2:
-          type: string
-          example: '*3'
-    phenotypeobj:
+          example: '*3/*3'
+    phenotype:
       required:
-        - enzyme
-        - phenotype
+        - CYP2D6
       properties:
-        enzyme:
-          type: string
-          example: 'CYP2D6'
-        phenotype:
+        CYP2D6:
           type: string
           example: 'Poor metabolizer'
     Error:

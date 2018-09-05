@@ -41,8 +41,6 @@ npm test
 You can now test the CPIC objects in an activator via a npm script. This script will download the 
 latest released activator and start up the activator using the CPIC repository as it's shelf. 
 
-_This process does utilize [jq](https://stedolan.github.io/jq/) a command-line JSON processor.  You must install [jq](https://stedolan.github.io/jq/) for this script to run._
-  
 Open a terminal window at the root of the cloned repository and run the following command.
 
 ```

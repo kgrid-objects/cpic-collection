@@ -1,0 +1,22 @@
+{
+  "title": "CPIC Genotype - Phenotype for UGT1A1",
+  "description": "KGrid CPIC guidelines Genotype to Phenotype for UGT1A1",
+  "arkId": "ark:/99999/fk47h1x090",
+  "citations": [
+    "https://link"
+  ],
+  "keywords": "CPIC, UGT1A1, Genotype, Phenotype",
+  "owners": "KGRID",
+  "contributors": "KGRID TEAM",
+  "license": {
+    "licenseName": "",
+    "licenseLink": ""
+  },
+  "url": "http://url",
+  "published": false,
+  "version": "v0.0.3",
+  "lastModified": 1529432624164,
+  "createdOn": 1529432624163,
+  "model": "model",
+  "service":"model/service/servicedescriptor.yaml"
+}
