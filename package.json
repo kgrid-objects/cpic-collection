@@ -66,6 +66,6 @@
     "download": "^7.1.0",
     "download-cli": "^1.1.1",
     "firstline": "^2.0.2",
-    "fs-extra": "^7.0.0",
+    "fs-extra": "^7.0.0"
   }
 }
