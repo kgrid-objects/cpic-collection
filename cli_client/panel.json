@@ -1,0 +1,11 @@
+{
+  "diplotype": {
+    "CYP2C19":"*3/*3",
+    "CYP2D6": "*3/*3",
+    "UGT1A1": "*1/*1"
+  },
+  "prescriptions": {
+    "atazanavir": true,
+    "codeine": true
+  }
+}

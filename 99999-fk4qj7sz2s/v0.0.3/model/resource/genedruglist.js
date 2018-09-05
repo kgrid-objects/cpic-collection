@@ -8,22 +8,41 @@
 //     "phenytoin" :{"CYP2C9":"","HLA-B":""},
 //     "simvastatin":{"SLCO1B1":""}
 //   }
+var drugkolist = {
+  'isoflurane': '',
+  'atazanavir': '/99999/fk4d79nq4z/v0.0.3',
+  'citalopram': '/99999/fk4d22836k/v0.0.3',
+  'clopidogrel': '/99999/fk4bz6hp15/v0.0.3',
+  'codeine': '/99999/fk4mc97w6m/v0.0.3',
+  'escitalopram': '/99999/fk4d22836k/v0.0.3',
+  'phenytoin': '',
+  'simvastatin': ''
+}
+  // var genedruglist={
+  //     "CACNA1S": {"isoflurane":""},
+  //     "RYR1": {"isoflurane":""},
+  //     "UGT1A1": { "atazanavir"  :"/99999/fk4d79nq4z/v0.0.3"},
+  //     "CYP2C19": {"citalopram":"/99999/fk4d22836k/v0.0.3","clopidogrel":"/99999/fk4bz6hp15/v0.0.3","escitalopram":"/99999/fk4d22836k/v0.0.3"},
+  //     "CYP2D6": { "codeine":"/99999/fk4mc97w6m/v0.0.3"},
+  //     "CYP2C9" :{"phenytoin":""},
+  //     "HLA-B" : {"phenytoin":""},
+  //     "SLCO1B1" : {  "simvastatin" :""}
+  //   }
 
-  var genedruglist={
-      "CACNA1S": {"isoflurane":""},
-      "RYR1": {"isoflurane":""},
-      "UGT1A1": { "atazanavir"  :"/99999/fk4d79nq4z/v0.0.3"},
-      "CYP2C19": {"citalopram":"/99999/fk4d22836k/v0.0.3","clopidogrel":"/99999/fk4bz6hp15/v0.0.3","escitalopram":"/99999/fk4d22836k/v0.0.3"},
-      "CYP2D6": { "codeine":"/99999/fk4mc97w6m/v0.0.3"},
-      "CYP2C9" :{"phenytoin":""},
-      "HLA-B" : {"phenytoin":""},
-      "SLCO1B1" : {  "simvastatin" :""}
+function druglist (inputs) {
+  var list = {}
+  // var isEmpty = true
+  // for (var key in inputs) {
+  //   if (inputs.hasOwnProperty(key)) {
+  //     isEmpty = isEmpty && false
+  //   }
+  // }
+  // if (isEmpty) {
+  //   return drugkolist
+  // } else {
+    for (var key in inputs) {
+      list[key] = drugkolist[key]
     }
-
-function druglist(inputs){
-  var list ={}
-  for (var key in inputs){
-    list[key]=genedruglist[key]
-  }
-  return list;
+    return list
+  // }
 }

@@ -22,7 +22,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/phenotype'
+              $ref: '#/components/schemas/prescriptionlist'
       responses:
         '200':
           description: response
@@ -38,25 +38,23 @@ paths:
                 $ref: '#/components/schemas/Error'
 components:
   schemas:
-    phenotype:
-      type: object
+    prescriptionlist:
+      required:
+        - codeine
       properties:
-        CYP2D6:
+        codeine:
           type: string
-          example: 'Normal metabolizer'
-        CYP2C19:
+          example: 'active'
+        atazanavir:
           type: string
-          example: 'Normal metabolizer'
-        UGT1A1:
-          type: string
-          example: 'Normal metabolizer'
+          example: 'active'
     druglist:
       required:
         - result
       properties:
         result:
           type: object
-          example: {CYP2D6:{},CYP2C19:{},UGT1A1:{}}
+          example: {'codeine':'','atazanavir':''}
     Error:
       required:
         - code
