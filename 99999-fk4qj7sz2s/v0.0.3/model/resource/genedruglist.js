@@ -31,18 +31,19 @@ var drugkolist = {
 
 function druglist (inputs) {
   var list = {}
-  // var isEmpty = true
-  // for (var key in inputs) {
-  //   if (inputs.hasOwnProperty(key)) {
-  //     isEmpty = isEmpty && false
-  //   }
-  // }
-  // if (isEmpty) {
-  //   return drugkolist
-  // } else {
+  var isEmpty = true
+  for (var key in inputs) {
+    if (inputs[key]!=null) {
+      isEmpty = isEmpty && false
+    }
+  }
+  if (isEmpty) {
+    return drugkolist
+  } else {
+
     for (var key in inputs) {
       list[key] = drugkolist[key]
     }
     return list
-  // }
+  }
 }

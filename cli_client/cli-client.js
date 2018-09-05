@@ -7,7 +7,7 @@ const exists = require('fs').existsSync
 var host = 'http://localhost:8080/';
 
 var inputData = readgeneticpanel('panel.json')
-console.log(inputData)
+
 var phenotypePanel = {};
 
 function postJsonReq(path, data){
@@ -37,6 +37,7 @@ postJsonReq('/99999/fk4qj7sz2t/v0.0.3/genophenokolist', inputData.diplotype)
         phenotypePanel[key] = phenotype[key];
       });
     });
+    console.log(phenotypePanel)
   }).then(results => generateDrugRecs()
   ).catch(error => {
     console.log(error);
@@ -54,6 +55,7 @@ function generateDrugRecs() {
     console.log(drugMap)
     // Create an array of drug recommendation request promises
     Object.keys(drugMap).forEach(drugKey => {
+          if(drugMap[drugKey]!='')
         drugRecPromises.push(
             postJsonReq(drugMap[drugKey] + '/dosingrecommendation',
                 phenotypePanel));

@@ -22,7 +22,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/prescriptionlist'
+              $ref: '#/components/schemas/prescriptions'
       responses:
         '200':
           description: response
@@ -38,16 +38,16 @@ paths:
                 $ref: '#/components/schemas/Error'
 components:
   schemas:
-    prescriptionlist:
+    prescriptions:
       required:
         - codeine
       properties:
         codeine:
-          type: string
-          example: 'active'
+          type: boolean
+          example: true
         atazanavir:
-          type: string
-          example: 'active'
+          type: boolean
+          example: true
     druglist:
       required:
         - result
