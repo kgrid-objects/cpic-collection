@@ -1,12 +1,11 @@
 const fs = require('fs');
 const download = require('download');
 const request = require('request');
-const jq = require('node-jq')
+const jp = require('jsonpath');
 const shell = require('shelljs');
 const fileExists = require('file-exists');
 
-const filter = '.assets[].browser_download_url'
-const jqOptions = { input: 'string', output: 'json'}
+const filter = '$.assets[*].browser_download_url'
 
   var requestOptions = {
       url: 'https://api.github.com/repos/kgrid/kgrid-activator/releases/latest',
@@ -15,28 +14,24 @@ const jqOptions = { input: 'string', output: 'json'}
       }
   };
 
-
   request(requestOptions, function (error, response, body) {
-    jq.run(filter, body, jqOptions).then((output) => {
 
-      let download_url=output;
+      let download_url = jp.value(JSON.parse(body),filter);
 
       fileExists( download_url.substring( (download_url.lastIndexOf('/')+1) ) ).then( exists => {
+
         if (exists){
           console.log("already have activator");
           executeActivator();
         } else {
           console.log("downloading activator");
-          download(output,".").then(() => {
+          download(download_url,".").then(() => {
             console.log('files downloaded!');
             executeActivator();
           });
         }
       });
 
-    }).catch((err) => {
-      console.error(err);
-    });
   });
 
   function executeActivator() {
