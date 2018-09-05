@@ -1,22 +1,82 @@
-{
-  "diplotype": {
-    "CFTR": "",
-    "CYP2C19":"*1/*1",
-    "CYP2C9" :"",
-    "CYP2D6": "*3/*3",
-    "CYP3A5": "",
-    "CYP4F2": "",
-    "DPYD": "",
-    "G6PD": "",
-    "HLA-A" : "",
-    "HLA-B" : "",
-    "IFNL3" : "",
-    "SLCO1B1" : "",
-    "TPMT" : "",
-    "UGT1A1": "*1/*1",
-    "VKORC1" : ""
+[
+  {
+    "patient": {
+      "name": "Hank Hill",
+      "id": "001"
+    },
+    "diplotype": {
+      "CFTR": "",
+      "CYP2C19":"*1/*11",
+      "CYP2C9" :"",
+      "CYP2D6": "*3/*3",
+      "CYP3A5": "",
+      "CYP4F2": "",
+      "DPYD": "",
+      "G6PD": "",
+      "HLA-A" : "",
+      "HLA-B" : "",
+      "IFNL3" : "",
+      "SLCO1B1" : "",
+      "TPMT" : "",
+      "UGT1A1": "*1/*1",
+      "VKORC1" : ""
+    },
+    "prescriptions": {
+      "atazanavir": true,
+      "codeine": true
+    }
   },
-  "prescriptions": {
-
+  {
+  "patient": {
+    "name": "Hank Green",
+    "id": "002"
+    },
+    "diplotype": {
+      "CFTR": "",
+      "CYP2C19":"*1/*7",
+      "CYP2C9" :"*3/*3",
+      "CYP2D6": "*3/*4",
+      "CYP3A5": "",
+      "CYP4F2": "",
+      "DPYD": "",
+      "G6PD": "",
+      "HLA-A" : "",
+      "HLA-B" : "",
+      "IFNL3" : "",
+      "SLCO1B1" : "",
+      "TPMT" : "",
+      "UGT1A1": "",
+      "VKORC1" : ""
+    },
+    "prescriptions": {
+      "escitalopram": true,
+      "clopidogrel": true
+    }
+  },
+  {
+    "patient": {
+      "name": "Hank Aaron",
+      "id": "003"
+    },
+    "diplotype": {
+      "CFTR": "",
+      "CYP2C19":"*1/*1",
+      "CYP2C9" :"*1/*1",
+      "CYP2D6": "*3/*3",
+      "CYP3A5": "",
+      "CYP4F2": "",
+      "DPYD": "",
+      "G6PD": "",
+      "HLA-A" : "",
+      "HLA-B" : "",
+      "IFNL3" : "",
+      "SLCO1B1" : "",
+      "TPMT" : "",
+      "UGT1A1": "",
+      "VKORC1" : ""
+    },
+    "prescriptions": {
+      "clopidogrel": true
+    }
   }
-}
+]
