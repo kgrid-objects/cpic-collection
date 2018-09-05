@@ -1,8 +1,20 @@
 {
   "diplotype": {
+    "CFTR": "",
     "CYP2C19":"*3/*3",
+    "CYP2C9" :"",
     "CYP2D6": "*3/*3",
-    "UGT1A1": "*1/*1"
+    "CYP3A5": "",
+    "CYP4F2": "",
+    "DPYD": "",
+    "G6PD": "",
+    "HLA-A" : "",
+    "HLA-B" : "",
+    "IFNL3" : "",
+    "SLCO1B1" : "",
+    "TPMT" : "",
+    "UGT1A1": "*1/*1",
+    "VKORC1" : ""
   },
   "prescriptions": {
     "atazanavir": true,

@@ -26,6 +26,7 @@ postJsonReq('/99999/fk4qj7sz2t/v0.0.3/genophenokolist', inputData.diplotype)
   var gToPPromises = [];
   // Create an array of genotype to phenotype request promises
   Object.keys(gToPMap).forEach(function(key) {
+    if(gToPMap[key]!='')
     gToPPromises.push(postJsonReq(gToPMap[key] + '/phenotype', inputData.diplotype))
   });
   // Use each genotype to phenotype object to get the phenotype panel
