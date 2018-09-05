@@ -1,14 +1,15 @@
 var fsextra = require('fs-extra')
 var file = 'payload.js'
 var infile = 'CYP2D6_table.tsv'
-var fl = require ('firstline')
+var fl = require ('firstline') //'firstline'
 var lineone = fl(infile)
 var list = {}
+var dict = []
+
 
 lineone.then(function(result) {
    console.log(result) //will log results.
-   var lineoneArr = result.split('\t')
-  // var c1 = lineoneArr.findIndex(findCol1)
+  var lineoneArr = result.split('\t')
   var c1 = lineoneArr.indexOf("CYP2D6 Diplotype")
   var c2 = lineoneArr.indexOf("Coded Genotype/Phenotype Summary")
 
@@ -18,7 +19,7 @@ lineone.then(function(result) {
 })
 var lineReader = require('readline').createInterface({
  input: require('fs').createReadStream(infile)
-});
+})
 
 
 function processFile(inputFile,c1,c2) {
@@ -28,12 +29,22 @@ function processFile(inputFile,c1,c2) {
         outstream = new (require('stream'))(),
         rl = readline.createInterface(instream, outstream);
 
-    rl.on('line', function (line) {
+     rl.on('line', function (line) {
       var lineArr = line.split('\t')
 
-        var line1 = lineArr[c1].replace('/', '-')
-        list[line1]= lineArr[c2]
+      var line1 = lineArr[c1].replace('/', '-')
+
+
+        //list[line1]= lineArr[c2]
+      var line2 = lineArr[c2].replace('CYP2D6 Poor Metabolizer','2')
+      //var line2= lineArr[c2].replace('CYP2D6 Intermediate Metabolizer','4')
+      list[line1]= line2
+    //  var line3= lineArr[c2].replace('CYP2D6 Intermediate Metabolizer','4')
+      //   list[line1]= line3
     })
+
+
+
 
     rl.on('close', function (line) {
 
@@ -81,7 +92,7 @@ fsextra.writeFile("payload.js", "\n" + ""
 +"return 'Error'" + "\n"
 +"}" + "\n"
 +"}" + "\n"
-+"var dict=['TBD','Likely Poor','Poor','Likely Intermediate','Intermediate','Normal','Rapid','Ultrarapid']" + "\n"
++"var dict = ['TBD','Likely Poor','Poor','Likely Intermediate','Intermediate','Normal','Rapid','Ultrarapid']" +  "\n"
 
 + "var list ="+ JSON.stringify(list) , function(err) {
     if(err) {
