@@ -36,11 +36,13 @@ function processFile(inputFile,c1,c2) {
 
 
         //list[line1]= lineArr[c2]
-      var line2 = lineArr[c2].replace('CYP2D6 Poor Metabolizer','2')
+      var line2 = lineArr[c2].replace('CYP2D6 Poor Metabolizer','2').replace('CYP2D6 Intermediate Metabolizer','4').replace('CYP2D6 Normal Metabolizer','5').replace('CYP2D6 Ultrarapid Metabolizer','7').replace('Indeterminate','4')
+
       //var line2= lineArr[c2].replace('CYP2D6 Intermediate Metabolizer','4')
-      list[line1]= line2
-    //  var line3= lineArr[c2].replace('CYP2D6 Intermediate Metabolizer','4')
-      //   list[line1]= line3
+       list[line1]= line2
+    //var line3= lineArr[c2].replace('CYP2D6 Intermediate Metabolizer','4')
+      //  list[line1]= line2
+      //  list[line1]= line3
     })
 
 
