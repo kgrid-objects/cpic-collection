@@ -1,0 +1,23 @@
+{
+  "name": "cpic_kit",
+  "version": "1.0.0",
+  "description": "CPIC KGrid Kit",
+  "main": " ",
+  "scripts": {
+    "postinstall": "node scripts/loadApps.js && node scripts/loadKOs.js"
+  },
+  "author": "KGrid Team",
+  "license": "MIT",
+  "devDependencies": {
+    "axios": "^0.18.0",
+    "download-file": "^0.1.5",
+    "file-exists": "^5.0.1",
+    "jest": "^23.5.0",
+    "jsonpath": "^1.0.0",
+    "mocha": "5.2.0",
+    "rewire": "^4.0.1",
+    "scripty": "1.7.2",
+    "shelljs": "^0.8.2",
+    "unzip": "^0.1.11"
+  }
+}
