@@ -61,13 +61,15 @@ var demo = new Vue({
 		    self.appendLog('app', 'Application Event - Loading Initial Data...')
       self.initdata = initdata.data
       self.listrequest = initdata.data.initrequest
-      self.genophenolookupko = config.data.genophenolookupko
-      self.druglookupko = config.data.druglookupko
       self.patientsamples = initdata.data.patientsamples
       self.phenotypePanel = JSON.parse(JSON.stringify(initdata.data.initrequest.diplotype))
       self.diplotypePanel = JSON.parse(JSON.stringify(initdata.data.initrequest.diplotype))
+      self.genophenolookupko = config.data.genophenolookupko
+      self.druglookupko = config.data.druglookupko
       self.genopheno_endpoint = config.data.genopheno_endpoint
       self.recommendation_endpoint = config.data.recommendation_endpoint
+      self.activatorurl.local=config.data.activator_url
+      self.options[1].url=config.data.activator_url
       axios.all([
         self.getdruglist,
         self.getg2pkolist
@@ -113,7 +115,7 @@ var demo = new Vue({
     },
     debouncegetdata: function () {
       return _.debounce(this.getdata, this.delay)
-    },
+    }
   },
   watch: {
     autofillSelection: function () {
@@ -133,7 +135,7 @@ var demo = new Vue({
         var ready = false
         var self = this
         this.resetapp()
-        for(var key in this.diplotypePanel){
+        for (var key in this.diplotypePanel) {
           ready = ready || (this.diplotypePanel[key] != '')
         }
         if (ready) {
@@ -176,7 +178,7 @@ var demo = new Vue({
     },
     resetapp: function () {
       this.phenoready = false
-      this.recommendationlist ={}
+      this.recommendationlist = {}
       Object.keys(this.phenotypePanel).forEach(key => {
         this.phenotypePanel[key] = ''
       })
