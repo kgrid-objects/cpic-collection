@@ -8,14 +8,6 @@
 		padding: 6px 0px;
 		font-style: italic;
 		font-weight: 600;
-		/* margin-top:10px; */
-	}
-	h3 {
-		font-size:24px;
-	}
-  a, a:hover, a:active, a:focus,a:visited {
-		 text-decoration: none;
-		 color:#0075bc;
 	}
 	.ft-sz-12{		font-size: 12px;	}
 	.ft-sz-14{		font-size: 14px;	}
@@ -23,44 +15,44 @@
 	.ft-sz-18{		font-size: 18px;	}
 	.ft-sz-20{		font-size: 20px;	}
 	.ft-sz-22{		font-size: 22px;	}
-
-	.box-header>h3{	 margin:0px;  	 }
 	header i {
 		margin-top:5px;
 		cursor:pointer;
 	}
-
-	div#setting  .btn-secondary {
-	color: #0075bc;
-	background-color: #fff;
-	border-color: #0075bc;
-	width: 100px;
-}
+	tbody {
+		display: block;
+		 overflow: auto;
+		   max-height: 800px;
+	}
+	th {
+		text-align:center;
+	}
 div#setting .form-group{
 	margin:0 auto;
 	text-align:center;
-
 }
 div#setting .btn-group{
 	margin-top:30px;
 }
 div#setting .urlinput {
 	margin-top:30px;
-
 }
 div#setting .urlinput>input{
 	width:60%;
 }
-		div#setting  .btn-secondary:not([disabled]):not(.disabled).active, .btn-secondary:not([disabled]):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
-    color: #fff;
-    background-color: #0075bc;
-    border-color: #0075bc;
-	}
+div#setting  .btn-secondary {
+color: #0075bc;
+background-color: #fff;
+border-color: #0075bc;
+width: 100px;
+}
+div#setting  .btn-secondary:not([disabled]):not(.disabled).active, .btn-secondary:not([disabled]):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+color: #fff;
+background-color: #0075bc;
+border-color: #0075bc;
+}
 
-	 ul#reclist li a {
-		 float:right;
-	 }
-	 ul#reclist li .kg-rec {
+ ul#reclist li .kg-rec {
  	 		line-height:1.1em;
 			padding: 5px;
 			margin:0;
@@ -83,10 +75,8 @@ div#setting .urlinput>input{
 		 background-color: #f7f7f7;
 		 opacity:1;
 		 text-align:left;
-		 /* padding: 5px 10px; */
 			transition: opacity 0.8s ease;
 			overflow:hidden;
-
 	 }
 ul#reclist li.active {
 	opacity:1;
@@ -97,20 +87,12 @@ ul#eventlog {
 }
 ul#eventlog li {
 	line-height:1.1em;
-			color:#838383;
+	color:#838383;
 }
-ul#eventlog li.app span{
-	color: #0075bc;  /* KGRID LIB */
-}
-ul#eventlog li.rec span{
-	color: #20657e;  /*TEAL*/
-}
-ul#eventlog li.smart span{
-	color: #ba5827; /* LSA Orange */
-}
-ul#eventlog li.phen span{
-	color: #336699;
-}
+ul#eventlog li.app span{	color: #0075bc;  /* KGRID LIB */ }
+ul#eventlog li.rec span{	color: #20657e;  /*TEAL*/   }
+ul#eventlog li.phen span{	color: #336699;  }
+
 header  {
 		position: relative;
 		height: 50px;
@@ -141,70 +123,12 @@ header  {
 ::-webkit-scrollbar-corner {
       background-color: #fff;
 } /* if both the vertical and the horizontal bars appear, then perhaps the right bottom corner also needs to be styled */
-.border-box
-	{
-		border: 1px solid steelblue;
-		margin-top: 0px;
-		margin-bottom: 0px;
-		padding: 5px;
-	}
-.patient-row {
-		margin-top: 8px;
-		margin-bottom: 8px;
-		padding-top:6px;
-	}
-	.resource-row {
-		margin-bottom: 0px;
-		background-color: #e3e3e3;
-	}
-	.resource-row span {
-		margin-bottom: 10px;
-		margin-left: 10px;
-	}
-	.resource-row p {
-		font-size:20px;
-		font-weight:500;
-		margin-bottom:0px;
-	}
-	.patient-row span {
-		margin-left: 10px;
-	}
-.pad-5 {
-	padding-left: 5px;
-	padding-right: 5px;
-}
- div#stent-div {
-		height:35px;
-		padding:5px;
-	}
-	div.initInstr {
-		padding: 100px;
-		font-size: 18px;
-		font-weight: 300;
-	}
-	.visual-field
-	{
-		margin-top: 0px;
-		padding: 10px 5px;
-		height:100%;
-	}
-	.viewtop {
-		position:relative;
-		background-color:#fff;
-	}
-	.viewtop.dimon {
-		z-index:200;
-	}
 	.ht-full{
 		height: 100%;
 		min-height:544px;
 	}
-	.ht-g {
-		min-height: 360px;
-	}
-	.ht-d {
-		min-height: 420px;
-	}
+	.ht-g {		min-height: 360px;	}
+	.ht-d {		min-height: 420px;	}
 	.pad-l-0 {		padding-left: 0px;	}
 	.pad-l-10 {		padding-left: 10px;	}
 	.pad-l-20 {		padding-left: 20px;	}
@@ -215,6 +139,9 @@ header  {
 	.pad-top20 {		padding-top: 20px;	}
 	.pad-top30 {		padding-top: 30px;	}
 	.pad-top40 {		padding-top: 40px;	}
+	.pad-25 { padding:25px;	}
+	.align-c { text-align:center;}
+
 	div.input_div {
 		background-color: #e3e3e3;
 	}
@@ -261,28 +188,6 @@ header  {
 	.gene-table tr.nobrd {
 		border:none;
 	}
-		.gene-drug-table {
-			margin:5px auto;
-		}
-	.gene-drug-table tr {
-		height:30px;
-		margin:2px auto;
-		border-bottom: 1px solid #d5d5d5;
-	}
-	.gene-drug-table td, .gene-drug-table th {
-		font-weight:500;
-		font-size:18px;
-		line-height:1.1em;
-		padding: 4px 25px;
-		opacity:1;
-		transition: all 0.8s ease;
-		color:#666666;
-		text-align:center;
-		min-width: 155px;
-	}
-	.gene-drug-table th {
-		font-weight:700;
-	}
 	.noselect {
 	    -webkit-touch-callout: none;
 	    -webkit-user-select: none;
@@ -308,32 +213,8 @@ header  {
 		position: fixed;
 		background-color:#d5d5d5;
   }
-  .knowledgeButton, .primaryButton {
-    background-color: #fff;
-    border: 1px solid #0075bc;
-    color: #0075bc;
-    padding: 10px 12px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px auto;
-    cursor: pointer;
-    width: 400px	;
-		transition:all 0.6s ease;
-}
 .inline {
 	    display: inline-block;
-}
-  .knowledgeButton:hover, .primaryButton:hover{
-		color:#fff;
-		background-color: #0075bc;
-	}
-.primaryButton {
-	padding: 8px 10px;
-	width: 100px;
-	float:right;
-	margin-right:-15px;
 }
 .float-r {		float:right; }
 .float-l {		float:left; }
@@ -402,13 +283,6 @@ input[type=radio]:checked + label {
   background: #0075bc;
 	border: solid 1px #0075bc;
 }
-.tab-title {
-	position: relative;
-	margin-bottom:30px;
-}
-div#phenospacer {
-	height: 15px;
-}
 .radio-group {
   display: inline-block;
   margin: 10px 0px;
@@ -422,9 +296,6 @@ div#phenospacer {
 	overflow-x:hidden;
 	margin: 0px 15px;
 	background-color:#fafafa;
-	cursor:pointer;
-}
-.trig:hover {
 	cursor:pointer;
 }
 .list-group-item {
@@ -444,41 +315,6 @@ div#phenospacer {
 .list-group-item.active {
 	background-color:#0075bc;
 }
-/* flip card */
-/* entire container, keeps perspective */
-.flip-container {
-	perspective: 1000px;
-}
-.flip-container.hover .flipper {
-		transform: rotateY(180deg);
-	}
-.flip-container, .front, .back {
-	width: 100%;
-}
-/* flip speed goes here */
-.flipper {
-	transition: 1.5s;
-	transform-style: preserve-3d;
-	position: relative;
-}
-/* hide back of pane during swap */
-.front, .back {
-
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-/* front pane, placed above back */
-.front {
-	z-index: 2;
-	transform: rotateY(0deg);
-}
-/* back, initially hidden pane */
-.back {
-	transform: rotateY(180deg);
-}
 /* ============= */
 .overlay {
 	visibility:hidden;
@@ -492,54 +328,10 @@ div#phenospacer {
 	opacity:0;
 	transition: all 1.5s ease;
 }
-.overlay.dimonrec {
-	visibility:visible;
-	opacity:0.75;
-	z-index:150;
-}
 .badge-pill {
 	font-size:12px;
 	top:-10px;
 	position:relative;
-}
-span.new{
-	    position: absolute;
-	    background-color: #ba5827;
-	    font-size: 10px;
-	    opacity: 0;
-	    padding: 0px 3px;
-	    color: #fff;
-	    transition: opacity 5s ease;
-}
-span.new.active{
-	opacity:1;
-	transition: opacity 0s ease;
-}
-ul.versionlist {
-	list-style:none;
-	display: inline-block;
-	margin:0px;
-	padding:10px;
-}
-ul.versionlist li {
-	display:inline-block;
-	width: 60px;
-	padding:0px 10px;
-	border:1px solid #d3d3d3;
-	background-color:#fff;
-	color:#d3d3d3;
-	cursor:pointer;
-	transition: all 0.6s ease;
-}
-ul.versionlist li:hover {
-	background-color:#b3b3b3;
-	color:#fff;
-}
-ul.versionlist li.active {
-	border:1px solid #0075bc;
-	background-color:#0075bc;
-	color:#fff;
-
 }
 button,button:focus,button:active
 { border:none;
@@ -547,10 +339,6 @@ button,button:focus,button:active
 	background-color:transparent;
 	cursor:pointer;
 }
-.green {
-	color:green;
-}
-/* overwirte */
 .modal .col-auto {
 	padding-left:0px;
 	padding-right:0px;
@@ -581,7 +369,6 @@ button,button:focus,button:active
 	    border-top-right-radius: 0px;
 	    border-bottom-right-radius: 0px;
 	    border-bottom-left-radius: 0px;
-
 }
 .modal .nav-pills .nav-link.active {
 			background-color: #0075bc;
@@ -591,22 +378,4 @@ button,button:focus,button:active
 }
 .modal-footer {
 	border-top:none;
-}
-.btn-primary.focus,  .btn-primary:focus,.btn.focus,.btn:focus{
-	background-color:#0075bc;
-	outline:none;
-	box-shadow:none;
-	color:#fff;
-}
-.btn-primary {
-	background-color:#fff;
-	color:#0075bc;
-	border:1px solid #0075bc;
-	transition: all 0.8s ease;
-	border-radius:0px;
-}
-.btn-primary:hover {
-	background-color:#0075bc;
-	color:#fff;
-	border:1px solid #0075bc;
 }
