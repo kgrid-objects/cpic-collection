@@ -1,5 +1,6 @@
 # CPIC Kit
-Kit Intro................................... 
+KGrid CPIC Kit packages Activator, Library and CPIC Demo Site.  The kit is designed as a personnel 
+CPIC Knowledge Grid used to explore the capablities of KGrid and examing the CPIC Knowlege Objects.
 
 ## Requirements
 To setup the CPIC Kit you need:
@@ -25,3 +26,19 @@ CPIC Knowledge Objects into the system.
 
 
 ## Usage
+
+### Starting KGrid CPIC Kit
+KGrid CPIC Kit has an 
+* [Activator](http://localhost:8082)
+* [Library](http://localhost:8082)
+* [CPIC Demo Site ]()
+
+
+```
+npm start
+```
+
+### Stopping KGrid CPIC Kit
+```
+npm stop
+```
