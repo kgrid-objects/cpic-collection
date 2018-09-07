@@ -8,9 +8,16 @@ const filter = '$.assets[*].browser_download_url'
 
 module.exports = {
 
-  downloadAssets: function(options, location){
+  downloadAssets: function(url, location){
 
-    return new Promise(function(resolve, reject) {
+    var options = {
+      url: url+"/releases/latest",
+      headers: {
+        'User-Agent': 'request'
+      }
+    };
+
+    return new Promise( (resolve, reject) => {
 
       request(options, function (error, response, body) {
         if (error){
@@ -19,22 +26,22 @@ module.exports = {
           let download_url = jp.value(JSON.parse(body), filter);
           let filename = download_url.substring(
               (download_url.lastIndexOf('/') + 1));
-          console.log("Download " + filename);
           fileExists(location + "/" + filename).then(exists => {
             if (exists) {
               console.log("Already have " + filename);
-              resolve();
+              resolve(filename);
             } else {
               console.log("Downloading " + filename);
               download(download_url, location, "{'extract':true}").then(() => {
                 console.log(filename + ' downloaded!');
-                resolve();
+                resolve(filename);
               });
             }
           });
         }
       });
-    })
+
+    });
 
  }
 

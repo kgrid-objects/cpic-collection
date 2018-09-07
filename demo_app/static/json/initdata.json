@@ -1,18 +1,4 @@
-{ "samples":[{"CYP2D6":{"allele1":"*1","allele2":"*10"},"UGT1A1":{"allele1":"*1","allele2":"*6"},"CYP2C19":{"allele1":"*1","allele2":"*1"}},
-   					{"CYP2D6":{"allele1":"*3","allele2":"*3"},"UGT1A1":{"allele1":"*1","allele2":"*1"},"CYP2C19":{"allele1":"*17","allele2":"*17"}},
-   					{"CYP2D6":{"allele1":"*1x2","allele2":"*9"},"UGT1A1":{"allele1":"*27","allele2":"*80"},"CYP2C19":{"allele1":"*1","allele2":"*4B"}},
-   					{"CYP2D6":{"allele1":"*7","allele2":"*59"},"UGT1A1":{"allele1":"*6","allele2":"*36"},"CYP2C19":{"allele1":"*4A","allele2":"*10"}},
-   					{"CYP2D6":{"allele1":"*31","allele2":"*92"},"UGT1A1":{"allele1":"*36","allele2":"*60"},"CYP2C19":{"allele1":"*14","allele2":"*34"}}
-   				],
-  "geneticpairs":[
-      {"enzyme":"CYP2C19","genenamecode":"2621","loinccode":"79714-2","pair":{"enzyme":"CYP2C19","allele1":"","allele2":""},"metab":"",
-                          "kotitle":"CPIC Genotype-Phenotype for CYP2C19","activever":"2017","versions":[{"kolink":"/99999/fk4mc97w0h/v0.0.2","ver":"2017"}]},
-      {"enzyme":"CYP2D6","genenamecode":"2625","loinccode":"79715-9","pair":{"enzyme":"CYP2D6","allele1":"","allele2":""},"metab":"",
-                          "kotitle":"CPIC Genotype-Phenotype for CYP2D6","activever":"2013","versions":[{"kolink":"/99999/fk49z9gr7p/v0.0.3","ver":"2013"},{"kolink":"/99999/fk49z9gr7p/v0.0.4","ver":"2017"}]},
-      {"enzyme":"UGT1A1","genenamecode":"12530","loinccode":"79718-3","pair":{"enzyme":"UGT1A1","allele1":"","allele2":""},"metab":"",
-                          "kotitle":"CPIC Genotype-Phenotype for UGT1A1","activever":"2017","versions":[{"kolink":"/99999/fk47h1x090/v0.0.2","ver":"2017"}]}
-  ],
-  "initrequest":{"diplotype": {
+{ "initrequest":{"diplotype": {
     "CFTR": "",
     "CYP2C19":"",
     "CYP2C9" :"",
