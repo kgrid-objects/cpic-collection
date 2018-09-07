@@ -9,29 +9,32 @@ let urls = Object.values(pkg.githubAssets);
 let requests = urls.map(
     url => download.downloadAssets(url, "dist"));
 
-Promise.all(requests).then( function() {
+Promise.all(requests).then(function (values) {
 
-  console.log("Completed KGrid Asset Load");
+  console.log("Completed KGrid Asset Load ");
 
   fs.createReadStream('dist/cpic-all.zip').pipe(
-      unzip.Extract({ path: 'library/shelf' }));
+      unzip.Extract({path: 'library/shelf'}));
   fs.createReadStream('dist/cpic-all.zip').pipe(
-      unzip.Extract({ path: 'activator/shelf' }));
+      unzip.Extract({path: 'activator/shelf'}));
 
-  fs.readdir('dist', function(err, files) {
+  for (var i = 0; i < values.length; i++) {
 
-    for (var i=0; i<files.length; i++) {
-
-      if (files[i].startsWith("kgrid-activator")){
-        fs.move('dist/'+files[i], 'activator/'+files[i], function (err) {
-          if (err) return console.error(err)
-        })
-      }
-      if (files[i].startsWith("kgrid-library")){
-        fs.move('dist/'+files[i], 'library/'+files[i], function (err) {
-          if (err) return console.error(err)
-        })
-      }
+    if (values[i].startsWith("kgrid-activator")) {
+      fs.move('dist/' + values[i], 'activator/kgrid-activator.jar',
+          function (err) {
+            if (err) {
+              return console.error(err)
+            }
+          })
     }
-  });
+    if (values[i].startsWith("kgrid-library")) {
+      fs.move('dist/' + values[i], 'library/kgrid-library.jar', function (err) {
+        if (err) {
+          return console.error(err)
+        }
+      })
+    }
+  }
+
 });

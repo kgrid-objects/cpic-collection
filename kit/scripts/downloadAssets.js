@@ -17,7 +17,7 @@ module.exports = {
       }
     };
 
-    return new Promise(function(resolve, reject) {
+    return new Promise( (resolve, reject) => {
 
       request(options, function (error, response, body) {
         if (error){
@@ -29,18 +29,19 @@ module.exports = {
           fileExists(location + "/" + filename).then(exists => {
             if (exists) {
               console.log("Already have " + filename);
-              resolve();
+              resolve(filename);
             } else {
               console.log("Downloading " + filename);
               download(download_url, location, "{'extract':true}").then(() => {
                 console.log(filename + ' downloaded!');
-                resolve();
+                resolve(filename);
               });
             }
           });
         }
       });
-    })
+
+    });
 
  }
 
