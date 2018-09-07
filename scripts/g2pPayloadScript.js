@@ -32,21 +32,20 @@ function processFile(inputFile,c1,c2) {
      rl.on('line', function (line) {
       var lineArr = line.split('\t')
 
-      var line1 = lineArr[c1].replace('/', '-').replace('CYP2D6 Diplotype','')
+      var line1 = lineArr[c1]
 
-      var line2 = lineArr[c2].replace('CYP2D6 Poor Metabolizer','2').replace('CYP2D6 Intermediate Metabolizer','4').replace('CYP2D6 Normal Metabolizer','5').replace('CYP2D6 Ultrarapid Metabolizer','7').replace('Indeterminate','4').replace('Coded Genotype/Phenotype Summary','')
+
+      var line2 = lineArr[c2].replace('CYP2D6 Poor Metabolizer','2').replace('CYP2D6 Intermediate Metabolizer','4').replace('CYP2D6 Normal Metabolizer','5').replace('CYP2D6 Ultrarapid Metabolizer','7').replace('Indeterminate','4')
 
        list[line1]= line2
-
+       delete list['CYP2D6 Diplotype']
     })
 
 
     rl.on('close', function (line) {
 
 
-//lineReader.on('line', function (line) {
-// console.log('Line from file:', line);
-//});
+
 fsextra.createFile(file, function(err) {
   console.log(err); //null
   //file has now been created, including the directory it is to be placed in
@@ -93,7 +92,7 @@ fsextra.writeFile("payload.js", "\n" + ""
     if(err) {
         return console.log(err);
     }
-
+   
     console.log("The file was saved!");
 })
 
@@ -101,6 +100,3 @@ console.log('done reading file.')
 })
 
 }
-
-
-//console.info("bbb");
