@@ -9,6 +9,7 @@ const genophenokolistPath = '/99999/fk4qj7sz2t/v0.0.3/genophenokolist';
 const druglistPath = '/99999/fk4qj7sz2s/v0.0.3/druglist';
 var host;
 var filename;
+var results = [];
 
 program
   .version('0.1.0')
@@ -19,8 +20,19 @@ program
     host = hostArg || 'http://localhost:8080/';
   }).parse(process.argv);
 
-var inputData = readGeneticPanelCSV(filename);
-var results = [];
+readGeneticPanelCSV(filename);
+
+function readGeneticPanelCSV(filename) {
+  if (exists(filename)) {
+    csvtojson()
+    .fromFile('panel.csv')
+    .then(json => {
+      processPatientData(json);
+    });
+  } else {
+    console.error('Cannot find input file ', filename)
+  }
+}
 
 function processPatientData (data) {
   //
@@ -49,18 +61,6 @@ function processPatientData (data) {
 
   // Output results to standard out as an array of patient results
   Promise.all(promises).then(r => (console.log(JSON.stringify(results))));
-}
-
-function readGeneticPanelCSV(filename) {
-  if (exists(filename)) {
-    csvtojson()
-    .fromFile('panel.csv')
-    .then(json => {
-      processPatientData(json);
-    });
-  } else {
-    console.error('Cannot find input file ', filename)
-  }
 }
 
 function postJsonRequest(path, data) {
