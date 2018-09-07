@@ -5,112 +5,53 @@ const fs = require('fs-extra');
 const exists = require('fs').existsSync;
 const csvtojson = require('csvtojson');
 
+const genophenokolistPath = '/99999/fk4qj7sz2t/v0.0.3/genophenokolist';
+const druglistPath = '/99999/fk4qj7sz2s/v0.0.3/druglist';
+var host;
+var filename;
+
 program
   .version('0.1.0')
-  .parse(process.argv);
+  .option('-p, --pheno', 'display phenotype results only')
+  .option('-r, --recs', 'display recommendation results only')
+  .arguments('<filename> [host]').action((fileArg, hostArg) => {
+    filename = fileArg;
+    host = hostArg || 'http://localhost:8080/';
+  }).parse(process.argv);
 
-var host = 'http://localhost:8080/';
-
-// Use command cpic [path to csv file] > [output file] to run script
-var filename = process.argv.slice(2)[0];
-var inputData = readgeneticpanel(filename);
+var inputData = readGeneticPanelCSV(filename);
+var results = [];
 
 function processPatientData (data) {
-  data.forEach(function (patientData) {
+  //
+  var promises = data.map(function (patientData) {
 
     var patient = patientData.patient;
+    var patientRecommendations = [];
 
-    var timestamp = new Date().toLocaleString('en-US');
-    var patientResults = [];
+    // Convert the string list of prescriptions separated by spaces into an
+    // object with a key for each prescription, this needs to be done
+    // because the current JS adapter cannot read in arrays :(
+    var drugObj = {};
+    var prescriptions;
+    if(patientData.prescriptions)
+      patientData.prescriptions.split(' ').forEach(rx => {drugObj[rx] = true});
 
-    var phenotypePanel = {};
-
-    function postJsonReq(path, data) {
-      return axios({
-        method: 'post',
-        url: host + path,
-        headers: {'Content-Type': 'application/json'},
-        data: data
-      });
-    }
-
-    // Call the first genotype to phenotype ko mapping
-    postJsonReq('/99999/fk4qj7sz2t/v0.0.3/genophenokolist', patientData.diplotype)
-    .then(response => {
-      var gToPMap = response.data.result;
-      var gToPPromises = [];
-      // Create an array of genotype to phenotype request promises
-      Object.keys(gToPMap).forEach(function (key) {
-        if (gToPMap[key] != '')
-          gToPPromises.push(
-              postJsonReq(gToPMap[key] + '/phenotype', patientData.diplotype))
-      });
-      // Use each genotype to phenotype object to get the phenotype panel
-      axios.all(gToPPromises).then((results) => {
-        results.forEach(response => {
-          var phenotype = response.data.result;
-          Object.keys(phenotype).forEach(key => {
-            phenotypePanel[key] = phenotype[key];
-          });
-        });
-      }).then(results => generateDrugRecs())
-      .catch(error => {
-        console.error(error);
-      })
-    }).catch(error => {
-      console.error(error);
-    });
-
-    function generateDrugRecs() {
-      // Convert the string list of prescriptions separated by spaces into an
-      // object with a key for each prescription, this needs to be done
-      // because the current JS adapter cannot read in arrays :(
-      var prescriptions = patientData.prescriptions.split(' ');
-      var rxObj = {};
-      prescriptions.forEach(rx => {rxObj[rx] = true})
-
-      // Get the list of drug recommendation objects
-      postJsonReq('/99999/fk4qj7sz2s/v0.0.3/druglist',
-          rxObj)
-      .then(response => {
-        var drugMap = response.data.result;
-        var drugRecPromises = [];
-        // Create an array of drug recommendation request promises
-        Object.keys(drugMap).forEach(drugKey => {
-          if (drugMap[drugKey] != '' && drugMap[drugKey] != null)
-            drugRecPromises.push(
-                postJsonReq(drugMap[drugKey] + '/dosingrecommendation',
-                    phenotypePanel));
-        });
-
-        // Use each drug recommendation object to get a recommendation
-        axios.all(drugRecPromises).then(results => {
-          results.forEach(response => {
-            var result = response.data.result;
-            patientResults.push(result);
-          });
-        }).then(result => printResults());
-      }).catch(error => {
-        console.error(error);
-      });
-    }
-
-    function printResults() {
-      var patientResult = {
-        "patient": patient,
-        "time": timestamp,
-        "results": patientResults
-      };
-      // Outputs to std out
-      console.log(JSON.stringify(patientResult));
-
-      // fs.writeJsonSync('results.txt', patientResult, {flag: 'a'});
-    }
-
+    // Get genotype to phenotype ko addresses, then generate phenotype panel for patient
+    // then generate drug recommendations, then aggregate the results in an object
+    return postJsonRequest(genophenokolistPath, patientData.diplotype)
+    .then(response => generatePhentotypes(response.data.result, patientData))
+    .then(phenotypePanel => generateDrugRecs(drugObj, phenotypePanel, patientRecommendations))
+    .then(phenotypePanel => aggregateResults(patient, phenotypePanel, patientRecommendations))
+    .catch(error => console.error(error));
+    // Todo: improve flow of above, eliminate global results variable
   });
+
+  // Output results to standard out as an array of patient results
+  Promise.all(promises).then(r => (console.log(JSON.stringify(results))));
 }
 
-function readgeneticpanel(filename) {
+function readGeneticPanelCSV(filename) {
   if (exists(filename)) {
     csvtojson()
     .fromFile('panel.csv')
@@ -121,3 +62,90 @@ function readgeneticpanel(filename) {
     console.error('Cannot find input file ', filename)
   }
 }
+
+function postJsonRequest(path, data) {
+  return axios({
+    method: 'post',
+    url: host + path,
+    headers: {'Content-Type': 'application/json'},
+    data: data
+  });
+}
+
+function aggregateResults(patient, phenotypePanel, patientRecommendations) {
+  if(program.pheno) {
+    patientResult = {
+      "patient": patient,
+      "time": new Date().toLocaleString('en-US'),
+      "phenotypes": phenotypePanel
+    };
+  } else if(program.recs) {
+    patientResult = {
+      "patient": patient,
+      "time": new Date().toLocaleString('en-US'),
+      "recommendations": patientRecommendations
+    };
+  } else {
+    patientResult = {
+      "patient": patient,
+      "time": new Date().toLocaleString('en-US'),
+      "phenotypes": phenotypePanel,
+      "recommendations": patientRecommendations
+    };
+  }
+  results.push(patientResult);
+}
+
+function generatePhentotypes(diplotypeObjectMap, patientData) {
+  var gToPMap = diplotypeObjectMap;
+
+  // Create an array of genotype to phenotype request promises
+  var gToPPromises = Object.keys(gToPMap).map(function (key) {
+    if (gToPMap[key] != '' && gToPMap[key] != null) {
+      var a = postJsonRequest(gToPMap[key] + '/phenotype', patientData.diplotype);
+      return a;
+    }
+  }).filter(element => {return element}); // gets rid of null or undefined elements
+
+  // Use each genotype to phenotype object to get the phenotype panel
+  return axios.all(gToPPromises).then((results) => {
+    var phenotypePanel = {};
+    var ret = results.forEach(response => {
+      var phenotype = response.data.result;
+      Object.keys(phenotype).map(key => {
+        phenotypePanel[key] = phenotype[key];
+      });
+    });
+    return phenotypePanel;
+  })
+  .catch(error => {
+    console.error(error);
+  })
+}
+
+function generateDrugRecs(rxObj, phenotypePanel, patientRecommendations) {
+  // Get the list of drug recommendation objects
+  return postJsonRequest(druglistPath, rxObj)
+  .then(response => {
+    var drugMap = response.data.result;
+    var drugRecPromises = [];
+    // Create an array of drug recommendation request promises
+    Object.keys(drugMap).forEach(drugKey => {
+      if (drugMap[drugKey] != '')
+        drugRecPromises.push(
+            postJsonRequest(drugMap[drugKey] + '/dosingrecommendation',
+                phenotypePanel));
+    });
+    // Use each drug recommendation object to get a recommendation
+    return axios.all(drugRecPromises).then(results => {
+      results.forEach(response => {
+        var result = response.data.result;
+        patientRecommendations.push(result);
+      });
+      return phenotypePanel;
+    })
+  }).catch(error => {
+    console.error(error);
+  });
+}
+
