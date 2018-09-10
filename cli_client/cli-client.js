@@ -66,7 +66,7 @@ function processPatientData (data) {
   });
 
   // Output results to standard out as an array of patient results
-  Promise.all(promises).then(r => (console.log(JSON.stringify(results))));
+  Promise.all(promises).then(r => (console.log(JSON.stringify(results, null, 2))));
 }
 
 function postJsonRequest(path, data) {
