@@ -42,7 +42,6 @@ function readGeneticPanelCSV(filename) {
 }
 
 function processPatientData (data) {
-  //
   var promises = data.map(function (patientData) {
 
     var patient = patientData.patient;
@@ -110,8 +109,7 @@ function generatePhentotypes(diplotypeObjectMap, patientData) {
   // Create an array of genotype to phenotype request promises
   var gToPPromises = Object.keys(gToPMap).map(function (key) {
     if (gToPMap[key] != '' && gToPMap[key] != null) {
-      var a = postJsonRequest(gToPMap[key] + '/phenotype', patientData.diplotype);
-      return a;
+      return postJsonRequest(gToPMap[key] + '/phenotype', patientData.diplotype);
     }
   }).filter(element => {return element}); // gets rid of null or undefined elements
 
