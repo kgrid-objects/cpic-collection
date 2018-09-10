@@ -5,7 +5,7 @@
   "main": "cli-client.js",
   "preferGlobal": true,
   "bin": {
-    "cpic": "./cli-client.js"
+    "cpic": "cli-client.js"
   },
   "author": "Nate Gittlen",
   "license": "",

@@ -8,7 +8,8 @@ const pathNames =
     'package-lock.json',
     'scripts',
     'scriptswin',
-    'web'
+    'web',
+    'cli_client'
   ];
 
 
