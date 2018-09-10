@@ -16,9 +16,9 @@ program
   .description('Use the CPIC toolkit to process panels of patient data')
   .option('-p, --pheno', 'display phenotype results only')
   .option('-r, --recs', 'display recommendation results only')
-  .arguments('<filename> [host]').action((fileArg, hostArg) => {
+  .arguments('<dataFilename> [host]').action((fileArg, hostArg) => {
     filename = fileArg;
-    host = hostArg || 'http://localhost:8080';
+    host = hostArg || 'http://localhost:8082';
   }).on('--help', function() {
     console.log('');
     console.log('Examples:');
@@ -61,7 +61,16 @@ function processPatientData (data) {
     .then(response => generatePhentotypes(response.data.result, patientData))
     .then(phenotypePanel => generateDrugRecs(drugObj, phenotypePanel, patientRecommendations))
     .then(phenotypePanel => aggregateResults(patient, phenotypePanel, patientRecommendations))
-    .catch(error => console.error(error));
+    .catch(error => {
+      if(error.response) {
+        console.error(error.response.data);
+      } else if (error.request) {
+        console.error('Cannot connect to', error.request._currentUrl, 'check the host name or specify a host with $ cpic <dataFilename> [host]');
+        process.exit(1);
+      } else {
+        console.error(error.message);
+      }
+    });
     // Todo: improve flow of above, eliminate global results variable
   });
 
