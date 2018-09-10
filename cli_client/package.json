@@ -1,0 +1,19 @@
+{
+  "name": "cli_client",
+  "version": "1.0.0",
+  "description": "A command-line client to run panels of patient data through the CPIC objects",
+  "main": "cli-client.js",
+  "preferGlobal": true,
+  "bin": {
+    "cpic": "./cli-client.js"
+  },
+  "author": "Nate Gittlen",
+  "license": "",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "commander": "^2.17.1",
+    "csvtojson": "^2.0.8",
+    "fs": "0.0.1-security",
+    "fs-extra": "^7.0.0"
+  }
+}
