@@ -13,11 +13,18 @@ var results = [];
 
 program
   .version('0.1.0')
+  .description('Use the CPIC toolkit to process panels of patient data')
   .option('-p, --pheno', 'display phenotype results only')
   .option('-r, --recs', 'display recommendation results only')
   .arguments('<filename> [host]').action((fileArg, hostArg) => {
     filename = fileArg;
-    host = hostArg || 'http://localhost:8080/';
+    host = hostArg || 'http://localhost:8080';
+  }).on('--help', function() {
+    console.log('');
+    console.log('Examples:');
+    console.log('');
+    console.log('  $ cpic -p panel.csv http://localhost:8081 > results.json');
+    console.log('  $ cpic patient-data.csv https://kgrid-activator.herokuapp.com');
   }).parse(process.argv);
 
 readGeneticPanelCSV(filename);
@@ -73,22 +80,23 @@ function postJsonRequest(path, data) {
 }
 
 function aggregateResults(patient, phenotypePanel, patientRecommendations) {
+  var currentTime = new Date().toLocaleString('en-US');
   if(program.pheno) {
     patientResult = {
       "patient": patient,
-      "time": new Date().toLocaleString('en-US'),
+      "time": currentTime,
       "phenotypes": phenotypePanel
     };
   } else if(program.recs) {
     patientResult = {
       "patient": patient,
-      "time": new Date().toLocaleString('en-US'),
+      "time": currentTime,
       "recommendations": patientRecommendations
     };
   } else {
     patientResult = {
       "patient": patient,
-      "time": new Date().toLocaleString('en-US'),
+      "time": currentTime,
       "phenotypes": phenotypePanel,
       "recommendations": patientRecommendations
     };
