@@ -5,9 +5,9 @@ const unzip = require("unzip");
 
 console.log("Load KGrid Assets");
 
-let urls = Object.values(pkg.githubAssets);
-let requests = urls.map(
-    url => download.downloadAssets(url, "dist"));
+let assests = Object.values(pkg.githubAssets);
+let requests = assests.map(
+    assest => download.downloadAssets(assest.url, assest.destination));
 
 Promise.all(requests).then(function (values) {
 
@@ -21,7 +21,7 @@ Promise.all(requests).then(function (values) {
   for (var i = 0; i < values.length; i++) {
 
     if (values[i].startsWith("kgrid-activator")) {
-      fs.move('dist/' + values[i], 'activator/kgrid-activator.jar',
+      fs.move('activator/' + values[i], 'activator/kgrid-activator.jar',
           function (err) {
             if (err) {
               return console.error(err)
@@ -29,12 +29,14 @@ Promise.all(requests).then(function (values) {
           })
     }
     if (values[i].startsWith("kgrid-library")) {
-      fs.move('dist/' + values[i], 'library/kgrid-library.jar', function (err) {
+      fs.move('library/' + values[i], 'library/kgrid-library.jar', function (err) {
         if (err) {
           return console.error(err)
         }
       })
     }
   }
+
+
 
 });

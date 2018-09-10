@@ -33,7 +33,7 @@ module.exports = {
             } else {
               console.log("Downloading " + filename);
               download(download_url, location, "{'extract':true}").then(() => {
-                console.log(filename + ' downloaded!');
+                console.log(filename + ' downloaded to '+location);
                 resolve(filename);
               });
             }

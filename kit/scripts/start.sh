@@ -12,4 +12,6 @@ echo "Waiting....."
 while [[ "$(curl -s -o /dev/null -w ''%{http_code}'' localhost:8081)" != "200" ]]; do sleep 5; done
 while [[ "$(curl -s -o /dev/null -w ''%{http_code}'' localhost:8082)" != "200" ]]; do sleep 5; done
 
+cd web &&  ../node_modules/http-server/bin/http-server -o  &>/dev/null &
+
 echo "KGrid CPIC Kit is running"
