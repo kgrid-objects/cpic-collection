@@ -1,16 +1,22 @@
 const AdmZip  = require('adm-zip');
-const stat = require('fs').statSync;
+const fs = require('fs');
 
 const zip = new AdmZip();
 const pathNames =
   [
     'package.json',
     'package-lock.json',
-    'scripts'
+    'scripts',
+    'web'
   ];
 
+
+if (!fs.existsSync('dist')){
+  fs.mkdirSync('dist');
+}
+
 pathNames.forEach(path => {
-  const p = stat(path);
+  const p = fs.statSync(path);
   if (p.isFile()) {
     zip.addLocalFile(path);
   } else if (p.isDirectory()) {
@@ -18,4 +24,4 @@ pathNames.forEach(path => {
   }
 });
 
-zip.writeZip("cpic-kit.zip");
+zip.writeZip("dist/cpic-kit.zip");
