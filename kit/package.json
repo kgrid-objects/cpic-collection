@@ -4,7 +4,7 @@
   "description": "CPIC KGrid Kit",
   "main": " ",
   "scripts": {
-    "postinstall": "chmod +x scripts/* && node scripts/clean.js && node scripts/kgridInstall.js",
+    "postinstall": "node scripts/clean.js && node scripts/kgridInstall.js",
     "clean": "node scripts/clean.js",
     "start": "scripty",
     "stop": "scripty",

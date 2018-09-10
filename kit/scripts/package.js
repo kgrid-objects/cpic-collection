@@ -7,6 +7,7 @@ const pathNames =
     'package.json',
     'package-lock.json',
     'scripts',
+    'scriptswin',
     'web'
   ];
 
