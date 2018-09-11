@@ -1,4 +1,0 @@
-patient.name, patient.id, diplotype.CFTR, diplotype.CYP2C19, diplotype.CYP2C9, diplotype.CYP2D6, diplotype.CYP3A5, diplotype.CYP4F2, diplotype.DPYD, diplotype.G6PD, diplotype.HLA-A, diplotype.HLA-B, diplotype.IFNL3, diplotype.SLCO1B1, diplotype.TPMT, diplotype.UGT1A1, diplotype.VKORC1, prescriptions
-Hank Hill,0001, , *1/*11,, *3/*3,,,,,,,,,,*1/*1,,atazanavir codeine
-Hank Green,0002,,*1/*7,*3/*3,*3/*4,,,,,,,,,,,,escitalopram clopidogrel
-Hank Aaron,0003,,*1/*1,*1/*1,*3/*3,,,,,,,,,,,,clopidogrel
