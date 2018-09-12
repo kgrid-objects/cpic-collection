@@ -2,12 +2,13 @@ function dosingrecommendation (inputs) {
   try {
     var phenotype = inputs[gene] || ''
     if (phenotype!='') {
-      if(recommendations[phenotype]!=null){
-        recommendation["phenotypes"][gene] = phenotype
-        recommendation.implication.value=recommendations[phenotype].implication
-        recommendation.recommendation.value=recommendations[phenotype].recommendation
-        recommendation.classification.value=recommendations[phenotype].classification
-        return recommendation
+      var searchKey = gene+' '+phenotype
+      if(recommendations[searchKey]!=null){
+        output["phenotypes"][gene] = phenotype
+        output.recommendation.implication=recommendations[searchKey].implication
+        output.recommendation.content=recommendations[searchKey].recommendation
+        output.recommendation.classification=recommendations[searchKey].classification
+        return output
       } else {
         return "Incorrect/invalid input for phenotype."
       }
@@ -23,20 +24,19 @@ function dosingrecommendation (inputs) {
 var gene = 'CYP2D6'
 var drug = 'Codeine'
 // # Dictionary containing Phenotype to Recommendation Information
-var recommendation =   { "drug":"codeine","phenotypes":{"CYP2D6":""}, "implication":{"label":"Implications for phenotypic measures","value":""},  "recommendation":{"label":"Dosing recommendations","value":""}, "classification":{"label":"Classification of recommendations","value":""}
-  }
+var output =   { "type":"CPIC Recommendation","drug":"codeine","phenotypes":{"CYP2D6":""}, "recommendation":{"classification":"",  "content":"","implication":""}}
 
 var recommendations = {
-  'Ultrarapid metabolizer': {'implication': 'Increased formation of morphine following codeine administration, leading to higher risk of toxicity',
-          'recommendation': 'Avoid codeine use due to potential for toxicity.',
+  'CYP2D6 Ultrarapid metabolizer': {'implication': 'Increased formation of morphine following codeine administration, leading to higher risk of toxicity',
+          'recommendation': 'Avoid codeine use due to potential for toxicity. Alternatives that are not affected by this CYP2D6 phenotype include morphine and nonopioid analgesics. Tramadol and, to a lesser extent, hydrocodone and oxycodone are not good alternatives because their metabolism is affected by CYP2D6 activity',
           'classification': 'Strong'},
-  'Normal metabolizer': {'implication': 'Normal morphine formation',
+  'CYP2D6 Normal metabolizer': {'implication': 'Normal morphine formation',
           'recommendation': 'Use label-recommended age- or weight-specific dosing.',
           'classification': 'Strong'},
-  'Intermediate metabolizer': {'implication': 'Reduced morphine formation',
-          'recommendation': 'Use label-recommended age- or weight-specific dosing. If no response, consider alternative analgesics such as morphine or a nonopioid.',
+  'CYP2D6 Intermediate metabolizer': {'implication': 'Reduced morphine formation',
+          'recommendation': 'Use label-recommended age- or weight-specific dosing. If no response, consider alternative analgesics such as morphine or a nonopioid. Monitor tramadol use for response.',
           'classification': 'Moderate'},
-  'Poor metabolizer': {'implication': 'Greatly reduced morphine formation following codeine administration, leading to insufficient pain relief',
-          'recommendation': 'Avoid codeine use due to lack of efficacy.',
+  'CYP2D6 Poor metabolizer': {'implication': 'Greatly reduced morphine formation following codeine administration, leading to insufficient pain relief. ',
+          'recommendation': 'Avoid codeine use due to lack of efficacy. Alternatives that are not affected by this CYP2D6 phenotype include morphine and nonopioid analgesics. Tramadol and, to a lesser extent, hydrocodone and oxycodone are not good alternatives because their metabolism is affected by CYP2D6 activity; these agents should be avoided',
           'classification': 'Strong'}
         }
