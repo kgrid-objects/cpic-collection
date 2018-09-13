@@ -51,7 +51,42 @@ components:
       properties:
         result:
           type: object
-          example: {"Codeine":{}}
+          required:
+            - type
+            - drug
+            - phenotype
+            - recommendation
+          properties:
+            type:
+              type: string
+              example: 'CPIC Recommendation'
+            drug:
+              type: string
+              example: 'codeine'
+            phenotype:
+              type: object
+              required:
+                - CYP2D6
+              properties:
+                CYP2D6:
+                  type: string
+                  example: 'Normal metabolizer'
+            recommendation:
+              type: object
+              required:
+                - implication
+                - content
+                - classification
+              properties:
+                implication:
+                  type: string
+                  example: ''
+                content:
+                  type: string
+                  example: ''
+                classification:
+                  type: string
+                  example: ''
     Error:
       required:
         - code
