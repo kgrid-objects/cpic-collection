@@ -35,7 +35,7 @@ function processFile(inputFile,c1,c2) {
       var line1 = lineArr[c1]
 
 
-      var line2 = lineArr[c2].replace('CYP2D6 Poor Metabolizer','2').replace('CYP2D6 Intermediate Metabolizer','4').replace('CYP2D6 Normal Metabolizer','5').replace('CYP2D6 Ultrarapid Metabolizer','7').replace('Indeterminate','4')
+      var line2 = lineArr[c2].replace('CYP2D6 Poor Metabolizer','2').replace('CYP2D6 Intermediate Metabolizer','4').replace('CYP2D6 Normal Metabolizer','5').replace('CYP2D6 Ultrarapid Metabolizer','7').replace('Indeterminate','0')
 
        list[line1]= line2
        delete list['CYP2D6 Diplotype']
@@ -92,7 +92,7 @@ fsextra.writeFile("payload.js", "\n" + ""
     if(err) {
         return console.log(err);
     }
-   
+
     console.log("The file was saved!");
 })
 
