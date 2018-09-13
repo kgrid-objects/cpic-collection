@@ -47,7 +47,7 @@ var phenotypes = {'UGT1A1':''}
 var drug = 'Atazanavir'
 var keymap = {"ugt1a1normal":'UGT1A1 Normal metabolizer',"ugt1a1intermediate":"UGT1A1 Intermediate metabolizer","ugt1a1poor":"UGT1A1 Poor metabolizer"}
 // # Dictionary containing Phenotype to Recommendation Information
-var output =   { "type":"CPIC Recommendation","drug":"codeine","phenotypes":{"UGT1A1":""}, "recommendation":{"classification":"",  "content":"","implication":""}}
+var output =   { "type":"CPIC Recommendation","drug":"atazanavir","phenotypes":{"UGT1A1":""}, "recommendation":{"classification":"",  "content":"","implication":""}}
 
 var recommendations = {
   'ugt1a1normal': {'implication': 'Reference UGT1A1 activity; very low likelihood of bilirubin-related discontinuation of atazanavir.',
