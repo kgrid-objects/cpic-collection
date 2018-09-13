@@ -9,7 +9,7 @@ var dosingrecommendation = javascript.__get__("dosingrecommendation");
 
 
 var testset = [
-  {"input":{"CYP2D6": "Ultrarapid metabolizer"},"output":"Implications for phenotypic measures" },
+  {"input":{"CYP2D6": "ultrarapid metabolizer"},"output":"Implications for phenotypic measures" },
   {"input":{"CYP2D6": "Normal metabolizer"},"output":"Implications for phenotypic measures" },
   {"input":{"CYP2D6": "Intermediate metabolizer"},"output":"Dosing recommendations" },
   {"input":{"CYP2D6": "Poor metabolizer"},"output":"Classification of recommendations" }

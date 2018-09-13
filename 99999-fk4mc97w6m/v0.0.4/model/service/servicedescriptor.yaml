@@ -65,10 +65,28 @@ components:
               example: 'codeine'
             phenotype:
               type: object
-              example: {"CYP2D6":"Normal metabolizer"}
+              required:
+                - CYP2D6
+              properties:
+                CYP2D6:
+                  type: string
+                  example: 'Normal metabolizer'
             recommendation:
               type: object
-              example: {"implication":"","recommendation":"","classification":""}
+              required:
+                - implication
+                - content
+                - classification
+              properties:
+                implication:
+                  type: string
+                  example: ''
+                content:
+                  type: string
+                  example: ''
+                classification:
+                  type: string
+                  example: ''
     Error:
       required:
         - code
