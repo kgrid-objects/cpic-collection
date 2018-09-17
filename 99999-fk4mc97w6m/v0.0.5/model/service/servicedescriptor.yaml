@@ -1,14 +1,14 @@
 openapi: 3.0.0
 info:
   version: 1.0.0
-  title: 'CPIC CYP2C19 citalopram and escitalopram recommendations'
-  description: 'CPIC recommendations for citalopram and escitalopram based on CYP2C19 phenotype'
+  title: 'CPIC CYP2D6 Codeine Recommendations'
+  description: 'KGrid CPIC guidelines CYP2D6 Phenotype to Recommendation'
 servers:
-  - url: '/99999/fk4d22836k/v0.0.5/'
-    description: 'CPIC recommendations for citalopram and escitalopram based on CYP2C19 phenotype'
+  - url: '/99999/fk4mc97w6m/v0.0.5/'
+    description: 'KGrid CPIC guidelines CYP2D6 Phenotype to Recommendation'
 tags:
   - name: KO Endpoints
-    description: KGrid CPIC guidelines CYP2C19 Phenotype to Recommendation Endpoints
+    description: KGrid CPIC guidelines CYP2D6 Phenotype to Recommendation Endpoints
 paths:
   /dosingrecommendation:
     post:
@@ -40,35 +40,35 @@ components:
   schemas:
     phenotype:
       required:
-        - CYP2C19
+        - CYP2D6
       properties:
-        CYP2C19:
+        CYP2D6:
           type: string
           example: 'Normal metabolizer'
     dosingrecommendation:
       required:
-      - result
+        - result
       properties:
         result:
           type: object
           required:
-          - type
-          - drug
-          - phenotype
-          - recommendation
+            - type
+            - drug
+            - phenotype
+            - recommendation
           properties:
             type:
               type: string
               example: 'CPIC Recommendation'
             drug:
               type: string
-              example: 'citalopram and escitalopram'
+              example: 'codeine'
             genes:
               type: object
               required:
-              - CYPC219
+              - CYP2D6
               properties:
-                CYPC219:
+                CYP2D6:
                   type: object
                   required:
                   - diplotype
@@ -83,9 +83,9 @@ components:
             recommendation:
               type: object
               required:
-              - implication
-              - content
-              - classification
+                - implication
+                - content
+                - classification
               properties:
                 implication:
                   type: string
