@@ -51,16 +51,16 @@ components:
       properties:
         CYP2D6:
           type: object
-            required:
+          required:
             - diplotype
             - phenotype
-            properties:
-              diplotype:
-                type: string
-                example: '*1/*1'
-              phenotype:
-                type: string
-                example: 'Normal metabolizer'
+          properties:
+            diplotype:
+              type: string
+              example: '*1/*1'
+            phenotype:
+              type: string
+              example: 'Normal metabolizer'
     Error:
       required:
         - code
