@@ -1,14 +1,14 @@
 openapi: 3.0.0
 info:
   version: 1.0.0
-  title: 'CPIC CYP2C19 Clopidogrel recommendations'
-  description: 'CPIC recommendations for Clopidogrel based on CYP2C19 phenotype'
+  title: 'CPIC - Atazanavir Guideline for UGT1A1'
+  description: 'CPIC guidelines UGT1A1 Phenotype to Recommendation'
 servers:
-  - url: '/99999/fk4bz6hp15/v0.0.5/'
-    description: 'CPIC recommendations for Clopidogrel based on CYP2C19 phenotype'
+  - url: '/99999/fk4d79nq4z/v0.0.5/'
+    description: 'CPIC guidelines UGT1A1 Phenotype to Recommendation'
 tags:
   - name: KO Endpoints
-    description: KGrid CPIC guidelines CYP2C19 Phenotype to Recommendation Endpoints
+    description: KGrid CPIC guidelines UGT1A1 Phenotype to Recommendation Endpoints
 paths:
   /dosingrecommendation:
     post:
@@ -22,7 +22,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/phenotype'
+              $ref: '#/components/schemas/genes'
       responses:
         '200':
           description: response
@@ -38,13 +38,23 @@ paths:
                 $ref: '#/components/schemas/Error'
 components:
   schemas:
-    phenotype:
+    genes:
       required:
-        - CYP2C19
+      - UGT1A1
       properties:
-        CYP2C19:
-          type: string
-          example: 'Poor metabolizer'
+        UGT1A1:
+          type: object
+          required:
+            - diplotype
+            - phenotype
+          properties:
+            diplotype:
+              type: string
+              example: '*1/*1'
+            phenotype:
+              type: string
+              example: 'Normal metabolizer'
+          example: 'Normal metabolizer'
     dosingrecommendation:
       required:
       - result
@@ -62,13 +72,13 @@ components:
               example: 'CPIC Recommendation'
             drug:
               type: string
-              example: 'codeine'
+              example: 'atazanavir'
             genes:
               type: object
               required:
-              - CYP2C19
+              - UGT1A1
               properties:
-                CYP2D6:
+                UGT1A1:
                   type: object
                   required:
                   - diplotype
@@ -79,7 +89,7 @@ components:
                       example: '*1/*1'
                     phenotype:
                       type: string
-                      example: 'ultrarapid metabolizer'
+                      example: 'normal metabolizer'
             recommendation:
               type: object
               required:
