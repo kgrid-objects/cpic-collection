@@ -4,13 +4,13 @@ function phenotype (inputs) {
   var diplotype = inputs[gene]
   try {
     var index = list[diplotype]
+    output[gene].diplotype = diplotype
     if (index == null) {
       output[gene].phenotype = 'Unknown'
     } else {
       if (index == 0) {
         output[gene].phenotype = dict[0]
       } else {
-        output[gene].diplotype = diplotype
         output[gene].phenotype = dict[index] + ' metabolizer'
       }
     }
