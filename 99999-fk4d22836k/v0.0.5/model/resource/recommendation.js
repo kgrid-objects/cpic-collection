@@ -45,10 +45,10 @@ function dosingrecommendation (inputs) {
 
 // KGrid CPIC guidelines CYP2C19 Phenotype to citalopram and escitalopram Recommendation
 var genes = {'CYP2C19':{}}
-var drug = 'Citalopram and Escitalopram'
+var drug = 'citalopram'
 var keymap = {'cyp2c19ultrarapid':'CYP2C19 Ultrarapid metabolizer',"cyp2c19normal":'CYP2C19 Normal metabolizer',"cyp2c19intermediate":"CYP2C19 Intermediate metabolizer","cyp2c19poor":"CYP2C19 Poor metabolizer"}
 // # Dictionary containing Phenotype to Recommendation Information
-var output =   { "type":"CPIC Recommendation","drug":"Citalopram and Escitalopram","genes":{"CYP2C19":""}, "recommendation":{"classification":"",  "content":"","implication":""}}
+var output =   { "type":"CPIC Recommendation","drug":"citalopram","genes":{"CYP2C19":""}, "recommendation":{"classification":"",  "content":"","implication":""}}
 
 var recommendations = {
   'cyp2c19ultrarapid': {'implication': 'Increased metabolism when compared to extensive metabolizers. Lower plasma concentrations will increase probability of pharmacotherapy failure.',
