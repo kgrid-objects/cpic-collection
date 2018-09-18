@@ -9,6 +9,9 @@ function dosingrecommendation (inputs) {
     }
     for(var genekey in genes){
       key = genekey.toLowerCase()
+      if(!lowercaseInput[key]) {
+        break
+      }
       genes[genekey].diplotype = lowercaseInput[key].diplotype || ''
       genes[genekey].phenotype = lowercaseInput[key].phenotype || ''
       genes[genekey].phenotype = genes[genekey].phenotype.toLowerCase()
@@ -33,7 +36,7 @@ function dosingrecommendation (inputs) {
         output.recommendation.classification=recommendations[searchKey].classification
         return output
       } else {
-        return "Incorrect/invalid input for phenotype."
+        return "Incorrect/invalid input for drug " + drug
       }
     }else {
       return "Incorrect/invalid input."
