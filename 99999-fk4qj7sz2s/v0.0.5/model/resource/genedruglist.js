@@ -9,6 +9,7 @@
 //     "simvastatin":{"SLCO1B1":""}
 //   }
 var drugkolist = {
+  'abacavir': '/99999/fk45m7fn9t/v0.0.1',
   'isoflurane': '',
   'atazanavir': '/99999/fk4d79nq4z/v0.0.5',
   'citalopram': '/99999/fk4d22836k/v0.0.5',

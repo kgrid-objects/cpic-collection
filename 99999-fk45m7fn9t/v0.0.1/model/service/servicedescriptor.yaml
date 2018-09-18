@@ -1,14 +1,14 @@
 openapi: 3.0.0
 info:
   version: 1.0.0
-  title: 'CPIC CYP2C19 Clopidogrel recommendations'
-  description: 'CPIC recommendations for Clopidogrel based on CYP2C19 phenotype'
+  title: 'CPIC HLA-B abacavir recommendations'
+  description: 'CPIC recommendations for abacavir based on HLA-B phenotype'
 servers:
-  - url: '/99999/fk4bz6hp15/v0.0.5/'
-    description: 'CPIC recommendations for Clopidogrel based on CYP2C19 phenotype'
+  - url: '/99999/fk45m7fn9t/v0.0.1/'
+    description: 'CPIC recommendations for abacavir based on HLA-B phenotype'
 tags:
   - name: KO Endpoints
-    description: KGrid CPIC guidelines CYP2C19 Phenotype to Recommendation Endpoints
+    description: KGrid CPIC guidelines HLA-B Phenotype to Recommendation Endpoints
 paths:
   /dosingrecommendation:
     post:
@@ -40,9 +40,9 @@ components:
   schemas:
     phenotype:
       required:
-        - CYP2C19
+        - HLA-B
       properties:
-        CYP2D6:
+        HLA-B:
           type: object
           required:
           - diplotype
@@ -71,13 +71,13 @@ components:
               example: 'CPIC Recommendation'
             drug:
               type: string
-              example: 'codeine'
+              example: 'abacavir'
             genes:
               type: object
               required:
-              - CYP2C19
+              - HLA-B
               properties:
-                CYP2D6:
+                HLA-B:
                   type: object
                   required:
                   - diplotype
