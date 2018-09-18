@@ -44,16 +44,16 @@ components:
       properties:
         CYP2D6:
           type: object
-            required:
-            - diplotype
-            - phenotype
-            properties:
-              diplotype:
-                type: string
-                example: '*3/*3'
-              phenotype:
-                type: string
-                example: 'Poor metabolizer'
+          required:
+          - diplotype
+          - phenotype
+          properties:
+            diplotype:
+              type: string
+              example: '*3/*3'
+            phenotype:
+              type: string
+              example: 'Poor metabolizer'
     dosingrecommendation:
       required:
         - result
