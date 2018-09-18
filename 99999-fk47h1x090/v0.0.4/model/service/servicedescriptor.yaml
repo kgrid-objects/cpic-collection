@@ -61,7 +61,6 @@ components:
             phenotype:
               type: string
               example: 'Normal metabolizer'
-          example: 'Normal metabolizer'
     Error:
       required:
         - code
