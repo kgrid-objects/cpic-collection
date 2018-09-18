@@ -14,7 +14,7 @@ var drugkolist = {
   'citalopram': '/99999/fk4d22836k/v0.0.5',
   'clopidogrel': '/99999/fk4bz6hp15/v0.0.5',
   'codeine': '/99999/fk4mc97w6m/v0.0.5',
-  'escitalopram': '/99999/fk4d22836k/v0.0.5',
+  'escitalopram': '/99999/fk4d22836l/v0.0.5',
   'phenytoin': '',
   'simvastatin': ''
 }

@@ -43,23 +43,23 @@ function dosingrecommendation (inputs) {
   }
 }
 
-// KGrid CPIC guidelines CYP2C19 Phenotype to Clopidogrel Recommendation
+// KGrid CPIC guidelines CYP2C19 Phenotype to citalopram and escitalopram Recommendation
 var genes = {'CYP2C19':{}}
-var drug = 'clopidogrel'
+var drug = 'escitalopram'
 var keymap = {'cyp2c19ultrarapid':'CYP2C19 Ultrarapid metabolizer',"cyp2c19normal":'CYP2C19 Normal metabolizer',"cyp2c19intermediate":"CYP2C19 Intermediate metabolizer","cyp2c19poor":"CYP2C19 Poor metabolizer"}
 // # Dictionary containing Phenotype to Recommendation Information
-var output =   { "type":"CPIC Recommendation","drug":"clopidogrel","genes":{"CYP2C19":""}, "recommendation":{"classification":"",  "content":"","implication":""}}
+var output =   { "type":"CPIC Recommendation","drug":"escitalopram","genes":{"CYP2C19":""}, "recommendation":{"classification":"",  "content":"","implication":""}}
 
 var recommendations = {
-  'cyp2c19ultrarapid': {'implication': 'Normal (EM) or increased (UM) platelet inhibition; normal (EM) or decreased (UM) residual platelet aggregation.',
-          'recommendation': 'Clopidogrel: label-recommended dosage and administration',
-          'classification': 'Strong'},
-  'cyp2c19normal': {'implication': 'Normal (EM) or increased (UM) platelet inhibition; normal (EM) or decreased (UM) residual platelet aggregation.',
-                  'recommendation': 'Clopidogrel: label-recommended dosage and administration',
-                  'classification': 'Strong'},
-  'cyp2c19intermediate': {'implication': 'Reduced platelet inhibition; increased residual platelet aggregation; increased risk for adverse cardiovascular events.',
-          'recommendation': 'Alternative antiplatelet therapy (if no contraindication), e.g., prasugrel, ticagrelor.',
+  'cyp2c19ultrarapid': {'implication': 'Increased metabolism when compared to extensive metabolizers. Lower plasma concentrations will increase probability of pharmacotherapy failure.',
+          'recommendation': 'Consider an alternative drug not predominantly metabolized by CYP2C19.',
           'classification': 'Moderate'},
-  'cyp2c19poor': {'implication': 'Significantly reduced platelet inhibition; increased residual platelet aggregation; increased risk for adverse cardiovascular events.',
-          'recommendation': 'Alternative antiplatelet therapy (if no contraindication), e.g., prasugrel, ticagrelor.',
-          'classification': 'Strong'}}
+  'cyp2c19normal': {'implication': 'Normal metabolism',
+          'recommendation': 'Initiate therapy with recommended starting dose.',
+          'classification': 'Strong'},
+  'cyp2c19intermediate': {'implication': 'Reduced metabolism when compared to extensive metabolizers.',
+          'recommendation': 'Initiate therapy with recommended starting dose.',
+          'classification': 'Strong'},
+  'cyp2c19poor': {'implication': 'Greatly reduced metabolism when compared to extensive metabolizers. Higher plasma concentrations may increase the probability of side effects.',
+          'recommendation': 'Consider a 50% reduction of recommended starting dose and titrate to response or select alternative drug not predominantly metabolized by CYP2C19',
+          'classification': 'Moderate'}}
