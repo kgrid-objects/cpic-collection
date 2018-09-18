@@ -33,12 +33,17 @@ Tests
 ### CPIC KO Descriptions
 
 #### Genotype to Phenotype 
-##### CYP2D6 Genotype to Phenotype 
-description
-links to demo library and activator, swagger
+
+**CYP2D6 Genotype to Phenotype**
+
+* [Demo Activator](https://activator.kgrid.org/99999/fk4mc97w6m)
+* Demo Swagger UI
+
 
 #### Drug Recommendation 
-##### CYP2D6 Phenotype to Codeine Recommendation
+
+**CYP2D6 Phenotype to Codeine Recommendation**
+
 description
 links to demo library and activator, swagger
 
