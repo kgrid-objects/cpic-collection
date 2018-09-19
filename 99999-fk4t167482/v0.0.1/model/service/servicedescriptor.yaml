@@ -4,7 +4,7 @@ info:
   title: 'CPIC amitriptyline Recommendations based on CYP2C19 and CYP2D6 phenotypes'
   description: 'KGrid CPIC guidelines CYP2C19 and CYP2D6 Phenotypes to amitriptyline Recommendation'
 servers:
-  - url: '/99999/amitriptyline/v0.0.1/'
+  - url: '/99999/fk4t167482/v0.0.1/'
     description: 'KGrid CPIC guidelines CYP2C19 and CYP2D6 Phenotypes to amitriptyline Recommendation'
 tags:
   - name: KO Endpoints
