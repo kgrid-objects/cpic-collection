@@ -1,34 +1,41 @@
 function dosingrecommendation (inputs) {
   try {
-    var phenotypesReady = true
+    var genes = {}
+    var output = {}
+    var searchkeyReady = true
     var phenotypesValue = ''
     var lowercaseInput = {}
     var searchKey = ''
+    var targetfield =''
     for(var inputkey in inputs){
       var key = inputkey.toLowerCase()
       lowercaseInput[key]=inputs[inputkey]
     }
-    for(var genekey in genes){
+    for(var genekey in base) {
       key = genekey.toLowerCase()
       if(!lowercaseInput[key]) {
         break
       }
+      genes[genekey]={}
       genes[genekey].diplotype = lowercaseInput[key].diplotype || ''
       genes[genekey].phenotype = lowercaseInput[key].phenotype || ''
       genes[genekey].phenotype = genes[genekey].phenotype.toLowerCase()
-      phenotypesReady = phenotypesReady && (genes[genekey].phenotype!='')
-      if(phenotypesValue!=''){
-        phenotypesValue = phenotypesValue+' '
-      }
-      phenotypesValue =phenotypesValue + genekey+ " "+genes[genekey].phenotype
-    }
-    if (phenotypesReady) {
-      for( var key in keymap){
-        if(keymap[key].toLowerCase()==phenotypesValue.toLowerCase()){
-          searchKey = key
-          break
+      targetfield = base[genekey].field
+      searchkeyReady = searchkeyReady && (genes[genekey][targetfield]!='')
+      if(targetfield=='diplotype'){
+        if (genes[genekey].diplotype.indexOf(base[genekey].value) != -1) {
+          searchKey = searchKey+genekey.toLowerCase()+base[genekey].value+keysuffix[genekey].positive
+        } else {
+          searchKey = searchKey+ genekey.toLowerCase()+base[genekey].value+keysuffix[genekey].negative
         }
       }
+      if(targetfield=='phenotype'){
+        if (genes[genekey].phenotype != "") {
+          searchKey = searchKey+genekey.toLowerCase()+genes[genekey].phenotype.replace('metabolizer','').replace(' ','')
+        }
+      }
+    }
+    if (searchkeyReady) {
       if(recommendations[searchKey]!=null){
         output.type='CPIC Recommendation'
         output.drug=drug
@@ -48,14 +55,9 @@ function dosingrecommendation (inputs) {
     return 'Error: '+ error
   }
 }
-
 // KGrid CPIC guidelines CYP2D6 Phenotype to Codeine Recommendation
-var genes = {'CYP2D6':{}}
 var drug = 'tropisetron'
-var keymap = {'cyp2d6ultrarapid':'CYP2D6 Ultrarapid metabolizer',"cyp2d6normal":'CYP2D6 Normal metabolizer',"cyp2d6intermediate":"CYP2D6 Intermediate metabolizer","cyp2d6poor":"CYP2D6 Poor metabolizer"}
-// # Dictionary containing Phenotype to Recommendation Information
-var output =   {}
-
+var base = {'CYP2D6':{field:'phenotype', value:''}}
 var recommendations = {
   'cyp2d6ultrarapid': {'implication': 'Increased metabolism to less active compounds when compared to NMs and is associated with decreased response to ondansetron and tropisetron (i.e., vomiting)',
           'recommendation': 'Select alternative drug not predominantly metabolized by CYP2D6 (i.e., granisetron). Dolasetron, palonosetron, and ramosetron are also metabolized by CYP2D6. Limited evidence is available regarding the utilization of CYP2D6 genetic variation to guide use of these drugs.',

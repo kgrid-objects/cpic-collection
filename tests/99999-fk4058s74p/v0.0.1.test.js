@@ -38,7 +38,7 @@ describe('99999-fk4058s74p v0.0.1', function () {
 
     it('missing diplotype', function(){
       var result = dosingrecommendation({"HLA-B":{ "phenotype":""}})
-      assert.equal('Incorrect/invalid input for drug allopurinol', result);
+      assert.equal('Incorrect/invalid input.', result);
     })
 
     it('no input', function(){
