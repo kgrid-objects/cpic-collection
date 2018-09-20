@@ -14,6 +14,8 @@ function dosingrecommendation (inputs) {
         break
       }
       genes[genekey].diplotype = lowercaseInput[key].diplotype || ''
+      genes[genekey].phenotype = lowercaseInput[key].phenotype || ''
+      genes[genekey].phenotype = genes[genekey].phenotype.toLowerCase()
       if (genes[genekey].diplotype.indexOf(allele) != -1) {
         searchKey = genekey.toLowerCase()+allele+keysuffix.positive
       } else if (genes[genekey].diplotype === '') {

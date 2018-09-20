@@ -27,7 +27,7 @@ var drugkolist = {
   'ivacaftor':'',
   'mercaptopurine':'',
   'nortriptyline':'',
-  'ondansetron':'',
+  'ondansetron':'/99999/fk4c83hw23/v0.0.1',
   'oxcarbazepine':'/99999/fk4qc17m5z/v0.0.1',
   'paroxetine':'',
   'peginterferon alfa-2a':'',
@@ -41,7 +41,7 @@ var drugkolist = {
   'tamoxifen':'',
   'thioguanine':'',
   'trimipramine':'',
-  'tropisetron':'',
+  'tropisetron':'/99999/fk4fn2d721/v0.0.1',
   'voriconazole':''
 }
   // var genedruglist={
