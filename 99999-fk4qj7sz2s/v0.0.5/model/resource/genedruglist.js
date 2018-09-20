@@ -28,7 +28,7 @@ var drugkolist = {
   'mercaptopurine':'',
   'nortriptyline':'',
   'ondansetron':'',
-  'oxcarbazepine':'',
+  'oxcarbazepine':'/99999/fk4qc17m5z/v0.0.1',
   'paroxetine':'',
   'peginterferon alfa-2a':'',
   'peginterferon alfa-2b':'',

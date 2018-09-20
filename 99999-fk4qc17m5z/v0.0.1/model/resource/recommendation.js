@@ -41,17 +41,18 @@ function dosingrecommendation (inputs) {
 
 // KGrid CPIC guidelines HLA-B gene to abacavir Recommendation
 var genes = {'HLA-B':{}}
-var drug = 'allopurinol'
-var allele = '58:01'
-var keysuffix= {negative:'noncarrier', positive:'carrier'}
+var drug = 'oxcarbazepine'
+var allele = '15:02'
+var keysuffix= {negative:'negative', positive:'positive'}
 // var keymap = {'hla-b57:01noncarrier':'negative',"hla-b57:01carrier":'positive'}
 // # Dictionary containing Phenotype to Recommendation Information
-// var output =   { "type":"CPIC Recommendation","drug":"allopurinol","genes":{"HLA-B":{}}, "recommendation":{"classification":"",  "content":"","implication":""}}
+// var output =   { "type":"CPIC Recommendation","drug":"oxcarbazepine","genes":{"HLA-B":{}}, "recommendation":{"classification":"",  "content":"","implication":""}}
 var output =   {}
+
 var recommendations = {
-  'hla-b58:01noncarrier': {'implication': 'Low or reduced risk of allopurinol-induced SCAR',
-          'recommendation': 'Use allopurinol per standard dosing guidelines',
+  'hla-b15:02negative': {'implication': 'Normal risk of oxcarbazepineinduced SJS/TEN',
+          'recommendation': 'Use oxcarbazepine per standard dosing guidelines.',
           'classification': 'Strong'},
-  'hla-b58:01carrier': {'implication': 'Significantly increased risk of allopurinol-induced SCAR',
-                  'recommendation': 'Allopurinol is contraindicated',
-                  'classification': 'Strong'}}
+  'hla-b15:02positive': {'implication': ' Greater risk of oxcarbazepineinduced SJS/TEN',
+                  'recommendation': 'Strong: If patient is oxcarbazepine naıve, do not use oxcarbazepine.  Optional: The latency period for druginduced SJS/TEN is short with continuous dosing and adherence to therapy (4-28 days), and cases usually occur within three months of dosing; therefore, if the patient has previously used oxcarbazepine consistently for longer than three months without incidence of cutaneous adverse reactions, cautiously consider use of oxcarbazepine in the future.',
+                  'classification': 'Strong/Optional'}}
