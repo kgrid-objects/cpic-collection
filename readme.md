@@ -40,13 +40,41 @@ Tests
 
 #### Drug Recommendation 
 
-**CYP2D6 Phenotype to Codeine Recommendation**
+Atazanavir based on UGT1A1 and phenotype fk4d79nq4z
 
-description
-links to demo library and activator, swagger
+Allopurinol based on HLA-B and phenotype fk4058s74p
+
+Abacavir based on HLA-B and phenotype fk45m7fn9t
+
+Clopidogrel based on CYP2C19 and phenotype fk4bz6hp15
+
+Ondansetron based on CYP2D6 and phenotype fk4c83hw23
+
+Citalopram  based on CYP2C19 and phenotype fk4d22836k
+
+Escitalopram based on CYP2C19 and phenotype fk4d22836l
+
 
 ## Development
+
 ### Testing
+
+#### Unit Tests
+The KO Unit Test are located in the [tests directory](./tests).  These tests utilize 
+[Jest](https://jestjs.io/) and  [rewire](https://github.com/jhnns/rewire). est provides the testing 
+framework and rewire allows the tests to access the javascript function without the 
+convienace of the export modules (KGrid Javascript adaptor limitation).  The [tests](../tests) are in 
+the tests directory.  You can execute the tests via npm
+
+```
+npm test
+```
+
+#### Performance Testing
+We have some performance/load testing scripts that utilize k6, a load testing tool.  Details on CPIC 
+load/perforance testing can be found in the [k6 readme](/tests/k6/readme.md)
+
 ### Continuous Integration
+
 ### Packaging
 
