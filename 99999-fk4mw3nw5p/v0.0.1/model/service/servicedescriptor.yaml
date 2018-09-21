@@ -1,0 +1,117 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: 'CPIC  HLA-A and HLA-B  carbamazepine  recommendations'
+  description: 'CPIC recommendations for carbamazepine based on HLA-A and HLA-B phenotype'
+servers:
+  - url: '/99999/fk4mw3nw5p/v0.0.1/'
+    description: 'CPIC recommendations for carbamazepine based on HLA-A and HLA-B phenotype'
+tags:
+  - name: KO Endpoints
+    description: KGrid CPIC guidelines HLA-A and HLA-B Phenotype to Recommendation Endpoints
+paths:
+  /dosingrecommendation:
+    post:
+      tags:
+       - KO Endpoints
+      description: Retrieve Dosing Recommendation based on the pheno type.
+      operationId: recomm
+      requestBody:
+        description: inputs
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/phenotype'
+      responses:
+        '200':
+          description: response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/dosingrecommendation'
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+components:
+  schemas:
+    phenotype:
+      required:
+        - HLA-B
+      properties:
+        HLA-B:
+          type: object
+          required:
+          - diplotype
+          - phenotype
+          properties:
+            diplotype:
+              type: string
+              example: '*1/*1'
+            phenotype:
+              type: string
+              example: 'ultrarapid metabolizer'
+    dosingrecommendation:
+      required:
+      - result
+      properties:
+        result:
+          type: object
+          required:
+          - type
+          - drug
+          - genes
+          - recommendation
+          properties:
+            type:
+              type: string
+              example: 'CPIC Recommendation'
+            drug:
+              type: string
+              example: 'carbamazepine'
+            genes:
+              type: object
+              required:
+              - HLA-B
+              properties:
+                HLA-B:
+                  type: object
+                  required:
+                  - diplotype
+                  - phenotype
+                  properties:
+                    diplotype:
+                      type: string
+                      example: '*1/*1'
+                    phenotype:
+                      type: string
+                      example: 'ultrarapid metabolizer'
+            recommendation:
+              type: object
+              required:
+              - implication
+              - content
+              - classification
+              properties:
+                implication:
+                  type: string
+                  example: ''
+                content:
+                  type: string
+                  example: ''
+                classification:
+                  type: string
+                  example: ''
+    Error:
+      required:
+        - code
+        - message
+      properties:
+        code:
+          type: integer
+          format: int32
+        message:
+          type: string
