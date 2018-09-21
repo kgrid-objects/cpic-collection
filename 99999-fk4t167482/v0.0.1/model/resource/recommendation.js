@@ -11,7 +11,7 @@ function dosingrecommendation (inputs) {
       var key = inputkey.toLowerCase()
       lowercaseInput[key]=inputs[inputkey]
     }
-    for(var genekey in base) {
+    for(var genekey in reference) {
       key = genekey.toLowerCase()
       if(!lowercaseInput[key]) {
         break
@@ -20,13 +20,13 @@ function dosingrecommendation (inputs) {
       genes[genekey].diplotype = lowercaseInput[key].diplotype || ''
       genes[genekey].phenotype = lowercaseInput[key].phenotype || ''
       genes[genekey].phenotype = genes[genekey].phenotype.toLowerCase()
-      targetfield = base[genekey].field
+      targetfield = reference[genekey].field
       searchkeyReady = searchkeyReady && (genes[genekey][targetfield]!='')
       if(targetfield=='diplotype'){
-        if (genes[genekey].diplotype.indexOf(base[genekey].value) != -1) {
-          searchKey = searchKey+genekey.toLowerCase()+base[genekey].value+keysuffix[genekey].positive
+        if (genes[genekey].diplotype.indexOf(reference[genekey].value) != -1) {
+          searchKey = searchKey+genekey.toLowerCase()+reference[genekey].value+keysuffix[genekey].positive
         } else {
-          searchKey = searchKey+ genekey.toLowerCase()+base[genekey].value+keysuffix[genekey].negative
+          searchKey = searchKey+ genekey.toLowerCase()+reference[genekey].value+keysuffix[genekey].negative
         }
       }
       if(targetfield=='phenotype'){
@@ -58,7 +58,7 @@ function dosingrecommendation (inputs) {
 
 // KGrid CPIC guidelines CYP2C19 and CYP2D6 Phenotypes to amitriptyline Recommendation
 var drug = 'amitriptyline'
-var base = {'CYP2C19':{field:'phenotype', value:''},'CYP2D6':{field:'phenotype', value:''}}
+var reference = {'CYP2C19':{field:'phenotype', value:''},'CYP2D6':{field:'phenotype', value:''}}
 // # Dictionary containing Phenotype to Recommendation Information
 var recommendations = {'cyp2c19ultrarapidcyp2d6ultrarapid':{'implication': '',
         'recommendation': 'Avoid amitriptyline use',

@@ -11,7 +11,7 @@ function dosingrecommendation (inputs) {
       var key = inputkey.toLowerCase()
       lowercaseInput[key]=inputs[inputkey]
     }
-    for(var genekey in base) {
+    for(var genekey in reference) {
       key = genekey.toLowerCase()
       if(!lowercaseInput[key]) {
         break
@@ -20,13 +20,13 @@ function dosingrecommendation (inputs) {
       genes[genekey].diplotype = lowercaseInput[key].diplotype || ''
       genes[genekey].phenotype = lowercaseInput[key].phenotype || ''
       genes[genekey].phenotype = genes[genekey].phenotype.toLowerCase()
-      targetfield = base[genekey].field
+      targetfield = reference[genekey].field
       searchkeyReady = searchkeyReady && (genes[genekey][targetfield]!='')
       if(targetfield=='diplotype'){
-        if (genes[genekey].diplotype.indexOf(base[genekey].value) != -1) {
-          searchKey = searchKey+genekey.toLowerCase()+base[genekey].value+keysuffix[genekey].positive
+        if (genes[genekey].diplotype.indexOf(reference[genekey].value) != -1) {
+          searchKey = searchKey+genekey.toLowerCase()+reference[genekey].value+keysuffix[genekey].positive
         } else {
-          searchKey = searchKey+ genekey.toLowerCase()+base[genekey].value+keysuffix[genekey].negative
+          searchKey = searchKey+ genekey.toLowerCase()+reference[genekey].value+keysuffix[genekey].negative
         }
       }
       if(targetfield=='phenotype'){
@@ -57,7 +57,7 @@ function dosingrecommendation (inputs) {
 }
 // KGrid CPIC guidelines CYP2D6 Phenotype to Codeine Recommendation
 var drug = 'Codeine'
-var base = {'CYP2D6':{field:'phenotype', value:''}}
+var reference = {'CYP2D6':{field:'phenotype', value:''}}
 var recommendations = {
   'cyp2d6ultrarapid': {'implication': 'Increased formation of morphine following codeine administration, leading to higher risk of toxicity',
           'recommendation': 'Avoid codeine use due to potential for toxicity. Alternatives that are not affected by this CYP2D6 phenotype include morphine and nonopioid analgesics. Tramadol and, to a lesser extent, hydrocodone and oxycodone are not good alternatives because their metabolism is affected by CYP2D6 activity',

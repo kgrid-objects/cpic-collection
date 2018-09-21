@@ -11,7 +11,7 @@ function dosingrecommendation (inputs) {
       var key = inputkey.toLowerCase()
       lowercaseInput[key]=inputs[inputkey]
     }
-    for(var genekey in base) {
+    for(var genekey in reference) {
       key = genekey.toLowerCase()
       if(!lowercaseInput[key]) {
         break
@@ -20,13 +20,13 @@ function dosingrecommendation (inputs) {
       genes[genekey].diplotype = lowercaseInput[key].diplotype || ''
       genes[genekey].phenotype = lowercaseInput[key].phenotype || ''
       genes[genekey].phenotype = genes[genekey].phenotype.toLowerCase()
-      targetfield = base[genekey].field
+      targetfield = reference[genekey].field
       searchkeyReady = searchkeyReady && (genes[genekey][targetfield]!='')
       if(targetfield=='diplotype'){
-        if (genes[genekey].diplotype.indexOf(base[genekey].value) != -1) {
-          searchKey = searchKey+genekey.toLowerCase()+base[genekey].value+keysuffix[genekey].positive
+        if (genes[genekey].diplotype.indexOf(reference[genekey].value) != -1) {
+          searchKey = searchKey+genekey.toLowerCase()+reference[genekey].value+keysuffix[genekey].positive
         } else {
-          searchKey = searchKey+ genekey.toLowerCase()+base[genekey].value+keysuffix[genekey].negative
+          searchKey = searchKey+ genekey.toLowerCase()+reference[genekey].value+keysuffix[genekey].negative
         }
       }
       if(targetfield=='phenotype'){
@@ -57,7 +57,7 @@ function dosingrecommendation (inputs) {
 }
 // KGrid CPIC guidelines CYP2D6 Phenotype to Codeine Recommendation
 var drug = 'tropisetron'
-var base = {'CYP2D6':{field:'phenotype', value:''}}
+var reference = {'CYP2D6':{field:'phenotype', value:''}}
 var recommendations = {
   'cyp2d6ultrarapid': {'implication': 'Increased metabolism to less active compounds when compared to NMs and is associated with decreased response to ondansetron and tropisetron (i.e., vomiting)',
           'recommendation': 'Select alternative drug not predominantly metabolized by CYP2D6 (i.e., granisetron). Dolasetron, palonosetron, and ramosetron are also metabolized by CYP2D6. Limited evidence is available regarding the utilization of CYP2D6 genetic variation to guide use of these drugs.',

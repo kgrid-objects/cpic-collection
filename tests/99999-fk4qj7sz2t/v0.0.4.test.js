@@ -2,7 +2,7 @@ var assert = require('assert');
 var rewire = require('rewire');
 
 //Get load in the js
-var javascript = rewire('../../99999-fk4qj7sz2t/v0.0.3/model/resource/genophenokolist');
+var javascript = rewire('../../99999-fk4qj7sz2t/v0.0.4/model/resource/genophenokolist');
 //var javascript = rewire('../../scripts/payload.js');
 
 //Load in the function

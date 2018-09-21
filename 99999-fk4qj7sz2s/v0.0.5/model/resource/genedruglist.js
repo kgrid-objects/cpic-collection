@@ -14,7 +14,7 @@ var drugkolist = {
   'amitriptyline': '/99999/fk4t167482/v0.0.1',
   'atazanavir': '/99999/fk4d79nq4z/v0.0.5',
   'azathioprine':'',
-  'carbamazepine':'',
+  'carbamazepine':'/99999/fk4mw3nw5p/v0.0.1',
   'citalopram': '/99999/fk4d22836k/v0.0.5',
   'clomipramine':'',
   'clopidogrel': '/99999/fk4bz6hp15/v0.0.5',
