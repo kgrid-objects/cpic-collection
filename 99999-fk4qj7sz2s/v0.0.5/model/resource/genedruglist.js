@@ -32,7 +32,7 @@ var drugkolist = {
   'paroxetine':'',
   'peginterferon alfa-2a':'',
   'peginterferon alfa-2b':'',
-  'phenytoin': '/99999-fk4qz3fz89/v0.0.1',
+  'phenytoin': '/99999/fk4qz3fz89/v0.0.1',
   'rasburicase':'',
   'ribavirin':'',
   'sertraline':'',
@@ -42,7 +42,7 @@ var drugkolist = {
   'thioguanine':'',
   'trimipramine':'',
   'tropisetron':'/99999/fk4fn2d721/v0.0.1',
-  'voriconazole':''
+  'voriconazole':'/99999/fk4cz4fm8f/v0.0.1'
 }
   // var genedruglist={
   //     "CACNA1S": {"isoflurane":""},
