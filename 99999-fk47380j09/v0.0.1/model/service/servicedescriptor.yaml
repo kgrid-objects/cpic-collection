@@ -1,0 +1,73 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: 'CPIC - Genotype to Phenotype for SLCO1B1'
+  description: 'KGrid CPIC guidelines Genotype to Phenotype for SLCO1B1'
+servers:
+  - url: '/99999/fk47380j09/v0.0.1/'
+    description: 'KGrid CPIC guidelines Genotype to Phenotype for SLCO1B1'
+tags:
+  - name: KO Endpoints
+    description: KGrid CPIC guidelines Genotype to Phenotype for SLCO1B1 Endpoints
+paths:
+  /phenotype:
+    post:
+      tags:
+       - KO Endpoints
+      description: Determine the pheno type based on the genotype.
+      operationId: pheno
+      requestBody:
+        description: inputs
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/genotype'
+      responses:
+        '200':
+          description: response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/phenotype'
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+components:
+  schemas:
+    genotype:
+      required:
+      - SLCO1B1
+      properties:
+        SLCO1B1:
+          type: string
+          example: '*1/*1'
+    phenotype:
+      required:
+        - SLCO1B1
+      properties:
+        SLCO1B1:
+          type: object
+          required:
+            - diplotype
+            - phenotype
+          properties:
+            diplotype:
+              type: string
+              example: '*1/*1'
+            phenotype:
+              type: string
+              example: 'Normal metabolizer'
+    Error:
+      required:
+        - code
+        - message
+      properties:
+        code:
+          type: integer
+          format: int32
+        message:
+          type: string
