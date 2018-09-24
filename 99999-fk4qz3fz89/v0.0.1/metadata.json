@@ -1,0 +1,22 @@
+{
+  "title": "CPIC Phenytoin Recommendations based on CYP2C9 and HLA-B phenotypes",
+  "description": "KGrid CPIC guidelines CYP2C9 and HLA-B Phenotypes to Phenytoin Recommendation",
+  "arkId": "ark:/99999/fk4qz3fz89",
+  "citations": [
+   "https://cpicpgx.org/guidelines/guideline-for-phenytoin-and-cyp2c9-and-hla-b/"
+  ],
+  "keywords": "CPIC, HLA-B, CYP2C9, Phenytoin, Recommendation",
+  "owners": "KGRID",
+  "contributors": "KGRID TEAM",
+  "license": {
+    "licenseName": "",
+    "licenseLink": ""
+  },
+  "url": "http://url",
+  "published": false,
+  "version": "v0.0.1",
+  "lastModified": 1529432646535,
+  "createdOn": 1529432646535,
+  "model": "model",
+  "service":"model/service/servicedescriptor.yaml"
+}

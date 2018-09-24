@@ -32,7 +32,7 @@ var drugkolist = {
   'paroxetine':'',
   'peginterferon alfa-2a':'',
   'peginterferon alfa-2b':'',
-  'phenytoin': '',
+  'phenytoin': '/99999-fk4qz3fz89/v0.0.1',
   'rasburicase':'',
   'ribavirin':'',
   'sertraline':'',
