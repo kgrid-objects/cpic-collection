@@ -1,0 +1,22 @@
+{
+  "title": "CPIC CYP2D6 Codeine Recommendations",
+  "description": "KGrid CPIC guidelines CYP2D6 Phenotype to paroxetine Recommendation",
+  "arkId": "ark:/99999/cp4mc9723se",
+  "citations": [
+   "https://cpicpgx.org/guidelines/guideline-for-paroxetine-and-cyp2d6/"
+  ],
+  "keywords": "CPIC, CYP2D6, paroxetine, Recommendation",
+  "owners": "KGRID",
+  "contributors": "KGRID TEAM",
+  "license": {
+    "licenseName": "",
+    "licenseLink": ""
+  },
+  "url": "http://url",
+  "published": false,
+  "version": "v0.0.1",
+  "lastModified": 1529432646535,
+  "createdOn": 1529432646535,
+  "model": "model",
+  "service":"model/service/servicedescriptor.yaml"
+}
