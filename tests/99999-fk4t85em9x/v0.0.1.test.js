@@ -9,13 +9,13 @@ var dosingrecommendation = javascript.__get__("dosingrecommendation");
 
 
 var testset = [
-  {"input":{"cyp3a5": {"diplotype": "*1/*1", "phenotype": "Normal metabolizer"}},"output":"classification" },
-  {"input":{"cyp3a5": {"diplotype": "*1/*2", "phenotype": "Intermediate metabolizer"}},"output":"content" },
-  {"input":{"cyp3a5": {"diplotype": "*2/*2", "phenotype": "Low metabolizer"}},"output":"implication" }
+  {"input":{"cyp3a5": {"diplotype": "*1/*1", "phenotype": "Extensive metabolizer"}},"output":"classification" },
+  {"input":{"cyp3a5": {"diplotype": "*1/*3", "phenotype": "Intermediate metabolizer"}},"output":"content" },
+  {"input":{"cyp3a5": {"diplotype": "*3/*3", "phenotype": "Poor metabolizer"}},"output":"implication" }
 
 ]
 
-describe('99999-fk4cz4fm8f v0.0.1', function () {
+describe('99999-fk4t85em9x v0.0.1', function () {
 
   describe('Valid inputs', function(){
 
