@@ -13,6 +13,7 @@ var testset = [
   {"input":{"CYP2D6": {"diplotype": "*1/*1", "phenotype": "Normal metabolizer"},"CYP2C19": {"diplotype": "*1/*28", "phenotype": "ultrarapid metabolizer"}},"output":"classification" },
   {"input":{"CYP2D6": {"diplotype": "*1/*2", "phenotype": "Intermediate metabolizer"},"CYP2C19": {"diplotype": "*1/*28", "phenotype": "ultrarapid metabolizer"}},"output":"content" },
   {"input":{"CYP2D6": {"diplotype": "*1/*3", "phenotype": "Poor metabolizer"},"CYP2C19": {"diplotype": "*1/*28", "phenotype": "ultrarapid metabolizer"}},"output":"content" }
+  {"input":{"CYP2D6": {"diplotype": "", "phenotype": ""},"CYP2C19": {"diplotype": "*1/*28", "phenotype": "ultrarapid metabolizer"}},"output":"content" }
 ]
 
 describe('99999-fk4t167482 v0.0.1', function () {
@@ -21,7 +22,7 @@ describe('99999-fk4t167482 v0.0.1', function () {
 
     testset.forEach(function(e, index){
 
-      it(e.input.CYP2D6.phenotype, function(){
+      it(e.input.CYP2C19.phenotype, function(){
         var result = dosingrecommendation(e.input)
         assert.equal(result.recommendation[e.output]!=null, true);
       });
