@@ -9,11 +9,10 @@ var dosingrecommendation = javascript.__get__("dosingrecommendation");
 
 
 var testset = [
-  {"input":{"CYP2D6": {"diplotype": "*1/*28", "phenotype": "ultrarapid metabolizer"},"CYP2C19": {"diplotype": "*1/*28", "phenotype": "ultrarapid metabolizer"}},"output":"classification" },
-  {"input":{"CYP2D6": {"diplotype": "*1/*1", "phenotype": "Normal metabolizer"},"CYP2C19": {"diplotype": "*1/*28", "phenotype": "ultrarapid metabolizer"}},"output":"classification" },
-  {"input":{"CYP2D6": {"diplotype": "*1/*2", "phenotype": "Intermediate metabolizer"},"CYP2C19": {"diplotype": "*1/*28", "phenotype": "ultrarapid metabolizer"}},"output":"content" },
-  {"input":{"CYP2D6": {"diplotype": "*1/*3", "phenotype": "Poor metabolizer"},"CYP2C19": {"diplotype": "*1/*28", "phenotype": "ultrarapid metabolizer"}},"output":"content" },
-  {"input":{"CYP2D6": {"diplotype": "", "phenotype": ""},"CYP2C19": {"diplotype": "*1/*28", "phenotype": "ultrarapid metabolizer"}},"output":"content" }
+  {"input":{"CYP2D6": {"diplotype": "*1/*28", "phenotype": "ultrarapid metabolizer"}},"output":"classification" },
+  {"input":{"CYP2D6": {"diplotype": "*1/*1", "phenotype": "Normal metabolizer"}},"output":"classification" },
+  {"input":{"CYP2D6": {"diplotype": "*1/*2", "phenotype": "Intermediate metabolizer"}},"output":"content" },
+  {"input":{"CYP2D6": {"diplotype": "*1/*3", "phenotype": "Poor metabolizer"}},"output":"content" }
 ]
 
 describe('99999-fk44n0ds5c v0.0.1', function () {
@@ -22,7 +21,7 @@ describe('99999-fk44n0ds5c v0.0.1', function () {
 
     testset.forEach(function(e, index){
 
-      it(e.input.CYP2C19.phenotype, function(){
+      it(e.input.CYP2D6.phenotype, function(){
         var result = dosingrecommendation(e.input)
         assert.equal(result.recommendation[e.output]!=null, true);
       });
@@ -35,11 +34,6 @@ describe('99999-fk44n0ds5c v0.0.1', function () {
 
     it('fields missing', function(){
       var result = dosingrecommendation({})
-      assert.equal(result, 'Incorrect/invalid input for drug nortripyline');
-    })
-
-    it('string phenotype instead of object', function(){
-      var result = dosingrecommendation({"CYP2D6": {"phenotype": ""},'CYP2C19':{"phenotype":""}})
       assert.equal(result, 'Incorrect/invalid input for drug nortripyline');
     })
 
