@@ -1,0 +1,22 @@
+{
+  "title": "CPIC TPMT mercaptopurine recommendations",
+  "description": "CPIC recommendations for mercaptopurine based on TPMT phenotype",
+  "arkId": "ark:/99999/fk4m91fj9z",
+  "citations": [
+   "https://cpicpgx.org/guidelines/guideline-for-thiopurines-and-tpmt/"
+  ],
+  "keywords": "CPIC, TPMT, mercaptopurine, Recommendation",
+  "owners": "KGRID",
+  "contributors": "KGRID TEAM",
+  "license": {
+    "licenseName": "",
+    "licenseLink": ""
+  },
+  "url": "http://url",
+  "published": false,
+  "version": "v0.0.1",
+  "lastModified": 1529432646535,
+  "createdOn": 1529432646535,
+  "model": "model",
+  "service":"model/service/servicedescriptor.yaml"
+}
