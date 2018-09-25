@@ -16,7 +16,7 @@ var drugkolist = {
   'imipramine':'/99999/fk4d51vd1p/v0.0.1',
   'ivacaftor':'',
   'mercaptopurine':'/99999/fk4m91fj9z/v0.0.1',
-  'nortriptyline':'',
+  'nortriptyline':'/99999/fk44n0ds5c/v0.0.1',
   'ondansetron':'/99999/fk4c83hw23/v0.0.1',
   'oxcarbazepine':'/99999/fk4qc17m5z/v0.0.1',
   'paroxetine':'/99999/cp4mc9723se/v0.0.1',
