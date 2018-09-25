@@ -6,10 +6,10 @@ var drugkolist = {
   'azathioprine':'/99999/fk4r225c4h/v0.0.1',
   'carbamazepine':'/99999/fk4mw3nw5p/v0.0.1',
   'citalopram': '/99999/fk4d22836k/v0.0.5',
-  'clomipramine':'',
+  'clomipramine':'/99999/fk4w67pr0f/v0.0.1',
   'clopidogrel': '/99999/fk4bz6hp15/v0.0.5',
   'codeine': '/99999/fk4mc97w6m/v0.0.5',
-  'desipramine':'',
+  'desipramine':'/99999/fk4rf6zx6d/v0.0.1',
   'doxepin':'/99999/fk4sf40t7f/v0.0.1',
   'escitalopram': '/99999/fk4d22836l/v0.0.5',
   'fluvoxamine':'/99999/cp4mc9723sd/v0.0.1',
@@ -30,7 +30,7 @@ var drugkolist = {
   'tacrolimus':'/99999/fk4t85em9x/v0.0.1',
   'tamoxifen':'',
   'thioguanine':'/99999/fk4cx5fm8f/v0.0.1',
-  'trimipramine':'',
+  'trimipramine':'/99999/fk4jw9m41b/v0.0.1',
   'tropisetron':'/99999/fk4fn2d721/v0.0.1',
   'voriconazole':'/99999/fk4cz4fm8f/v0.0.1'
 }
