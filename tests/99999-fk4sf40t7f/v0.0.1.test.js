@@ -2,7 +2,7 @@ var assert = require('assert');
 var rewire = require('rewire');
 
 //Get load in the js
-var javascript = rewire('../../99999-fk4t167482/v0.0.1/model/resource/recommendation.js');
+var javascript = rewire('../../99999-fk4sf40t7f/v0.0.1/model/resource/recommendation.js');
 
 //Load in the function
 var dosingrecommendation = javascript.__get__("dosingrecommendation");
@@ -16,7 +16,7 @@ var testset = [
   {"input":{"CYP2D6": {"diplotype": "", "phenotype": ""},"CYP2C19": {"diplotype": "*1/*28", "phenotype": "ultrarapid metabolizer"}},"output":"content" }
 ]
 
-describe('99999-fk4t167482 v0.0.1', function () {
+describe('99999-fk4sf40t7f v0.0.1', function () {
 
   describe('Valid inputs', function(){
 
@@ -35,22 +35,22 @@ describe('99999-fk4t167482 v0.0.1', function () {
 
     it('fields missing', function(){
       var result = dosingrecommendation({})
-      assert.equal(result, 'Incorrect/invalid input for drug amitriptyline');
+      assert.equal(result, 'Incorrect/invalid input for drug doxepin');
     })
 
     it('string phenotype instead of object', function(){
       var result = dosingrecommendation({"CYP2D6": {"phenotype": ""},'CYP2C19':{"phenotype":""}})
-      assert.equal(result, 'Incorrect/invalid input for drug amitriptyline');
+      assert.equal(result, 'Incorrect/invalid input for drug doxepin');
     })
 
     it('incorrect phenotype', function(){
       var result = dosingrecommendation({"CYP2D6": {"phenotype": "Ultrarapid mettabolizer"}})
-      assert.equal('Incorrect/invalid input for drug amitriptyline', result);
+      assert.equal('Incorrect/invalid input for drug doxepin', result);
     })
 
     it('no input', function(){
       var result = dosingrecommendation()
-      assert.equal(result, 'Incorrect/invalid input for drug amitriptyline');
+      assert.equal(result, 'Incorrect/invalid input for drug doxepin');
     })
 
   });

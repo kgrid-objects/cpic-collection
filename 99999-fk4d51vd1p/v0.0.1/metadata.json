@@ -1,0 +1,22 @@
+{
+  "title": "CPIC imipramine Recommendations based on CYP2C19 and CYP2D6 phenotypes",
+  "description": "KGrid CPIC guidelines CYP2C19 and CYP2D6 Phenotypes to imipramine Recommendation",
+  "arkId": "ark:/99999/fk4d51vd1p",
+  "citations": [
+   "https://cpicpgx.org/guidelines/guideline-for-tricyclic-antidepressants-and-cyp2d6-and-cyp2c19/"
+  ],
+  "keywords": "CPIC, CYP2D6, CYP2C19, imipramine, Recommendation",
+  "owners": "KGRID",
+  "contributors": "KGRID TEAM",
+  "license": {
+    "licenseName": "",
+    "licenseLink": ""
+  },
+  "url": "http://url",
+  "published": false,
+  "version": "v0.0.1",
+  "lastModified": 1529432646535,
+  "createdOn": 1529432646535,
+  "model": "model",
+  "service":"model/service/servicedescriptor.yaml"
+}
