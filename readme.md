@@ -2,7 +2,7 @@
 [![CircleCI](https://circleci.com/gh/kgrid-objects/cpic-objects.svg?style=svg)](https://circleci.com/gh/kgrid-objects/cpic-objects)
 
 This is a collection of objects that focus on dosing guidelines as provided by the [CPIC pharmacogenomic guidelines](https://cpicpgx.org/guidelines/). These objects generally take allele pairs as inputs and return the corresponding drug selection or dosing guideline recommendation based on a patient's alleles.
- 
+
 ## Table of Contents
 * [Status](#status)
 * [CPIC Knowledge Objects](#cpic-knowledge-objects)
@@ -12,15 +12,15 @@ This is a collection of objects that focus on dosing guidelines as provided by t
   * [Testing](#testing)
   * [Continuous Integration](#continuous_integration)
   * [Packaging](#Packaging)
- 
+
 ## Status
 Talk about the objects completed and objects we are working on, if we have and idea of roadmap
 
 ## CPIC Knowledge Objects (KO)
 
-### CPIC KO Design 
+### CPIC KO Design
  (code, api, workflow)
- 
+
 ### Using the CPIC KOs
 [CPIC Kit](https://demo.kgrid.org/cpic-kit/) - KGrid CPIC Kit packages Activator, Library and CPIC Demo Site. The kit is designed as a personnel CPIC Knowledge Grid used to explore the capablities of KGrid and CPIC Knowlege Objects.
 
@@ -30,40 +30,93 @@ Tests
 
 ### CPIC KO Descriptions
 
-#### Genotype to Phenotype 
+#### Genotype to Phenotype
 
-**CYP2D6 Genotype to Phenotype**
+Currently, the following genes' phenotypes based on their diplotypes can be determined by the respective knowledge objects, which are included in the cpic-kit.
 
-* [Demo Activator](https://activator.kgrid.org/99999/fk4mc97w6m)
-* Demo Swagger UI
+[CYP2C19](https://library.kgrid.org/#/object/99999%2Ffk4mc97w0h%2Fv0.0.4)
 
+[CYP2C9](https://library.kgrid.org/#/object/99999%2Ffk4bv8qb3r%2Fv0.0.1)
 
-#### Drug Recommendation 
+[CYP2D6](https://library.kgrid.org/#/object/99999%2Ffk49z9gr7p%2Fv0.0.6)
 
-Atazanavir based on UGT1A1 and phenotype fk4d79nq4z
+[CYP3A5](https://library.kgrid.org/#/object/99999%2Ffk4md04x9z%2Fv0.0.1)
 
-Allopurinol based on HLA-B and phenotype fk4058s74p
+[SLCO1B1](https://library.kgrid.org/#/object/99999%2Ffk47380j09%2Fv0.0.1)
 
-Abacavir based on HLA-B and phenotype fk45m7fn9t
+[TPMT](https://library.kgrid.org/#/object/99999%2Ffk4vq45s09%2Fv0.0.1)
 
-Clopidogrel based on CYP2C19 and phenotype fk4bz6hp15
+[UGT1A1](https://library.kgrid.org/#/object/99999%2Ffk47h1x090%2Fv0.0.4)
 
-Ondansetron based on CYP2D6 and phenotype fk4c83hw23
+#### Drug Recommendation
 
-Citalopram  based on CYP2C19 and phenotype fk4d22836k
+Currently, the following drug recommendations are available as knowledge objects and included in the cpic-kit.
 
-Escitalopram based on CYP2C19 and phenotype fk4d22836l
+[Abacavir (based on HLA-B allele information)](https://library.kgrid.org/#/object/99999%2Ffk45m7fn9t%2Fv0.0.1)
 
+[Allopurinol (based on HLA-B allele information)](https://library.kgrid.org/#/object/99999%2Ffk4058s74p%2Fv0.0.1)
+
+[Amitriptyline (based on CYP2C19 and CYP2D6 phenotypes)](https://library.kgrid.org/#/object/99999%2Ffk4t167482%2Fv0.0.1)
+
+[Atazanavir (based on UGT1A1 phenotype)](https://library.kgrid.org/#/object/99999%2Ffk4d79nq4z%2Fv0.0.5)
+
+[Azathioprine (based on TPMT phenotype)](https://library.kgrid.org/#/object/99999%2Ffk4r225c4h%2Fv0.0.1)
+
+[Carbamazepine (based on HLA-A and HLA-B allele information)](https://library.kgrid.org/#/object/99999%2Ffk4mw3nw5p%2Fv0.0.1)
+
+[Citalopram (based on CYP2C19 phenotype)](https://library.kgrid.org/#/object/99999%2Ffk4d22836k%2Fv0.0.5)
+
+[Clomipramine (based on CYP2C19 and CYP2D6 phenotypes)](https://library.kgrid.org/#/object/99999%2Ffk4w67pr0f%2Fv0.0.1)
+
+[Clopidogrel (based on CYP2C19 phenotype)](https://library.kgrid.org/#/object/99999%2Ffk4bz6hp15%2Fv0.0.5)
+
+[Codeine (based on CYP2D6 phenotype)](https://library.kgrid.org/#/object/99999%2Ffk4mc97w6m%2Fv0.0.5)
+
+[Desipramine (based on CYP2D6 phenotype)](https://library.kgrid.org/#/object/99999%2Ffk4rf6zx6d%2Fv0.0.1)
+
+[Doxepin (based on CYP2C19 and CYP2D6 phenotypes)](https://library.kgrid.org/#/object/99999%2Ffk4sf40t7f%2Fv0.0.1)
+
+[Escitalopram (based on CYP2C19 phenotype)](https://library.kgrid.org/#/object/99999%2Ffk4d22836l%2Fv0.0.5)
+
+[Fluvoxamine (based on CYP2D6 phenotype)](https://library.kgrid.org/#/object/99999%2Fcp4mc9723sd%2Fv0.0.1)
+
+[Imipramine (based on CYP2C19 and CYP2D6 phenotypes)](https://library.kgrid.org/#/object/99999%2Ffk4d51vd1p%2Fv0.0.1)
+
+[Mercaptopurine (based on TPMT phenotype)](https://library.kgrid.org/#/object/99999%2Ffk4m91fj9z%2Fv0.0.1)
+
+[Nortriptyline (based on CYP2D6 phenotype)](https://library.kgrid.org/#/object/99999%2Ffk44n0ds5c%2Fv0.0.1)
+
+[Ondansetron (based on CYP2D6 phenotype)](https://library.kgrid.org/#/object/99999%2Ffk4c83hw23%2Fv0.0.1)
+
+[Oxcarbazepine (based on HLA-B allele information)](https://library.kgrid.org/#/object/99999%2Ffk4qc17m5z%2Fv0.0.1)
+
+[Paroxetine (based on CYP2D6 phenotype)](https://library.kgrid.org/#/object/99999%2Fcp4mc9723se%2Fv0.0.1)
+
+[Phenytoin (based on CYP2C9 phenotype and HLA-B allele information)](https://library.kgrid.org/#/object/99999%2Ffk4qz3fz89%2Fv0.0.1)
+
+[Sertraline (based on CYP2C19 phenotype)](https://library.kgrid.org/#/object/99999%2Ffk40k3kt35%2Fv0.0.1)
+
+[Simvastatin (based on SLCO1B1 phenotype)](https://library.kgrid.org/#/object/99999%2Ffk4m95ek9z%2Fv0.0.1)
+
+[Tacrolimus (based on CYP3A5 phenotype)](https://library.kgrid.org/#/object/99999%2Ffk4t85em9x%2Fv0.0.1)
+
+[Thioguanine (based on TPMT phenotype)](https://library.kgrid.org/#/object/99999%2Ffk4cx5fm8f%2Fv0.0.1)
+
+[Trimipramine (based on CYP2npm stopC19 and CYP2D6 phenotypes)](https://library.kgrid.org/#/object/99999%2Ffk4jw9m41b%2Fv0.0.1)
+
+[Tropisetron (based on CYP2D6 phenotype)](https://library.kgrid.org/#/object/99999%2Ffk4fn2d721%2Fv0.0.1)
+
+[Voriconazole (based on CYP2C19 phenotype)](https://library.kgrid.org/#/object/99999%2Ffk4cz4fm8f%2Fv0.0.1)
 
 ## Development
 
 ### Testing
 
 #### Unit Tests
-The KO Unit Test are located in the [tests directory](./tests).  These tests utilize 
-[Jest](https://jestjs.io/) and  [rewire](https://github.com/jhnns/rewire). est provides the testing 
-framework and rewire allows the tests to access the javascript function without the 
-convienace of the export modules (KGrid Javascript adaptor limitation).  The [tests](../tests) are in 
+The KO Unit Test are located in the [tests directory](./tests).  These tests utilize
+[Jest](https://jestjs.io/) and  [rewire](https://github.com/jhnns/rewire). est provides the testing
+framework and rewire allows the tests to access the javascript function without the
+convienace of the export modules (KGrid Javascript adaptor limitation).  The [tests](../tests) are in
 the tests directory.  You can execute the tests via npm
 
 ```
@@ -71,10 +124,9 @@ npm test
 ```
 
 #### Performance Testing
-We have some performance/load testing scripts that utilize k6, a load testing tool.  Details on CPIC 
+We have some performance/load testing scripts that utilize k6, a load testing tool.  Details on CPIC
 load/perforance testing can be found in the [k6 readme](/tests/k6/readme.md)
 
 ### Continuous Integration
 
 ### Packaging
-
