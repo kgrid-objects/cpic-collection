@@ -23,7 +23,24 @@ This release contains 37 KOs, including 28 drug recommendation KOs, 7 geno-to-ph
 ## CPIC Knowledge Objects (KO)
 
 ### CPIC KO Design
- (code, api, workflow)
+ CPIC collection consists of three types of KOs:
+ - Look-up table
+  The look-up table KO provides the KO ark ids for either the genes or the drugs of interest
+
+ - Geno-to-Pheno
+ The geno-to-pheno KO is gene-specific. It will determine the phenotype based on the gene's diplotypes
+
+ There are two groups within this type of KO:
+  * CYP2D6, CYP2C19 and UGT1A1: Each gene has a spreadsheet mapping the dipltotype directly to the phenotype;
+  * CYP2C9, CYP3A5, SLCO1B1 and TPMT: Each gene has a allele-definition spreadsheet for the functional status of the allele. The alleles in the diplotype are checked on the functional status. The likely phenotype is then determined based on the functional status of both alleles.
+
+
+ - Drug recommendations
+ The drug recommendation KO is drug-specific. It will provide the recommendation based on the information of relevant gene(s). The combination of information includes:
+  * single gene allele
+  * multiple gene allele
+  * one gene allele and one gene phenotype
+  * multiple gene phenotypes
 
 
 ### CPIC KO Descriptions
@@ -100,7 +117,7 @@ Currently, the following drug recommendations are available as knowledge objects
 
 [Thioguanine (based on TPMT phenotype)](https://library.kgrid.org/#/object/99999%2Ffk4cx5fm8f%2Fv0.0.1)
 
-[Trimipramine (based on CYP2npm stopC19 and CYP2D6 phenotypes)](https://library.kgrid.org/#/object/99999%2Ffk4jw9m41b%2Fv0.0.1)
+[Trimipramine (based on CYP2C19 and CYP2D6 phenotypes)](https://library.kgrid.org/#/object/99999%2Ffk4jw9m41b%2Fv0.0.1)
 
 [Tropisetron (based on CYP2D6 phenotype)](https://library.kgrid.org/#/object/99999%2Ffk4fn2d721%2Fv0.0.1)
 
