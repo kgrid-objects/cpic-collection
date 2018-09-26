@@ -59,7 +59,7 @@ function dosingrecommendation (inputs) {
 var drug = 'paroxetine'
 var reference = {'CYP2D6':{field:'phenotype', value:''}}
 var recommendations = {
-  'cyp2d6ultrarapid': {'implication': 'Increased metabolism to less active compounds when compared to extensive metabolizers. Lower/undetectable plasma concentrations may i ncrease probability of pharmacotherapy failure.',
+  'cyp2d6ultrarapid': {'implication': 'Increased metabolism to less active compounds when compared to extensive metabolizers. Lower/undetectable plasma concentrations may increase probability of pharmacotherapy failure.',
           'recommendation': 'Select alternative drug not predominantly metabolized by CYP2D6.',
           'classification': 'Strong'},
   'cyp2d6normal': {'implication': 'Normal metabolism',

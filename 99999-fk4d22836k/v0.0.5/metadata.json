@@ -1,11 +1,11 @@
 {
-  "title": "CPIC CYP2C19 citalopram and escitalopram recommendations",
-  "description": "CPIC recommendations for citalopram and escitalopram based on CYP2C19 phenotype",
+  "title": "CPIC CYP2C19 citalopram recommendation",
+  "description": "CPIC recommendations for citalopram based on CYP2C19 phenotype",
   "arkId": "ark:/99999/fk4d22836k",
   "citations": [
    "https://cpicpgx.org/guidelines/guideline-for-selective-serotonin-reuptake-inhibitors-and-cyp2d6-and-cyp2c19/"
   ],
-  "keywords": "CPIC, CYP2C19, citalopram and escitalopram, Recommendation",
+  "keywords": "CPIC, CYP2C19, citalopram, Recommendation",
   "owners": "KGRID",
   "contributors": "KGRID TEAM",
   "license": {

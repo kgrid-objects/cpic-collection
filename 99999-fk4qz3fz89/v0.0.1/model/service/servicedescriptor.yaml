@@ -1,7 +1,7 @@
 openapi: 3.0.0
 info:
   version: 1.0.0
-  title: 'CPIC amitriptyline Recommendations based on CYP2C9 and HLA-B phenotypes'
+  title: 'CPIC Phenytoin Recommendations based on CYP2C9 and HLA-B phenotypes'
   description: 'KGrid CPIC guidelines CYP2C9 and HLA-B Phenotypes to Phenytoin Recommendation'
 servers:
   - url: '/99999/fk4qz3fz89/v0.0.1/'

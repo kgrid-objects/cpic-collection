@@ -1,11 +1,11 @@
 openapi: 3.0.0
 info:
   version: 1.0.0
-  title: 'CPIC CYP2C19 citalopram and escitalopram recommendations'
-  description: 'CPIC recommendations for citalopram and escitalopram based on CYP2C19 phenotype'
+  title: 'CPIC CYP2C19 citalopram recommendations'
+  description: 'CPIC recommendations for citalopram based on CYP2C19 phenotype'
 servers:
   - url: '/99999/fk4d22836k/v0.0.5/'
-    description: 'CPIC recommendations for citalopram and escitalopram based on CYP2C19 phenotype'
+    description: 'CPIC recommendations for citalopram based on CYP2C19 phenotype'
 tags:
   - name: KO Endpoints
     description: KGrid CPIC guidelines CYP2C19 Phenotype to Recommendation Endpoints
@@ -62,7 +62,7 @@ components:
               example: 'CPIC Recommendation'
             drug:
               type: string
-              example: 'citalopram and escitalopram'
+              example: 'citalopram'
             genes:
               type: object
               required:

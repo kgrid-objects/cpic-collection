@@ -63,9 +63,9 @@ var reference = {'HLA-B':{field:'diplotype', value:'58:01'}}
 var keysuffix= {'HLA-B':{negative:'noncarrier', positive:'carrier'}}   //dipltotype only
 
 var recommendations = {
-  'hla-b58:01noncarrier': {'implication': 'Low or reduced risk of allopurinol-induced SCAR',
+  'hla-b58:01noncarrier': {'implication': 'Low or reduced risk of allopurinol-induced severe cutaneous adverse reactions',
           'recommendation': 'Use allopurinol per standard dosing guidelines',
           'classification': 'Strong'},
-  'hla-b58:01carrier': {'implication': 'Significantly increased risk of allopurinol-induced SCAR',
+  'hla-b58:01carrier': {'implication': 'Significantly increased risk of allopurinol-induced severe cutaneous adverse reactions',
                   'recommendation': 'Allopurinol is contraindicated',
                   'classification': 'Strong'}}

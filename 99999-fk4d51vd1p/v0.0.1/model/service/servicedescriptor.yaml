@@ -84,7 +84,7 @@ components:
               example: 'CPIC Recommendation'
             drug:
               type: string
-              example: 'doxepin'
+              example: 'imipramine'
             genes:
               type: object
               required:

@@ -63,7 +63,7 @@ var reference = {'CYP2C19':{field:'phenotype', value:''},'CYP2D6':{field:'phenot
 var recommendations = {
 
   'cyp2c19cyp2d6ultrarapid':{'implication': 'Increased metabolism of TCAs to less active compounds compared to normal metabolizers Lower plasma concentrations of active drug will increase probability of pharmacotherapy failure',
-        'recommendation': 'Avoid tricyclic use due to potential lack of efficacy. Consider alternative drug not metabolized by CYP2D6. If a TCA is warranted, consider titrating to a higher target dose (compared to normal metabolizers).e Utilize therapeutic drug monitoring to guide dose adjustments.',
+        'recommendation': 'Avoid tricyclic use due to potential lack of efficacy. Consider alternative drug not metabolized by CYP2D6. If a TCA is warranted, consider titrating to a higher target dose (compared to normal metabolizers). Utilize therapeutic drug monitoring to guide dose adjustments.',
         'classification': 'Optional'},
   "cyp2c19cyp2d6normal":{'implication': 'Normal metabolism of TCAs',
         'recommendation': ' Initiate therapy with recommended starting dose.',
@@ -92,7 +92,7 @@ var recommendations = {
         'classification': 'Optional'},
 
   'cyp2c19ultrarapidcyp2d6ultrarapid':{'implication': 'Increased metabolism of TCAs to less active compounds compared to normal metabolizers Lower plasma concentrations of active drug will increase probability of pharmacotherapy failure',
-        'recommendation': 'Avoid tricyclic use due to potential lack of efficacy. Consider alternative drug not metabolized by CYP2D6. If a TCA is warranted, consider titrating to a higher target dose (compared to normal metabolizers).e Utilize therapeutic drug monitoring to guide dose adjustments.',
+        'recommendation': 'Avoid tricyclic use due to potential lack of efficacy. Consider alternative drug not metabolized by CYP2D6. If a TCA is warranted, consider titrating to a higher target dose (compared to normal metabolizers). Utilize therapeutic drug monitoring to guide dose adjustments.',
         'classification': 'Optional'},
   "cyp2c19ultrarapidcyp2d6normal":{'implication': 'Normal metabolism of TCAs',
         'recommendation': ' Initiate therapy with recommended starting dose.',
@@ -105,7 +105,7 @@ var recommendations = {
         'classification': 'Optional'},
 
   'cyp2c19rapidcyp2d6ultrarapid':{'implication': 'Increased metabolism of TCAs to less active compounds compared to normal metabolizers Lower plasma concentrations of active drug will increase probability of pharmacotherapy failure',
-        'recommendation': 'Avoid tricyclic use due to potential lack of efficacy. Consider alternative drug not metabolized by CYP2D6. If a TCA is warranted, consider titrating to a higher target dose (compared to normal metabolizers).e Utilize therapeutic drug monitoring to guide dose adjustments.',
+        'recommendation': 'Avoid tricyclic use due to potential lack of efficacy. Consider alternative drug not metabolized by CYP2D6. If a TCA is warranted, consider titrating to a higher target dose (compared to normal metabolizers). Utilize therapeutic drug monitoring to guide dose adjustments.',
         'classification': 'Optional'},
   "cyp2c19rapidcyp2d6normal":{'implication': 'Normal metabolism of TCAs',
         'recommendation': ' Initiate therapy with recommended starting dose.',
@@ -119,7 +119,7 @@ var recommendations = {
 
 
   'cyp2c19normalcyp2d6ultrarapid':{'implication': 'Increased metabolism of TCAs to less active compounds compared to normal metabolizers Lower plasma concentrations of active drug will increase probability of pharmacotherapy failure',
-        'recommendation': 'Avoid tricyclic use due to potential lack of efficacy. Consider alternative drug not metabolized by CYP2D6. If a TCA is warranted, consider titrating to a higher target dose (compared to normal metabolizers).e Utilize therapeutic drug monitoring to guide dose adjustments.',
+        'recommendation': 'Avoid tricyclic use due to potential lack of efficacy. Consider alternative drug not metabolized by CYP2D6. If a TCA is warranted, consider titrating to a higher target dose (compared to normal metabolizers). Utilize therapeutic drug monitoring to guide dose adjustments.',
         'classification': 'Optional'},
   "cyp2c19normalcyp2d6normal":{'implication': 'Normal metabolism of TCAs',
         'recommendation': ' Initiate therapy with recommended starting dose.',
@@ -132,7 +132,7 @@ var recommendations = {
         'classification': 'Optional'},
 
   'cyp2c19intermediatecyp2d6ultrarapid':{'implication': 'Increased metabolism of TCAs to less active compounds compared to normal metabolizers Lower plasma concentrations of active drug will increase probability of pharmacotherapy failure',
-        'recommendation': 'Avoid tricyclic use due to potential lack of efficacy. Consider alternative drug not metabolized by CYP2D6. If a TCA is warranted, consider titrating to a higher target dose (compared to normal metabolizers).e Utilize therapeutic drug monitoring to guide dose adjustments.',
+        'recommendation': 'Avoid tricyclic use due to potential lack of efficacy. Consider alternative drug not metabolized by CYP2D6. If a TCA is warranted, consider titrating to a higher target dose (compared to normal metabolizers). Utilize therapeutic drug monitoring to guide dose adjustments.',
         'classification': 'Optional'},
   "cyp2c19intermediatecyp2d6normal":{'implication': 'Normal metabolism of TCAs',
         'recommendation': ' Initiate therapy with recommended starting dose.',
@@ -145,7 +145,7 @@ var recommendations = {
         'classification': 'Optional'},
 
   'cyp2c19poorcyp2d6ultrarapid':{'implication': 'Increased metabolism of TCAs to less active compounds compared to normal metabolizers Lower plasma concentrations of active drug will increase probability of pharmacotherapy failure',
-        'recommendation': 'Avoid tricyclic use due to potential lack of efficacy. Consider alternative drug not metabolized by CYP2D6. If a TCA is warranted, consider titrating to a higher target dose (compared to normal metabolizers).e Utilize therapeutic drug monitoring to guide dose adjustments.',
+        'recommendation': 'Avoid tricyclic use due to potential lack of efficacy. Consider alternative drug not metabolized by CYP2D6. If a TCA is warranted, consider titrating to a higher target dose (compared to normal metabolizers). Utilize therapeutic drug monitoring to guide dose adjustments.',
         'classification': 'Optional'},
   "cyp2c19poorcyp2d6normal":{'implication': 'Normal metabolism of TCAs',
         'recommendation': ' Initiate therapy with recommended starting dose.',

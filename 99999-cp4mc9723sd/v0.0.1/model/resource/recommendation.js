@@ -69,6 +69,6 @@ var recommendations = {
           'recommendation': 'Initiate therapy with recommended starting dose.',
           'classification': 'Moderate'},
   'cyp2d6poor': {'implication': 'Greatly reduced metabolism when compared to extensive metabolizers. Higher plasma concentrations may increase the probability of side effects.',
-          'recommendation': 'Consider a 25–50% reductiond of recommended starting dose and titrate to response or use an alternative drug not metabolized by CYP2D6.',
+          'recommendation': 'Consider a 25–50% reduction of recommended starting dose and titrate to response or use an alternative drug not metabolized by CYP2D6.',
           'classification': 'Optional'}
         }

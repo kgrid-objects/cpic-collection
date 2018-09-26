@@ -1,7 +1,7 @@
 openapi: 3.0.0
 info:
   version: 1.0.0
-  title: 'CPIC CYP2D6 fluvoxamine Recommendations'
+  title: 'CPIC CYP2D6 paroxetine Recommendations'
   description: 'KGrid CPIC guidelines CYP2D6 Phenotype to Recommendation'
 servers:
   - url: '/99999/cp4mc9723se/v0.0.1/'
