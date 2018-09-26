@@ -14,19 +14,16 @@ This is a collection of objects that focus on dosing guidelines as provided by t
   * [Packaging](#Packaging)
 
 ## Status
-Talk about the objects completed and objects we are working on, if we have and idea of roadmap
+The current release of CPIC collection of knowledge objects is [1.5.0] (https://github.com/kgrid-objects/cpic-objects/releases/tag/1.5.0)
+
+This release contains 37 KOs, including 28 drug recommendation KOs, 7 geno-to-pheno KOs and two look-up table KOs.
+
 
 ## CPIC Knowledge Objects (KO)
 
 ### CPIC KO Design
  (code, api, workflow)
 
-### Using the CPIC KOs
-[CPIC Kit](https://demo.kgrid.org/cpic-kit/) - KGrid CPIC Kit packages Activator, Library and CPIC Demo Site. The kit is designed as a personnel CPIC Knowledge Grid used to explore the capablities of KGrid and CPIC Knowlege Objects.
-
-[Swagger UI]  
-
-Tests
 
 ### CPIC KO Descriptions
 
@@ -108,15 +105,27 @@ Currently, the following drug recommendations are available as knowledge objects
 
 [Voriconazole (based on CYP2C19 phenotype)](https://library.kgrid.org/#/object/99999%2Ffk4cz4fm8f%2Fv0.0.1)
 
+
+### Using the CPIC KOs
+
+CPIC KOs are individually available for access and deployment.
+
+The collection of CPIC KOs can also be easily deployed through [CPIC Kit](https://demo.kgrid.org/cpic-kit/). The kit packages Activator, Library and CPIC Demo Site. The kit is designed as a personnel CPIC Knowledge Grid used to explore the capablities of KGrid and CPIC Knowlege Objects.
+
+To try the CPIC KOs:
+- Click on the gene or drug from the above KO list. The link will open the KO page in the library.
+- Click on 'Live Demo'. The library will deploy the KO to the default activator or your choice and provide the links for trying the KO in Swagger UI
+- Click on the selected link will open the KO's service description in Swagger UI or Swagger Editor. ([More information on Swagger UI](https://swagger.io/tools/swagger-ui/))
+
 ## Development
 
 ### Testing
 
 #### Unit Tests
 The KO Unit Test are located in the [tests directory](./tests).  These tests utilize
-[Jest](https://jestjs.io/) and  [rewire](https://github.com/jhnns/rewire). est provides the testing
+[Jest](https://jestjs.io/) and  [rewire](https://github.com/jhnns/rewire). Jest provides the testing
 framework and rewire allows the tests to access the javascript function without the
-convienace of the export modules (KGrid Javascript adaptor limitation).  The [tests](../tests) are in
+convienence of the export modules (KGrid Javascript adaptor limitation).  The [tests](../tests) are in
 the tests directory.  You can execute the tests via npm
 
 ```
