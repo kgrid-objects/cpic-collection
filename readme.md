@@ -15,39 +15,135 @@ This is a collection of objects that focus on dosing guidelines as provided by t
   * [Packaging](#Packaging)
 
 ## Status
-The current release of CPIC collection of knowledge objects is [1.5.0] (https://github.com/kgrid-objects/cpic-objects/releases/tag/1.5.0)
+The current release of CPIC collection of knowledge objects is [1.5.0](https://github.com/kgrid-objects/cpic-objects/releases/tag/1.5.0)
 
 This release contains 37 KOs, including 28 drug recommendation KOs, 7 geno-to-pheno KOs and two look-up table KOs.
-
 
 ## CPIC Knowledge Objects (KO)
 
 ### CPIC KO Design
  CPIC collection consists of three types of KOs:
- - Look-up table
-  The look-up table KO provides the KO ark ids for either the genes or the drugs of interest
 
- - Geno-to-Pheno
- The geno-to-pheno KO is gene-specific. It will determine the phenotype based on the gene's diplotypes
+- Geno-to-Pheno
 
- There are two groups within this type of KO:
+  This type of KO is gene-specific. It will determine the phenotype based on the gene's diplotypes
+
+  There are two groups within this type of KO:
   * CYP2D6, CYP2C19 and UGT1A1: Each gene has a spreadsheet mapping the dipltotype directly to the phenotype;
+
   * CYP2C9, CYP3A5, SLCO1B1 and TPMT: Each gene has a allele-definition spreadsheet for the functional status of the allele. The alleles in the diplotype are checked on the functional status. The likely phenotype is then determined based on the functional status of both alleles.
 
+  Endpoint:       ` /phenotype`
 
- - Drug recommendations
- The drug recommendation KO is drug-specific. It will provide the recommendation based on the information of relevant gene(s). The combination of information includes:
+  Input Example:
+  ```json
+  { "CYP2D6" : "*1/*1" }
+  ```
+
+  Output Example (Only the `result` of the response is shown):
+  ```json
+  {
+    "CYP2D6": {
+      "diplotype": "*1/*1",
+      "phenotype": "Normal metabolizer"
+    }
+  }
+  ```
+
+- Drug recommendations
+
+  The drug recommendation KO is drug-specific. It will provide the recommendation based on the information of relevant gene(s). The combination of information includes:
+
   * single gene allele
   * multiple gene allele
   * one gene allele and one gene phenotype
+  * single gene phenotype
   * multiple gene phenotypes
 
+  The drug recommendation KO will take the phenotype panel as input, extract the needed gene and provide recommendation output.
+
+  Endpoint:       ` /dosingrecommendation`
+
+  Input Example:
+  ```json
+  {
+    "CYP2C19" : "*3/*3",
+    "CYP2D6"  : "*1/*1",
+    ...
+  }
+  ```
+
+  Output Example (Only the `result` of the response is shown):
+  ```json
+  {
+    "type": "CPIC Recommendation",
+    "drug": "Codeine",
+    "genes": {
+      "CYP2D6": {
+        "diplotype": "*1/*1",
+        "phenotype": "normal metabolizer"
+      }
+    },
+    "recommendation": {
+      "implication": "Normal morphine formation",
+      "content": "Use label-recommended age- or weight-specific dosing.",
+      "classification": "Strong"
+    }
+  }
+  ```
+
+- Look-up table
+
+  The look-up table KO provides the KO ark ids for either the genes or the drugs of interest.
+
+  Endpoint for geno-to-pheno table:   `/genophenokolist`
+
+  Input for geno-to-pheno table:
+  ```json
+  {
+     "CYP2D6":"",
+     "CYP2C19":"",
+     "UGT1A1":"",
+     ...
+   }
+   ```
+
+   Output for geno-to-pheno table:
+   ```json
+   {
+    "CYP2D6": "/99999/fk49z9gr7p/v0.0.6",
+    "CYP2C19": "/99999/fk4mc97w0h/v0.0.4",
+    "UGT1A1": "/99999/fk47h1x090/v0.0.4",
+    ...
+   }
+   ```
+
+   Endpoint for drug list table:   `/druglist`
+
+   Input for drug list table:
+   ```json
+   {
+     "codeine": true,
+     "atazanavir": true,
+     ...
+   }
+   ```
+
+    Output for drug list table:
+    ```json
+    {
+      "codeine": "/99999/fk4mc97w6m/v0.0.5",
+      "atazanavir": "/99999/fk4d79nq4z/v0.0.5",
+      ...
+    }
+    ```
+    Note: For drug list table, a input of empty object `{}` will produce the output containing the list of all available KOs.
 
 ### CPIC KO Descriptions
 
 #### Genotype to Phenotype
 
-Currently, the following genes' phenotypes based on their diplotypes can be determined by the respective knowledge objects, which are included in the cpic-kit.
+Currently, the following genes' phenotypes can be determined based on their diplotypes by the respective knowledge objects, as included in the cpic-kit.
 
 [CYP2C19](https://library.kgrid.org/#/object/99999%2Ffk4mc97w0h%2Fv0.0.4)
 
@@ -131,7 +227,7 @@ CPIC KOs are individually available for access and deployment.
 The collection of CPIC KOs can also be easily deployed through [CPIC Kit](https://demo.kgrid.org/cpic-kit/). The kit packages Activator, Library and CPIC Demo Site. The kit is designed as a personnel CPIC Knowledge Grid used to explore the capablities of KGrid and CPIC Knowlege Objects.
 
 To try the CPIC KOs:
-- Click on the gene or drug from the above KO list. The link will open the KO page in the library.
+- Click on the gene or drug from the KO list. The link will open the KO page in the library.
 - Click on 'Live Demo'. The library will deploy the KO to the default activator or your choice and provide the links for trying the KO in Swagger UI
 - Click on the selected link will open the KO's service description in Swagger UI or Swagger Editor. ([More information on Swagger UI](https://swagger.io/tools/swagger-ui/))
 

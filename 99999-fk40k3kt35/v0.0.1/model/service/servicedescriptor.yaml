@@ -4,7 +4,7 @@ info:
   title: 'CPIC CYP2C19 sertraline recommendations'
   description: 'CPIC recommendations for sertraline based on CYP2C19 phenotype'
 servers:
-  - url: '/99999/fk40k3kt35/v0.0.5/'
+  - url: '/99999/fk40k3kt35/v0.0.1/'
     description: 'CPIC recommendations for sertraline based on CYP2C19 phenotype'
 tags:
   - name: KO Endpoints
@@ -42,7 +42,7 @@ components:
       required:
         - CYP2C19
       properties:
-        CYP2D6:
+        CYP2C19:
           type: object
           required:
           - diplotype
