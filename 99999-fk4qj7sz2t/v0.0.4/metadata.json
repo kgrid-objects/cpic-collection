@@ -3,7 +3,7 @@
   "description": "CPIC Geno2Pheno KO Table, with total of 15 entries, which can be filtered by supplying a list of genes.",
   "arkId": "ark:/99999/fk4qj7sz2t",
   "citations": [
-    "https://cpicpgx.org/genes-drugs/"
+    ""
   ],
   "keywords": "CPIC",
   "owners": "KGRID",

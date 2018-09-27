@@ -41,7 +41,20 @@ components:
     phenotype:
       required:
         - HLA-B
+        - HLA-A
       properties:
+        HLA-A:
+          type: object
+          required:
+          - diplotype
+          - phenotype
+          properties:
+            diplotype:
+              type: string
+              example: '*31:01/*1'
+            phenotype:
+              type: string
+              example: ''
         HLA-B:
           type: object
           required:
@@ -50,10 +63,10 @@ components:
           properties:
             diplotype:
               type: string
-              example: '*1/*1'
+              example: '*15:02/*1'
             phenotype:
               type: string
-              example: 'ultrarapid metabolizer'
+              example: ''
     dosingrecommendation:
       required:
       - result
@@ -85,10 +98,10 @@ components:
                   properties:
                     diplotype:
                       type: string
-                      example: '*1/*1'
+                      example: '*15:02/*1'
                     phenotype:
                       type: string
-                      example: 'ultrarapid metabolizer'
+                      example: ''
             recommendation:
               type: object
               required:

@@ -50,10 +50,10 @@ components:
           properties:
             diplotype:
               type: string
-              example: '*3/*3'
+              example: '*1/*1'
             phenotype:
               type: string
-              example: 'Poor metabolizer'
+              example: 'Ultrarapid metabolizer'
     dosingrecommendation:
       required:
         - result

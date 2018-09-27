@@ -54,7 +54,6 @@ components:
             phenotype:
               type: string
               example: 'Normal metabolizer'
-          example: 'Normal metabolizer'
     dosingrecommendation:
       required:
       - result

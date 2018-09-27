@@ -44,7 +44,7 @@ components:
       properties:
        CYP2C19:
           type: string
-          example: '*3/*3'
+          example: '*1/*1'
     phenotype:
       required:
         - CYP2C19
@@ -57,10 +57,10 @@ components:
           properties:
             diplotype:
               type: string
-              example: '*3/*3'
+              example: '*1/*1'
             phenotype:
               type: string
-              example: 'Likely Poor metabolizer'
+              example: 'Normal metabolizer'
     Error:
       required:
         - code

@@ -65,7 +65,7 @@ This release contains 37 KOs, including 28 drug recommendation KOs, 7 geno-to-ph
   Endpoint:       ` /dosingrecommendation`
 
   Input Example:
-  ```json
+  ```
   {
     "CYP2C19" : "*3/*3",
     "CYP2D6"  : "*1/*1",
@@ -99,7 +99,7 @@ This release contains 37 KOs, including 28 drug recommendation KOs, 7 geno-to-ph
   Endpoint for geno-to-pheno table:   `/genophenokolist`
 
   Input for geno-to-pheno table:
-  ```json
+  ```
   {
      "CYP2D6":"",
      "CYP2C19":"",
@@ -109,7 +109,7 @@ This release contains 37 KOs, including 28 drug recommendation KOs, 7 geno-to-ph
    ```
 
    Output for geno-to-pheno table:
-   ```json
+   ```
    {
     "CYP2D6": "/99999/fk49z9gr7p/v0.0.6",
     "CYP2C19": "/99999/fk4mc97w0h/v0.0.4",
@@ -121,7 +121,7 @@ This release contains 37 KOs, including 28 drug recommendation KOs, 7 geno-to-ph
    Endpoint for drug list table:   `/druglist`
 
    Input for drug list table:
-   ```json
+   ```
    {
      "codeine": true,
      "atazanavir": true,
@@ -130,7 +130,7 @@ This release contains 37 KOs, including 28 drug recommendation KOs, 7 geno-to-ph
    ```
 
     Output for drug list table:
-    ```json
+    ```
     {
       "codeine": "/99999/fk4mc97w6m/v0.0.5",
       "atazanavir": "/99999/fk4d79nq4z/v0.0.5",

@@ -3,7 +3,7 @@
   "description": "CPIC Genes-Drug Table, with total of 28 entries, which can be filtered by supplying a list of genes, a list of drugs, or both.",
   "arkId": "ark:/99999/fk4qj7sz2s",
   "citations": [
-    "https://cpicpgx.org/genes-drugs/"
+    ""
   ],
   "keywords": "CPIC",
   "owners": "KGRID",

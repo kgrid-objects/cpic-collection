@@ -50,7 +50,7 @@ components:
           properties:
             diplotype:
               type: string
-              example: '*1/*1'
+              example: '*58:01/*1'
             phenotype:
               type: string
               example: ''
@@ -71,7 +71,7 @@ components:
               example: 'CPIC Recommendation'
             drug:
               type: string
-              example: 'abacavir'
+              example: 'allopurinol'
             genes:
               type: object
               required:
@@ -85,7 +85,7 @@ components:
                   properties:
                     diplotype:
                       type: string
-                      example: '*1/*1'
+                      example: '*58:01/*1'
                     phenotype:
                       type: string
                       example: ''

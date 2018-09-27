@@ -44,7 +44,7 @@ components:
       properties:
        CYP2D6:
           type: string
-          example: '*3/*3'
+          example: '*1/*1'
     phenotype:
       required:
         - CYP2D6

@@ -44,7 +44,7 @@ components:
       properties:
         SLCO1B1:
           type: string
-          example: '*1/*1'
+          example: '*1A/*1A'
     phenotype:
       required:
         - SLCO1B1
@@ -57,7 +57,7 @@ components:
           properties:
             diplotype:
               type: string
-              example: '*1/*1'
+              example: '*1A/*1A'
             phenotype:
               type: string
               example: 'Normal metabolizer'

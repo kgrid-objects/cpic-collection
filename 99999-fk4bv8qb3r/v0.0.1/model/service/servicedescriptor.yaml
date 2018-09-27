@@ -42,14 +42,14 @@ components:
       required:
       - CYP2C9
       properties:
-        CYP3A5:
+        CYP2C9:
           type: string
           example: '*1/*1'
     phenotype:
       required:
         - CYP2C9
       properties:
-        CYP3A5:
+        CYP2C9:
           type: object
           required:
             - diplotype
@@ -60,7 +60,7 @@ components:
               example: '*1/*1'
             phenotype:
               type: string
-              example: 'Normal metabolizer'
+              example: 'Extensive metabolizer'
     Error:
       required:
         - code

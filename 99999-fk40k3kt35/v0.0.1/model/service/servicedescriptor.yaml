@@ -53,7 +53,7 @@ components:
               example: '*1/*1'
             phenotype:
               type: string
-              example: 'ultrarapid metabolizer'
+              example: 'normal metabolizer'
     dosingrecommendation:
       required:
       - result
@@ -88,7 +88,7 @@ components:
                       example: '*1/*1'
                     phenotype:
                       type: string
-                      example: 'ultrarapid metabolizer'
+                      example: 'normal metabolizer'
             recommendation:
               type: object
               required:

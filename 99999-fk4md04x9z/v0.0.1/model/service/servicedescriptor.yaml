@@ -60,7 +60,7 @@ components:
               example: '*1/*1'
             phenotype:
               type: string
-              example: 'Normal metabolizer'
+              example: 'Extensive metabolizer'
     Error:
       required:
         - code

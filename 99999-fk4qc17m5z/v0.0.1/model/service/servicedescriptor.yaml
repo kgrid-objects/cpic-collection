@@ -50,7 +50,7 @@ components:
           properties:
             diplotype:
               type: string
-              example: '*1/*1'
+              example: '*57:01/*1'
             phenotype:
               type: string
               example: ''
@@ -85,7 +85,7 @@ components:
                   properties:
                     diplotype:
                       type: string
-                      example: '*1/*1'
+                      example: '*57:01/*1'
                     phenotype:
                       type: string
                       example: ''

@@ -8,7 +8,7 @@ servers:
     description: 'KGrid CPIC guidelines CYP2C9 and HLA-B Phenotypes to Phenytoin Recommendation'
 tags:
   - name: KO Endpoints
-    description: KGrid CPIC guidelines CYP2C19 and HLA-B Phenotypes to Phenytoin Recommendation
+    description: KGrid CPIC guidelines CYP2C9 and HLA-B Phenotypes to Phenytoin Recommendation
 paths:
   /dosingrecommendation:
     post:
@@ -43,7 +43,7 @@ components:
         - HLA-B
         - CYP2C9
       properties:
-        CYP2D6:
+        HLA-B:
           type: object
           required:
           - diplotype
@@ -51,11 +51,11 @@ components:
           properties:
             diplotype:
               type: string
-              example: '*3/*3'
+              example: '*15:02/*1'
             phenotype:
               type: string
-              example: 'Poor metabolizer'
-        CYP2C19:
+              example: ''
+        CYP2C9:
           type: object
           required:
           - diplotype
@@ -63,10 +63,10 @@ components:
           properties:
             diplotype:
               type: string
-              example: '*3/*3'
+              example: '*1/*1'
             phenotype:
               type: string
-              example: 'Poor metabolizer'
+              example: 'Extensive metabolizer'
     dosingrecommendation:
       required:
         - result
@@ -88,9 +88,22 @@ components:
             genes:
               type: object
               required:
-              - CYP2D6
+              - HLA-B  
+              - CYP2C9
               properties:
-                CYP2D6:
+                HLA-B:
+                  type: object
+                  required:
+                  - diplotype
+                  - phenotype
+                  properties:
+                    diplotype:
+                      type: string
+                      example: '*15:02/*1'
+                    phenotype:
+                      type: string
+                      example: ''
+                CYP2C9:
                   type: object
                   required:
                   - diplotype
@@ -101,7 +114,7 @@ components:
                       example: '*1/*1'
                     phenotype:
                       type: string
-                      example: 'ultrarapid metabolizer'
+                      example: 'Extensive metabolizer'
             recommendation:
               type: object
               required:

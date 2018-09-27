@@ -63,10 +63,10 @@ components:
           properties:
             diplotype:
               type: string
-              example: '*3/*3'
+              example: '*1/*1'
             phenotype:
               type: string
-              example: 'Poor metabolizer'
+              example: 'Normal metabolizer'
     dosingrecommendation:
       required:
         - result
@@ -98,10 +98,10 @@ components:
                   properties:
                     diplotype:
                       type: string
-                      example: '*1/*1'
+                      example: '*3/*3'
                     phenotype:
                       type: string
-                      example: 'ultrarapid metabolizer'
+                      example: 'poor metabolizer'
             recommendation:
               type: object
               required:
