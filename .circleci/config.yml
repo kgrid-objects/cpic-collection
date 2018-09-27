@@ -21,12 +21,25 @@ jobs:
         # fallback to using the latest cache if no exact match is found
         - v1-dependencies-
 
-    - run: npm install
+    - run:
+        name: Install CPIC Objects
+        command: npm install
 
     - save_cache:
         paths:
         - node_modules
         key: v1-dependencies-{{ checksum "package.json" }}
 
-    # run tests!
-    - run: npm test
+    - run:
+        name: Run smoke tests on the CPIC Kit
+        command: npm test
+
+    - run:
+        name: Create CPIC Objects zip ready for deployment
+        command: npm run package
+
+    - store_artifacts:
+        path: dist
+
+    - store_test_results:
+        path: test-results
