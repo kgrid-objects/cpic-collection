@@ -31,8 +31,12 @@ jobs:
         key: v1-dependencies-{{ checksum "package.json" }}
 
     - run:
-        name: Run smoke tests on the CPIC Kit
+        name: Unit Testing
         command: npm test
+
+    - run:
+        name: Intgration Testing
+        command: npm run ci
 
     - run:
         name: Create CPIC Objects zip ready for deployment

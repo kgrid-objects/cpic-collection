@@ -1,5 +1,6 @@
 const fs = require('fs');
 const download = require('download');
+const await = require('await-sleep')
 const request = require('request');
 const jp = require('jsonpath');
 const shell = require('shelljs');
@@ -26,20 +27,23 @@ var activatorFilename = ''
           executeActivator();
         } else {
           console.log("downloading activator");
-          download(download_url,".").then(() => {
+          download(download_url,"build").then(() => {
             console.log('files downloaded!');
-            executeActivator();
+           executeActivator();
           });
         }
       });
 
   });
 
-  function executeActivator() {
-    var wd = process.cwd()
-    shell.exec("java -jar "+activatorFilename+" --kgrid.shelf.cdostore.url=filesystem:file:///"+ wd.replace(/\\/g,'/') ,function(code, stdout, stderr) {
+   function executeActivator() {
+    let wd = process.cwd()
+    console.log(wd);
+    var activator = shell.exec(" java -jar build/kgrid-activator-1.0.1.jar  --kgrid.shelf.cdostore.url=filesystem:file:///Users/farrisg/cpic-objects", function(code, stdout, stderr) {
       console.log('Exit code:', code);
       console.log('Program output:', stdout);
       console.log('Program stderr:', stderr);
     });
+
+    return activator;
   }

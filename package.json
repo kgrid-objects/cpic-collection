@@ -43,14 +43,17 @@
     "mocha": "5.2.0",
     "rewire": "^4.0.1",
     "scripty": "1.7.2",
-    "shelljs": "^0.8.2"
+    "shelljs": "^0.8.2",
+    "start-server-and-test": "^1.7.1"
   },
   "scripts": {
     "test": "jest --ci --reporters=default --reporters=jest-junit",
+    "test-it": "newman run tests/postman/cpic_integration_tests.postman_collection.json --reporters  cli,junit --reporter-junit-export test-results",
     "prod": "scripty",
-    "dev": "node scripts/dev.js",
     "package": "scripty",
-    "release": "scripty"
+    "release": "scripty",
+    "start": "node scripts/start.js",
+    "ci": "server-test :8080 test-it "
   },
   "scripty": {
     "path": "scripts",
@@ -73,6 +76,7 @@
     "npm": ">= 3.0.0"
   },
   "dependencies": {
+    "await-sleep": "0.0.1",
     "axios": "^0.18.0",
     "download": "^7.1.0",
     "download-cli": "^1.1.1",
