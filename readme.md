@@ -248,13 +248,28 @@ the tests directory.  You can execute the tests via npm
 npm test
 ```
 
+### Integration Tests
+We test the CPIC KO endpoints in a KGrid Activator instance using [Postman](https://www.getpostman.com/) and 
+[Newman](https://www.npmjs.com/package/newman). The tests are defined in the 
+[cpic_integration_tests](tests/postman/cpic_integration_tests.postman_collection.json). The CI script uses the 
+[start server and test](https://www.npmjs.com/package/start-server-and-test) library to:
+1. downloads the latest KGrid Activator
+1. runs the activator with the cpic kos
+1. runs the [Postman](https://www.getpostman.com/) collection defined in 
+[cpic_integration_tests](tests/postman/cpic_integration_tests.postman_collection.json) using 
+        [Newman](https://www.npmjs.com/package/newman) 
+
+
+
+```
+npm run ci
+```
+
 #### Performance Testing
 
 We have some performance/load testing scripts that utilize k6, a load testing tool.  
 
 Details on CPIC load/performance testing can be found in the [k6 readme](/tests/k6/readme.md)
-
-### Continuous Integration
 
 ### Packaging
 
