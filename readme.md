@@ -259,17 +259,13 @@ We test the CPIC KO endpoints in a KGrid Activator instance using [Postman](http
 [cpic_integration_tests](tests/postman/cpic_integration_tests.postman_collection.json) using 
         [Newman](https://www.npmjs.com/package/newman) 
 
-
-
 ```
 npm run ci
 ```
 
-#### Performance Testing
+### Performance Testing
 
-We have some performance/load testing scripts that utilize k6, a load testing tool.  
-
-Details on CPIC load/performance testing can be found in the [k6 readme](/tests/k6/readme.md)
+We have some performance/load testing scripts that utilize k6, a load testing tool.  Details on CPIC load/performance testing can be found in the [k6 readme](/tests/k6/readme.md)
 
 ### Packaging
 
