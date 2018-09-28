@@ -8,7 +8,7 @@ This is a collection of objects that focus on dosing guidelines as provided by t
 * [CPIC Knowledge Objects](#cpic-knowledge-objects)
   * [KO Design](#cpic-ko-design)
   * [KO Descriptions](#cpic-ko-descriptions)
-  * [Using the KOs](#using_the_cpic_kos)
+  * [Using the KOs](#using-the-cpic-kos)               
 * [Development](#development)
   * [Testing](#testing)
   * [Packaging](#packaging)
