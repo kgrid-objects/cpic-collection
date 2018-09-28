@@ -19,6 +19,8 @@ The current release of CPIC collection of knowledge objects is [1.5.0](https://g
 
 This release contains 37 KOs, including 28 drug recommendation KOs, 7 geno-to-pheno KOs and two look-up table KOs.
 
+The collection of CPIC KOs can be easily deployed through [CPIC Kit](https://demo.kgrid.org/cpic-kit/).
+
 ## CPIC Knowledge Objects (KO)
 
 ### CPIC KO Design
@@ -239,7 +241,7 @@ To try the CPIC KOs:
 The KO Unit Test are located in the [tests directory](./tests).  These tests utilize
 [Jest](https://jestjs.io/) and  [rewire](https://github.com/jhnns/rewire). Jest provides the testing
 framework and rewire allows the tests to access the javascript function without the
-convienence of the export modules (KGrid Javascript adaptor limitation).  The [tests](../tests) are in
+convienence of the export modules (KGrid Javascript adapter limitation).  The [tests](../tests) are in
 the tests directory.  You can execute the tests via npm
 
 ```
@@ -247,9 +249,15 @@ npm test
 ```
 
 #### Performance Testing
-We have some performance/load testing scripts that utilize k6, a load testing tool.  Details on CPIC
-load/perforance testing can be found in the [k6 readme](/tests/k6/readme.md)
+
+We have some performance/load testing scripts that utilize k6, a load testing tool.  
+
+Details on CPIC load/performance testing can be found in the [k6 readme](/tests/k6/readme.md)
 
 ### Continuous Integration
 
 ### Packaging
+
+CPIC Knowledge Objects, just as other KOs, can be compressed individually into zip file, and then deposited into a KGrid library, for example, [KGRID Sandbox Library](https://library.kgrid.org)
+
+CPIC Knowledge Objects are released in as a collection in the form of a single zip file,  such as `cpic-all.zip` on [GitHub release](https://github.com/kgrid-objects/cpic-objects/releases/latest)
