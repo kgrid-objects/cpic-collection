@@ -8,11 +8,10 @@ This is a collection of objects that focus on dosing guidelines as provided by t
 * [CPIC Knowledge Objects](#cpic-knowledge-objects)
   * [KO Design](#cpic-ko-design)
   * [KO Descriptions](#cpic-ko-descriptions)
-  * [Using the KOs](#using-cpic-ko)
+  * [Using the KOs](#using_the_cpic_kos)
 * [Development](#development)
   * [Testing](#testing)
-  * [Continuous Integration](#continuous_integration)
-  * [Packaging](#Packaging)
+  * [Packaging](#packaging)
 
 ## Status
 The current release of CPIC collection of knowledge objects is [1.5.0](https://github.com/kgrid-objects/cpic-objects/releases/tag/1.5.0)
@@ -263,7 +262,7 @@ We test the CPIC KO endpoints in a KGrid Activator instance using [Postman](http
 npm run ci
 ```
 
-### Performance Testing
+### Performance Tests
 
 We have some performance/load testing scripts that utilize k6, a load testing tool.  Details on CPIC load/performance testing can be found in the [k6 readme](/tests/k6/readme.md)
 
