@@ -8,8 +8,8 @@ This is a collection of objects that focus on dosing guidelines as provided by t
 * [CPIC Knowledge Objects](#cpic-knowledge-objects-kos)
   * [KO Design](#cpic-ko-design)
   * [KO Descriptions](#cpic-ko-descriptions)
-      * [Genotype to Phenotype](#genotype-to-phenotype)
-      * [Drug Recommendation](#drug-recommendation)
+     * [Genotype to Phenotype](#genotype-to-phenotype)
+     * [Drug Recommendation](#drug-recommendation)
   * [Using the KOs](#using-the-cpic-kos)               
 * [Development](#development)
   * [Testing](#testing)
@@ -27,7 +27,7 @@ The collection of CPIC KOs can be easily deployed through [CPIC Kit](https://dem
 ### CPIC KO Design
  CPIC collection consists of three types of KOs:
 
-- Geno-to-Pheno
+#### Geno-to-Pheno
 
   This type of KO is gene-specific. It will determine the phenotype based on the gene's diplotypes
 
@@ -53,7 +53,7 @@ The collection of CPIC KOs can be easily deployed through [CPIC Kit](https://dem
   }
   ```
 
-- Drug recommendations
+#### Drug recommendations
 
   The drug recommendation KO is drug-specific. It will provide the recommendation based on the information of relevant gene(s). The combination of information includes:
 
@@ -95,7 +95,7 @@ The collection of CPIC KOs can be easily deployed through [CPIC Kit](https://dem
   }
   ```
 
-- Look-up table
+#### Look-up table
 
   The look-up table KO provides the KO ark ids for either the genes or the drugs of interest.
 
