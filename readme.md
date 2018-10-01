@@ -1,5 +1,5 @@
-[![GitHub release](https://img.shields.io/github/release/kgrid/cpic-objects.svg)](https://github.com/kgrid/cpic-objects/releases/)
-[![CircleCI](https://circleci.com/gh/kgrid-objects/cpic-objects.svg?style=svg)](https://circleci.com/gh/kgrid-objects/cpic-objects)
+[![GitHub release](https://img.shields.io/github/release/kgrid/cpic-collection.svg)](https://github.com/kgrid/cpic-collection/releases/)
+[![CircleCI](https://circleci.com/gh/kgrid-objects/cpic-collection.svg?style=svg)](https://circleci.com/gh/kgrid-objects/cpic-collection)
 
 This is a collection of objects that focus on dosing guidelines as provided by the [CPIC pharmacogenomic guidelines](https://cpicpgx.org/guidelines/). These objects generally take allele pairs as inputs and return the corresponding drug selection or dosing guideline recommendation based on a patient's alleles.
 
@@ -14,7 +14,7 @@ This is a collection of objects that focus on dosing guidelines as provided by t
   * [Packaging](#packaging)
 
 ## Status
-The current release of CPIC collection of knowledge objects is [1.5.0](https://github.com/kgrid-objects/cpic-objects/releases/tag/1.5.0)
+The current release of CPIC collection of knowledge objects is [1.5.0](https://github.com/kgrid-objects/cpic-collection/releases/tag/1.5.0)
 
 This release contains 37 KOs, including 28 drug recommendation KOs, 7 geno-to-pheno KOs and two look-up table KOs.
 
@@ -248,15 +248,15 @@ npm test
 ```
 
 ### Integration Tests
-We test the CPIC KO endpoints in a KGrid Activator instance using [Postman](https://www.getpostman.com/) and 
-[Newman](https://www.npmjs.com/package/newman). The tests are defined in the 
-[cpic_integration_tests](tests/postman/cpic_integration_tests.postman_collection.json). The CI script uses the 
+We test the CPIC KO endpoints in a KGrid Activator instance using [Postman](https://www.getpostman.com/) and
+[Newman](https://www.npmjs.com/package/newman). The tests are defined in the
+[cpic_integration_tests](tests/postman/cpic_integration_tests.postman_collection.json). The CI script uses the
 [start server and test](https://www.npmjs.com/package/start-server-and-test) library to:
 1. downloads the latest KGrid Activator
 1. runs the activator with the cpic kos
-1. runs the [Postman](https://www.getpostman.com/) collection defined in 
-[cpic_integration_tests](tests/postman/cpic_integration_tests.postman_collection.json) using 
-        [Newman](https://www.npmjs.com/package/newman) 
+1. runs the [Postman](https://www.getpostman.com/) collection defined in
+[cpic_integration_tests](tests/postman/cpic_integration_tests.postman_collection.json) using
+        [Newman](https://www.npmjs.com/package/newman)
 
 ```
 npm run ci
@@ -270,4 +270,4 @@ We have some performance/load testing scripts that utilize k6, a load testing to
 
 CPIC Knowledge Objects, just as other KOs, can be compressed individually into zip file, and then deposited into a KGrid library, for example, [KGRID Sandbox Library](https://library.kgrid.org)
 
-CPIC Knowledge Objects are released in as a collection in the form of a single zip file,  such as `cpic-all.zip` on [GitHub release](https://github.com/kgrid-objects/cpic-objects/releases/latest)
+CPIC Knowledge Objects are released in as a collection in the form of a single zip file,  such as `cpic-all.zip` on [GitHub release](https://github.com/kgrid-objects/cpic-collection/releases/latest)
