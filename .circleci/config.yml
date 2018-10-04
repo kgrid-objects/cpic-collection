@@ -11,9 +11,10 @@ jobs:
 
     working_directory: ~/repo
 
-    branches:
-      ignore:
-        - gh-pages
+    filters:
+      branches:
+        ignore:
+          - gh-pages
 
     steps:
     - checkout
