@@ -11,11 +11,6 @@ jobs:
 
     working_directory: ~/repo
 
-    filters:
-      branches:
-        ignore:
-          - gh-pages
-
     steps:
     - checkout
 
@@ -57,3 +52,13 @@ jobs:
 
     - store_test_results:
         path: test-results
+
+
+workflows:
+  version: 2
+  main:
+    jobs:
+    - build:
+        filters:
+          branches:
+            only: master
