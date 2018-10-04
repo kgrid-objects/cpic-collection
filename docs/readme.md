@@ -160,7 +160,7 @@ Currently, the following genes' phenotypes can be determined based on their dipl
 
 #### Drug Recommendation
 
-Currently, the following drug recommendations are available as knowledge objects and included in the cpic-kit.
+Currently, the following drug recommendations are available as knowledge objects and included in the CPIC-kit.
 
 1. [Abacavir (based on HLA-B allele information)](https://library.kgrid.org/#/object/99999%2Ffk45m7fn9t%2Fv0.0.1)
 
@@ -223,7 +223,7 @@ Currently, the following drug recommendations are available as knowledge objects
 
 CPIC KOs are individually available for access and deployment.
 
-The collection of CPIC KOs can also be easily deployed through [CPIC Kit](https://demo.kgrid.org/cpic-kit/). The kit packages Activator, Library and CPIC Demo Site. The kit is designed as a personnel CPIC Knowledge Grid used to explore the capablities of KGrid and CPIC Knowlege Objects.
+The collection of CPIC KOs can also be easily deployed through [CPIC Kit](https://demo.kgrid.org/cpic-kit/). The kit packages Activator, Library and CPIC Demo Site. The kit is designed as a personnel CPIC Knowledge Grid used to explore the capabilities of KGrid and CPIC Knowledge Objects.
 
 To try the CPIC KOs:
 - Click on the gene or drug from the KO list. The link will open the KO page in the library.
@@ -238,7 +238,7 @@ To try the CPIC KOs:
 The KO Unit Test are located in the `/tests` directory.  These tests utilize
 [Jest](https://jestjs.io/) and  [rewire](https://github.com/jhnns/rewire). Jest provides the testing
 framework and rewire allows the tests to access the javascript function without the
-convienence of the export modules (KGrid Javascript adapter limitation).  You can execute the tests via npm
+convenience of the export modules (KGrid Javascript adapter limitation).  You can execute the tests via npm
 
 ```
 npm test
@@ -250,7 +250,7 @@ We test the CPIC KO endpoints in a KGrid Activator instance using [Postman](http
 `/tests/postman/cpic_integration_tests.postman_collection.json`.The CI script uses the
 [start server and test](https://www.npmjs.com/package/start-server-and-test) library to:
 1. downloads the latest KGrid Activator
-1. runs the activator with the cpic kos
+1. runs the activator with the CPIC KOs
 1. runs the [Postman](https://www.getpostman.com/) collection defined as the CPIC integration tests
   using  [Newman](https://www.npmjs.com/package/newman)
 
