@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="cpic_integration_tests" tests="5" time="0.289">
+  <testsuite name="CYP2D6 Phenotype Intermediate" id="244c6940-4592-422b-a295-89d57928b731" tests="2" failures="0" errors="0" time="0.201">
+    <testcase name="response is ok" time="0.201"/>
+    <testcase name="Intermediate" time="0.201"/>
+  </testsuite>
+  <testsuite name="CYP2D6 Phenotype TBD" id="b1d5c81c-3883-4af4-adde-4eba24d6a242" tests="2" failures="0" errors="0" time="0.042">
+    <testcase name="response is ok" time="0.042"/>
+    <testcase name="TDB" time="0.042"/>
+  </testsuite>
+  <testsuite name="CYP2D6 Phenotype Ultrarapid" id="c426e879-213e-4581-a6fd-81206ce01be2" tests="2" failures="0" errors="0" time="0.016">
+    <testcase name="response is ok" time="0.016"/>
+    <testcase name="Ultrarapid" time="0.016"/>
+  </testsuite>
+  <testsuite name="CYP2D6 Phenotype Unknown" id="39db59c6-b190-474d-89a8-6b35d59fd5f6" tests="2" failures="0" errors="0" time="0.020">
+    <testcase name="response is ok" time="0.020"/>
+    <testcase name="bad diplotype" time="0.020"/>
+  </testsuite>
+  <testsuite name="CYP2D6 Phenotype Not JSON" id="5dfe91bc-7bf6-4ecc-a9b5-4c220ab242e1" tests="2" failures="0" errors="0" time="0.010">
+    <testcase name="response is ok" time="0.010"/>
+    <testcase name="bad diplotype" time="0.010"/>
+  </testsuite>
+</testsuites>

@@ -44,7 +44,8 @@
     "rewire": "^4.0.1",
     "scripty": "1.7.2",
     "shelljs": "^0.8.2",
-    "start-server-and-test": "^1.7.1"
+    "start-server-and-test": "^1.7.1",
+    "vuepress": "^0.14.4"
   },
   "scripts": {
     "test": "jest --ci --reporters=default --reporters=jest-junit",
@@ -53,7 +54,9 @@
     "package": "scripty",
     "release": "scripty",
     "start": "node scripts/start.js",
-    "ci": "server-test :8080 test-it "
+    "ci": "server-test :8080 test-it ",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   },
   "scripty": {
     "path": "scripts",
