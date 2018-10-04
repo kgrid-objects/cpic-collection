@@ -47,6 +47,11 @@ jobs:
         name: Create CPIC Objects zip ready for deployment
         command: npm run package
 
+    - run:
+        name: Deploy VuePress GitHub Pages
+        command: |
+              .circleci/vuepress_deploy.sh
+              
     - store_artifacts:
         path: dist
 

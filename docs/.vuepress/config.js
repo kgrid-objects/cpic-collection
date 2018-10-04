@@ -2,7 +2,7 @@ module.exports = {
   base: '/cpic-collection/',
   title: 'CPIC Collection',
   themeConfig: {
-    repo: 'kgrid-demos/cpic-kit',
+    repo: 'kgrid-objects/cpic-collection',
     lastUpdated: 'Last Updated',
     nav: [
       { text: 'Guide', link: '/' },
