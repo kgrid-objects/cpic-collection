@@ -24,22 +24,22 @@ var activatorFilename = ''
 
         if (exists){
           console.log("already have activator");
-          executeActivator();
+          executeActivator(activatorFilename);
         } else {
           console.log("downloading activator");
           download(download_url,"build").then(() => {
             console.log('files downloaded!');
-           executeActivator();
+           executeActivator(activatorFilename);
           });
         }
       });
 
   });
 
-   function executeActivator() {
+   function executeActivator(filename) {
     let wd = process.cwd()
     console.log(wd);
-    var activator = shell.exec(" java -jar build/kgrid-activator-1.0.3.jar  --kgrid.shelf.cdostore.url=filesystem:file:///"+ wd.replace(/\\/g,'/'), function(code, stdout, stderr) {
+    var activator = shell.exec(" java -jar build/"+filename+"  --kgrid.shelf.cdostore.url=filesystem:file:///"+ wd.replace(/\\/g,'/'), function(code, stdout, stderr) {
       console.log('Exit code:', code);
       console.log('Program output:', stdout);
       console.log('Program stderr:', stderr);
