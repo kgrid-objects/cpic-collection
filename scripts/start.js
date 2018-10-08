@@ -39,7 +39,7 @@ var activatorFilename = ''
    function executeActivator() {
     let wd = process.cwd()
     console.log(wd);
-    var activator = shell.exec(" java -jar build/kgrid-activator-1.0.1.jar  --kgrid.shelf.cdostore.url=filesystem:file:///"+ wd.replace(/\\/g,'/'), function(code, stdout, stderr) {
+    var activator = shell.exec(" java -jar build/kgrid-activator-1.0.3.jar  --kgrid.shelf.cdostore.url=filesystem:file:///"+ wd.replace(/\\/g,'/'), function(code, stdout, stderr) {
       console.log('Exit code:', code);
       console.log('Program output:', stdout);
       console.log('Program stderr:', stderr);
