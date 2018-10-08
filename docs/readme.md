@@ -61,8 +61,14 @@ The collection of CPIC KOs can be easily deployed through [CPIC Kit](https://dem
   Input Example:
   ```json
   {
-    "CYP2C19" : "*3/*3",
-    "CYP2D6"  : "*1/*1",
+    "CYP2C19": {
+        "diplotype": "*1/*1",
+        "phenotype": "Normal metabolizer"
+    },
+    "CYP2D6": {
+      "diplotype": "*1/*1",
+      "phenotype": "normal metabolizer"
+    },
     ...
   }
   ```
@@ -120,8 +126,8 @@ The collection of CPIC KOs can be easily deployed through [CPIC Kit](https://dem
 
    ```json
    {
-     "codeine": true,
-     "atazanavir": true,
+     "codeine": "",
+     "atazanavir": "",
      ...
    }
    ```
@@ -219,16 +225,40 @@ Currently, the following drug recommendations are available as knowledge objects
 1. [Voriconazole (based on CYP2C19 phenotype)](https://library.kgrid.org/#/object/99999%2Ffk4cz4fm8f%2Fv0.0.1)
 
 
-### Using the CPIC KOs
+### Deploying the CPIC KOs
 
 CPIC KOs are individually available for access and deployment.
 
-The collection of CPIC KOs can also be easily deployed through [CPIC Kit](https://demo.kgrid.org/cpic-kit/). The kit packages Activator, Library and CPIC Demo Site. The kit is designed as a personnel CPIC Knowledge Grid used to explore the capabilities of KGrid and CPIC Knowledge Objects.
+The collection of CPIC KOs can also be easily deployed through [CPIC Kit](https://demo.kgrid.org/cpic-kit/). The kit packages Activator, Library and CPIC Demo Site. The kit is designed as a personal CPIC Knowledge Grid used to explore the capabilities of KGrid and CPIC Knowledge Objects.
 
-To try the CPIC KOs:
+
+### Trying the CPIC KOs
+
+From this guide, you can follow the step-by-step instruction to try these CPIC KOs:
 - Click on the gene or drug from the KO list. The link will open the KO page in the library.
 - Click on 'Live Demo'. The library will deploy the KO to the default activator or your choice and provide the links for trying the KO in Swagger UI
 - Click on the selected link will open the KO's service description in Swagger UI or Swagger Editor. ([More information on Swagger UI](https://swagger.io/tools/swagger-ui/))
+
+
+### Workflow for using CPIC KOs
+
+Here is an example workflow showing how the CPIC KOs is used:
+
+  1. Start a patient's genetic panel;
+  1. Use the genetic panel as input to retrieve the geno-to-pheno KO ids from the geno-to-pheno look-up table KO;
+  1. Send an object with drug information as input to retrieve all recommendation KO ids from the recommendation look-up table KO;
+  1. Send the genetic panel to each geno-to-pheno KO to determine the phenotype for the respective gene;
+  1. Aggregate the results from the geno-to-pheno KOs and send to each recommendation KO;
+  1. Each recommendation KO will return the recommendation if required genetic information is available in input.
+
+In Step 3, different inputs can be used for different scenarios, such as:
+
+  * Use an empty object `{}` as input, to check all relevant drugs' dosing recommendations
+
+  * Use an object containing the patient's current prescription e.g.`{"codeine":"", ...}` as input, to check the dosing recommendations
+
+  * Use an object containing a specific drug, e.g.`{"codeine":""}` as input, to check the dosing recommendations for the drug of interest
+
 
 ## Development
 
