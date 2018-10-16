@@ -61,21 +61,21 @@ var drug = 'Phenytoin'
 var reference = {'CYP2C9':{field:'phenotype', value:''},'HLA-B':{field:'diplotype', value:'15:02'}}
 var keysuffix= {'HLA-B':{negative:'noncarrier', positive:'carrier'}}   //dipltotype only
 // # Dictionary containing Phenotype to Recommendation Information
-var recommendations = {'cyp2c9extensivehla-b15:02carrier':{'implication': 'Increased risk of phenytoin induced Stevens–Johnson syndrome/toxic epidermal necrolysis',
+var recommendations = {'cyp2c9extensivehla-b15:02carrier':{'implication': 'Increased risk of phenytoin induced Stevens-Johnson syndrome/toxic epidermal necrolysis',
         'recommendation': 'If patient is phenytoin naive, do not use phenytoin/fosphenytoinc',
         'classification': 'Strong'},
 "cyp2c9extensivehla-b15:02noncarrier":{'implication': 'Normal phenytoin metabolism',
         'recommendation': 'Initiate therapy with recommended maintenance dosed',
         'classification': 'Strong'},
 
-'cyp2c9intermediatehla-b15:02carrier':{'implication': 'Increased risk of phenytoin induced  Stevens–Johnson syndrome/toxic epidermal necrolysis',
+'cyp2c9intermediatehla-b15:02carrier':{'implication': 'Increased risk of phenytoin induced  Stevens-Johnson syndrome/toxic epidermal necrolysis',
         'recommendation': 'If patient is phenytoin naive, do not use phenytoin/fosphenytoinc',
         'classification': 'Strong'},
 "cyp2c9intermediatehla-b15:02noncarrier":{'implication': 'Reduced phenytoin metabolism. Higher plasma concentrations will increase probability of toxicities',
         'recommendation': 'Consider 25% reduction of recommended starting maintenance dose. Subsequent maintenance doses should be adjusted according to therapeutic drug monitoring and response',
         'classification': 'Moderate'},
 
-  'cyp2c9poorhla-b15:02carrier':{'implication': 'Increased risk of phenytoin induced  Stevens–Johnson syndrome/toxic epidermal necrolysis',
+  'cyp2c9poorhla-b15:02carrier':{'implication': 'Increased risk of phenytoin induced  Stevens-Johnson syndrome/toxic epidermal necrolysis',
     'recommendation': 'If patient is phenytoin naive, do not use phenytoin/fosphenytoinc',
     'classification': 'Strong'},
   "cyp2c9poorhla-b15:02noncarrier":{'implication': 'Reduced phenytoin metabolism. Higher plasma concentrations will increase probability of toxicities',

@@ -65,8 +65,8 @@ var recommendations = {
                   'recommendation': 'Start with normal starting dose (e.g., 2-3mg/kg/d) and adjust doses of azathioprine based on disease-specific guidelines. Allow 2 weeks to reach steady state after each dose adjustment.',
                   'classification': 'Strong'},
   'tpmtintermediate': {'implication': '',
-          'recommendation': 'If disease treatment normally starts at the “full dose”, consider starting at 30–70% of target dose (e.g., 1–1.5mg/kg/d), and titrate based on tolerance. Allow 2–4 weeks to reach steady state after each dose adjustment.',
+          'recommendation': 'If disease treatment normally starts at the “full dose”, consider starting at 30-70% of target dose (e.g., 1-1.5mg/kg/d), and titrate based on tolerance. Allow 2-4 weeks to reach steady state after each dose adjustment.',
           'classification': 'Strong'},
   'tpmtlow': {'implication': '',
-          'recommendation': 'Consider alternative agents. If using azathioprine start with drastically reduced doses (reduce daily dose by 10-fold and dose thrice weekly instead of daily) and adjust doses of azathioprine based on  degree of myelosuppression and disease-specific guidelines. Allow 4–6 weeks to reach steady state after each dose adjustment. Azathioprine is the likely cause of myelosuppression.',
+          'recommendation': 'Consider alternative agents. If using azathioprine start with drastically reduced doses (reduce daily dose by 10-fold and dose thrice weekly instead of daily) and adjust doses of azathioprine based on  degree of myelosuppression and disease-specific guidelines. Allow 4-6 weeks to reach steady state after each dose adjustment. Azathioprine is the likely cause of myelosuppression.',
           'classification': 'Strong'}}
