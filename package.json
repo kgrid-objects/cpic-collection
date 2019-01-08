@@ -86,6 +86,6 @@
     "firstline": "^2.0.2",
     "fs-extra": "^7.0.0",
     "jest-junit": "^5.1.0",
-    "newman": "^4.1.0"
+    "newman": "^4.3.1"
   }
 }
