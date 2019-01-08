@@ -1,0 +1,18 @@
+{
+  "@id": "99999-fk44n0ds5c",
+  "@type": "koio:KnowledgeObject",
+  "identifier": "ark:/99999/fk44n0ds5c",
+  "title": "CPIC nortripyline Recommendations based on CYP2C19 and CYP2D6 phenotypes",
+  "contributors": "KGRID TEAM",
+  "desription": "KGrid CPIC guidelines CYP2C19 and CYP2D6 Phenotypes to nortripyline Recommendation",
+  "citations": [
+    "https://cpicpgx.org/guidelines/guideline-for-tricyclic-antidepressants-and-cyp2d6-and-cyp2c19/"
+  ],
+  "keywords": "CPIC, CYP2D6, CYP2C19, nortripyline, Recommendation",
+  "hasImplementation": [
+    "99999-fk44n0ds5c/v0.1.0"
+  ],
+  "@context": [
+    "http://kgrid.org/koio/contexts/knowledgeobject.jsonld"
+  ]
+}

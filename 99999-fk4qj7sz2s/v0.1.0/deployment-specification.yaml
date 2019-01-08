@@ -1,0 +1,5 @@
+endpoints:
+  /druglist:
+    adapterType: JAVASCRIPT
+    artifact: genedruglist.js
+    entry: druglist

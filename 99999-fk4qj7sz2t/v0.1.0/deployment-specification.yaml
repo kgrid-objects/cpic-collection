@@ -1,0 +1,5 @@
+endpoints:
+  /genophenokolist:
+    adapterType: JAVASCRIPT
+    artifact: genophenokolist.js
+    entry: genophenokolist

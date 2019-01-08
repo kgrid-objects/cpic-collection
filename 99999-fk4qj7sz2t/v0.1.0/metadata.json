@@ -1,0 +1,14 @@
+{
+  "@id": "v0.1.0",
+  "@type": "koio:Implementation",
+  "identifier": "v0.1.0",
+  "title": "CPIC Geno Pheno KO Table Implementation",
+  "description": "CPIC Geno2Pheno KO Table, with total of 15 entries, which can be filtered by supplying a list of genes.",
+  "keywords": "CPIC",
+  "hasServiceSpecification": "v0.1.0/service-specification.yaml",
+  "hasDeploymentSpecification": "v0.1.0/deployment-specification.yaml",
+  "hasPayload": "v0.1.0/genophenokolist.js",
+  "@context": [
+    "http://kgrid.org/koio/contexts/knowledgeobject.jsonld"
+  ]
+}

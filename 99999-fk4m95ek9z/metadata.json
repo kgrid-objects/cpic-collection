@@ -1,0 +1,18 @@
+{
+  "@id": "99999-fk4m95ek9z",
+  "@type": "koio:KnowledgeObject",
+  "identifier": "ark:/99999/fk4m95ek9z",
+  "title": "CPIC SLCO1B1 simvastatin recommendations",
+  "contributors": "KGRID TEAM",
+  "desription": "CPIC recommendations for simvastatin based on SLCO1B1 phenotype",
+  "citations": [
+    "https://cpicpgx.org/guidelines/guideline-for-simvastatin-and-slco1b1/"
+  ],
+  "keywords": "CPIC, SLCO1B1, simvastatin, Recommendation",
+  "hasImplementation": [
+    "99999-fk4m95ek9z/v0.1.0"
+  ],
+  "@context": [
+    "http://kgrid.org/koio/contexts/knowledgeobject.jsonld"
+  ]
+}

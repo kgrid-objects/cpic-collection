@@ -1,0 +1,14 @@
+{
+  "@id": "v0.1.0",
+  "@type": "koio:Implementation",
+  "identifier": "v0.1.0",
+  "title": "CPIC trimipramine Recommendations based on CYP2C19 and CYP2D6 phenotypes Implementation",
+  "description": "KGrid CPIC guidelines CYP2C19 and CYP2D6 Phenotypes to trimipramine Recommendation",
+  "keywords": "CPIC, CYP2D6, CYP2C19, trimipramine, Recommendation",
+  "hasServiceSpecification": "v0.1.0/service-specification.yaml",
+  "hasDeploymentSpecification": "v0.1.0/deployment-specification.yaml",
+  "hasPayload": "v0.1.0/recommendation.js",
+  "@context": [
+    "http://kgrid.org/koio/contexts/knowledgeobject.jsonld"
+  ]
+}

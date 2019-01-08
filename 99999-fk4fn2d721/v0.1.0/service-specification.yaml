@@ -1,0 +1,117 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: CPIC CYP2D6 tropisetron Recommendations
+  description: KGrid CPIC guidelines CYP2D6 Phenotype to Recommendation
+servers:
+  - url: /99999/fk4fn2d721/v0.1.0
+    description: KGrid CPIC guidelines CYP2D6 Phenotype to Recommendation
+tags:
+  - name: KO Endpoints
+    description: KGrid CPIC guidelines CYP2D6 Phenotype to Recommendation Endpoints
+paths:
+  /dosingrecommendation:
+    post:
+      tags:
+        - KO Endpoints
+      description: Retrieve Dosing Recommendation based on the pheno type.
+      operationId: recomm
+      requestBody:
+        description: inputs
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/phenotype'
+      responses:
+        '200':
+          description: response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/dosingrecommendation'
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+components:
+  schemas:
+    phenotype:
+      required:
+        - CYP2D6
+      properties:
+        CYP2D6:
+          type: object
+          required:
+            - diplotype
+            - phenotype
+          properties:
+            diplotype:
+              type: string
+              example: '*3/*3'
+            phenotype:
+              type: string
+              example: Poor metabolizer
+    dosingrecommendation:
+      required:
+        - result
+      properties:
+        result:
+          type: object
+          required:
+            - type
+            - drug
+            - phenotype
+            - recommendation
+          properties:
+            type:
+              type: string
+              example: CPIC Recommendation
+            drug:
+              type: string
+              example: tropisetron
+            genes:
+              type: object
+              required:
+                - CYP2D6
+              properties:
+                CYP2D6:
+                  type: object
+                  required:
+                    - diplotype
+                    - phenotype
+                  properties:
+                    diplotype:
+                      type: string
+                      example: '*3/*3'
+                    phenotype:
+                      type: string
+                      example: poor metabolizer
+            recommendation:
+              type: object
+              required:
+                - implication
+                - content
+                - classification
+              properties:
+                implication:
+                  type: string
+                  example: ''
+                content:
+                  type: string
+                  example: ''
+                classification:
+                  type: string
+                  example: ''
+    Error:
+      required:
+        - code
+        - message
+      properties:
+        code:
+          type: integer
+          format: int32
+        message:
+          type: string

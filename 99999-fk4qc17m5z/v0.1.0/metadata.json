@@ -1,0 +1,14 @@
+{
+  "@id": "v0.1.0",
+  "@type": "koio:Implementation",
+  "identifier": "v0.1.0",
+  "title": "CPIC HLA-B oxcarbazepine recommendations Implementation",
+  "description": "CPIC recommendations for oxcarbazepine based on HLA-B genotype",
+  "keywords": "CPIC, HLA-B, allopurinol, Recommendation",
+  "hasServiceSpecification": "v0.1.0/service-specification.yaml",
+  "hasDeploymentSpecification": "v0.1.0/deployment-specification.yaml",
+  "hasPayload": "v0.1.0/recommendation.js",
+  "@context": [
+    "http://kgrid.org/koio/contexts/knowledgeobject.jsonld"
+  ]
+}

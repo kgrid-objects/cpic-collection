@@ -1,0 +1,18 @@
+{
+  "@id": "99999-fk4sf40t7f",
+  "@type": "koio:KnowledgeObject",
+  "identifier": "ark:/99999/fk4sf40t7f",
+  "title": "CPIC doxepin Recommendations based on CYP2C19 and CYP2D6 phenotypes",
+  "contributors": "KGRID TEAM",
+  "desription": "KGrid CPIC guidelines CYP2C19 and CYP2D6 Phenotypes to doxepin Recommendation",
+  "citations": [
+    "https://cpicpgx.org/guidelines/guideline-for-tricyclic-antidepressants-and-cyp2d6-and-cyp2c19/"
+  ],
+  "keywords": "CPIC, CYP2D6, CYP2C19, doxepin, Recommendation",
+  "hasImplementation": [
+    "99999-fk4sf40t7f/v0.1.0"
+  ],
+  "@context": [
+    "http://kgrid.org/koio/contexts/knowledgeobject.jsonld"
+  ]
+}

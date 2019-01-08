@@ -1,0 +1,14 @@
+{
+  "@id": "v0.1.0",
+  "@type": "koio:Implementation",
+  "identifier": "v0.1.0",
+  "title": "CPIC Genotype - Phenotype for UGT1A1 Implementation",
+  "description": "KGrid CPIC guidelines Genotype to Phenotype for UGT1A1",
+  "keywords": "CPIC, UGT1A1, Genotype, Phenotype",
+  "hasServiceSpecification": "v0.1.0/service-specification.yaml",
+  "hasDeploymentSpecification": "v0.1.0/deployment-specification.yaml",
+  "hasPayload": "v0.1.0/phenotype.js",
+  "@context": [
+    "http://kgrid.org/koio/contexts/knowledgeobject.jsonld"
+  ]
+}

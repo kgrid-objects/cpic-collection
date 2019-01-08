@@ -1,0 +1,18 @@
+{
+  "@id": "99999-fk4qj7sz2t",
+  "@type": "koio:KnowledgeObject",
+  "identifier": "ark:/99999/fk4qj7sz2t",
+  "title": "CPIC Geno Pheno KO Table",
+  "contributors": "KGRID TEAM",
+  "desription": "CPIC Geno2Pheno KO Table, with total of 15 entries, which can be filtered by supplying a list of genes.",
+  "citations": [
+    ""
+  ],
+  "keywords": "CPIC",
+  "hasImplementation": [
+    "99999-fk4qj7sz2t/v0.1.0"
+  ],
+  "@context": [
+    "http://kgrid.org/koio/contexts/knowledgeobject.jsonld"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "@id": "v0.1.0",
+  "@type": "koio:Implementation",
+  "identifier": "v0.1.0",
+  "title": "CPIC CYP2D6 Codeine Recommendations Implementation",
+  "description": "KGrid CPIC guidelines CYP2D6 Phenotype to Codeine Recommendation",
+  "keywords": "CPIC, CYP2D6, Codeine, Recommendation",
+  "hasServiceSpecification": "v0.1.0/service-specification.yaml",
+  "hasDeploymentSpecification": "v0.1.0/deployment-specification.yaml",
+  "hasPayload": "v0.1.0/recommendation.js",
+  "@context": [
+    "http://kgrid.org/koio/contexts/knowledgeobject.jsonld"
+  ]
+}
