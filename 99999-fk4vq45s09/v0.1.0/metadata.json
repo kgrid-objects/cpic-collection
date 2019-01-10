@@ -9,6 +9,6 @@
   "hasDeploymentSpecification": "v0.1.0/deployment-specification.yaml",
   "hasPayload": "v0.1.0/phenotype.js",
   "@context": [
-    "http://kgrid.org/koio/contexts/knowledgeobject.jsonld"
+    "http://kgrid.org/koio/contexts/implementation.jsonld"
   ]
 }
