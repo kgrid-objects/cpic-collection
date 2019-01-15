@@ -2,7 +2,7 @@ var assert = require('assert');
 var rewire = require('rewire');
 
 //Get load in the js
-var javascript = rewire('../../99999-fk4t85em9x/v0.0.1/model/resource/recommendation.js');
+var javascript = rewire('../../collection/99999-fk4t85em9x/v0.0.1/model/resource/recommendation.js');
 
 //Load in the function
 var dosingrecommendation = javascript.__get__("dosingrecommendation");
