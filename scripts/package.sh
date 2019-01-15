@@ -3,7 +3,7 @@
 # Setup
 rm -rf dist
 mkdir -p dist
-cp -r 99999-* dist
+cp -r collection/* dist
 
 # create zip for each ko
 cd dist
