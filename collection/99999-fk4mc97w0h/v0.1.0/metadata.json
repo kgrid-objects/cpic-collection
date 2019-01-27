@@ -1,7 +1,7 @@
 {
   "@id": "v0.1.0",
   "@type": "koio:Implementation",
-  "identifier": "v0.1.0",
+  "identifier": "ark:/99999/fk4mc97w0h/v0.1.0",
   "title": "CPIC Genotype - Phenotype for CYP2C19 Implementation",
   "description": "KGrid CPIC guidelines Genotype to Phenotype for CYP2C19",
   "keywords": "CPIC, CYP2C19, Genotype, Phenotype",

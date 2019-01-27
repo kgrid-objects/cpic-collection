@@ -10,7 +10,7 @@
   ],
   "keywords": "CPIC, UGT1A1, Genotype, Phenotype",
   "hasImplementation": [
-    "99999-fk47h1x090/v0.1.0"
+    "99999-fk47h1x090/v0.1.0","99999-fk47h1x090/v0.0.2"
   ],
   "@context": [
     "http://kgrid.org/koio/contexts/knowledgeobject.jsonld"

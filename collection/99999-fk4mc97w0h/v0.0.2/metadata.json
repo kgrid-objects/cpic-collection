@@ -1,22 +1,15 @@
+
 {
-  "title": "CPIC Genotype - Phenotype for CYP2C19",
+  "@id": "v0.0.2",
+  "@type": "koio:Implementation",
+  "identifier": "ark:/99999/fk4mc97w0h/v0.0.2",
+  "title": "CPIC Genotype - Phenotype for CYP2C19 Implementation",
   "description": "KGrid CPIC guidelines Genotype to Phenotype for CYP2C19",
-  "arkId": "ark:/99999/fk4mc97w0h",
-  "citations": [
-    "https://link"
-  ],
   "keywords": "CPIC, CYP2C19, Genotype, Phenotype",
-  "owners": "KGRID",
-  "contributors": "KGRID TEAM",
-  "license": {
-    "licenseName": "",
-    "licenseLink": ""
-  },
-  "url": "http://url",
-  "published": false,
-  "version": "v0.0.2",
-  "lastModified": 1529432624164,
-  "createdOn": 1529432624163,
-  "model": "model",
-  "service":"model/service/servicedescriptor.yaml"
+  "hasServiceSpecification": "v0.0.2/servicedescriptor.yaml",
+  "hasDeploymentSpecification": "v0.0.2/deployment-specification.yaml",
+  "hasPayload": "v0.0.2/getphenotype.js",
+  "@context": [
+    "http://kgrid.org/koio/contexts/implementation.jsonld"
+  ]
 }

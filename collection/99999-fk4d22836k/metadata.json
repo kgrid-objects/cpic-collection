@@ -10,7 +10,7 @@
   ],
   "keywords": "CPIC, CYP2C19, citalopram, Recommendation",
   "hasImplementation": [
-    "99999-fk4d22836k/v0.1.0"
+    "99999-fk4d22836k/v0.1.0","99999-fk4d22836k/v0.0.2"
   ],
   "@context": [
     "http://kgrid.org/koio/contexts/knowledgeobject.jsonld"

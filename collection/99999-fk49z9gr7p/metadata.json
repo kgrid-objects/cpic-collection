@@ -10,7 +10,7 @@
   ],
   "keywords": "CPIC, CYP2D6, Genotype, Phenotype",
   "hasImplementation": [
-    "99999-fk49z9gr7p/v0.1.0"
+    "99999-fk49z9gr7p/v0.1.0","99999-fk49z9gr7p/v0.0.3"
   ],
   "@context": [
     "http://kgrid.org/koio/contexts/knowledgeobject.jsonld"

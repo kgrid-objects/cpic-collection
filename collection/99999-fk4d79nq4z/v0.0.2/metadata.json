@@ -1,22 +1,14 @@
 {
-  "title": "CPIC - Atazanavir Guideline for UGT1A1",
-  "description": "CPIC recommendations for citalopram and escitalopram based on CYP2C19 phenotype",
-  "arkId": "ark:/99999/fk4d79nq4z",
-  "citations": [
-   "https://cpicpgx.org/guidelines/guideline-for-atazanavir-and-ugt1a1/"
-  ],
+  "@id": "v0.0.2",
+  "@type": "koio:Implementation",
+  "identifier": "ark:/99999/fk4d79nq4z/v0.0.2",
+  "title": "CPIC - Atazanavir Guideline for UGT1A1 Implementation",
+  "description": "CPIC recommendations for Atazanavir based on UGT1A1 phenotype",
   "keywords": "CPIC, UGT1A1, Atazanavir, Recommendation",
-  "owners": "KGRID",
-  "contributors": "KGRID TEAM",
-  "license": {
-    "licenseName": "",
-    "licenseLink": ""
-  },
-  "url": "http://url",
-  "published": false,
-  "version": "v0.0.2",
-  "lastModified": 1529432646535,
-  "createdOn": 1529432646535,
-  "model": "model",
-  "service":"model/service/servicedescriptor.yaml"
+  "hasServiceSpecification": "v0.0.2/servicedescriptor.yaml",
+  "hasDeploymentSpecification": "v0.0.2/deployment-specification.yaml",
+  "hasPayload": "v0.1.0/getrecommendation.js",
+  "@context": [
+    "http://kgrid.org/koio/contexts/implementation.jsonld"
+  ]
 }

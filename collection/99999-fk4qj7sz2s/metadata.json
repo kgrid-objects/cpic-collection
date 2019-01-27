@@ -10,7 +10,7 @@
   ],
   "keywords": "CPIC",
   "hasImplementation": [
-    "99999-fk4qj7sz2s/v0.1.0"
+    "99999-fk4qj7sz2s/v0.1.0","99999-fk4qj7sz2s/v0.0.2"
   ],
   "@context": [
     "http://kgrid.org/koio/contexts/knowledgeobject.jsonld"

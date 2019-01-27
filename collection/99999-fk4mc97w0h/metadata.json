@@ -10,7 +10,7 @@
   ],
   "keywords": "CPIC, CYP2C19, Genotype, Phenotype",
   "hasImplementation": [
-    "99999-fk4mc97w0h/v0.1.0"
+    "99999-fk4mc97w0h/v0.0.2","99999-fk4mc97w0h/v0.1.0"
   ],
   "@context": [
     "http://kgrid.org/koio/contexts/knowledgeobject.jsonld"

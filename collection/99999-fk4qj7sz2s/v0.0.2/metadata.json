@@ -1,22 +1,15 @@
+
 {
-  "title": "CPIC Gene Drug Table",
-  "description": "CPIC Genes-Drug Table, with total of 353 entries, which can be filtered by supplying a list of genes, a list of drugs, or both.",
-  "arkId": "ark:/99999/fk4qj7sz2s",
-  "citations": [
-    "https://cpicpgx.org/genes-drugs/"
-  ],
+  "@id": "v0.0.2",
+  "@type": "koio:Implementation",
+  "identifier": "ark:/99999/fk4qj7sz2s/v0.0.2",
+  "title": "CPIC Gene Drug Table Implementation",
+  "description": "CPIC Genes-Drug Table, with total of 28 entries, which can be filtered by supplying a list of genes, a list of drugs, or both.",
   "keywords": "CPIC",
-  "owners": "KGRID",
-  "contributors": "KGRID TEAM",
-  "license": {
-    "licenseName": "",
-    "licenseLink": ""
-  },
-  "url": "http://url",
-  "published": false,
-  "version": "v0.0.2",
-  "lastModified": 1529432624164,
-  "createdOn": 1529432624163,
-  "model": "model",
-  "service":"model/service/servicedescriptor.yaml"
+  "hasServiceSpecification": "v0.0.2/servicedescriptor.yaml",
+  "hasDeploymentSpecification": "v0.0.2/deployment-specification.yaml",
+  "hasPayload": "v0.0.2/getgenedruglist.js",
+  "@context": [
+    "http://kgrid.org/koio/contexts/implementation.jsonld"
+  ]
 }

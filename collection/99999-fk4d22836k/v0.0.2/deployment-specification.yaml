@@ -1,0 +1,5 @@
+endpoints:
+  /getrecommendation:
+    adapterType: JAVASCRIPT
+    artifact: getrecommendation.js
+    entry: getrecommendation

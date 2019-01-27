@@ -1,0 +1,5 @@
+endpoints:
+  /getphenotype:
+    adapterType: JAVASCRIPT
+    artifact: getphenotype.js
+    entry: getphenotype
