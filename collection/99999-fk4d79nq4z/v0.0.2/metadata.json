@@ -7,7 +7,7 @@
   "keywords": "CPIC, UGT1A1, Atazanavir, Recommendation",
   "hasServiceSpecification": "v0.0.2/servicedescriptor.yaml",
   "hasDeploymentSpecification": "v0.0.2/deployment-specification.yaml",
-  "hasPayload": "v0.1.0/getrecommendation.js",
+  "hasPayload": "v0.0.2/getrecommendation.js",
   "@context": [
     "http://kgrid.org/koio/contexts/implementation.jsonld"
   ]
