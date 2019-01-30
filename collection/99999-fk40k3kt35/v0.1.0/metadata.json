@@ -1,7 +1,7 @@
 {
   "@id": "v0.1.0",
   "@type": "koio:Implementation",
-  "identifier": "v0.1.0",
+  "identifier": "ark:/99999/fk40k3kt35/v0.1.0",
   "title": "CPIC CYP2C19 sertraline recommendations Implementation",
   "description": "CPIC recommendations for sertraline based on CYP2C19 phenotype",
   "keywords": "CPIC, CYP2C19, sertraline, Recommendation",

@@ -1,7 +1,7 @@
 {
   "@id": "v0.1.0",
   "@type": "koio:Implementation",
-  "identifier": "v0.1.0",
+  "identifier": "ark:/99999/cp4mc9723se/v0.1.0",
   "title": "CPIC CYP2D6 Paroxetine Recommendations Implementation",
   "description": "KGrid CPIC guidelines CYP2D6 Phenotype to paroxetine Recommendation",
   "keywords": "CPIC, CYP2D6, paroxetine, Recommendation",

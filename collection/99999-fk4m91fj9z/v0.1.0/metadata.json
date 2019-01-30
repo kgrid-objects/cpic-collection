@@ -1,7 +1,7 @@
 {
   "@id": "v0.1.0",
   "@type": "koio:Implementation",
-  "identifier": "v0.1.0",
+  "identifier": "ark:/99999/fk4m91fj9z/v0.1.0",
   "title": "CPIC TPMT mercaptopurine recommendations Implementation",
   "description": "CPIC recommendations for mercaptopurine based on TPMT phenotype",
   "keywords": "CPIC, TPMT, mercaptopurine, Recommendation",

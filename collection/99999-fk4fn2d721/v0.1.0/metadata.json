@@ -1,7 +1,7 @@
 {
   "@id": "v0.1.0",
   "@type": "koio:Implementation",
-  "identifier": "v0.1.0",
+  "identifier": "ark:/99999/fk4fn2d721/v0.1.0",
   "title": "CPIC CYP2D6 tropisetron Recommendations Implementation",
   "description": "KGrid CPIC guidelines CYP2D6 Phenotype to tropisetron Recommendation",
   "keywords": "CPIC, CYP2D6, tropisetron, Recommendation",

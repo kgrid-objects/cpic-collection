@@ -1,7 +1,7 @@
 {
   "@id": "v0.1.0",
   "@type": "koio:Implementation",
-  "identifier": "v0.1.0",
+  "identifier": "ark:/99999/fk4qj7sz2s/v0.1.0",
   "title": "CPIC Gene Drug Table Implementation",
   "description": "CPIC Genes-Drug Table, with total of 28 entries, which can be filtered by supplying a list of genes, a list of drugs, or both.",
   "keywords": "CPIC",

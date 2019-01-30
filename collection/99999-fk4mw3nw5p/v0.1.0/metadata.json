@@ -1,7 +1,7 @@
 {
   "@id": "v0.1.0",
   "@type": "koio:Implementation",
-  "identifier": "v0.1.0",
+  "identifier": "ark:/99999/fk4mw3nw5p/v0.1.0",
   "title": "CPIC HLA-A and HLA-B carbamazepine recommendations Implementation",
   "description": "CPIC recommendations for carbamazepine based on HLA-A and HLA-B phenotypes",
   "keywords": "CPIC, HLA-B, abacavir, Recommendation",

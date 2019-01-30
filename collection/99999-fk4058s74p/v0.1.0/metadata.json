@@ -1,7 +1,7 @@
 {
   "@id": "v0.1.0",
   "@type": "koio:Implementation",
-  "identifier": "v0.1.0",
+  "identifier": "ark:/99999/fk4058s74p/v0.1.0",
   "title": "CPIC HLA-B allopurinol recommendations Implementation",
   "description": "CPIC recommendations for allopurinol based on HLA-B phenotype",
   "keywords": "CPIC, HLA-B, allopurinol, Recommendation",

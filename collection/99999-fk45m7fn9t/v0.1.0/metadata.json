@@ -1,7 +1,7 @@
 {
   "@id": "v0.1.0",
   "@type": "koio:Implementation",
-  "identifier": "v0.1.0",
+  "identifier": "ark:/99999/fk45m7fn9t/v0.1.0",
   "title": "CPIC HLA-B abacavir recommendations Implementation",
   "description": "CPIC recommendations for abacavir based on HLA-B phenotype",
   "keywords": "CPIC, HLA-B, abacavir, Recommendation",

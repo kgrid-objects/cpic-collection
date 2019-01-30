@@ -1,7 +1,7 @@
 {
   "@id": "v0.1.0",
   "@type": "koio:Implementation",
-  "identifier": "v0.1.0",
+  "identifier": "ark:/99999/fk4md04x9z/v0.1.0",
   "title": "CPIC Genotype - Phenotype for CYP3A5 Implementation",
   "description": "KGrid CPIC guidelines Genotype to Phenotype for CYP3A5",
   "keywords": "CPIC, CYP3A5, Genotype, Phenotype",

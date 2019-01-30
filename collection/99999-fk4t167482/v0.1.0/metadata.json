@@ -1,7 +1,7 @@
 {
   "@id": "v0.1.0",
   "@type": "koio:Implementation",
-  "identifier": "v0.1.0",
+  "identifier": "ark:/99999/fk4t167482/v0.1.0",
   "title": "CPIC amitriptyline Recommendations based on CYP2C19 and CYP2D6 phenotypes Implementation",
   "description": "KGrid CPIC guidelines CYP2C19 and CYP2D6 Phenotypes to amitriptyline Recommendation",
   "keywords": "CPIC, CYP2D6, CYP2C19, amitriptyline, Recommendation",

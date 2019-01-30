@@ -1,7 +1,7 @@
 {
   "@id": "v0.1.0",
   "@type": "koio:Implementation",
-  "identifier": "v0.1.0",
+  "identifier": "ark:/99999/fk47h1x090/v0.1.0",
   "title": "CPIC Genotype - Phenotype for UGT1A1 Implementation",
   "description": "KGrid CPIC guidelines Genotype to Phenotype for UGT1A1",
   "keywords": "CPIC, UGT1A1, Genotype, Phenotype",

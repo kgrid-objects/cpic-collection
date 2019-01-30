@@ -1,7 +1,7 @@
 {
   "@id": "v0.1.0",
   "@type": "koio:Implementation",
-  "identifier": "v0.1.0",
+  "identifier": "ark:/99999/fk4d79nq4z/v0.1.0",
   "title": "CPIC - Atazanavir Guideline for UGT1A1 Implementation",
   "description": "CPIC recommendations for Atazanavir based on UGT1A1 phenotype",
   "keywords": "CPIC, UGT1A1, Atazanavir, Recommendation",

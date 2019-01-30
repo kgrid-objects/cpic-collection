@@ -1,7 +1,7 @@
 {
   "@id": "v0.1.0",
   "@type": "koio:Implementation",
-  "identifier": "v0.1.0",
+  "identifier": "ark:/99999/cp4mc9723sd/v0.1.0",
   "title": "CPIC CYP2D6 fluvoxamine Recommendations Implementation",
   "description": "KGrid CPIC guidelines CYP2D6 Phenotype to fluvoxamine Recommendation",
   "keywords": "CPIC, CYP2D6, fluvoxamine, Recommendation",

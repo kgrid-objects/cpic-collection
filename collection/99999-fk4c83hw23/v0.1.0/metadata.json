@@ -1,7 +1,7 @@
 {
   "@id": "v0.1.0",
   "@type": "koio:Implementation",
-  "identifier": "v0.1.0",
+  "identifier": "ark:/99999/fk4c83hw23/v0.1.0",
   "title": "CPIC CYP2D6 ondansetron Recommendations Implementation",
   "description": "KGrid CPIC guidelines CYP2D6 Phenotype to ondansetron Recommendation",
   "keywords": "CPIC, CYP2D6, ondansetron, Recommendation",

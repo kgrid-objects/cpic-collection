@@ -1,7 +1,7 @@
 {
   "@id": "v0.1.0",
   "@type": "koio:Implementation",
-  "identifier": "v0.1.0",
+  "identifier": "ark:/99999/fk4t85em9x/v0.1.0",
   "title": "CPIC CYP3A5 tacrolimus recommendations Implementation",
   "description": "CPIC recommendations for tacrolimus based on CYP3A5 phenotype",
   "keywords": "CPIC, CYP3A5, tacrolimus, Recommendation",

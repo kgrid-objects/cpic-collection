@@ -1,7 +1,7 @@
 {
   "@id": "v0.1.0",
   "@type": "koio:Implementation",
-  "identifier": "v0.1.0",
+  "identifier": "ark:/99999/fk4cx5fm8f/v0.1.0",
   "title": "CPIC TPMT thioguanine recommendations Implementation",
   "description": "CPIC recommendations for thioguanine based on TPMT phenotype",
   "keywords": "CPIC, TPMT, thioguanine, Recommendation",
