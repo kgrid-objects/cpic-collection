@@ -45,7 +45,7 @@
     "scripty": "1.7.2",
     "shelljs": "^0.8.2",
     "start-server-and-test": "^1.7.1",
-    "vuepress": "^0.14.4"
+    "vuepress": "^0.14.8"
   },
   "scripts": {
     "test": "jest --ci --reporters=default --reporters=jest-junit",
