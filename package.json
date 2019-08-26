@@ -38,14 +38,14 @@
   ],
   "devDependencies": {
     "file-exists": "^5.0.1",
-    "jest": "^23.5.0",
-    "jsonpath": "^1.0.0",
+    "jest": "^24.9.0",
+    "jsonpath": "^1.0.2",
     "mocha": "5.2.0",
     "rewire": "^4.0.1",
     "scripty": "1.7.2",
     "shelljs": "^0.8.2",
     "start-server-and-test": "^1.7.1",
-    "vuepress": "^0.14.8"
+    "vuepress": "^1.0.2"
   },
   "scripts": {
     "test": "jest --ci --reporters=default --reporters=jest-junit",
@@ -80,12 +80,12 @@
   },
   "dependencies": {
     "await-sleep": "0.0.1",
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "download": "^7.1.0",
     "download-cli": "^1.1.1",
     "firstline": "^2.0.2",
     "fs-extra": "^7.0.0",
-    "jest-junit": "^5.1.0",
-    "newman": "^4.3.1"
+    "jest-junit": "^7.0.0",
+    "newman": "^4.5.4"
   }
 }
