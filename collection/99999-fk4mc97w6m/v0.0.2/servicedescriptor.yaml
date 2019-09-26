@@ -1,11 +1,19 @@
 openapi: 3.0.0
 info:
   version: 1.0.0
-  title: 'CPIC CYP2D6 Codeine Recommendations'
-  description: 'KGrid CPIC guidelines CYP2D6 Phenotype to Recommendation'
+  title: CPIC CYP2D6 Codeine Recommendations
+  description: KGrid CPIC guidelines CYP2D6 Phenotype to Recommendation
+  license:
+    name: GNU General Public License v3 (GPL-3)
+    url: >-
+      https://tldrlegal.com/license/gnu-general-public-license-v3-(gpl-3)#fulltext
+  contact:
+    name: KGrid Team
+    email: kgrid-developers@umich.edu
+    url: 'http://kgrid.org'
 servers:
-  - url: '/99999/fk4mc97w6m/v0.0.2/'
-    description: 'KGrid CPIC guidelines CYP2D6 Phenotype to Recommendation'
+  - url: /99999/fk4mc97w6m/v0.0.2/
+    description: KGrid CPIC guidelines CYP2D6 Phenotype to Recommendation
 tags:
   - name: KO Endpoints
     description: KGrid CPIC guidelines CYP2D6 Phenotype to Recommendation Endpoints
@@ -13,7 +21,7 @@ paths:
   /getrecommendation:
     post:
       tags:
-       - KO Endpoints
+        - KO Endpoints
       description: Retrieve Dosing Recommendation based on the pheno type.
       operationId: recomm
       requestBody:
@@ -45,17 +53,20 @@ components:
       properties:
         enzyme:
           type: string
-          example: 'CYP2D6'
+          example: CYP2D6
         phenotype:
           type: string
-          example: 'Normal metabolizer'
+          example: Normal metabolizer
     dosingrecouput:
       required:
         - result
       properties:
         result:
           type: object
-          example: {"enzyme":"CYP2D6","drug":"Codeine","recommendation":{}}
+          example:
+            enzyme: CYP2D6
+            drug: Codeine
+            recommendation: {}
     Error:
       required:
         - code

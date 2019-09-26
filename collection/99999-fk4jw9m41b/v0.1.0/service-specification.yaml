@@ -5,6 +5,14 @@ info:
   description: >-
     KGrid CPIC guidelines CYP2C19 and CYP2D6 Phenotypes to trimipramine
     Recommendation
+  license:
+    name: GNU General Public License v3 (GPL-3)
+    url: >-
+      https://tldrlegal.com/license/gnu-general-public-license-v3-(gpl-3)#fulltext
+  contact:
+    name: KGrid Team
+    email: kgrid-developers@umich.edu
+    url: 'http://kgrid.org'
 servers:
   - url: /99999/fk4jw9m41b/v0.1.0
     description: >-

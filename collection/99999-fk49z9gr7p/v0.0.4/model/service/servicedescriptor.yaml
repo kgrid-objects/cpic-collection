@@ -1,11 +1,19 @@
 openapi: 3.0.0
 info:
   version: 1.0.0
-  title: 'CPIC - Genotype to Phenotype for CYP2D6'
-  description: 'KGrid CPIC guidelines Genotype to Phenotype for CYP2D6'
+  title: CPIC - Genotype to Phenotype for CYP2D6
+  description: KGrid CPIC guidelines Genotype to Phenotype for CYP2D6
+  license:
+    name: GNU General Public License v3 (GPL-3)
+    url: >-
+      https://tldrlegal.com/license/gnu-general-public-license-v3-(gpl-3)#fulltext
+  contact:
+    name: KGrid Team
+    email: kgrid-developers@umich.edu
+    url: 'http://kgrid.org'
 servers:
-  - url: '/99999/fk49z9gr7p/v0.0.5/'
-    description: 'KGrid CPIC guidelines Genotype to Phenotype for CYP2D6'
+  - url: /99999/fk49z9gr7p/v0.0.5/
+    description: KGrid CPIC guidelines Genotype to Phenotype for CYP2D6
 tags:
   - name: KO Endpoints
     description: KGrid CPIC guidelines Genotype to Phenotype for CYP2D6 Endpoints
@@ -13,7 +21,7 @@ paths:
   /phenotype:
     post:
       tags:
-       - KO Endpoints
+        - KO Endpoints
       description: Determine the pheno type based on the genotype.
       operationId: pheno
       requestBody:
@@ -46,7 +54,7 @@ components:
       properties:
         enzyme:
           type: string
-          example: 'CYP2D6'
+          example: CYP2D6
         allele1:
           type: string
           example: '*3'
@@ -60,10 +68,10 @@ components:
       properties:
         enzyme:
           type: string
-          example: 'CYP2D6'
+          example: CYP2D6
         phenotype:
           type: string
-          example: 'Poor metabolizer'
+          example: Poor metabolizer
     Error:
       required:
         - code

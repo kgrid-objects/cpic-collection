@@ -1,19 +1,29 @@
 openapi: 3.0.0
 info:
   version: 1.0.0
-  title: 'CPIC  HLA-A and HLA-B  carbamazepine  recommendations'
-  description: 'CPIC recommendations for carbamazepine based on HLA-A and HLA-B phenotype'
+  title: CPIC  HLA-A and HLA-B  carbamazepine  recommendations
+  description: CPIC recommendations for carbamazepine based on HLA-A and HLA-B phenotype
+  license:
+    name: GNU General Public License v3 (GPL-3)
+    url: >-
+      https://tldrlegal.com/license/gnu-general-public-license-v3-(gpl-3)#fulltext
+  contact:
+    name: KGrid Team
+    email: kgrid-developers@umich.edu
+    url: 'http://kgrid.org'
 servers:
-  - url: '/99999/fk4mw3nw5p/v0.0.1/'
-    description: 'CPIC recommendations for carbamazepine based on HLA-A and HLA-B phenotype'
+  - url: /99999/fk4mw3nw5p/v0.0.1/
+    description: CPIC recommendations for carbamazepine based on HLA-A and HLA-B phenotype
 tags:
   - name: KO Endpoints
-    description: KGrid CPIC guidelines HLA-A and HLA-B Phenotype to Recommendation Endpoints
+    description: >-
+      KGrid CPIC guidelines HLA-A and HLA-B Phenotype to Recommendation
+      Endpoints
 paths:
   /dosingrecommendation:
     post:
       tags:
-       - KO Endpoints
+        - KO Endpoints
       description: Retrieve Dosing Recommendation based on the pheno type.
       operationId: recomm
       requestBody:
@@ -46,8 +56,8 @@ components:
         HLA-A:
           type: object
           required:
-          - diplotype
-          - phenotype
+            - diplotype
+            - phenotype
           properties:
             diplotype:
               type: string
@@ -58,8 +68,8 @@ components:
         HLA-B:
           type: object
           required:
-          - diplotype
-          - phenotype
+            - diplotype
+            - phenotype
           properties:
             diplotype:
               type: string
@@ -69,32 +79,32 @@ components:
               example: ''
     dosingrecommendation:
       required:
-      - result
+        - result
       properties:
         result:
           type: object
           required:
-          - type
-          - drug
-          - genes
-          - recommendation
+            - type
+            - drug
+            - genes
+            - recommendation
           properties:
             type:
               type: string
-              example: 'CPIC Recommendation'
+              example: CPIC Recommendation
             drug:
               type: string
-              example: 'carbamazepine'
+              example: carbamazepine
             genes:
               type: object
               required:
-              - HLA-B
+                - HLA-B
               properties:
                 HLA-B:
                   type: object
                   required:
-                  - diplotype
-                  - phenotype
+                    - diplotype
+                    - phenotype
                   properties:
                     diplotype:
                       type: string
@@ -105,9 +115,9 @@ components:
             recommendation:
               type: object
               required:
-              - implication
-              - content
-              - classification
+                - implication
+                - content
+                - classification
               properties:
                 implication:
                   type: string

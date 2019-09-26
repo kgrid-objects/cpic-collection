@@ -1,11 +1,19 @@
 openapi: 3.0.0
 info:
   version: 1.0.0
-  title: 'CPIC CYP2C19 Clopidogrel recommendations'
-  description: 'CPIC recommendations for Clopidogrel based on CYP2C19 phenotype'
+  title: CPIC CYP2C19 Clopidogrel recommendations
+  description: CPIC recommendations for Clopidogrel based on CYP2C19 phenotype
+  license:
+    name: GNU General Public License v3 (GPL-3)
+    url: >-
+      https://tldrlegal.com/license/gnu-general-public-license-v3-(gpl-3)#fulltext
+  contact:
+    name: KGrid Team
+    email: kgrid-developers@umich.edu
+    url: 'http://kgrid.org'
 servers:
-  - url: '/99999/fk4bz6hp15/v0.0.2/'
-    description: 'CPIC recommendations for Clopidogrel based on CYP2C19 phenotype'
+  - url: /99999/fk4bz6hp15/v0.0.2/
+    description: CPIC recommendations for Clopidogrel based on CYP2C19 phenotype
 tags:
   - name: KO Endpoints
     description: KGrid CPIC guidelines CYP2C19 Phenotype to Recommendation Endpoints
@@ -13,7 +21,7 @@ paths:
   /getrecommendation:
     post:
       tags:
-       - KO Endpoints
+        - KO Endpoints
       description: Retrieve Dosing Recommendation based on the pheno type.
       operationId: recomm
       requestBody:
@@ -45,17 +53,20 @@ components:
       properties:
         enzyme:
           type: string
-          example: 'CYP2C19'
+          example: CYP2C19
         phenotype:
           type: string
-          example: 'Poor metabolizer'
+          example: Poor metabolizer
     dosingrecouput:
       required:
         - result
       properties:
         result:
           type: object
-          example: {"enzyme":"CYP2C19","drug":"clopidogrel","recommendation":{}}
+          example:
+            enzyme: CYP2C19
+            drug: clopidogrel
+            recommendation: {}
     Error:
       required:
         - code

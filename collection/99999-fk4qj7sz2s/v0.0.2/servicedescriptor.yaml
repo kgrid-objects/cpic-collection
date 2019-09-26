@@ -1,11 +1,19 @@
 openapi: 3.0.0
 info:
   version: 1.0.0
-  title: 'CPIC Gene Drug Table'
-  description: 'CPIC Gene Drug Table'
+  title: CPIC Gene Drug Table
+  description: CPIC Gene Drug Table
+  license:
+    name: GNU General Public License v3 (GPL-3)
+    url: >-
+      https://tldrlegal.com/license/gnu-general-public-license-v3-(gpl-3)#fulltext
+  contact:
+    name: KGrid Team
+    email: kgrid-developers@umich.edu
+    url: 'http://kgrid.org'
 servers:
-  - url: '/99999/fk4qj7sz2s/v0.0.2/'
-    description: 'CPIC Gene Drug Table'
+  - url: /99999/fk4qj7sz2s/v0.0.2/
+    description: CPIC Gene Drug Table
 tags:
   - name: KO Endpoints
     description: CPIC Gene Drug Table
@@ -13,7 +21,7 @@ paths:
   /getgenedruglist:
     post:
       tags:
-       - KO Endpoints
+        - KO Endpoints
       description: Get the filtered gene/drug list.
       operationId: genedrugtable
       requestBody:
@@ -45,7 +53,7 @@ components:
       properties:
         genelist:
           type: string
-          example: 'CYP2D6'
+          example: CYP2D6
         druglist:
           type: string
           example: '*3'
@@ -55,7 +63,7 @@ components:
       properties:
         result:
           type: string
-          example: "{'genelist':[],'druglist':[]}"
+          example: '{''genelist'':[],''druglist'':[]}'
     Error:
       required:
         - code

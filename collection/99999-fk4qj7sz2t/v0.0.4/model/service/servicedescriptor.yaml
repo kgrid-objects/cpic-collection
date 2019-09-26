@@ -1,19 +1,29 @@
 openapi: 3.0.0
 info:
   version: 1.0.0
-  title: 'CPIC Geno Pheno KO Table'
-  description: 'CPIC Geno2Pheno KO Table, with total of 15 entries, which can be filtered by supplying a list of genes.'
+  title: CPIC Geno Pheno KO Table
+  description: >-
+    CPIC Geno2Pheno KO Table, with total of 15 entries, which can be filtered by
+    supplying a list of genes.
+  license:
+    name: GNU General Public License v3 (GPL-3)
+    url: >-
+      https://tldrlegal.com/license/gnu-general-public-license-v3-(gpl-3)#fulltext
+  contact:
+    name: KGrid Team
+    email: kgrid-developers@umich.edu
+    url: 'http://kgrid.org'
 servers:
-  - url: '/99999/fk4qj7sz2t/v0.0.4/'
-    description: 'CPIC Geno Pheno KO Table'
+  - url: /99999/fk4qj7sz2t/v0.0.4/
+    description: CPIC Geno Pheno KO Table
 tags:
   - name: KO Endpoints
-    description: 'CPIC Geno Pheno KO Table'
+    description: CPIC Geno Pheno KO Table
 paths:
   /genophenokolist:
     post:
       tags:
-       - KO Endpoints
+        - KO Endpoints
       description: Get the filtered gene2pheno ko list.
       operationId: genophenokolist
       requestBody:
@@ -43,20 +53,23 @@ components:
       properties:
         CYP2D6:
           type: string
-          example: 'Normal metabolizer'
+          example: Normal metabolizer
         CYP2C19:
           type: string
-          example: 'Normal metabolizer'
+          example: Normal metabolizer
         UGT1A1:
           type: string
-          example: 'Normal metabolizer'
+          example: Normal metabolizer
     genophenokolist:
       required:
         - result
       properties:
         result:
           type: object
-          example: {'CYP2D6':'','CYP2C19':'','UGT1A1':''}
+          example:
+            CYP2D6: ''
+            CYP2C19: ''
+            UGT1A1: ''
     Error:
       required:
         - code

@@ -1,19 +1,33 @@
 openapi: 3.0.0
 info:
   version: 1.0.0
-  title: 'CPIC Phenytoin Recommendations based on CYP2C9 and HLA-B phenotypes'
-  description: 'KGrid CPIC guidelines CYP2C9 and HLA-B Phenotypes to Phenytoin Recommendation'
+  title: CPIC Phenytoin Recommendations based on CYP2C9 and HLA-B phenotypes
+  description: >-
+    KGrid CPIC guidelines CYP2C9 and HLA-B Phenotypes to Phenytoin
+    Recommendation
+  license:
+    name: GNU General Public License v3 (GPL-3)
+    url: >-
+      https://tldrlegal.com/license/gnu-general-public-license-v3-(gpl-3)#fulltext
+  contact:
+    name: KGrid Team
+    email: kgrid-developers@umich.edu
+    url: 'http://kgrid.org'
 servers:
-  - url: '/99999/fk4qz3fz89/v0.0.1/'
-    description: 'KGrid CPIC guidelines CYP2C9 and HLA-B Phenotypes to Phenytoin Recommendation'
+  - url: /99999/fk4qz3fz89/v0.0.1/
+    description: >-
+      KGrid CPIC guidelines CYP2C9 and HLA-B Phenotypes to Phenytoin
+      Recommendation
 tags:
   - name: KO Endpoints
-    description: KGrid CPIC guidelines CYP2C9 and HLA-B Phenotypes to Phenytoin Recommendation
+    description: >-
+      KGrid CPIC guidelines CYP2C9 and HLA-B Phenotypes to Phenytoin
+      Recommendation
 paths:
   /dosingrecommendation:
     post:
       tags:
-       - KO Endpoints
+        - KO Endpoints
       description: Retrieve Dosing Recommendation based on the pheno type.
       operationId: recomm
       requestBody:
@@ -46,8 +60,8 @@ components:
         HLA-B:
           type: object
           required:
-          - diplotype
-          - phenotype
+            - diplotype
+            - phenotype
           properties:
             diplotype:
               type: string
@@ -58,15 +72,15 @@ components:
         CYP2C9:
           type: object
           required:
-          - diplotype
-          - phenotype
+            - diplotype
+            - phenotype
           properties:
             diplotype:
               type: string
               example: '*1/*1'
             phenotype:
               type: string
-              example: 'Extensive metabolizer'
+              example: Extensive metabolizer
     dosingrecommendation:
       required:
         - result
@@ -81,21 +95,21 @@ components:
           properties:
             type:
               type: string
-              example: 'CPIC Recommendation'
+              example: CPIC Recommendation
             drug:
               type: string
-              example: 'phenytoin'
+              example: phenytoin
             genes:
               type: object
               required:
-              - HLA-B  
-              - CYP2C9
+                - HLA-B
+                - CYP2C9
               properties:
                 HLA-B:
                   type: object
                   required:
-                  - diplotype
-                  - phenotype
+                    - diplotype
+                    - phenotype
                   properties:
                     diplotype:
                       type: string
@@ -106,15 +120,15 @@ components:
                 CYP2C9:
                   type: object
                   required:
-                  - diplotype
-                  - phenotype
+                    - diplotype
+                    - phenotype
                   properties:
                     diplotype:
                       type: string
                       example: '*1/*1'
                     phenotype:
                       type: string
-                      example: 'Extensive metabolizer'
+                      example: Extensive metabolizer
             recommendation:
               type: object
               required:

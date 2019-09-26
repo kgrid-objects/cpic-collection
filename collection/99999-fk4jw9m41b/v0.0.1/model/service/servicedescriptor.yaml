@@ -1,19 +1,33 @@
 openapi: 3.0.0
 info:
   version: 1.0.0
-  title: 'CPIC trimipramine Recommendations based on CYP2C19 and CYP2D6 phenotypes'
-  description: 'KGrid CPIC guidelines CYP2C19 and CYP2D6 Phenotypes to trimipramine Recommendation'
+  title: CPIC trimipramine Recommendations based on CYP2C19 and CYP2D6 phenotypes
+  description: >-
+    KGrid CPIC guidelines CYP2C19 and CYP2D6 Phenotypes to trimipramine
+    Recommendation
+  license:
+    name: GNU General Public License v3 (GPL-3)
+    url: >-
+      https://tldrlegal.com/license/gnu-general-public-license-v3-(gpl-3)#fulltext
+  contact:
+    name: KGrid Team
+    email: kgrid-developers@umich.edu
+    url: 'http://kgrid.org'
 servers:
-  - url: '/99999/fk4jw9m41b/v0.0.1/'
-    description: 'KGrid CPIC guidelines CYP2C19 and CYP2D6 Phenotypes to trimipramine Recommendation'
+  - url: /99999/fk4jw9m41b/v0.0.1/
+    description: >-
+      KGrid CPIC guidelines CYP2C19 and CYP2D6 Phenotypes to trimipramine
+      Recommendation
 tags:
   - name: KO Endpoints
-    description: KGrid CPIC guidelines CYP2C19 and CYP2D6 Phenotypes to trimipramine Recommendation
+    description: >-
+      KGrid CPIC guidelines CYP2C19 and CYP2D6 Phenotypes to trimipramine
+      Recommendation
 paths:
   /dosingrecommendation:
     post:
       tags:
-       - KO Endpoints
+        - KO Endpoints
       description: Retrieve Dosing Recommendation based on the pheno type.
       operationId: recomm
       requestBody:
@@ -46,27 +60,27 @@ components:
         CYP2D6:
           type: object
           required:
-          - diplotype
-          - phenotype
+            - diplotype
+            - phenotype
           properties:
             diplotype:
               type: string
               example: '*3/*3'
             phenotype:
               type: string
-              example: 'Poor metabolizer'
+              example: Poor metabolizer
         CYP2C19:
           type: object
           required:
-          - diplotype
-          - phenotype
+            - diplotype
+            - phenotype
           properties:
             diplotype:
               type: string
               example: '*1/*1'
             phenotype:
               type: string
-              example: 'Normal metabolizer'
+              example: Normal metabolizer
     dosingrecommendation:
       required:
         - result
@@ -81,27 +95,27 @@ components:
           properties:
             type:
               type: string
-              example: 'CPIC Recommendation'
+              example: CPIC Recommendation
             drug:
               type: string
-              example: 'trimipramine'
+              example: trimipramine
             genes:
               type: object
               required:
-              - CYP2D6
+                - CYP2D6
               properties:
                 CYP2D6:
                   type: object
                   required:
-                  - diplotype
-                  - phenotype
+                    - diplotype
+                    - phenotype
                   properties:
                     diplotype:
                       type: string
                       example: '*3/*3'
                     phenotype:
                       type: string
-                      example: 'poor metabolizer'
+                      example: poor metabolizer
             recommendation:
               type: object
               required:

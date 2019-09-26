@@ -1,11 +1,19 @@
 openapi: 3.0.0
 info:
   version: 1.0.0
-  title: 'CPIC CYP2C19 escitalopram recommendations'
-  description: 'CPIC recommendations for escitalopram based on CYP2C19 phenotype'
+  title: CPIC CYP2C19 escitalopram recommendations
+  description: CPIC recommendations for escitalopram based on CYP2C19 phenotype
+  license:
+    name: GNU General Public License v3 (GPL-3)
+    url: >-
+      https://tldrlegal.com/license/gnu-general-public-license-v3-(gpl-3)#fulltext
+  contact:
+    name: KGrid Team
+    email: kgrid-developers@umich.edu
+    url: 'http://kgrid.org'
 servers:
-  - url: '/99999/fk4d22836l/v0.0.5/'
-    description: 'CPIC recommendations for escitalopram based on CYP2C19 phenotype'
+  - url: /99999/fk4d22836l/v0.0.5/
+    description: CPIC recommendations for escitalopram based on CYP2C19 phenotype
 tags:
   - name: KO Endpoints
     description: KGrid CPIC guidelines CYP2C19 Phenotype to Recommendation Endpoints
@@ -13,7 +21,7 @@ paths:
   /dosingrecommendation:
     post:
       tags:
-       - KO Endpoints
+        - KO Endpoints
       description: Retrieve Dosing Recommendation based on the pheno type.
       operationId: recomm
       requestBody:
@@ -45,56 +53,56 @@ components:
         CYP2C19:
           type: object
           required:
-          - diplotype
-          - phenotype
+            - diplotype
+            - phenotype
           properties:
             diplotype:
               type: string
               example: '*1/*1'
             phenotype:
               type: string
-              example: 'Normal metabolizer'
+              example: Normal metabolizer
     dosingrecommendation:
       required:
-      - result
+        - result
       properties:
         result:
           type: object
           required:
-          - type
-          - drug
-          - phenotype
-          - recommendation
+            - type
+            - drug
+            - phenotype
+            - recommendation
           properties:
             type:
               type: string
-              example: 'CPIC Recommendation'
+              example: CPIC Recommendation
             drug:
               type: string
-              example: 'escitalopram'
+              example: escitalopram
             genes:
               type: object
               required:
-              - CYP2C19
+                - CYP2C19
               properties:
                 CYP2C19:
                   type: object
                   required:
-                  - diplotype
-                  - phenotype
+                    - diplotype
+                    - phenotype
                   properties:
                     diplotype:
                       type: string
                       example: '*1/*1'
                     phenotype:
                       type: string
-                      example: 'normal metabolizer'
+                      example: normal metabolizer
             recommendation:
               type: object
               required:
-              - implication
-              - content
-              - classification
+                - implication
+                - content
+                - classification
               properties:
                 implication:
                   type: string

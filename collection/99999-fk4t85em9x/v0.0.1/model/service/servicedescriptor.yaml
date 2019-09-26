@@ -1,11 +1,19 @@
 openapi: 3.0.0
 info:
   version: 1.0.0
-  title: 'CPIC CYP3A5 tacrolimus recommendations'
-  description: 'CPIC recommendations for tacrolimus based on CYP3A5 phenotype'
+  title: CPIC CYP3A5 tacrolimus recommendations
+  description: CPIC recommendations for tacrolimus based on CYP3A5 phenotype
+  license:
+    name: GNU General Public License v3 (GPL-3)
+    url: >-
+      https://tldrlegal.com/license/gnu-general-public-license-v3-(gpl-3)#fulltext
+  contact:
+    name: KGrid Team
+    email: kgrid-developers@umich.edu
+    url: 'http://kgrid.org'
 servers:
-  - url: '/99999/fk4t85em9x/v0.0.1/'
-    description: 'CPIC recommendations for tacrolimus based on CYP3A5 phenotype'
+  - url: /99999/fk4t85em9x/v0.0.1/
+    description: CPIC recommendations for tacrolimus based on CYP3A5 phenotype
 tags:
   - name: KO Endpoints
     description: KGrid CPIC guidelines CYP3A5 Phenotype to Recommendation Endpoints
@@ -13,7 +21,7 @@ paths:
   /dosingrecommendation:
     post:
       tags:
-       - KO Endpoints
+        - KO Endpoints
       description: Retrieve Dosing Recommendation based on the pheno type.
       operationId: recomm
       requestBody:
@@ -45,56 +53,56 @@ components:
         CYP3A5:
           type: object
           required:
-          - diplotype
-          - phenotype
+            - diplotype
+            - phenotype
           properties:
             diplotype:
               type: string
               example: '*1/*1'
             phenotype:
               type: string
-              example: 'extensive metabolizer'
+              example: extensive metabolizer
     dosingrecommendation:
       required:
-      - result
+        - result
       properties:
         result:
           type: object
           required:
-          - type
-          - drug
-          - genes
-          - recommendation
+            - type
+            - drug
+            - genes
+            - recommendation
           properties:
             type:
               type: string
-              example: 'CPIC Recommendation'
+              example: CPIC Recommendation
             drug:
               type: string
-              example: 'tacrolimus'
+              example: tacrolimus
             genes:
               type: object
               required:
-              - CYP3A5
+                - CYP3A5
               properties:
                 CYP2D6:
                   type: object
                   required:
-                  - diplotype
-                  - phenotype
+                    - diplotype
+                    - phenotype
                   properties:
                     diplotype:
                       type: string
                       example: '*1/*1'
                     phenotype:
                       type: string
-                      example: 'normal metabolizer'
+                      example: normal metabolizer
             recommendation:
               type: object
               required:
-              - implication
-              - content
-              - classification
+                - implication
+                - content
+                - classification
               properties:
                 implication:
                   type: string

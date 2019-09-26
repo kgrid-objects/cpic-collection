@@ -1,11 +1,19 @@
 openapi: 3.0.0
 info:
   version: 1.0.0
-  title: 'CPIC SLCO1B1 simvastatin recommendations'
-  description: 'CPIC recommendations for simvastatin based on SLCO1B1 phenotype'
+  title: CPIC SLCO1B1 simvastatin recommendations
+  description: CPIC recommendations for simvastatin based on SLCO1B1 phenotype
+  license:
+    name: GNU General Public License v3 (GPL-3)
+    url: >-
+      https://tldrlegal.com/license/gnu-general-public-license-v3-(gpl-3)#fulltext
+  contact:
+    name: KGrid Team
+    email: kgrid-developers@umich.edu
+    url: 'http://kgrid.org'
 servers:
-  - url: '/99999/fk4m95ek9z/v0.0.1/'
-    description: 'CPIC recommendations for simvastatin based on SLCO1B1 phenotype'
+  - url: /99999/fk4m95ek9z/v0.0.1/
+    description: CPIC recommendations for simvastatin based on SLCO1B1 phenotype
 tags:
   - name: KO Endpoints
     description: KGrid CPIC guidelines SLCO1B1 Phenotype to Recommendation Endpoints
@@ -13,7 +21,7 @@ paths:
   /dosingrecommendation:
     post:
       tags:
-       - KO Endpoints
+        - KO Endpoints
       description: Retrieve Dosing Recommendation based on the pheno type.
       operationId: recomm
       requestBody:
@@ -45,56 +53,56 @@ components:
         SLCO1B1:
           type: object
           required:
-          - diplotype
-          - phenotype
+            - diplotype
+            - phenotype
           properties:
             diplotype:
               type: string
               example: '*1A/*1A'
             phenotype:
               type: string
-              example: 'normal function'
+              example: normal function
     dosingrecommendation:
       required:
-      - result
+        - result
       properties:
         result:
           type: object
           required:
-          - type
-          - drug
-          - genes
-          - recommendation
+            - type
+            - drug
+            - genes
+            - recommendation
           properties:
             type:
               type: string
-              example: 'CPIC Recommendation'
+              example: CPIC Recommendation
             drug:
               type: string
-              example: 'simvastatin'
+              example: simvastatin
             genes:
               type: object
               required:
-              - SLCO1B1
+                - SLCO1B1
               properties:
                 SLCO1B1:
                   type: object
                   required:
-                  - diplotype
-                  - phenotype
+                    - diplotype
+                    - phenotype
                   properties:
                     diplotype:
                       type: string
                       example: '*1A/*1A'
                     phenotype:
                       type: string
-                      example: 'normal function'
+                      example: normal function
             recommendation:
               type: object
               required:
-              - implication
-              - content
-              - classification
+                - implication
+                - content
+                - classification
               properties:
                 implication:
                   type: string

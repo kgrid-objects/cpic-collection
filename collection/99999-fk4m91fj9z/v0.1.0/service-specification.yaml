@@ -3,6 +3,14 @@ info:
   version: 1.0.0
   title: CPIC TPMT mercaptopurine recommendations
   description: CPIC recommendations for mercaptopurine based on TPMT phenotype
+  license:
+    name: GNU General Public License v3 (GPL-3)
+    url: >-
+      https://tldrlegal.com/license/gnu-general-public-license-v3-(gpl-3)#fulltext
+  contact:
+    name: KGrid Team
+    email: kgrid-developers@umich.edu
+    url: 'http://kgrid.org'
 servers:
   - url: /99999/fk4m91fj9z/v0.1.0
     description: CPIC recommendations for mercaptopurine based on TPMT phenotype

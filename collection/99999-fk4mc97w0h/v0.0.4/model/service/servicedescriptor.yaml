@@ -1,11 +1,19 @@
 openapi: 3.0.0
 info:
   version: 1.0.0
-  title: 'CPIC - Genotype to Phenotype for CYP2C19'
-  description: 'KGrid CPIC guidelines Genotype to Phenotype for CYP2C19'
+  title: CPIC - Genotype to Phenotype for CYP2C19
+  description: KGrid CPIC guidelines Genotype to Phenotype for CYP2C19
+  license:
+    name: GNU General Public License v3 (GPL-3)
+    url: >-
+      https://tldrlegal.com/license/gnu-general-public-license-v3-(gpl-3)#fulltext
+  contact:
+    name: KGrid Team
+    email: kgrid-developers@umich.edu
+    url: 'http://kgrid.org'
 servers:
-  - url: '/99999/fk4mc97w0h/v0.0.4/'
-    description: 'KGrid CPIC guidelines Genotype to Phenotype for CYP2C19'
+  - url: /99999/fk4mc97w0h/v0.0.4/
+    description: KGrid CPIC guidelines Genotype to Phenotype for CYP2C19
 tags:
   - name: KO Endpoints
     description: KGrid CPIC guidelines Genotype to Phenotype for CYP2C19 Endpoints
@@ -13,7 +21,7 @@ paths:
   /phenotype:
     post:
       tags:
-       - KO Endpoints
+        - KO Endpoints
       description: Determine the pheno type based on the genotype.
       operationId: pheno
       requestBody:
@@ -40,9 +48,9 @@ components:
   schemas:
     genotype:
       required:
-      - CYP2C19
+        - CYP2C19
       properties:
-       CYP2C19:
+        CYP2C19:
           type: string
           example: '*1/*1'
     phenotype:
@@ -60,7 +68,7 @@ components:
               example: '*1/*1'
             phenotype:
               type: string
-              example: 'Normal metabolizer'
+              example: Normal metabolizer
     Error:
       required:
         - code

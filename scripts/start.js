@@ -10,7 +10,7 @@ const filter = '$.assets[*].browser_download_url'
 var activatorFilename = ''
 
 var requestOptions = {
-  url: 'https://api.github.com/repos/kgrid/kgrid-activator/releases/tags/1.0.4-rc10',
+  url: 'https://api.github.com/repos/kgrid/kgrid-activator/releases/latest',
   headers: {
     'User-Agent': 'request'
   }
