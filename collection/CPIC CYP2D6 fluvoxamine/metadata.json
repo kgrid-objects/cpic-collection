@@ -9,6 +9,7 @@
   "hasServiceSpecification": "service.yaml",
   "hasDeploymentSpecification": "deployment.yaml",
   "hasPayload": "recommendation.js",
+  "hasImplementation": ["99999-cp4mc9723sd"],
   "@context": [
     "http://kgrid.org/koio/contexts/knowledgeobject.jsonld"
   ]
