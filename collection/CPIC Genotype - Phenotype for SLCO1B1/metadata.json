@@ -1,0 +1,22 @@
+{
+  "@id": "99999-fk47380j09",
+  "@type": "koio:KnowledgeObject",
+  "identifier": "ark:/99999/fk47380j09",
+  "version": "v0.1.0",
+  "title": "CPIC Genotype - Phenotype for SLCO1B1",
+  "contributors": "KGRID TEAM",
+  "desription": "KGrid CPIC guidelines Genotype to Phenotype for SLCO1B1",
+  "citations": [
+    ""
+  ],
+  "keywords": "CPIC, SLCO1B1, Genotype, Phenotype",
+  "hasImplementation": [
+    "99999-fk47380j09/v0.1.0"
+  ],
+  "hasServiceSpecification": "v0.1.0/service-specification.yaml",
+  "hasDeploymentSpecification": "v0.1.0/deployment-specification.yaml",
+  "hasPayload": "v0.1.0/phenotype.js",
+  "@context": [
+    "http://kgrid.org/koio/contexts/knowledgeobject.jsonld"
+  ]
+}
