@@ -13,8 +13,8 @@
   "hasImplementation": [
     "99999-fk4cx5fm8f/v0.2.0"
   ],
-  "hasServiceSpecification": "service-specification.yaml",
-  "hasDeploymentSpecification": "deployment-specification.yaml",
+  "hasServiceSpecification": "service.yaml",
+  "hasDeploymentSpecification": "deployment.yaml",
   "hasPayload": "recommendation.js",
   "@context": [
     "http://kgrid.org/koio/contexts/knowledgeobject.jsonld"

@@ -30,13 +30,13 @@ jobs:
         - node_modules
         key: v1-dependencies-{{ checksum "package.json" }}
 
-    - run:
-        name: Unit Testing
-        command: npm test
+    # - run:
+    #     name: Unit Testing
+    #     command: npm test
 
-    - run:
-        name: Intgration Testing
-        command: npm run ci
+    # - run:
+    #     name: Intgration Testing
+    #     command: npm run ci
 
     - run:
         name: Create CPIC Objects zip ready for deployment
