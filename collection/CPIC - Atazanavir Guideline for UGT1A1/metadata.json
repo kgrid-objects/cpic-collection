@@ -1,0 +1,22 @@
+{
+  "@id": "99999-fk4d79nq4z",
+  "@type": "koio:KnowledgeObject",
+  "identifier": "ark:/99999/fk4d79nq4z",
+  "version": "v0.1.0",
+  "title": "CPIC - Atazanavir Guideline for UGT1A1",
+  "contributors": "KGRID TEAM",
+  "desription": "CPIC recommendations for Atazanavir based on UGT1A1 phenotype",
+  "citations": [
+    "https://cpicpgx.org/guidelines/guideline-for-atazanavir-and-ugt1a1/"
+  ],
+  "keywords": "CPIC, UGT1A1, Atazanavir, Recommendation",
+  "hasImplementation": [
+    "99999-fk4d79nq4z/v0.1.0"
+  ],
+  "hasServiceSpecification": "service-specification.yaml",
+  "hasDeploymentSpecification": "deployment-specification.yaml",
+  "hasPayload": "recommendation.js",
+  "@context": [
+    "http://kgrid.org/koio/contexts/knowledgeobject.jsonld"
+  ]
+}

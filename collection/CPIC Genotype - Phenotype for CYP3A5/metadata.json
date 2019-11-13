@@ -1,0 +1,22 @@
+{
+  "@id": "99999-fk4md04x9z",
+  "@type": "koio:KnowledgeObject",
+  "identifier": "ark:/99999/fk4md04x9z",
+  "version": "0.1.0",
+  "title": "CPIC Genotype - Phenotype for CYP3A5",
+  "contributors": "KGRID TEAM",
+  "desription": "KGrid CPIC guidelines Genotype to Phenotype for CYP3A5",
+  "citations": [
+    "https://link"
+  ],
+  "keywords": "CPIC, CYP3A5, Genotype, Phenotype",
+  "hasImplementation": [
+    "99999-fk4md04x9z/v0.1.0"
+  ],
+  "hasServiceSpecification": "service-specification.yaml",
+  "hasDeploymentSpecification": "deployment-specification.yaml",
+  "hasPayload": "phenotype.js",
+  "@context": [
+    "http://kgrid.org/koio/contexts/knowledgeobject.jsonld"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "@id": "99999-fk4c83hw23",
+  "@type": "koio:KnowledgeObject",
+  "identifier": "ark:/99999/fk4c83hw23",
+  "version": "v0.1.0",
+  "title": "CPIC CYP2D6 ondansetron Recommendations",
+  "contributors": "KGRID TEAM",
+  "desription": "KGrid CPIC guidelines CYP2D6 Phenotype to ondansetron Recommendation",
+  "citations": [
+    "https://cpicpgx.org/guidelines/guideline-for-ondansetron-and-tropisetron-and-cyp2d6-genotype/"
+  ],
+  "keywords": "CPIC, CYP2D6, ondansetron, Recommendation",
+  "hasImplementation": [
+    "99999-fk4c83hw23/v0.1.0"
+  ],
+  "hasServiceSpecification": "service-specification.yaml",
+  "hasDeploymentSpecification": "deployment-specification.yaml",
+  "hasPayload": "recommendation.js",
+  "@context": [
+    "http://kgrid.org/koio/contexts/knowledgeobject.jsonld"
+  ]
+}

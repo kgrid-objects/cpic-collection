@@ -1,0 +1,81 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: CPIC - Genotype to Phenotype for CYP3A5
+  description: KGrid CPIC guidelines Genotype to Phenotype for CYP3A5
+  license:
+    name: GNU General Public License v3 (GPL-3)
+    url: >-
+      https://tldrlegal.com/license/gnu-general-public-license-v3-(gpl-3)#fulltext
+  contact:
+    name: KGrid Team
+    email: kgrid-developers@umich.edu
+    url: 'http://kgrid.org'
+servers:
+  - url: /99999/fk4md04x9z/v0.1.0
+    description: KGrid CPIC guidelines Genotype to Phenotype for CYP3A5
+tags:
+  - name: KO Endpoints
+    description: KGrid CPIC guidelines Genotype to Phenotype for CYP3A5 Endpoints
+paths:
+  /phenotype:
+    post:
+      tags:
+        - KO Endpoints
+      description: Determine the pheno type based on the genotype.
+      operationId: pheno
+      requestBody:
+        description: inputs
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/genotype'
+      responses:
+        '200':
+          description: response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/phenotype'
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+components:
+  schemas:
+    genotype:
+      required:
+        - CYP3A5
+      properties:
+        CYP3A5:
+          type: string
+          example: '*1/*1'
+    phenotype:
+      required:
+        - CYP3A5
+      properties:
+        CYP3A5:
+          type: object
+          required:
+            - diplotype
+            - phenotype
+          properties:
+            diplotype:
+              type: string
+              example: '*1/*1'
+            phenotype:
+              type: string
+              example: Extensive metabolizer
+    Error:
+      required:
+        - code
+        - message
+      properties:
+        code:
+          type: integer
+          format: int32
+        message:
+          type: string
