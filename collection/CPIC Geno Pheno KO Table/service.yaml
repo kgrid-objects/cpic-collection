@@ -14,7 +14,7 @@ info:
     email: kgrid-developers@umich.edu
     url: 'http://kgrid.org'
 servers:
-  - url: /99999/fk4qj7sz2t/v0.1.0
+  - url: /99999/fk4qj7sz2t
     description: CPIC Geno Pheno KO Table
 tags:
   - name: KO Endpoints

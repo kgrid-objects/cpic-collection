@@ -14,7 +14,7 @@ info:
     email: kgrid-developers@umich.edu
     url: 'http://kgrid.org'
 servers:
-  - url: /99999/fk4qz3fz89/v0.1.0
+  - url: /99999/fk4qz3fz89
     description: >-
       KGrid CPIC guidelines CYP2C9 and HLA-B Phenotypes to Phenytoin
       Recommendation

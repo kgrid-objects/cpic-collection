@@ -12,7 +12,7 @@ info:
     email: kgrid-developers@umich.edu
     url: 'http://kgrid.org'
 servers:
-  - url: /99999/fk4vq45s09/v0.1.0
+  - url: /99999/fk4vq45s09
     description: KGrid CPIC guidelines Genotype to Phenotype for TPMT
 tags:
   - name: KO Endpoints

@@ -14,7 +14,7 @@ info:
     email: kgrid-developers@umich.edu
     url: 'http://kgrid.org'
 servers:
-  - url: /99999/fk4rf6zx6d/v0.1.0
+  - url: /99999/fk4rf6zx6d
     description: >-
       KGrid CPIC guidelines CYP2C19 and CYP2D6 Phenotypes to desipramine
       Recommendation

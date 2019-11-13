@@ -41,7 +41,7 @@
 					"raw": "{\"CYP2D6\":\"*8/*9\"}"
 				},
 				"url": {
-					"raw": "http://localhost:8080/99999/fk49z9gr7p/v0.1.0/phenotype",
+					"raw": "http://localhost:8080/99999/fk49z9gr7p/phenotype",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -93,7 +93,7 @@
 					"raw": "{\"CYP2D6\":\"*13/*86\"}"
 				},
 				"url": {
-					"raw": "http://localhost:8080/99999/fk49z9gr7p/v0.1.0/phenotype",
+					"raw": "http://localhost:8080/99999/fk49z9gr7p/phenotype",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -145,7 +145,7 @@
 					"raw": "{\"CYP2D6\":\"*6xN/*35xN>2\"}"
 				},
 				"url": {
-					"raw": "http://localhost:8080/99999/fk49z9gr7p/v0.1.0/phenotype",
+					"raw": "http://localhost:8080/99999/fk49z9gr7p/phenotype",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -197,7 +197,7 @@
 					"raw": "{\"CYP2D6\":\"nothing\"}"
 				},
 				"url": {
-					"raw": "http://localhost:8080/99999/fk49z9gr7p/v0.1.0/phenotype",
+					"raw": "http://localhost:8080/99999/fk49z9gr7p/phenotype",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -249,7 +249,7 @@
 					"raw": "{\"CYP2D6\":\"nothing\"}"
 				},
 				"url": {
-					"raw": "http://localhost:8080/99999/fk49z9gr7p/v0.1.0/phenotype",
+					"raw": "http://localhost:8080/99999/fk49z9gr7p/phenotype",
 					"protocol": "http",
 					"host": [
 						"localhost"
