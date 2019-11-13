@@ -11,7 +11,7 @@
   ],
   "keywords": "CPIC, CYP3A5, Genotype, Phenotype",
   "hasImplementation": [
-    "99999-fk4md04x9z/v0.1.0"
+    "99999-fk4md04x9z/v0.2.0"
   ],
   "hasServiceSpecification": "service-specification.yaml",
   "hasDeploymentSpecification": "deployment-specification.yaml",

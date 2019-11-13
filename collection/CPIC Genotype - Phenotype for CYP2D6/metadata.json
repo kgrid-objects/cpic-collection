@@ -2,7 +2,7 @@
   "@id": "99999-fk49z9gr7p",
   "@type": "koio:KnowledgeObject",
   "identifier": "ark:/99999/fk49z9gr7p",
-  "version": "v0.1.0",
+  "version": "v0.2.0",
   "title": "CPIC Genotype - Phenotype for CYP2D6",
   "contributors": "KGRID TEAM",
   "desription": "KGrid CPIC guidelines Genotype to Phenotype for CYP2D6",
@@ -11,7 +11,7 @@
   ],
   "keywords": "CPIC, CYP2D6, Genotype, Phenotype",
   "hasImplementation": [
-    "99999-fk49z9gr7p/v0.1.0"
+    "99999-fk49z9gr7p/v0.2.0"
   ],
   "hasServiceSpecification": "service-specification.yaml",
   "hasDeploymentSpecification": "deployment-specification.yaml",

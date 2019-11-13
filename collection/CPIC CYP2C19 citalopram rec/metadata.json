@@ -2,7 +2,7 @@
   "@id": "99999-fk4d22836k",
   "@type": "koio:KnowledgeObject",
   "identifier": "ark:/99999/fk4d22836k",
-  "version": "v0.1.0",
+  "version": "v0.2.0",
   "title": "CPIC CYP2C19 citalopram recommendation",
   "contributors": "KGRID TEAM",
   "desription": "CPIC recommendations for citalopram based on CYP2C19 phenotype",
@@ -11,7 +11,7 @@
   ],
   "keywords": "CPIC, CYP2C19, citalopram, Recommendation",
   "hasImplementation": [
-    "99999-fk4d22836k/v0.1.0"
+    "99999-fk4d22836k/v0.2.0"
   ],
   "hasServiceSpecification": "service-specification.yaml",
   "hasDeploymentSpecification": "deployment-specification.yaml",

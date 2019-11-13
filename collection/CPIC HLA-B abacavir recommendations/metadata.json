@@ -2,7 +2,7 @@
   "@id": "99999-fk45m7fn9t",
   "@type": "koio:KnowledgeObject",
   "identifier": "ark:/99999/fk45m7fn9t",
-  "version": "v0.1.0",
+  "version": "v0.2.0",
   "title": "CPIC HLA-B abacavir recommendations",
   "contributors": "KGRID TEAM",
   "desription": "CPIC recommendations for abacavir based on HLA-B phenotype",
@@ -11,7 +11,7 @@
   ],
   "keywords": "CPIC, HLA-B, abacavir, Recommendation",
   "hasImplementation": [
-    "99999-fk45m7fn9t/v0.1.0"
+    "99999-fk45m7fn9t/v0.2.0"
   ],
   "hasServiceSpecification": "service-specification.yaml",
   "hasDeploymentSpecification": "deployment-specification.yaml",

@@ -2,7 +2,7 @@
   "@id": "99999-fk4mc97w6m",
   "@type": "koio:KnowledgeObject",
   "identifier": "ark:/99999/fk4mc97w6m",
-  "version": "v0.1.0",
+  "version": "v0.2.0",
   "title": "CPIC CYP2D6 Codeine Recommendations",
   "contributors": "KGRID TEAM",
   "desription": "KGrid CPIC guidelines CYP2D6 Phenotype to Codeine Recommendation",
@@ -11,7 +11,7 @@
   ],
   "keywords": "CPIC, CYP2D6, Codeine, Recommendation",
   "hasImplementation": [
-    "99999-fk4mc97w6m/v0.1.0"
+    "99999-fk4mc97w6m/v0.2.0"
   ],
   "hasServiceSpecification": "service-specification.yaml",
   "hasDeploymentSpecification": "deployment-specification.yaml",

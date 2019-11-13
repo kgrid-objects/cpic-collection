@@ -2,7 +2,7 @@
   "@id": "99999-fk4jw9m41b",
   "@type": "koio:KnowledgeObject",
   "identifier": "ark:/99999/fk4jw9m41b",
-  "version": "v0.1.0",
+  "version": "v0.2.0",
   "title": "CPIC trimipramine Recommendations based on CYP2C19 and CYP2D6 phenotypes",
   "contributors": "KGRID TEAM",
   "desription": "KGrid CPIC guidelines CYP2C19 and CYP2D6 Phenotypes to trimipramine Recommendation",
@@ -11,7 +11,7 @@
   ],
   "keywords": "CPIC, CYP2D6, CYP2C19, trimipramine, Recommendation",
   "hasImplementation": [
-    "99999-fk4jw9m41b/v0.1.0"
+    "99999-fk4jw9m41b/v0.2.0"
   ],
   "hasServiceSpecification": "service-specification.yaml",
   "hasDeploymentSpecification": "deployment-specification.yaml",

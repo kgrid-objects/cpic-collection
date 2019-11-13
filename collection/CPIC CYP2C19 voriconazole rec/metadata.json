@@ -2,7 +2,7 @@
   "@id": "99999-fk4cz4fm8f",
   "@type": "koio:KnowledgeObject",
   "identifier": "ark:/99999/fk4cz4fm8f",
-  "version": "v0.1.0",
+  "version": "v0.2.0",
   "title": "CPIC CYP2C19 voriconazole recommendations",
   "contributors": "KGRID TEAM",
   "desription": "CPIC recommendations for voriconazole based on CYP2C19 phenotype",
@@ -11,7 +11,7 @@
   ],
   "keywords": "CPIC, CYP2C19, voriconazole, Recommendation",
   "hasImplementation": [
-    "99999-fk4cz4fm8f/v0.1.0"
+    "99999-fk4cz4fm8f/v0.2.0"
   ],
   "hasServiceSpecification": "service-specification.yaml",
   "hasDeploymentSpecification": "deployment-specification.yaml",

@@ -2,7 +2,7 @@
   "@id": "99999-fk40k3kt35",
   "@type": "koio:KnowledgeObject",
   "identifier": "ark:/99999/fk40k3kt35",
-  "version": "v0.1.0",
+  "version": "v0.2.0",
   "title": "CPIC CYP2C19 sertraline recommendations",
   "contributors": "KGRID TEAM",
   "desription": "CPIC recommendations for sertraline based on CYP2C19 phenotype",
@@ -11,7 +11,7 @@
   ],
   "keywords": "CPIC, CYP2C19, sertraline, Recommendation",
   "hasImplementation": [
-    "99999-fk40k3kt35/v0.1.0"
+    "99999-fk40k3kt35/v0.2.0"
   ],
   "hasServiceSpecification": "service-specification.yaml",
   "hasDeploymentSpecification": "deployment-specification.yaml",

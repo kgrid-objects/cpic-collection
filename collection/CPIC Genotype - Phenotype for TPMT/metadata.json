@@ -2,7 +2,7 @@
   "@id": "99999-fk4vq45s09",
   "@type": "koio:KnowledgeObject",
   "identifier": "ark:/99999/fk4vq45s09",
-  "version": "v0.1.0",
+  "version": "v0.2.0",
   "title": "CPIC Genotype - Phenotype for TPMT",
   "contributors": "KGRID TEAM",
   "desription": "KGrid CPIC guidelines Genotype to Phenotype for TPMT",
@@ -11,7 +11,7 @@
   ],
   "keywords": "CPIC, TPMT, Genotype, Phenotype",
   "hasImplementation": [
-    "99999-fk4vq45s09/v0.1.0"
+    "99999-fk4vq45s09/v0.2.0"
   ],
   "hasServiceSpecification": "service-specification.yaml",
   "hasDeploymentSpecification": "deployment-specification.yaml",

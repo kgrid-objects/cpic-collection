@@ -2,7 +2,7 @@
   "@id": "99999-fk4d51vd1p",
   "@type": "koio:KnowledgeObject",
   "identifier": "ark:/99999/fk4d51vd1p",
-  "version": "v0.1.0",
+  "version": "v0.2.0",
   "title": "CPIC imipramine Recommendations based on CYP2C19 and CYP2D6 phenotypes",
   "contributors": "KGRID TEAM",
   "desription": "KGrid CPIC guidelines CYP2C19 and CYP2D6 Phenotypes to imipramine Recommendation",
@@ -11,7 +11,7 @@
   ],
   "keywords": "CPIC, CYP2D6, CYP2C19, imipramine, Recommendation",
   "hasImplementation": [
-    "99999-fk4d51vd1p/v0.1.0"
+    "99999-fk4d51vd1p/v0.2.0"
   ],
   "hasServiceSpecification": "service-specification.yaml",
   "hasDeploymentSpecification": "deployment-specification.yaml",

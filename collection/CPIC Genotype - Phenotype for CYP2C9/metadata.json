@@ -2,7 +2,7 @@
   "@id": "99999-fk4bv8qb3r",
   "@type": "koio:KnowledgeObject",
   "identifier": "ark:/99999/fk4bv8qb3r",
-  "version": "v0.1.0",
+  "version": "v0.2.0",
   "title": "CPIC Genotype - Phenotype for CYP2C9",
   "contributors": "KGRID TEAM",
   "desription": "KGrid CPIC guidelines Genotype to Phenotype for CYP2C9",
@@ -11,7 +11,7 @@
   ],
   "keywords": "CPIC, CYP2C9, Genotype, Phenotype",
   "hasImplementation": [
-    "99999-fk4bv8qb3r/v0.1.0"
+    "99999-fk4bv8qb3r/v0.2.0"
   ],
   "hasServiceSpecification": "service-specification.yaml",
   "hasDeploymentSpecification": "deployment-specification.yaml",

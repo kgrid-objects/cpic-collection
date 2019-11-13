@@ -2,7 +2,7 @@
   "@id": "99999-fk4mw3nw5p",
   "@type": "koio:KnowledgeObject",
   "identifier": "ark:/99999/fk4mw3nw5p",
-  "version": "v0.1.0",
+  "version": "v0.2.0",
   "title": "CPIC HLA-A and HLA-B carbamazepine recommendations",
   "contributors": "KGRID TEAM",
   "desription": "CPIC recommendations for carbamazepine based on HLA-A and HLA-B phenotypes",
@@ -11,7 +11,7 @@
   ],
   "keywords": "CPIC, HLA-B, abacavir, Recommendation",
   "hasImplementation": [
-    "99999-fk4mw3nw5p/v0.1.0"
+    "99999-fk4mw3nw5p/v0.2.0"
   ],
   "hasServiceSpecification": "service-specification.yaml",
   "hasDeploymentSpecification": "deployment-specification.yaml",

@@ -2,7 +2,7 @@
   "@id": "99999-fk4t85em9x",
   "@type": "koio:KnowledgeObject",
   "identifier": "ark:/99999/fk4t85em9x",
-  "version": "v0.1.0",
+  "version": "v0.2.0",
   "title": "CPIC CYP3A5 tacrolimus recommendations",
   "contributors": "KGRID TEAM",
   "desription": "CPIC recommendations for tacrolimus based on CYP3A5 phenotype",
@@ -11,7 +11,7 @@
   ],
   "keywords": "CPIC, CYP3A5, tacrolimus, Recommendation",
   "hasImplementation": [
-    "99999-fk4t85em9x/v0.1.0"
+    "99999-fk4t85em9x/v0.2.0"
   ],
   "hasServiceSpecification": "service-specification.yaml",
   "hasDeploymentSpecification": "deployment-specification.yaml",
