@@ -1,5 +1,0 @@
-endpoints:
-  /phenotype:
-    adapterType: JAVASCRIPT
-    artifact: phenotype.js
-    entry: phenotype

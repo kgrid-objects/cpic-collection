@@ -1,0 +1,18 @@
+{
+  "@id": "99999-cp4mc9723se",
+  "@type": "koio:KnowledgeObject",
+  "identifier": "ark:/99999/cp4mc9723se",
+  "version":"v0.1.0",
+  "title": "CPIC CYP2D6 Paroxetine Recommendations Implementation",
+  "description": "KGrid CPIC guidelines CYP2D6 Phenotype to paroxetine Recommendation",
+  "keywords": ["CPIC", "CYP2D6", "paroxetine", "Recommendation"],
+  "hasServiceSpecification": "service.yaml",
+  "hasDeploymentSpecification": "deployment.yaml",
+  "hasImplementation": [
+    "99999-cp4mc9723se"
+  ],
+  "hasPayload": "recommendation.js",
+  "@context": [
+    "http://kgrid.org/koio/contexts/knowledgeobject.jsonld"
+  ]
+}
