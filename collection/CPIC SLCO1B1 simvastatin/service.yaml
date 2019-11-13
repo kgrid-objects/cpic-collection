@@ -12,7 +12,7 @@ info:
     email: kgrid-developers@umich.edu
     url: 'http://kgrid.org'
 servers:
-  - url: /99999/fk4m95ek9z/v0.1.0
+  - url: /99999/fk4m95ek9z
     description: CPIC recommendations for simvastatin based on SLCO1B1 phenotype
 tags:
   - name: KO Endpoints
