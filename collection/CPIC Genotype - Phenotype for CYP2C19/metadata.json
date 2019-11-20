@@ -5,14 +5,10 @@
   "version": "v0.2.0",
   "title": "CPIC Genotype - Phenotype for CYP2C19",
   "contributors": "KGRID TEAM",
-  "desription": "KGrid CPIC guidelines Genotype to Phenotype for CYP2C19",
+  "description": "KGrid CPIC guidelines Genotype to Phenotype for CYP2C19",
   "citations": [
-    "https://link"
   ],
-  "keywords": "CPIC, CYP2C19, Genotype, Phenotype",
-  "hasImplementation": [
-    "99999-fk4mc97w0h/v0.2.0"
-  ],
+  "keywords": ["CPIC", "CYP2C19", "Genotype", "Phenotype"],
   "hasServiceSpecification": "service.yaml",
   "hasDeploymentSpecification": "deployment.yaml",
   "hasPayload": "phenotype.js",

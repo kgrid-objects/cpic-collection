@@ -5,14 +5,11 @@
   "version": "v0.2.0",
   "title": "CPIC HLA-B oxcarbazepine recommendations",
   "contributors": "KGRID TEAM",
-  "desription": "CPIC recommendations for oxcarbazepine based on HLA-B genotype",
+  "description": "CPIC recommendations for oxcarbazepine based on HLA-B genotype",
   "citations": [
     "https://cpicpgx.org/guidelines/guideline-for-carbamazepine-and-hla-b/"
   ],
-  "keywords": "CPIC, HLA-B, allopurinol, Recommendation",
-  "hasImplementation": [
-    "99999-fk4qc17m5z/v0.2.0"
-  ],
+  "keywords": ["CPIC", "HLA-B", "allopurinol", "Recommendation"],
   "hasServiceSpecification": "service.yaml",
   "hasDeploymentSpecification": "deployment.yaml",
   "hasPayload": "recommendation.js",

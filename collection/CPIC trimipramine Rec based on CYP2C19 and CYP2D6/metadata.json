@@ -5,14 +5,11 @@
   "version": "v0.2.0",
   "title": "CPIC trimipramine Recommendations based on CYP2C19 and CYP2D6 phenotypes",
   "contributors": "KGRID TEAM",
-  "desription": "KGrid CPIC guidelines CYP2C19 and CYP2D6 Phenotypes to trimipramine Recommendation",
+  "description": "KGrid CPIC guidelines CYP2C19 and CYP2D6 Phenotypes to trimipramine Recommendation",
   "citations": [
     "https://cpicpgx.org/guidelines/guideline-for-tricyclic-antidepressants-and-cyp2d6-and-cyp2c19/"
   ],
-  "keywords": "CPIC, CYP2D6, CYP2C19, trimipramine, Recommendation",
-  "hasImplementation": [
-    "99999-fk4jw9m41b/v0.2.0"
-  ],
+  "keywords": ["CPIC", "CYP2D6", "CYP2C19", "trimipramine", "Recommendation"],
   "hasServiceSpecification": "service.yaml",
   "hasDeploymentSpecification": "deployment.yaml",
   "hasPayload": "recommendation.js",

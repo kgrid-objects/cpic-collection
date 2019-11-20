@@ -5,14 +5,11 @@
   "version": "v0.2.0",
   "title": "CPIC CYP2C19 sertraline recommendations",
   "contributors": "KGRID TEAM",
-  "desription": "CPIC recommendations for sertraline based on CYP2C19 phenotype",
+  "description": "CPIC recommendations for sertraline based on CYP2C19 phenotype",
   "citations": [
     "https://cpicpgx.org/guidelines/guideline-for-sertraline-and-cyp2c19/"
   ],
-  "keywords": "CPIC, CYP2C19, sertraline, Recommendation",
-  "hasImplementation": [
-    "99999-fk40k3kt35/v0.2.0"
-  ],
+  "keywords": ["CPIC", "CYP2C19", "sertraline", "Recommendation"],
   "hasServiceSpecification": "service.yaml",
   "hasDeploymentSpecification": "deployment.yaml",
   "hasPayload": "recommendation.js",

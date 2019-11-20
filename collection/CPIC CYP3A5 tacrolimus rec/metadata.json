@@ -5,14 +5,11 @@
   "version": "v0.2.0",
   "title": "CPIC CYP3A5 tacrolimus recommendations",
   "contributors": "KGRID TEAM",
-  "desription": "CPIC recommendations for tacrolimus based on CYP3A5 phenotype",
+  "description": "CPIC recommendations for tacrolimus based on CYP3A5 phenotype",
   "citations": [
     "https://cpicpgx.org/guidelines/guideline-for-tacrolimus-and-cyp3a5/"
   ],
-  "keywords": "CPIC, CYP3A5, tacrolimus, Recommendation",
-  "hasImplementation": [
-    "99999-fk4t85em9x/v0.2.0"
-  ],
+  "keywords": ["CPIC", "CYP3A5", "tacrolimus", "Recommendation"],
   "hasServiceSpecification": "service.yaml",
   "hasDeploymentSpecification": "deployment.yaml",
   "hasPayload": "recommendation.js",

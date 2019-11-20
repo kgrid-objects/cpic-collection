@@ -5,14 +5,11 @@
   "version": "v0.2.0",
   "title": "CPIC CYP2C19 citalopram recommendation",
   "contributors": "KGRID TEAM",
-  "desription": "CPIC recommendations for citalopram based on CYP2C19 phenotype",
+  "description": "CPIC recommendations for citalopram based on CYP2C19 phenotype",
   "citations": [
     "https://cpicpgx.org/guidelines/guideline-for-selective-serotonin-reuptake-inhibitors-and-cyp2d6-and-cyp2c19/"
   ],
-  "keywords": "CPIC, CYP2C19, citalopram, Recommendation",
-  "hasImplementation": [
-    "99999-fk4d22836k/v0.2.0"
-  ],
+  "keywords": ["CPIC", "CYP2C19", "citalopram", "Recommendation"],
   "hasServiceSpecification": "service.yaml",
   "hasDeploymentSpecification": "deployment.yaml",
   "hasPayload": "recommendation.js",

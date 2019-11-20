@@ -1,22 +1,15 @@
 {
-  "@id": "99999-fk49z9gr7p",
-  "@type": "koio:KnowledgeObject",
-  "identifier": "ark:/99999/fk49z9gr7p",
-  "version": "v0.2.0",
-  "title": "CPIC Genotype - Phenotype for CYP2D6",
-  "contributors": "KGRID TEAM",
-  "desription": "KGrid CPIC guidelines Genotype to Phenotype for CYP2D6",
-  "citations": [
-    ""
-  ],
-  "keywords": "CPIC, CYP2D6, Genotype, Phenotype",
-  "hasImplementation": [
-    "99999-fk49z9gr7p/v0.2.0"
-  ],
-  "hasServiceSpecification": "service.yaml",
-  "hasDeploymentSpecification": "deployment.yaml",
-  "hasPayload": "phenotype.js",
-  "@context": [
-    "http://kgrid.org/koio/contexts/knowledgeobject.jsonld"
-  ]
+  "@id" : "99999-fk49z9gr7p",
+  "@type" : "koio:KnowledgeObject",
+  "identifier" : "ark:/99999/fk49z9gr7p",
+  "version" : "v0.2.0",
+  "title" : "CPIC Genotype - Phenotype for CYP2D6 v0.2.0",
+  "contributors" : "KGRID TEAM",
+  "description" : "KGrid CPIC guidelines Genotype to Phenotype for CYP2D6",
+  "citations" : [ "" ],
+  "keywords" : [ "CPIC", "CYP2D6", "Genotype", "Phenotype" ],
+  "hasServiceSpecification" : "service.yaml",
+  "hasDeploymentSpecification" : "deployment.yaml",
+  "hasPayload" : "phenotype.js",
+  "@context" : [ "http://kgrid.org/koio/contexts/knowledgeobject.jsonld" ]
 }
