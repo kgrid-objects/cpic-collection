@@ -5,14 +5,11 @@
   "version": "v0.2.0",
   "title": "CPIC Genotype - Phenotype for UGT1A1",
   "contributors": "KGRID TEAM",
-  "desription": "KGrid CPIC guidelines Genotype to Phenotype for UGT1A1",
+  "description": "KGrid CPIC guidelines Genotype to Phenotype for UGT1A1",
   "citations": [
     ""
   ],
-  "keywords": "CPIC, UGT1A1, Genotype, Phenotype",
-  "hasImplementation": [
-    "99999-fk47h1x090/v0.2.0"
-  ],
+  "keywords": ["CPIC", "UGT1A1", "Genotype", "Phenotype"],
   "hasServiceSpecification": "service.yaml",
   "hasDeploymentSpecification": "deployment.yaml",
   "hasPayload": "phenotype.js",

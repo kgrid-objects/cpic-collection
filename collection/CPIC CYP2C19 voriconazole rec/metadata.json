@@ -5,14 +5,11 @@
   "version": "v0.2.0",
   "title": "CPIC CYP2C19 voriconazole recommendations",
   "contributors": "KGRID TEAM",
-  "desription": "CPIC recommendations for voriconazole based on CYP2C19 phenotype",
+  "description": "CPIC recommendations for voriconazole based on CYP2C19 phenotype",
   "citations": [
     "https://cpicpgx.org/guidelines/guideline-for-voriconazole-and-cyp2c19/"
   ],
-  "keywords": "CPIC, CYP2C19, voriconazole, Recommendation",
-  "hasImplementation": [
-    "99999-fk4cz4fm8f/v0.2.0"
-  ],
+  "keywords": ["CPIC", "CYP2C19", "voriconazole", "Recommendation"],
   "hasServiceSpecification": "service.yaml",
   "hasDeploymentSpecification": "deployment.yaml",
   "hasPayload": "recommendation.js",

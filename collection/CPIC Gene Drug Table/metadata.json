@@ -5,7 +5,7 @@
   "version":"v0.2.0",
   "title": "CPIC Gene Drug Table Implementation",
   "description": "CPIC Genes-Drug Table, with total of 28 entries, which can be filtered by supplying a list of genes, a list of drugs, or both.",
-  "keywords": ["CPIC"],
+  "keywords": ["CPIC","Phenotype","Gene","Drug","KO Table"],
   "hasServiceSpecification": "service.yaml",
   "hasDeploymentSpecification": "deployment.yaml",
   "hasPayload": "genedruglist.js",

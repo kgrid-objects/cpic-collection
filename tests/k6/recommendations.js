@@ -5,10 +5,10 @@ import { check, fail } from "k6";
 const params = {headers: {'Content-Type': 'application/json'}};
 let hostname = __ENV.HOSTNAME === undefined ? 'localhost:8080' : __ENV.HOSTNAME
 let testObjects = [
-  {endpoint: "99999/fk4bz6hp15/v0.0.5/dosingrecommendation", input: {"CYP2C19": {"diplotype": "*1/*20", "phenotype": "Ultrarapid metabolizer"}}, gene:"CYP2C19", diplotype: "*1/*20", classification:"Strong"},
-  {endpoint: "99999/fk4bz6hp15/v0.0.5/dosingrecommendation", input: {"CYP2C19": {"diplotype": "*1/*8", "phenotype": "Intermediate metabolizer"}}, gene:"CYP2C19", diplotype: "*1/*8", classification:"Moderate"},
-  {endpoint: "99999/fk4c83hw23/v0.0.1/dosingrecommendation", input: {"CYP2D6":  {"diplotype": "*1/*3", "phenotype": "Poor metabolizer"}}, gene:"CYP2D6", diplotype: "*1/*3", classification:"No recommendation"},
-  {endpoint: "/99999/fk4058s74p/v0.0.1/dosingrecommendation", input: {"HLA-B":  {"diplotype": "*58:01/*1", "phenotype": ""}}, gene:"HLA-B", diplotype: "*58:01/*1", classification:"Strong"},
+  {endpoint: "99999/fk4bz6hp15/dosingrecommendation", input: {"CYP2C19": {"diplotype": "*1/*20", "phenotype": "Ultrarapid metabolizer"}}, gene:"CYP2C19", diplotype: "*1/*20", classification:"Strong"},
+  {endpoint: "99999/fk4bz6hp15/dosingrecommendation", input: {"CYP2C19": {"diplotype": "*1/*8", "phenotype": "Intermediate metabolizer"}}, gene:"CYP2C19", diplotype: "*1/*8", classification:"Moderate"},
+  {endpoint: "99999/fk4c83hw23/dosingrecommendation", input: {"CYP2D6":  {"diplotype": "*1/*3", "phenotype": "Poor metabolizer"}}, gene:"CYP2D6", diplotype: "*1/*3", classification:"No recommendation"},
+  {endpoint: "/99999/fk4058s74p/dosingrecommendation", input: {"HLA-B":  {"diplotype": "*58:01/*1", "phenotype": ""}}, gene:"HLA-B", diplotype: "*58:01/*1", classification:"Strong"},
 
 ]
 
@@ -31,4 +31,3 @@ export default function() {
   }) || fail(r.body);
 
 };
-

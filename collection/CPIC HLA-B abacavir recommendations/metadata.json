@@ -5,14 +5,11 @@
   "version": "v0.2.0",
   "title": "CPIC HLA-B abacavir recommendations",
   "contributors": "KGRID TEAM",
-  "desription": "CPIC recommendations for abacavir based on HLA-B phenotype",
+  "description": "CPIC recommendations for abacavir based on HLA-B phenotype",
   "citations": [
     "https://cpicpgx.org/guidelines/guideline-for-abacavir-and-hla-b/"
   ],
-  "keywords": "CPIC, HLA-B, abacavir, Recommendation",
-  "hasImplementation": [
-    "99999-fk45m7fn9t/v0.2.0"
-  ],
+  "keywords": ["CPIC", "HLA-B", "abacavir", "Recommendation"],
   "hasServiceSpecification": "service.yaml",
   "hasDeploymentSpecification": "deployment.yaml",
   "hasPayload": "recommendation.js",

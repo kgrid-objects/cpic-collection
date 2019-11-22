@@ -5,14 +5,11 @@
   "version": "v0.2.0",
   "title": "CPIC CYP2D6 Codeine Recommendations",
   "contributors": "KGRID TEAM",
-  "desription": "KGrid CPIC guidelines CYP2D6 Phenotype to Codeine Recommendation",
+  "description": "KGrid CPIC guidelines CYP2D6 Phenotype to Codeine Recommendation",
   "citations": [
     "https://cpicpgx.org/guidelines/guideline-for-codeine-and-cyp2d6/"
   ],
-  "keywords": "CPIC, CYP2D6, Codeine, Recommendation",
-  "hasImplementation": [
-    "99999-fk4mc97w6m/v0.2.0"
-  ],
+  "keywords": ["CPIC", "CYP2D6", "Codeine", "Recommendation"],
   "hasServiceSpecification": "service.yaml",
   "hasDeploymentSpecification": "deployment.yaml",
   "hasPayload": "recommendation.js",

@@ -5,7 +5,7 @@
   "version": "v0.2.0",
   "title": "CPIC CYP2D6 fluvoxamine Recommendations Implementation",
   "description": "KGrid CPIC guidelines CYP2D6 Phenotype to fluvoxamine Recommendation",
-  "keywords": "CPIC, CYP2D6, fluvoxamine, Recommendation",
+  "keywords": ["CPIC", "CYP2D6", "fluvoxamine", "Recommendation"],
   "hasServiceSpecification": "service.yaml",
   "hasDeploymentSpecification": "deployment.yaml",
   "hasPayload": "recommendation.js",

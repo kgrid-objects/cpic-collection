@@ -5,14 +5,11 @@
   "version": "v0.2.0",
   "title": "CPIC desipramine Recommendations based on CYP2C19 and CYP2D6 phenotypes",
   "contributors": "KGRID TEAM",
-  "desription": "KGrid CPIC guidelines CYP2C19 and CYP2D6 Phenotypes to desipramine Recommendation",
+  "description": "KGrid CPIC guidelines CYP2C19 and CYP2D6 Phenotypes to desipramine Recommendation",
   "citations": [
     "https://cpicpgx.org/guidelines/guideline-for-tricyclic-antidepressants-and-cyp2d6-and-cyp2c19/"
   ],
-  "keywords": "CPIC, CYP2D6, CYP2C19, desipramine, Recommendation",
-  "hasImplementation": [
-    "99999-fk4rf6zx6d/v0.2.0"
-  ],
+  "keywords": ["CPIC", "CYP2D6", "CYP2C19", "desipramine", "Recommendation"],
   "hasServiceSpecification": "service.yaml",
   "hasDeploymentSpecification": "deployment.yaml",
   "hasPayload": "recommendation.js",

@@ -5,14 +5,11 @@
   "version": "v0.2.0",
   "title": "CPIC TPMT azathioprine recommendations",
   "contributors": "KGRID TEAM",
-  "desription": "CPIC recommendations for azathioprine based on TPMT phenotype",
+  "description": "CPIC recommendations for azathioprine based on TPMT phenotype",
   "citations": [
     "https://cpicpgx.org/guidelines/guideline-for-thiopurines-and-tpmt/"
   ],
-  "keywords": "CPIC, TPMT, azathioprine, Recommendation",
-  "hasImplementation": [
-    "99999-fk4r225c4h/v0.2.0"
-  ],
+  "keywords": ["CPIC", "TPMT", "azathioprine", "Recommendation"],
   "hasServiceSpecification": "service.yaml",
   "hasDeploymentSpecification": "deployment.yaml",
   "hasPayload": "recommendation.js",
