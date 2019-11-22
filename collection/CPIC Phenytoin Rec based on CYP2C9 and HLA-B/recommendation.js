@@ -65,7 +65,7 @@ var recommendations = {'cyp2c9extensivehla-b15:02carrier':{'implication': 'Incre
         'recommendation': 'If patient is phenytoin naive, do not use phenytoin/fosphenytoinc',
         'classification': 'Strong'},
 "cyp2c9extensivehla-b15:02noncarrier":{'implication': 'Normal phenytoin metabolism',
-        'recommendation': 'Initiate therapy with recommended maintenance dosed',
+        'recommendation': 'Initiate therapy with recommended maintenance dose',
         'classification': 'Strong'},
 
 'cyp2c9intermediatehla-b15:02carrier':{'implication': 'Increased risk of phenytoin induced  Stevens-Johnson syndrome/toxic epidermal necrolysis',

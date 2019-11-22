@@ -62,10 +62,10 @@ var reference = {'CYP3A5':{field:'phenotype', value:''}}
 
 var recommendations = {
   'cyp3a5extensive': {'implication': 'Lower dose-adjusted trough concentrations of tacrolimus and decreased chance of achieving target tacrolimus concentrations.',
-                  'recommendation': 'Increase starting dose 1.5-2 times recommended starting dose.d Total starting dose should not exceed 0.3 mg/kg/day. Use therapeutic drug monitoring to guide dose adjustments.',
+                  'recommendation': 'Increase starting dose 1.5-2 times recommended starting dose. Total starting dose should not exceed 0.3 mg/kg/day. Use therapeutic drug monitoring to guide dose adjustments.',
                   'classification': 'Strong'},
   'cyp3a5intermediate': {'implication': 'Lower dose-adjusted trough concentrations of tacrolimus and decreased chance of achieving target tacrolimus concentrations.',
-          'recommendation': 'Increase starting dose 1.5-2 times recommended starting dose.a Total starting dose should not exceed 0.3 mg/kg/day. Use therapeutic drug monitoring to guide dose adjustments.',
+          'recommendation': 'Increase starting dose 1.5-2 times recommended starting dose. Total starting dose should not exceed 0.3 mg/kg/day. Use therapeutic drug monitoring to guide dose adjustments.',
           'classification': 'Strong'},
   'cyp3a5poor': {'implication': 'Higher ("normal") dose-adjusted trough concentrations of tacrolimus and increased chance of achieving target tacrolimus concentrations.',
           'recommendation': 'Initiate therapy with standard recommended dose. Use therapeutic drug monitoring to guide dose adjustments.',

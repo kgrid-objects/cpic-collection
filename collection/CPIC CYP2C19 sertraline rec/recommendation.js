@@ -71,5 +71,5 @@ var recommendations = {
           'recommendation': 'Initiate therapy with recommended starting dose.',
           'classification': 'Strong'},
   'cyp2c19poor': {'implication': 'Greatly reduced metabolism when compared to extensive metabolizers. Higher plasma concentrations may increase the probability of side effects.',
-          'recommendation': 'Consider a 50% reductiond of recommended starting dose and titrate to response or select alternative drug not predominantly metabolized by CYP2C19.',
+          'recommendation': 'Consider a 50% reduction of recommended starting dose and titrate to response or select alternative drug not predominantly metabolized by CYP2C19.',
           'classification': 'Optional'}}
