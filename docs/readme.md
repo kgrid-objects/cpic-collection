@@ -11,7 +11,7 @@ The current release of CPIC collection of knowledge objects is [![GitHub release
 
 This release contains 37 KOs, including 28 drug recommendation KOs, 7 geno-to-pheno KOs and two look-up table KOs.
 
-The collection of CPIC KOs can be easily deployed through [CPIC Kit](https://demo.kgrid.org/cpic-kit/).
+The collection of CPIC KOs can be easily deployed through [KGrid CLI](https://kgrid.org/kgrid-cli/).
 
 ## CPIC Knowledge Objects (KO)
 
@@ -113,9 +113,9 @@ The collection of CPIC KOs can be easily deployed through [CPIC Kit](https://dem
 
    ```json
    {
-    "CYP2D6": "/99999/fk49z9gr7p/v0.0.6",
-    "CYP2C19": "/99999/fk4mc97w0h/v0.0.4",
-    "UGT1A1": "/99999/fk47h1x090/v0.0.4",
+    "CYP2D6": "/99999/fk49z9gr7p",
+    "CYP2C19": "/99999/fk4mc97w0h",
+    "UGT1A1": "/99999/fk47h1x090",
     ...
    }
    ```
@@ -136,8 +136,8 @@ The collection of CPIC KOs can be easily deployed through [CPIC Kit](https://dem
 
    ```json
     {
-      "codeine": "/99999/fk4mc97w6m/v0.0.5",
-      "atazanavir": "/99999/fk4d79nq4z/v0.0.5",
+      "codeine": "/99999/fk4mc97w6m",
+      "atazanavir": "/99999/fk4d79nq4z",
       ...
     }
    ```
@@ -229,7 +229,7 @@ Currently, the following drug recommendations are available as knowledge objects
 
 CPIC KOs are individually available for access and deployment.
 
-The collection of CPIC KOs can also be easily deployed through [CPIC Kit](https://demo.kgrid.org/cpic-kit/). The kit packages Activator, Library and CPIC Demo Site. The kit is designed as a personal CPIC Knowledge Grid used to explore the capabilities of KGrid and CPIC Knowledge Objects.
+The collection of CPIC KOs can also be easily deployed through [KGrid CLI](https://kgrid.org/kgrid-cli/).
 
 
 ### Trying the CPIC KOs
@@ -296,4 +296,4 @@ We have some performance/load testing scripts that utilize k6, a load testing to
 
 CPIC Knowledge Objects, just as other KOs, can be compressed individually into zip file, and then deposited into a KGrid library, for example, [KGRID Sandbox Library](https://library.kgrid.org)
 
-CPIC Knowledge Objects are released in as a collection in the form of a single zip file,  such as `cpic-all.zip` on [GitHub release](https://github.com/kgrid-objects/cpic-collection/releases/latest)
+CPIC Knowledge Objects are released on [GitHub release](https://github.com/kgrid-objects/cpic-collection/releases/latest)
