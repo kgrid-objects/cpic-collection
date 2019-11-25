@@ -1,5 +1,6 @@
 #!/usr/bin/env sh
 
-for dir in /collection
-  do (cd "$dir" && kgrid package)
+for dir in collection/*
+  echo "$dir"
+  do (cd "$dir" && kgrid package && cd ..)
 done
