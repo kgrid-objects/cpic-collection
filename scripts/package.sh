@@ -1,19 +1,5 @@
 #!/usr/bin/env sh
 
-# Setup
-rm -rf dist
-mkdir -p dist
-cp -r collection/* dist
-
-# create zip for each ko
-cd dist
-for d in * ; do
-    echo "$d.zip"
-    zip -r -X "$d.zip" $d -x \"*.DS_Store\"
+for dir in /collection
+  do (cd "$dir" && kgrid package)
 done
-
-# create one big zip of all kos
-zip -r -X cpic-all.zip * -x \"*.DS_Store\" "*.zip*"
-
-# clean up only leaving zip files
-rm -r */

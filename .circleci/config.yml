@@ -14,6 +14,10 @@ jobs:
     steps:
     - checkout
 
+    - run:
+        name: Install KGrid CLI
+        command: sudo npm install -g @kgrid/cli  --unsafe-perm=true --allow-root
+
     # Download and cache dependencies
     - restore_cache:
         keys:
@@ -30,17 +34,17 @@ jobs:
         - node_modules
         key: v1-dependencies-{{ checksum "package.json" }}
 
-    # - run:
-    #     name: Unit Testing
-    #     command: npm test
+    - run:
+        name: Unit Testing
+        command: npm test
 
     # - run:
     #     name: Intgration Testing
     #     command: npm run ci
 
-    # - run:
-    #     name: Create CPIC Objects zip ready for deployment
-    #     command: npm run package
+    - run:
+        name: Create CPIC Objects zip ready for deployment
+        command: npm run package
 
     - run:
         name: Deploy VuePress GitHub Pages
