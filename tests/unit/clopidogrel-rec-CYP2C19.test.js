@@ -1,5 +1,5 @@
 const rewire = require('rewire');
-const script = rewire('../../collection/CPIC CYP2C19 clopidogrel rec/recommendation');
+const script = rewire('../../collection/CPIC CYP2C19 Clopidogrel rec/recommendation');
 var recommendation = script.__get__("dosingrecommendation");
 
 describe('Give correct clopidogrel recommendations', () => {
