@@ -148,7 +148,7 @@ The collection of CPIC KOs can be easily deployed through [KGrid CLI](https://kg
 
 #### Genotype to Phenotype
 
-Currently, the following genes' phenotypes can be determined based on their diplotypes by the respective knowledge objects, as included in the cpic-kit.
+Currently, the following genes' phenotypes can be determined based on their diplotypes by the respective knowledge objects.
 
 1. [CYP2C19](https://library.kgrid.org/#/object/99999%2Ffk4mc97w0h)
 
@@ -166,7 +166,7 @@ Currently, the following genes' phenotypes can be determined based on their dipl
 
 #### Drug Recommendation
 
-Currently, the following drug recommendations are available as knowledge objects and included in the CPIC-kit.
+Currently, the following drug recommendations are available as knowledge objects.
 
 1. [Abacavir (based on HLA-B allele information)](https://library.kgrid.org/#/object/99999%2Ffk45m7fn9t)
 

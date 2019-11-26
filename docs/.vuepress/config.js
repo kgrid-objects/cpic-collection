@@ -7,8 +7,8 @@ module.exports = {
     nav: [
       { text: 'KGrid.org', link: 'https://kgrid.org' },
       { text: 'Guide', link: '/' },
-      { text: 'CPIC Kit', link: 'https://demo.kgrid.org/cpic-kit'},
-      { text: 'Online Demo', link: 'https://demo.kgrid.org/cpic-kit/web' }
+      { text: 'CPIC Demo', link: 'https://demo.kgrid.org/cpic-demo'},
+      { text: 'Online Demo', link: 'https://demo.kgrid.org/cpic-demo/web' }
     ],
     search: true,
     searchMaxSuggestions: 10,
