@@ -61,7 +61,7 @@ jobs:
                git config --global user.email "$GIT_USER_EMAIL"
                git config --global user.name "$GIT_USER_NAME"
 
-               .circleci/release.sh
+               chmod 775 .circleci/release.sh && .circleci/release.sh
             fi
 
     - run:
