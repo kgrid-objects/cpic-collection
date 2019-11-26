@@ -34,17 +34,35 @@ jobs:
         - node_modules
         key: v1-dependencies-{{ checksum "package.json" }}
 
-    # - run:
-    #     name: Unit Testing
-    #     command: npm test
+    - run:
+        name: Unit Testing
+        command: npm test
 
     # - run:
     #     name: Intgration Testing
     #     command: npm run ci
 
     - run:
-        name: Create CPIC Objects zip ready for deployment
+        name: Package
         command: npm run package
+
+    - run:
+        name: Deploy KOs to Chipmunk
+        command: |
+          .circleci/shelf_deploy.sh https://kgrid-activator.herokuapp.com/kos collection
+          curl --write-out '%{http_code}' --silent --output /dev/null  https://kgrid-activator.herokuapp.com/activate
+          .circleci/shelf_deploy.sh https://kgrid-library.herokuapp.com/kos collection
+
+    - run:
+        name: Create Release
+        command: |
+
+            if [ $RELEASE ]; then
+               git config --global user.email "$GIT_USER_EMAIL"
+               git config --global user.name "$GIT_USER_NAME"
+
+               .circleci/release.sh
+            fi
 
     - run:
         name: Deploy VuePress GitHub Pages
