@@ -13,6 +13,11 @@ This release contains 37 KOs, including 28 drug recommendation KOs, 7 geno-to-ph
 
 The collection of CPIC KOs can be easily deployed through [KGrid CLI](https://kgrid.org/kgrid-cli/).
 
+## What's new
+  As of November 2019, the CPIC collection has been updated and released with the new KO structure. For detail of the changes, please refer to [KGrid Guides](https://kgrid.org/guides/latest/)
+
+  To deploy the CPIC collection, KGRID activator >1.1.5 is needed (Currently only the development version is available).
+
 ## CPIC Knowledge Objects (KO)
 
 ### CPIC KO Design
