@@ -293,9 +293,6 @@ We test the CPIC KO endpoints in a KGrid Activator instance using [Postman](http
 npm run ci
 ```
 
-### Performance Tests
-
-We have some performance/load testing scripts that utilize k6, a load testing tool.  Details on CPIC load/performance testing can be found in the [k6 readme](/k6/)
 
 ### Packaging
 

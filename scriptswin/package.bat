@@ -1,3 +1,2 @@
-@ECHO OFF
-if not exist dist ( mkdir dist )
-zip -r dist\%1.zip %1
+cd collection
+for /D %%G in ("*") do (echo %%G && cd %%G && kgrid package && cd ..)

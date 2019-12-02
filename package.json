@@ -10,15 +10,14 @@
     "scripty": "1.7.2",
     "shelljs": "^0.8.2",
     "start-server-and-test": "^1.7.1",
-    "vuepress": "^1.0.2"
+    "vuepress": "^1.0.2",
+    "@kgrid/cli":"^0.4.0"
   },
   "scripts": {
     "test": "jest --ci --reporters=default --reporters=jest-junit",
     "test-it": "newman run tests/postman/cpic_integration_tests.postman_collection.json --reporters  cli,junit --reporter-junit-export test-results",
-    "prod": "scripty",
     "package": "scripty",
-    "release": "scripty",
-    "start": "node scripts/start.js",
+    "start": "cd collection && kgrid setup && kgrid start:activator",
     "ci": "server-test :8080 test-it ",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
