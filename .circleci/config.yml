@@ -16,15 +16,15 @@ jobs:
 
 
     # Download and cache dependencies
-    - restore_cache:
-        keys:
-        - v1-dependencies-{{ checksum "package.json" }}
-        # fallback to using the latest cache if no exact match is found
-        - v1-dependencies-
+    # - restore_cache:
+    #     keys:
+    #     - v1-dependencies-{{ checksum "package.json" }}
+    #     # fallback to using the latest cache if no exact match is found
+    #     - v1-dependencies-
 
-    - run:
-        name: Install KGrid CLI
-        command: sudo npm install -g @kgrid/cli  --unsafe-perm=true --allow-root
+    # - run:
+    #     name: Install KGrid CLI
+    #     command: sudo npm install -g @kgrid/cli  --unsafe-perm=true --allow-root
 
     - run:
         name: Install Dependencies
