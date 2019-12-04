@@ -23,8 +23,8 @@ jobs:
         - v1-dependencies-
 
     - run:
-      name: Install KGrid CLI
-      command: sudo npm install -g @kgrid/cli  --unsafe-perm=true --allow-root
+        name: Install KGrid CLI
+        command: sudo npm install -g @kgrid/cli  --unsafe-perm=true --allow-root
 
     - run:
         name: Install Dependencies
