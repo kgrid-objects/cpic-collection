@@ -38,9 +38,9 @@ jobs:
         name: Unit Testing
         command: npm test
 
-    # - run:
-    #     name: Intgration Testing
-    #     command: npm run ci
+    - run:
+        name: Intgration Testing
+        command: npm run ci
 
     - run:
         name: Package
