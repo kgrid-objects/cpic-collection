@@ -26,8 +26,8 @@ jobs:
         - v1-dependencies-
 
     - run:
-        name: Install CPIC Objects
-        command: yarn install
+        name: Install Dependencies
+        command: npm install
 
     - save_cache:
         paths:
