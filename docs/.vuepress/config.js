@@ -6,7 +6,8 @@ module.exports = {
     lastUpdated: 'Last Updated',
     nav: [
       { text: 'KGrid.org', link: 'https://kgrid.org' },
-      { text: 'Guide', link: '/' },
+      { text: 'Overview', link: '/' },
+      { text: 'Instructions', link: '/deployment/' },
       { text: 'CPIC Demo', link: 'https://demo.kgrid.org/cpic-demo'},
       { text: 'Online Demo', link: 'https://demo.kgrid.org/cpic-demo/web' }
     ],
