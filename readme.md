@@ -3,7 +3,7 @@
 [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](http://perso.crans.org/besson/LICENSE.html)
 
 
-This is a collection of objects that focus on dosing guidelines as provided by the [CPIC pharmacogenomic guidelines](https://cpicpgx.org/guidelines/). These objects generally take allele pairs as inputs and return the corresponding drug selection or dosing guideline recommendation based on a patient's alleles.
+This is a collection of digital Knowledge Objects (KOs) that encode drug selection and dosing guidelines from the [CPIC pharmacogenomic guidelines](https://cpicpgx.org/guidelines/). These KOs generally take an individual's allele pairs as inputs and ultimately return the corresponding drug selection or dosing guideline recommendation from CPIC based on a single patient's alleles.
 
 ## Table of Contents
 * [Status](#status)
