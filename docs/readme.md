@@ -3,7 +3,7 @@
 [![GitHub release](https://img.shields.io/github/release/kgrid-objects/cpic-collection.svg)](https://github.com/kgrid-objects/cpic-collection/releases/)
 [![CircleCI](https://circleci.com/gh/kgrid-objects/cpic-collection.svg?style=svg)](https://circleci.com/gh/kgrid-objects/cpic-collection)
 
-This is a collection of objects that focus on dosing guidelines as provided by the [CPIC pharmacogenomic guidelines](https://cpicpgx.org/guidelines/). These objects generally take allele pairs as inputs and return the corresponding drug selection or dosing guideline recommendation based on a patient's alleles.
+This is a collection of digital Knowledge Objects (KOs) that focus on dosing guidelines as provided by the [CPIC pharmacogenomic guidelines](https://cpicpgx.org/guidelines/). These KOs generally start by accepting allele pairs as inputs and, after mapping allele pairs to drug metabolism phenotypes, return the corresponding drug selection or dosing guideline recommendation from CPIC based on an individual patient's alleles.
 
 
 ## Status
