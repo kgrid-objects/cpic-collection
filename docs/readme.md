@@ -3,25 +3,25 @@
 [![GitHub release](https://img.shields.io/github/release/kgrid-objects/cpic-collection.svg)](https://github.com/kgrid-objects/cpic-collection/releases/)
 [![CircleCI](https://circleci.com/gh/kgrid-objects/cpic-collection.svg?style=svg)](https://circleci.com/gh/kgrid-objects/cpic-collection)
 
-This is a collection of digital Knowledge Objects (KOs) that focus on dosing guidelines as provided by the [CPIC pharmacogenomic guidelines](https://cpicpgx.org/guidelines/). These KOs generally start by accepting allele pairs as inputs and, after mapping allele pairs to drug metabolism phenotypes, return the corresponding drug selection or dosing guideline recommendation from CPIC based on an individual patient's alleles.
+This is a collection of digital Knowledge Objects (KOs) that focus on dosing guidelines as provided by the [CPIC pharmacogenomic guidelines](https://cpicpgx.org/guidelines/). These KOs generally start by accepting pharmacogene allele pairs as inputs and, after mapping those allele pairs to drug metabolism phenotypes, return the corresponding phenotype-specific drug selection or drug dosing guideline recommendation from CPIC based on an individual patient's alleles.
 
 
 ## Status
 The current release of CPIC collection of knowledge objects is [![GitHub release](https://img.shields.io/github/release/kgrid-objects/cpic-collection.svg)](https://github.com/kgrid-objects/cpic-collection/releases/)
 
-This release contains 37 KOs, including 28 drug recommendation KOs, 7 geno-to-pheno KOs and two look-up table KOs.
+This release contains 37 KOs, includihg 7 gene-specific genotype to phenotype (geno-to-pheno) KOs, 28 drug-specific CPIC recommendation KOs, and 2 KGrid look-up table KOs. (The two look-up table KOs enable software application developers to look-up which KO corresponds to a specific gene or drug, respectively. Drug names or gene names are mapped by these KOs to persistent unique identifers for the other 35 KOs in this CPIC Collection of KOs.)
 
 ## What's new
   As of November 2019, the CPIC collection has been updated and released with the new KO structure. For detail of the changes, please refer to [KGrid Guides](https://kgrid.org/guides/latest/)
 
-  To deploy the CPIC collection, KGRID activator >1.1.5 is needed (Currently only the development version is available).
+  To deploy the CPIC collection, a KGRID Activator with version 1.1.5 or greater is needed. A suitable KGRID Activator is available here [KGrid Activator](https://github.com/kgrid/kgrid-activator/releases/tag/1.1.5)
 
 ## CPIC Knowledge Objects (KO)
 
 ### CPIC KO Design
  CPIC collection consists of three types of KOs:
 
-#### Geno-to-Pheno
+#### Geno-to-Pheno KOs
 
   This type of KO is gene-specific. It will determine the phenotype based on the gene's diplotypes
 
