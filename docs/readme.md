@@ -12,9 +12,9 @@ The current release of CPIC collection of knowledge objects is [![GitHub release
 This release contains 37 KOs, includihg 7 gene-specific genotype to phenotype (geno-to-pheno) KOs, 28 drug-specific CPIC recommendation KOs, and 2 KGrid look-up table KOs. (The two look-up table KOs enable software application developers to look-up which KO corresponds to a specific gene or drug, respectively. Drug names or gene names are mapped by these KOs to persistent unique identifers for the other 35 KOs in this CPIC Collection of KOs.)
 
 ## What's new
-  As of November 2019, the CPIC collection has been updated and released with the new KO structure. For detail of the changes, please refer to [KGrid Guides](https://kgrid.org/guides/latest/)
+  As of November 2019, the CPIC collection has been updated and released with the new KO structure. For detail of the changes, please refer to . . .  [KGrid Guides](https://kgrid.org/guides/latest/)
 
-  To deploy the CPIC collection, a KGRID Activator with version 1.1.5 or greater is needed. A suitable KGRID Activator is available at this location [KGrid Activator](https://github.com/kgrid/kgrid-activator/releases/tag/1.1.5)
+  To deploy the CPIC collection, a KGRID Activator with version 1.1.5 or greater is needed. A suitable KGRID Activator is available at this location . . .  [KGrid Activator](https://github.com/kgrid/kgrid-activator/releases/tag/1.1.5)
 
 ## CPIC Knowledge Objects (KO)
 
@@ -54,7 +54,9 @@ This release contains 37 KOs, includihg 7 gene-specific genotype to phenotype (g
 
 #### Drug recommendation KOs
 
-  Drug recommendation KOs are all drug-specific. They provide CPIC's evidence-based recommendations based on a patient's germline phenotype for one or more relevant pharmacogene(s). The combination of information includes:
+  Drug recommendation KOs are all drug-specific. They provide CPIC's evidence-based recommendations based on a patient's germline phenotype for one or more relevant pharmacogene(s). 
+  
+  The combination of information includes:
 
   * single gene allele
   * multiple gene allele
@@ -62,7 +64,7 @@ This release contains 37 KOs, includihg 7 gene-specific genotype to phenotype (g
   * single gene phenotype
   * multiple gene phenotypes
 
-  The drug recommendation KO will take the phenotype panel as input, extract the needed gene and provide recommendation output.
+  The drug recommendation KO will take a phenotype panel (i.e., one or more gene-specific phenotypes) as input, extract the needed gene and provide CPIC drug selection or drug dosing recommendations as output.
 
   Endpoint:       ` /dosingrecommendation`
 
@@ -100,13 +102,15 @@ This release contains 37 KOs, includihg 7 gene-specific genotype to phenotype (g
   }
   ```
 
-#### Look-up table
+  Each recommendation provided as output from the API-based services enabled by these KOs has three parts, all of which come from CPIC guidelines. The first part is the "implication." This part tells about drug metabolism in general. The second part is "content". The content carries the actual text of a CPIC recommendation for clinical medication use. The third part is the "classification", which conveys the class (or strength) of evidence. 
 
-  The look-up table KO provides the KO ark ids for either the genes or the drugs of interest.
+#### Look-up table KOs
 
-  Endpoint for geno-to-pheno table:   `/genophenokolist`
+  The two look-up table KOs provide the persistent unique identifiers (PUIDs) for the other CPIC KOs in this collection. These look-up table KOs are meant to help application developers find which KOs are associated either with a specific gene or with a specific drug. In this case, for KGrid, the PUIDs are Archive Resource Key (ARK) identifiers. ARK identifiers are described in more detail here . . . [ARK IDs Explained](https://n2t.net/e/ark_ids.html)
 
-  Input for geno-to-pheno table:
+  Endpoint for look-up table KO for geno-to-pheno KOs:   `/genophenokolist`
+
+  Input for look-up table for geno-to-pheno KOs:
 
   ```json
   {
@@ -117,7 +121,7 @@ This release contains 37 KOs, includihg 7 gene-specific genotype to phenotype (g
    }
    ```
 
-   Output for geno-to-pheno table:
+   Output from look-up table for geno-to-pheno KOs (the ARK identifiers in use all begin with /99999/):
 
    ```json
    {
@@ -128,9 +132,9 @@ This release contains 37 KOs, includihg 7 gene-specific genotype to phenotype (g
    }
    ```
 
-   Endpoint for drug list table:   `/druglist`
+   Endpoint for look-up table for drug specific KOs:   `/druglist`
 
-   Input for drug list table:
+   Input for look-up table for drug-specific KOs:
 
    ```json
    {
@@ -140,7 +144,7 @@ This release contains 37 KOs, includihg 7 gene-specific genotype to phenotype (g
    }
    ```
 
-   Output for drug list table:
+   Output for drug list table (the ARK identifiers in use all begin with /99999/):
 
    ```json
     {
@@ -150,13 +154,14 @@ This release contains 37 KOs, includihg 7 gene-specific genotype to phenotype (g
     }
    ```
 
-   Note: For drug list table, a input of empty object `{}` will produce the output containing the list of all available KOs.
+   Note: For look-up table for drug-specific KOs, an input of empty object `{}` will produce the output containing the entire list of all available KOs from the service of either look-up table KO.
+   
 
 ### CPIC KO Descriptions
 
-#### Genotype to Phenotype
+#### Genotype to Phenotype KOs
 
-Currently, the following genes' phenotypes can be determined based on their diplotypes by the respective knowledge objects.
+Currently, the following genes' phenotypes can be determined based on their diplotypes by these KOs:
 
 1. [CYP2C19](https://library.kgrid.org/#/object/99999%2Ffk4mc97w0h)
 
@@ -172,7 +177,7 @@ Currently, the following genes' phenotypes can be determined based on their dipl
 
 1. [UGT1A1](https://library.kgrid.org/#/object/99999%2Ffk47h1x090)
 
-#### Drug Recommendation
+#### Drug Recommendation KOs
 
 Currently, the following drug recommendations are available as knowledge objects.
 
