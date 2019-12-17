@@ -14,25 +14,27 @@ This release contains 37 KOs, includihg 7 gene-specific genotype to phenotype (g
 ## What's new
   As of November 2019, the CPIC collection has been updated and released with the new KO structure. For detail of the changes, please refer to [KGrid Guides](https://kgrid.org/guides/latest/)
 
-  To deploy the CPIC collection, a KGRID Activator with version 1.1.5 or greater is needed. A suitable KGRID Activator is available here [KGrid Activator](https://github.com/kgrid/kgrid-activator/releases/tag/1.1.5)
+  To deploy the CPIC collection, a KGRID Activator with version 1.1.5 or greater is needed. A suitable KGRID Activator is available at this location [KGrid Activator](https://github.com/kgrid/kgrid-activator/releases/tag/1.1.5)
 
 ## CPIC Knowledge Objects (KO)
 
 ### CPIC KO Design
- CPIC collection consists of three types of KOs:
+ This CPIC Collection of KOs consists of three different types of KOs:
 
 #### Geno-to-Pheno KOs
 
-  This type of KO is gene-specific. It will determine the phenotype based on the gene's diplotypes
+  The purpose of geno-to-pheno KOs is to map patient-specific germline genotypes for pharmacogenes to expected, evidence-based, clinically-relevant drug metabolism phenotypes. Pharmacogenomic clinical recommendations are phenotype specific. Therefore, geno-to-pheno KOs are needed for determining phenotypes prior to generating any specific drug selection or drug dosing recommendations.
+  
+  As the name implies, geno-to-pheno KOs are gene-specific. For 7 different genes, the API-based services provided by these 7 KOs can return an expected phenotype based on on genetic lab results for 7 genes, when those lab results are input in the form of a single patient's diplotype.
 
-  There are two groups within this type of KO:
-  * CYP2D6, CYP2C19 and UGT1A1: Each gene has a spreadsheet mapping the dipltotype directly to the phenotype;
+  There are two sub-groups of geno-to-pheno KOs:
+  * CYP2D6, CYP2C19 and UGT1A1: Each gene has a spreadsheet mapping the dipltotype directly to the expected phenotype;
 
   * CYP2C9, CYP3A5, SLCO1B1 and TPMT: Each gene has a allele-definition spreadsheet for the functional status of the allele. The alleles in the diplotype are checked on the functional status. The likely phenotype is then determined based on the functional status of both alleles.
 
   Endpoint:       ` /phenotype`
 
-  Input Example:
+  Input Example (where the patient diplotype for the gene CYP2D6 is represented using star alleles):
   ```json
   { "CYP2D6" : "*1/*1" }
   ```
@@ -46,10 +48,13 @@ This release contains 37 KOs, includihg 7 gene-specific genotype to phenotype (g
     }
   }
   ```
+  Note that the phenotype returned by a geno-to-pheno KO takes the form of a text string, e.g., "Normal metabolizer". These phenotype text strings conform to the CPIC standard vocabularly for describing clinically-relevant, gene-specific, drug metabolism phenotypes. 
+  
+  Not all valid diplotypes for the 7 genes associated with these KOs will return an expected phenotype. In some cases, expected phenotypes are unknown and, in those cases, the "phenotype" output from a geno-to-pheno KO API service interaction will be returned as "Unknown".
 
-#### Drug recommendations
+#### Drug recommendation KOs
 
-  The drug recommendation KO is drug-specific. It will provide the recommendation based on the information of relevant gene(s). The combination of information includes:
+  Drug recommendation KOs are all drug-specific. They provide CPIC's evidence-based recommendations based on a patient's germline phenotype for one or more relevant pharmacogene(s). The combination of information includes:
 
   * single gene allele
   * multiple gene allele
