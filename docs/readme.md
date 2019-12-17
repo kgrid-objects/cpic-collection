@@ -54,15 +54,9 @@ This release contains 37 KOs, includihg 7 gene-specific genotype to phenotype (g
 
 #### Drug recommendation KOs
 
-  Drug recommendation KOs are all drug-specific. They provide CPIC's evidence-based recommendations based on a patient's germline phenotype for one or more relevant pharmacogene(s). 
+  Drug recommendation KOs are all drug-specific. They provide CPIC's evidence-based recommendations based in most cases on a patient's germline phenotype for one or more relevant pharmacogene(s). In a few cases, a genetic lab test result, in the form of a diplotype, can be used directly to generate a CPIC recommendation (e.g., when a specific HLA-B diplotype is contraindication for exposure to the drug abacavir.) 
   
-  The combination of information includes:
-
-  * single gene allele
-  * multiple gene allele
-  * one gene allele and one gene phenotype
-  * single gene phenotype
-  * multiple gene phenotypes
+  Because the drug recommendation KOs work in more than one way, the structure and content of the inputs to drug recommendation KOs differ. Below, we show the primary set of inputs that most of the drug recommendation KOs use. Most drug recommendation KOs use phenotype information to generate drug-specific recommendations.
 
   The drug recommendation KO will take a phenotype panel (i.e., one or more gene-specific phenotypes) as input, extract the needed gene and provide CPIC drug selection or drug dosing recommendations as output.
 
