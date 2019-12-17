@@ -7,7 +7,7 @@ Please refer to [Get Started Guide (Developer's Guide)](https://kgrid.org/guides
 
 ## Deploying the CPIC KOs
 
-With the KGrid Activator running, presumably on http://localhsot:8080, there are two ways to deploy the CPIC collection KOs.
+With the KGrid Activator running, presumably on http://localhost:8080, there are two ways to deploy the CPIC collection KOs.
 
 - Deploy the collection using manifest.json
 
