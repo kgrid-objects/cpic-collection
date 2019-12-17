@@ -235,39 +235,3 @@ Currently, the following drug recommendations are available as knowledge objects
 ## Deployment of CPIC KOs
 
 Please refer to [the instruction page](./deployment) for deploying and using the collection of CPIC KOs.
-
-
-## Development
-
-### Testing
-
-#### Unit Tests
-The KO Unit Test are located in the `/tests` directory.  These tests utilize
-[Jest](https://jestjs.io/) and  [rewire](https://github.com/jhnns/rewire). Jest provides the testing
-framework and rewire allows the tests to access the javascript function without the
-convenience of the export modules (KGrid Javascript adapter limitation).  You can execute the tests via npm
-
-```
-npm test
-```
-
-### Integration Tests
-We test the CPIC KO endpoints in a KGrid Activator instance using [Postman](https://www.getpostman.com/) and
-[Newman](https://www.npmjs.com/package/newman). The CPIC integration tests are defined in the
-`/tests/postman/cpic_integration_tests.postman_collection.json`.The CI script uses the
-[start server and test](https://www.npmjs.com/package/start-server-and-test) library to:
-1. downloads the latest KGrid Activator
-1. runs the activator with the CPIC KOs
-1. runs the [Postman](https://www.getpostman.com/) collection defined as the CPIC integration tests
-  using  [Newman](https://www.npmjs.com/package/newman)
-
-```
-npm run ci
-```
-
-
-### Packaging
-
-CPIC Knowledge Objects, just as other KOs, can be compressed individually into zip file, and then deposited into a KGrid library, for example, [KGRID Sandbox Library](https://library.kgrid.org)
-
-CPIC Knowledge Objects are released on [GitHub release](https://github.com/kgrid-objects/cpic-collection/releases/latest)
