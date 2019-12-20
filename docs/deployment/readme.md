@@ -61,9 +61,9 @@ With the KGrid Activator running, presumably on http://localhost:8080, deploy th
 
 Using a `POST` operation, send the manifest above as request body to the endpoint `{{url}}/kos/manifest`, e.g. `http://localhost:8080/kos/manifest`.
 
-The KGrid Activator will download all zip files.
+When the `POST` operation is run, the KGrid Activator will download all the zip files containing KOs in the manifest.
 
-Examples of executing the POST operation with a manifest for single KO include:
+Examples of executing the POST operation with a manifest for downloading a single KO include:
 
 For Linux/Mac
 
