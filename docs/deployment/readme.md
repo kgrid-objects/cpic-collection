@@ -74,7 +74,13 @@ curl -X POST "http://localhost:8080/kos/manifest" -H "accept: application/json" 
 For Windows, using Powershell
 
 ```
+$headers = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
+$headers.Add("Content-Type", "application/json")
 
+$body = "{`"manifest`":[`"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4w67pr0f-v0.2.0.zip`"]}"
+
+$response = Invoke-RestMethod 'http://localhost:8080/kos/manifest' -Method 'POST' -Headers $headers -Body $body
+$response | ConvertTo-Json
 
 ```
 
@@ -94,8 +100,7 @@ curl -X GET "http://localhost:8080/activate" -H "accept: application/json"
 For Windows, using Powershell
 
 ```
-
-
+Invoke-RestMethod 'http://localhost:8080/activate' -Method 'GET'
 ```
 
 At this point, the CPIC KOs are activated and the endpoints they support are available for use.
