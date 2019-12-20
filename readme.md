@@ -1,5 +1,5 @@
-# CPIC Collection 
+# CPIC Collection
 
 Find documentation here:
 
-[CPIC COLLECTION DOCS](https://github.com/kgrid-objects/cpic-collection/blob/master/docs/readme.md)
+[CPIC COLLECTION DOCS](https://kgrid-objects.github.io/cpic-collection/)

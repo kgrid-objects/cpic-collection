@@ -2,16 +2,16 @@
 
 This document provides the detailed instructions to deploy the CPIC collection to the KGrid Activator. Once activated, the KOs will be accessible through the web API service.
 
-Please refer to [Get Started Guide (Developer's Guide)](https://kgrid.org/guides/developer/) for the information on how to install and start the Kgrid Activator.
+Deployment of the CPIC collection takes place after the KGrid Activator is installed and running.
+
+If the KGrid Activator needs to be installed, please refer to [Quick Start](https://kgrid.org/guides/quickstart/) for the information on how to install and start the Kgrid Activator.
 
 
 ## Deploying the CPIC KOs
 
-With the KGrid Activator running, presumably on http://localhost:8080, there are two ways to deploy the CPIC collection KOs.
+### Downloading KOs
 
-- Deploy the collection using manifest.json
-
-A JSON object can be posted to `{{url}}/kos/manifest` containing the manifest of CPIC KOs as following:
+With the KGrid Activator running, presumably on http://localhost:8080, deploy the CPIC collection of KOs using the manifest, a JSON object appearing below:
 
 ```
 {
@@ -59,40 +59,73 @@ A JSON object can be posted to `{{url}}/kos/manifest` containing the manifest of
 
 ```
 
-The KGrid Activator will download all zip files and activate the KOs.
+Using a `POST` operation, send the manifest above as request body to the endpoint `{{url}}/kos/manifest`, e.g. `http://localhost:8080/kos/manifest`.
+
+The KGrid Activator will download all zip files.
+
+Examples of executing the POST operation with a manifest for single KO include:
+
+For Linux/Mac
+
+```
+curl -X POST "http://localhost:8080/kos/manifest" -H "accept: application/json" -H "Content-Type: application/json" -d "{\"manifest\":[\"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4w67pr0f-v0.2.0.zip\"]}"
+```
+
+For Windows, using Powershell
+
+```
 
 
-- CPIC KOs are also individually available.
+```
 
-A packaged KO ( in zip format) can be posted to `{{url}}/kos`.
+Modify the command above by replacing the single-object manifest with the manifest for the whole collection shown above.
+
+Other tools, such as [Postman](https://www.getpostman.com/), can be used to perform the needed POST operation.
 
 
+### Activating KOs
 
-For details, please refer to [Activator API - Import Knowledge Objects](https://kgrid.org/guides/swagger/#/Knowledge%20Object%20Import)
+For Linux/Mac
+
+```
+curl -X GET "http://localhost:8080/activate" -H "accept: application/json"
+```
+
+For Windows, using Powershell
+
+```
+
+
+```
+
+At this point, the CPIC KOs are activated and the endpoints they support are available for use.
 
 
 ## Trying the CPIC KOs
 
-- `{{url}}/endpoitns` will list all endpoints from the activated KOs;
-- You can find the endpoint of interest and locate the link for Swagger Editor loaded with the service specification
-- Following the selected link will open the KO's service description in Swagger UI or Swagger Editor. ([More information on Swagger UI](https://swagger.io/tools/swagger-ui/))
+To try the CPIC KOs, use the activator and the freely-available Swagger Editor.
+
+- In a browser, to list all the endpoints on the activator, open a page at `http://localhost:8080/endpoints`;
+- Select an endpoint of interest, which will look like the endpoint shown below;
+```
+{
+      "title": "CPIC doxepin Recommendations based on CYP2C19 and CYP2D6 phenotypes",
+      "endpointPath": "99999/fk4sf40t7f/dosingrecommendation?v=v0.2.0",
+      "servicePath": "99999/fk4sf40t7f/service",
+      "activated": "2019-12-20T10:09:16.535285",
+      "_links": {
+        "self": {
+          "href": "http://localhost:8080/endpoints/99999/fk4sf40t7f/dosingrecommendation?v=v0.2.0"
+        },
+        "swagger_editor": {
+          "href": "https://editor.swagger.io?url=http://localhost:8080/kos/99999/fk4sf40t7f/service"
+        }
+      }
+    }
+```
+- Copy the link for the `swagger_editor` into a browser;
+- The selected `swagger_editor` link will open the KO's service description in Swagger Editor. ([More information on Swagger UI](https://swagger.io/tools/swagger-ui/))
+- In the Swagger Editor, click on the green button for `POST`;
 - Clicking on `Try it Out` will provide the UI to interact with the endpoint.
 
-## Workflow for using CPIC KOs
-
-Here is an example workflow showing how the CPIC KOs is used:
-
-  1. Start a patient's genetic panel;
-  1. Use the genetic panel as input to retrieve the geno-to-pheno KO ids from the geno-to-pheno look-up table KO;
-  1. Send an object with drug information as input to retrieve all recommendation KO ids from the recommendation look-up table KO;
-  1. Send the genetic panel to each geno-to-pheno KO to determine the phenotype for the respective gene;
-  1. Aggregate the results from the geno-to-pheno KOs and send to each recommendation KO;
-  1. Each recommendation KO will return the recommendation if required genetic information is available in input.
-
-In Step 3, different inputs can be used for different scenarios, such as:
-
-  * Use an empty object `{}` as input, to check all relevant drugs' dosing recommendations
-
-  * Use an object containing the patient's current prescription e.g.`{"codeine":"", ...}` as input, to check the dosing recommendations
-
-  * Use an object containing a specific drug, e.g.`{"codeine":""}` as input, to check the dosing recommendations for the drug of interest
+Congratulations! Your CPIC collection of KOs is deployed and working. You can now develop or integrate client applications that use the KOs as services powered by KGrid technology.
