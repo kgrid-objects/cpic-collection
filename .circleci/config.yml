@@ -7,7 +7,7 @@ jobs:
   build:
     docker:
     # specify the version you desire here
-    - image: circleci/openjdk:8-jdk-node
+    - image: circleci/openjdk:11.0.1-node
 
     working_directory: ~/repo
 
@@ -47,12 +47,12 @@ jobs:
         name: Package
         command: npm run package
 
-    - run:
-        name: Deploy KOs to Chipmunk
-        command: |
-          chmod 775 .circleci/shelf_deploy.sh && .circleci/shelf_deploy.sh https://kgrid-activator.herokuapp.com/kos collection
-          curl --write-out '%{http_code}' --silent --output /dev/null  https://kgrid-activator.herokuapp.com/activate
-          .circleci/shelf_deploy.sh https://kgrid-library.herokuapp.com/kos collection
+    # - run:
+    #     name: Deploy KOs to Chipmunk
+    #     command: |
+    #       chmod 775 .circleci/shelf_deploy.sh && .circleci/shelf_deploy.sh https://kgrid-activator.herokuapp.com/kos collection
+    #       curl --write-out '%{http_code}' --silent --output /dev/null  https://kgrid-activator.herokuapp.com/activate
+    #       .circleci/shelf_deploy.sh https://kgrid-library.herokuapp.com/kos collection
 
     - run:
         name: Create Release
