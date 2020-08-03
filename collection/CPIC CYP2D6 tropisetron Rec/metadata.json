@@ -2,7 +2,7 @@
   "@id": "99999-fk4fn2d721",
   "@type": "koio:KnowledgeObject",
   "identifier": "ark:/99999/fk4fn2d721",
-  "version": "v0.2.0",
+  "version": "v0.3.0",
   "title": "CPIC CYP2D6 tropisetron Recommendations",
   "contributors": "KGRID TEAM",
   "description": "KGrid CPIC guidelines CYP2D6 Phenotype to tropisetron Recommendation",

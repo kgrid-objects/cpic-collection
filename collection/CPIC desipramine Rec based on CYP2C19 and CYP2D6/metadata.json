@@ -2,7 +2,7 @@
   "@id": "99999-fk4rf6zx6d",
   "@type": "koio:KnowledgeObject",
   "identifier": "ark:/99999/fk4rf6zx6d",
-  "version": "v0.2.0",
+  "version": "v0.3.0",
   "title": "CPIC desipramine Recommendations based on CYP2C19 and CYP2D6 phenotypes",
   "contributors": "KGRID TEAM",
   "description": "KGrid CPIC guidelines CYP2C19 and CYP2D6 Phenotypes to desipramine Recommendation",

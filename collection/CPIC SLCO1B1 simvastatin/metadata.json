@@ -2,7 +2,7 @@
   "@id": "99999-fk4m95ek9z",
   "@type": "koio:KnowledgeObject",
   "identifier": "ark:/99999/fk4m95ek9z",
-  "version":"v0.2.0",
+  "version":"v0.3.0",
   "title": "CPIC SLCO1B1 simvastatin recommendations Implementation",
   "description": "CPIC recommendations for simvastatin based on SLCO1B1 phenotype",
   "keywords": ["CPIC", "SLCO1B1", "simvastatin", "Recommendation"],

@@ -2,7 +2,7 @@
   "@id": "99999-fk4qj7sz2t",
   "@type": "koio:KnowledgeObject",
   "identifier": "ark:/99999/fk4qj7sz2t",
-  "version":"v0.2.0",
+  "version":"v0.3.0",
   "title": "CPIC Geno Pheno KO Table Implementation",
   "description": "CPIC Geno2Pheno KO Table, with total of 15 entries, which can be filtered by supplying a list of genes.",
   "keywords": ["CPIC","Phenotype","Genotype","KO Table"],

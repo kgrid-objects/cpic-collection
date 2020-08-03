@@ -2,7 +2,7 @@
   "@id": "99999-fk4w67pr0f",
   "@type": "koio:KnowledgeObject",
   "identifier": "ark:/99999/fk4w67pr0f",
-  "version": "v0.2.0",
+  "version": "v0.3.0",
   "title": "CPIC clomipramine Recommendations based on CYP2C19 and CYP2D6 phenotypes",
   "contributors": "KGRID TEAM",
   "description": "KGrid CPIC guidelines CYP2C19 and CYP2D6 Phenotypes to clomipramine Recommendation",

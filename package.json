@@ -2,30 +2,20 @@
   "template": "kotemplate",
   "project": "cpic",
   "devDependencies": {
-    "@kgrid/cli": "^0.4.3",
+    "@kgrid/cli": "^0.5.1",
     "file-exists": "^5.0.1",
     "jest": "^25.5.4",
     "jsonpath": "^1.0.2",
     "mocha": "^8.0.1",
     "rewire": "^4.0.1",
-    "scripty": "1.7.2",
     "shelljs": "^0.8.4",
     "start-server-and-test": "^1.11.2",
     "vuepress": "^1.5.2"
   },
   "scripts": {
     "test": "jest --ci --reporters=default --reporters=jest-junit",
-    "test-it": "newman run tests/postman/cpic_integration_tests.postman_collection.json --reporters  cli,junit --reporter-junit-export test-results",
-    "package": "scripty",
-    "start": "cd collection && kgrid setup && kgrid start:activator",
-    "ci": "server-test :8080 test-it ",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
-  },
-  "scripty": {
-    "path": "scripts",
-    "windowsPath": "scriptswin",
-    "silent": true
   },
   "jest": {
     "verbose": true,

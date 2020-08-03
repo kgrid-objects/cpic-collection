@@ -40,32 +40,6 @@ jobs:
         command: npm test
 
     - run:
-        name: Intgration Testing
-        command: npm run ci
-
-    - run:
-        name: Package
-        command: npm run package
-
-    # - run:
-    #     name: Deploy KOs to Chipmunk
-    #     command: |
-    #       chmod 775 .circleci/shelf_deploy.sh && .circleci/shelf_deploy.sh https://kgrid-activator.herokuapp.com/kos collection
-    #       curl --write-out '%{http_code}' --silent --output /dev/null  https://kgrid-activator.herokuapp.com/activate
-    #       .circleci/shelf_deploy.sh https://kgrid-library.herokuapp.com/kos collection
-
-    - run:
-        name: Create Release
-        command: |
-
-            if [ $RELEASE ]; then
-               git config --global user.email "$GIT_USER_EMAIL"
-               git config --global user.name "$GIT_USER_NAME"
-
-               chmod 775 .circleci/release.sh && .circleci/release.sh
-            fi
-
-    - run:
         name: Deploy VuePress GitHub Pages
         command: |
               chmod 775 .circleci/vuepress_deploy.sh && .circleci/vuepress_deploy.sh

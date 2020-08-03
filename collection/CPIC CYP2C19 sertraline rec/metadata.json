@@ -2,7 +2,7 @@
   "@id": "99999-fk40k3kt35",
   "@type": "koio:KnowledgeObject",
   "identifier": "ark:/99999/fk40k3kt35",
-  "version": "v0.2.0",
+  "version": "v0.3.0",
   "title": "CPIC CYP2C19 sertraline recommendations",
   "contributors": "KGRID TEAM",
   "description": "CPIC recommendations for sertraline based on CYP2C19 phenotype",

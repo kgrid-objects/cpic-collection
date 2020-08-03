@@ -2,7 +2,7 @@
   "@id": "99999-fk4058s74p",
   "@type": "koio:KnowledgeObject",
   "identifier": "ark:/99999/fk4058s74p",
-  "version": "v0.2.0",
+  "version": "v0.3.0",
   "title": "CPIC HLA-B allopurinol recommendations",
   "contributors": "KGRID TEAM",
   "description": "CPIC recommendations for allopurinol based on HLA-B phenotype",

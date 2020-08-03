@@ -2,7 +2,7 @@
   "@id" : "99999-fk4d79nq4z",
   "@type" : "koio:KnowledgeObject",
   "identifier" : "ark:/99999/fk4d79nq4z",
-  "version" : "v0.2.0",
+  "version" : "v0.3.0",
   "title" : "CPIC - Atazanavir Guideline for UGT1A1",
   "contributors" : "KGRID TEAM",
   "description" : "CPIC recommendations for Atazanavir based on UGT1A1 phenotype",

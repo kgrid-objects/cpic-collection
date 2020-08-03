@@ -2,7 +2,7 @@
   "@id": "99999-fk4qz3fz89",
   "@type": "koio:KnowledgeObject",
   "identifier": "ark:/99999/fk4qz3fz89",
-  "version": "v0.2.0",
+  "version": "v0.3.0",
   "title": "CPIC Phenytoin Recommendations based on CYP2C9 and HLA-B phenotypes",
   "contributors": "KGRID TEAM",
   "description": "KGrid CPIC guidelines CYP2C9 and HLA-B Phenotypes to Phenytoin Recommendation",

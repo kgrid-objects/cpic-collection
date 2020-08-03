@@ -16,44 +16,44 @@ With the KGrid Activator running, presumably on http://localhost:8080, deploy th
 ```
 {
   "manifest": [
- 	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-cp4mc9723sd-v0.2.0.zip",
-	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-cp4mc9723se-v0.2.0.zip",
-	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4058s74p-v0.2.0.zip",
-	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk40k3kt35-v0.2.0.zip",
-	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk44n0ds5c-v0.2.0.zip",
-	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk45m7fn9t-v0.2.0.zip",
-	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk47380j09-v0.2.0.zip",
-	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk47h1x090-v0.2.0.zip",
-	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk49z9gr7p-v0.2.0.zip",
+ 	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-cp4mc9723sd-v0.3.0.zip",
+	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-cp4mc9723se-v0.3.0.zip",
+	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4058s74p-v0.3.0.zip",
+	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk40k3kt35-v0.3.0.zip",
+	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk44n0ds5c-v0.3.0.zip",
+	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk45m7fn9t-v0.3.0.zip",
+	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk47380j09-v0.3.0.zip",
+	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk47h1x090-v0.3.0.zip",
+	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk49z9gr7p-v0.3.0.zip",
 	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk49z9gr7p-v0.0.4.zip",
-	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4bv8qb3r-v0.2.0.zip",
-	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4bz6hp15-v0.2.0.zip",
-	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4c83hw23-v0.2.0.zip",
-	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4cx5fm8f-v0.2.0.zip",
-	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4cz4fm8f-v0.2.0.zip",
-	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4d22836k-v0.2.0.zip",
-	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4d22836l-v0.2.0.zip",
-	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4d51vd1p-v0.2.0.zip",
-	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4d79nq4z-v0.2.0.zip",
-	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4fn2d721-v0.2.0.zip",
-	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4jw9m41b-v0.2.0.zip",
-	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4m91fj9z-v0.2.0.zip",
-	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4m95ek9z-v0.2.0.zip",
-	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4mc97w0h-v0.2.0.zip",
-	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4mc97w6m-v0.2.0.zip",
+	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4bv8qb3r-v0.3.0.zip",
+	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4bz6hp15-v0.3.0.zip",
+	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4c83hw23-v0.3.0.zip",
+	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4cx5fm8f-v0.3.0.zip",
+	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4cz4fm8f-v0.3.0.zip",
+	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4d22836k-v0.3.0.zip",
+	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4d22836l-v0.3.0.zip",
+	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4d51vd1p-v0.3.0.zip",
+	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4d79nq4z-v0.3.0.zip",
+	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4fn2d721-v0.3.0.zip",
+	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4jw9m41b-v0.3.0.zip",
+	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4m91fj9z-v0.3.0.zip",
+	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4m95ek9z-v0.3.0.zip",
+	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4mc97w0h-v0.3.0.zip",
+	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4mc97w6m-v0.3.0.zip",
 	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4md04x9z-0.1.0.zip",
-	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4mw3nw5p-v0.2.0.zip",
-	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4qc17m5z-v0.2.0.zip",
-	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4qj7sz2s-v0.2.0.zip",
-	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4qj7sz2t-v0.2.0.zip",
-	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4qz3fz89-v0.2.0.zip",
-	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4r225c4h-v0.2.0.zip",
-	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4rf6zx6d-v0.2.0.zip",
-	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4sf40t7f-v0.2.0.zip",
-	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4t167482-v0.2.0.zip",
-	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4t85em9x-v0.2.0.zip",
-	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4vq45s09-v0.2.0.zip",
-	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4w67pr0f-v0.2.0.zip"
+	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4mw3nw5p-v0.3.0.zip",
+	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4qc17m5z-v0.3.0.zip",
+	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4qj7sz2s-v0.3.0.zip",
+	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4qj7sz2t-v0.3.0.zip",
+	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4qz3fz89-v0.3.0.zip",
+	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4r225c4h-v0.3.0.zip",
+	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4rf6zx6d-v0.3.0.zip",
+	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4sf40t7f-v0.3.0.zip",
+	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4t167482-v0.3.0.zip",
+	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4t85em9x-v0.3.0.zip",
+	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4vq45s09-v0.3.0.zip",
+	"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4w67pr0f-v0.3.0.zip"
   ]
 }
 
@@ -68,7 +68,7 @@ Examples of executing the POST operation with a manifest for downloading a singl
 For Linux/Mac
 
 ```
-curl -X POST "http://localhost:8080/kos/manifest" -H "accept: application/json" -H "Content-Type: application/json" -d "{\"manifest\":[\"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4w67pr0f-v0.2.0.zip\"]}"
+curl -X POST "http://localhost:8080/kos/manifest" -H "accept: application/json" -H "Content-Type: application/json" -d "{\"manifest\":[\"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4w67pr0f-v0.3.0.zip\"]}"
 ```
 
 For Windows, using Powershell
@@ -77,7 +77,7 @@ For Windows, using Powershell
 $headers = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
 $headers.Add("Content-Type", "application/json")
 
-$body = "{`"manifest`":[`"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4w67pr0f-v0.2.0.zip`"]}"
+$body = "{`"manifest`":[`"https://github.com/kgrid-objects/cpic-collection/releases/download/2.0.0/99999-fk4w67pr0f-v0.3.0.zip`"]}"
 
 $response = Invoke-RestMethod 'http://localhost:8080/kos/manifest' -Method 'POST' -Headers $headers -Body $body
 $response | ConvertTo-Json
@@ -115,12 +115,12 @@ To try the CPIC KOs, use the activator and the freely-available Swagger Editor.
 ```
 {
       "title": "CPIC doxepin Recommendations based on CYP2C19 and CYP2D6 phenotypes",
-      "endpointPath": "99999/fk4sf40t7f/dosingrecommendation?v=v0.2.0",
+      "endpointPath": "99999/fk4sf40t7f/dosingrecommendation?v=v0.3.0",
       "servicePath": "99999/fk4sf40t7f/service",
       "activated": "2019-12-20T10:09:16.535285",
       "_links": {
         "self": {
-          "href": "http://localhost:8080/endpoints/99999/fk4sf40t7f/dosingrecommendation?v=v0.2.0"
+          "href": "http://localhost:8080/endpoints/99999/fk4sf40t7f/dosingrecommendation?v=v0.3.0"
         },
         "swagger_editor": {
           "href": "https://editor.swagger.io?url=http://localhost:8080/kos/99999/fk4sf40t7f/service"
