@@ -185,7 +185,7 @@ Currently, the following drug recommendations are available as knowledge objects
 
 1. [Azathioprine (based on TPMT phenotype)](http://library.kgrid.org/#/object/99999%2Ffk4r225c4h%2Fv0.2.0)
 
-1. [Carbamazepine (based on HLA-A and HLA-B allele information)](https://library.kgrid.org/#/object/99999%2Ffk4mw3nw5p)
+1. [Carbamazepine (based on HLA-A and HLA-B allele information)](http://library.kgrid.org/#/object/99999%2Ffk4mw3nw5p%2Fv0.2.0)
 
 1. [Citalopram (based on CYP2C19 phenotype)](http://library.kgrid.org/#/object/99999%2Ffk4d22836k%2Fv0.2.0)
 
