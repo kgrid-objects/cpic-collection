@@ -195,7 +195,7 @@ Currently, the following drug recommendations are available as knowledge objects
 
 1. [Codeine (based on CYP2D6 phenotype)](http://library.kgrid.org/#/object/99999%2Ffk4mc97w6m%2Fv0.2.0)
 
-1. [Desipramine (based on CYP2D6 phenotype)](http://library.kgrid.org/#/object/99999%2Ffk4rf6zx6d%2Fv0.2.0)
+1. [Desipramine (based on CYP2C19 and CYP2D6 phenotypes)](http://library.kgrid.org/#/object/99999%2Ffk4rf6zx6d%2Fv0.2.0)
 
 1. [Doxepin (based on CYP2C19 and CYP2D6 phenotypes)](http://library.kgrid.org/#/object/99999%2Ffk4sf40t7f%2Fv0.2.0)
 
