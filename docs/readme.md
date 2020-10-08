@@ -207,7 +207,7 @@ Currently, the following drug recommendations are available as knowledge objects
 
 1. [Mercaptopurine (based on TPMT phenotype)](http://library.kgrid.org/#/object/99999%2Ffk4m91fj9z%2Fv0.2.0)
 
-1. [Nortriptyline (based on CYP2D6 phenotype)](http://library.kgrid.org/#/object/99999%2Ffk44n0ds5c%2Fv0.2.0)
+1. [Nortriptyline (based on CYP2C19 and CYP2D6 phenotypes)](http://library.kgrid.org/#/object/99999%2Ffk44n0ds5c%2Fv0.2.0)
 
 1. [Ondansetron (based on CYP2D6 phenotype)](http://library.kgrid.org/#/object/99999%2Ffk4c83hw23%2Fv0.2.0)
 
