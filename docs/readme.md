@@ -157,19 +157,19 @@ This release contains 37 KOs, includihg 7 gene-specific genotype to phenotype (g
 
 Currently, the following genes' phenotypes can be determined based on their diplotypes by these KOs:
 
-1. [CYP2C19](https://library.kgrid.org/#/object/99999%2Ffk4mc97w0h)
+1. [CYP2C19](http://library.kgrid.org/#/object/99999%2Ffk4mc97w0h%2Fv0.2.0)
 
-1. [CYP2C9](https://library.kgrid.org/#/object/99999%2Ffk4bv8qb3r)
+1. [CYP2C9](http://library.kgrid.org/#/object/99999%2Ffk4bv8qb3r%2Fv0.2.0)
 
-1. [CYP2D6](https://library.kgrid.org/#/object/99999%2Ffk49z9gr7p)
+1. [CYP2D6](http://library.kgrid.org/#/object/99999%2Ffk49z9gr7p%2Fv0.2.0)
 
-1. [CYP3A5](https://library.kgrid.org/#/object/99999%2Ffk4md04x9z)
+1. [CYP3A5](http://library.kgrid.org/#/object/99999%2Ffk4md04x9z%2F0.1.0)
 
-1. [SLCO1B1](https://library.kgrid.org/#/object/99999%2Ffk47380j09)
+1. [SLCO1B1](http://library.kgrid.org/#/object/99999%2Ffk47380j09%2Fv0.2.0)
 
-1. [TPMT](https://library.kgrid.org/#/object/99999%2Ffk4vq45s09)
+1. [TPMT](http://library.kgrid.org/#/object/99999%2Ffk4vq45s09%2Fv0.2.0)
 
-1. [UGT1A1](https://library.kgrid.org/#/object/99999%2Ffk47h1x090)
+1. [UGT1A1](http://library.kgrid.org/#/object/99999%2Ffk47h1x090%2Fv0.2.0)
 
 #### Drug Recommendation KOs
 
