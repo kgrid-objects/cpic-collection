@@ -1,6 +1,6 @@
 openapi: 3.0.0
 info:
-  version: 1.0.0
+  version: '1.0'
   title: CPIC - Atazanavir Guideline for UGT1A1
   description: CPIC guidelines UGT1A1 Phenotype to Recommendation
   license:
@@ -12,7 +12,7 @@ info:
     email: kgrid-developers@umich.edu
     url: 'http://kgrid.org'
 servers:
-  - url: /99999/fk4d79nq4z
+  - url: /99999/fk4d79nq4z/1.0
     description: CPIC guidelines UGT1A1 Phenotype to Recommendation
 tags:
   - name: KO Endpoints

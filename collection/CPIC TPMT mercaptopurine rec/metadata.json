@@ -1,19 +1,24 @@
 {
-  "@id": "99999-fk4m91fj9z",
-  "@type": "koio:KnowledgeObject",
-  "identifier": "ark:/99999/fk4m91fj9z",
-  "version": "v0.3.0",
-  "title": "CPIC TPMT mercaptopurine recommendations",
-  "contributors": "KGRID TEAM",
-  "description": "CPIC recommendations for mercaptopurine based on TPMT phenotype",
-  "citations": [
-    "https://cpicpgx.org/guidelines/guideline-for-thiopurines-and-tpmt/"
-  ],
-  "keywords": ["CPIC", "TPMT", "mercaptopurine", "Recommendation"],
-  "hasServiceSpecification": "service.yaml",
-  "hasDeploymentSpecification": "deployment.yaml",
-  "hasPayload": "recommendation.js",
-  "@context": [
-    "http://kgrid.org/koio/contexts/knowledgeobject.jsonld"
-  ]
+    "@id": "99999/fk4m91fj9z/v1.0",
+    "@type": "koio:KnowledgeObject",
+    "identifier": "ark:/99999/fk4m91fj9z/v1.0",
+    "version": "v1.0",
+    "title": "CPIC TPMT mercaptopurine recommendations",
+    "contributors": "KGRID TEAM",
+    "description": "CPIC recommendations for mercaptopurine based on TPMT phenotype",
+    "citations": [
+        "https://cpicpgx.org/guidelines/guideline-for-thiopurines-and-tpmt/"
+    ],
+    "keywords": [
+        "CPIC",
+        "TPMT",
+        "mercaptopurine",
+        "Recommendation"
+    ],
+    "hasServiceSpecification": "service.yaml",
+    "hasDeploymentSpecification": "deployment.yaml",
+    "hasPayload": "recommendation.js",
+    "@context": [
+        "http://kgrid.org/koio/contexts/knowledgeobject.jsonld"
+    ]
 }

@@ -1,5 +1,5 @@
-endpoints:
-  /druglist:
-    adapter: JAVASCRIPT
+/druglist:
+  post:
+    engine: javascript
     artifact: genedruglist.js
-    entry: druglist
+    function: druglist

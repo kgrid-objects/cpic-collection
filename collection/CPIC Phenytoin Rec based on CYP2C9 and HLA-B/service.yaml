@@ -1,6 +1,6 @@
 openapi: 3.0.0
 info:
-  version: 1.0.0
+  version: '1.0'
   title: CPIC Phenytoin Recommendations based on CYP2C9 and HLA-B phenotypes
   description: >-
     KGrid CPIC guidelines CYP2C9 and HLA-B Phenotypes to Phenytoin
@@ -14,7 +14,7 @@ info:
     email: kgrid-developers@umich.edu
     url: 'http://kgrid.org'
 servers:
-  - url: /99999/fk4qz3fz89
+  - url: /99999/fk4qz3fz89/1.0
     description: >-
       KGrid CPIC guidelines CYP2C9 and HLA-B Phenotypes to Phenytoin
       Recommendation

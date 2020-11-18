@@ -1,5 +1,5 @@
-endpoints:
-  /genophenokolist:
-    adapter: JAVASCRIPT
+/genophenokolist:
+  post:
+    engine: javascript
     artifact: genophenokolist.js
-    entry: genophenokolist
+    function: genophenokolist

@@ -1,6 +1,6 @@
 openapi: 3.0.0
 info:
-  version: 1.0.0
+  version: '1.0'
   title: CPIC Geno Pheno KO Table
   description: >-
     CPIC Geno2Pheno KO Table, with total of 15 entries, which can be filtered by
@@ -14,7 +14,7 @@ info:
     email: kgrid-developers@umich.edu
     url: 'http://kgrid.org'
 servers:
-  - url: /99999/fk4qj7sz2t
+  - url: /99999/fk4qj7sz2t/1.0
     description: CPIC Geno Pheno KO Table
 tags:
   - name: KO Endpoints

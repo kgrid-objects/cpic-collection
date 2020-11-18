@@ -1,15 +1,21 @@
 {
-  "@id": "99999-fk4qj7sz2s",
-  "@type": "koio:KnowledgeObject",
-  "identifier": "ark:/99999/fk4qj7sz2s",
-  "version":"v0.3.0",
-  "title": "CPIC Gene Drug Table Implementation",
-  "description": "CPIC Genes-Drug Table, with total of 28 entries, which can be filtered by supplying a list of genes, a list of drugs, or both.",
-  "keywords": ["CPIC","Phenotype","Gene","Drug","KO Table"],
-  "hasServiceSpecification": "service.yaml",
-  "hasDeploymentSpecification": "deployment.yaml",
-  "hasPayload": "genedruglist.js",
-  "@context": [
-    "http://kgrid.org/koio/contexts/knowledgeobject.jsonld"
-  ]
+    "@id": "99999/fk4qj7sz2s/v1.0",
+    "@type": "koio:KnowledgeObject",
+    "identifier": "ark:/99999/fk4qj7sz2s/v1.0",
+    "version": "v1.0",
+    "title": "CPIC Gene Drug Table Implementation",
+    "description": "CPIC Genes-Drug Table, with total of 28 entries, which can be filtered by supplying a list of genes, a list of drugs, or both.",
+    "keywords": [
+        "CPIC",
+        "Phenotype",
+        "Gene",
+        "Drug",
+        "KO Table"
+    ],
+    "hasServiceSpecification": "service.yaml",
+    "hasDeploymentSpecification": "deployment.yaml",
+    "hasPayload": "genedruglist.js",
+    "@context": [
+        "http://kgrid.org/koio/contexts/knowledgeobject.jsonld"
+    ]
 }

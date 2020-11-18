@@ -1,19 +1,24 @@
 {
-  "@id": "99999-fk4t85em9x",
-  "@type": "koio:KnowledgeObject",
-  "identifier": "ark:/99999/fk4t85em9x",
-  "version": "v0.3.0",
-  "title": "CPIC CYP3A5 tacrolimus recommendations",
-  "contributors": "KGRID TEAM",
-  "description": "CPIC recommendations for tacrolimus based on CYP3A5 phenotype",
-  "citations": [
-    "https://cpicpgx.org/guidelines/guideline-for-tacrolimus-and-cyp3a5/"
-  ],
-  "keywords": ["CPIC", "CYP3A5", "tacrolimus", "Recommendation"],
-  "hasServiceSpecification": "service.yaml",
-  "hasDeploymentSpecification": "deployment.yaml",
-  "hasPayload": "recommendation.js",
-  "@context": [
-    "http://kgrid.org/koio/contexts/knowledgeobject.jsonld"
-  ]
+    "@id": "99999/fk4t85em9x/v1.0",
+    "@type": "koio:KnowledgeObject",
+    "identifier": "ark:/99999/fk4t85em9x/v1.0",
+    "version": "v1.0",
+    "title": "CPIC CYP3A5 tacrolimus recommendations",
+    "contributors": "KGRID TEAM",
+    "description": "CPIC recommendations for tacrolimus based on CYP3A5 phenotype",
+    "citations": [
+        "https://cpicpgx.org/guidelines/guideline-for-tacrolimus-and-cyp3a5/"
+    ],
+    "keywords": [
+        "CPIC",
+        "CYP3A5",
+        "tacrolimus",
+        "Recommendation"
+    ],
+    "hasServiceSpecification": "service.yaml",
+    "hasDeploymentSpecification": "deployment.yaml",
+    "hasPayload": "recommendation.js",
+    "@context": [
+        "http://kgrid.org/koio/contexts/knowledgeobject.jsonld"
+    ]
 }

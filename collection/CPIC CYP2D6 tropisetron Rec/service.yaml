@@ -1,6 +1,6 @@
 openapi: 3.0.0
 info:
-  version: 1.0.0
+  version: '1.0'
   title: CPIC CYP2D6 tropisetron Recommendations
   description: KGrid CPIC guidelines CYP2D6 Phenotype to Recommendation
   license:
@@ -12,7 +12,7 @@ info:
     email: kgrid-developers@umich.edu
     url: 'http://kgrid.org'
 servers:
-  - url: /99999/fk4fn2d721
+  - url: /99999/fk4fn2d721/1.0
     description: KGrid CPIC guidelines CYP2D6 Phenotype to Recommendation
 tags:
   - name: KO Endpoints

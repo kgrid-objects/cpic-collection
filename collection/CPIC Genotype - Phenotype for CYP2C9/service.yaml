@@ -1,6 +1,6 @@
 openapi: 3.0.0
 info:
-  version: 1.0.0
+  version: '1.0'
   title: CPIC - Genotype to Phenotype for CYP2C9
   description: KGrid CPIC guidelines Genotype to Phenotype for CYP2C9
   license:
@@ -12,7 +12,7 @@ info:
     email: kgrid-developers@umich.edu
     url: 'http://kgrid.org'
 servers:
-  - url: /99999/fk4bv8qb3r
+  - url: /99999/fk4bv8qb3r/1.0
     description: KGrid CPIC guidelines Genotype to Phenotype for CYP2C9
 tags:
   - name: KO Endpoints

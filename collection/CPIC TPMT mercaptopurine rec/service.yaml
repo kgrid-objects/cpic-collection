@@ -1,6 +1,6 @@
 openapi: 3.0.0
 info:
-  version: 1.0.0
+  version: '1.0'
   title: CPIC TPMT mercaptopurine recommendations
   description: CPIC recommendations for mercaptopurine based on TPMT phenotype
   license:
@@ -12,7 +12,7 @@ info:
     email: kgrid-developers@umich.edu
     url: 'http://kgrid.org'
 servers:
-  - url: /99999/fk4m91fj9z
+  - url: /99999/fk4m91fj9z/1.0
     description: CPIC recommendations for mercaptopurine based on TPMT phenotype
 tags:
   - name: KO Endpoints

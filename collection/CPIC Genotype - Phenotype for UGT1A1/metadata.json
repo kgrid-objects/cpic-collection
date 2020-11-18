@@ -1,19 +1,24 @@
 {
-  "@id": "99999-fk47h1x090",
-  "@type": "koio:KnowledgeObject",
-  "identifier": "ark:/99999/fk47h1x090",
-  "version": "v0.3.0",
-  "title": "CPIC Genotype - Phenotype for UGT1A1",
-  "contributors": "KGRID TEAM",
-  "description": "KGrid CPIC guidelines Genotype to Phenotype for UGT1A1",
-  "citations": [
-    ""
-  ],
-  "keywords": ["CPIC", "UGT1A1", "Genotype", "Phenotype"],
-  "hasServiceSpecification": "service.yaml",
-  "hasDeploymentSpecification": "deployment.yaml",
-  "hasPayload": "phenotype.js",
-  "@context": [
-    "http://kgrid.org/koio/contexts/knowledgeobject.jsonld"
-  ]
+    "@id": "99999/fk47h1x090/v1.0",
+    "@type": "koio:KnowledgeObject",
+    "identifier": "ark:/99999/fk47h1x090/v1.0",
+    "version": "v1.0",
+    "title": "CPIC Genotype - Phenotype for UGT1A1",
+    "contributors": "KGRID TEAM",
+    "description": "KGrid CPIC guidelines Genotype to Phenotype for UGT1A1",
+    "citations": [
+        ""
+    ],
+    "keywords": [
+        "CPIC",
+        "UGT1A1",
+        "Genotype",
+        "Phenotype"
+    ],
+    "hasServiceSpecification": "service.yaml",
+    "hasDeploymentSpecification": "deployment.yaml",
+    "hasPayload": "phenotype.js",
+    "@context": [
+        "http://kgrid.org/koio/contexts/knowledgeobject.jsonld"
+    ]
 }

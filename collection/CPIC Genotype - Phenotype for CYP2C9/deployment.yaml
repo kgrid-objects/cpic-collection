@@ -1,5 +1,5 @@
-endpoints:
-  /phenotype:
-    adapter: JAVASCRIPT
+/phenotype:
+  post:
+    engine: javascript
     artifact: phenotype.js
-    entry: phenotype
+    function: phenotype

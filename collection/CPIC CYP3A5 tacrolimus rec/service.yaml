@@ -1,6 +1,6 @@
 openapi: 3.0.0
 info:
-  version: 1.0.0
+  version: '1.0'
   title: CPIC CYP3A5 tacrolimus recommendations
   description: CPIC recommendations for tacrolimus based on CYP3A5 phenotype
   license:
@@ -12,7 +12,7 @@ info:
     email: kgrid-developers@umich.edu
     url: 'http://kgrid.org'
 servers:
-  - url: /99999/fk4t85em9x
+  - url: /99999/fk4t85em9x/1.0
     description: CPIC recommendations for tacrolimus based on CYP3A5 phenotype
 tags:
   - name: KO Endpoints

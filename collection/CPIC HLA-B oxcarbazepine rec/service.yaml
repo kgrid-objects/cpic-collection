@@ -1,6 +1,6 @@
 openapi: 3.0.0
 info:
-  version: 1.0.0
+  version: '1.0'
   title: CPIC HLA-B oxcarbazepine recommendations
   description: CPIC recommendations for oxcarbazepine based on HLA-B genotype
   license:
@@ -12,7 +12,7 @@ info:
     email: kgrid-developers@umich.edu
     url: 'http://kgrid.org'
 servers:
-  - url: /99999/fk4qc17m5z
+  - url: /99999/fk4qc17m5z/1.0
     description: CPIC recommendations for oxcarbazepine based on HLA-B genotype
 tags:
   - name: KO Endpoints

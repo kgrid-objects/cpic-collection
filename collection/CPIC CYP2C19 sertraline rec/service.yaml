@@ -1,6 +1,6 @@
 openapi: 3.0.0
 info:
-  version: 1.0.0
+  version: '1.0'
   title: CPIC CYP2C19 sertraline recommendations
   description: CPIC recommendations for sertraline based on CYP2C19 phenotype
   license:
@@ -12,7 +12,7 @@ info:
     email: kgrid-developers@umich.edu
     url: 'http://kgrid.org'
 servers:
-  - url: /99999/fk40k3kt35
+  - url: /99999/fk40k3kt35/1.0
     description: CPIC recommendations for sertraline based on CYP2C19 phenotype
 tags:
   - name: KO Endpoints

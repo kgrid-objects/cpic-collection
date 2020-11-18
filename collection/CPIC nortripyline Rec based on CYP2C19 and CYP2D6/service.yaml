@@ -1,6 +1,6 @@
 openapi: 3.0.0
 info:
-  version: 1.0.0
+  version: '1.0'
   title: CPIC nortripyline Recommendations based on CYP2C19 and CYP2D6 phenotypes
   description: >-
     KGrid CPIC guidelines CYP2C19 and CYP2D6 Phenotypes to nortripyline
@@ -14,7 +14,7 @@ info:
     email: kgrid-developers@umich.edu
     url: 'http://kgrid.org'
 servers:
-  - url: /99999/fk44n0ds5c
+  - url: /99999/fk44n0ds5c/1.0
     description: >-
       KGrid CPIC guidelines CYP2C19 and CYP2D6 Phenotypes to nortripyline
       Recommendation
