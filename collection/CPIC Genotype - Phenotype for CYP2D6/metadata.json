@@ -1,8 +1,8 @@
 {
-    "@id": "99999/fk49z9gr7p/v1.0",
+    "@id": "99999/fk49z9gr7p/v1.1",
     "@type": "koio:KnowledgeObject",
-    "identifier": "ark:/99999/fk49z9gr7p/v1.0",
-    "version": "v1.0",
+    "identifier": "ark:/99999/fk49z9gr7p/v1.1",
+    "version": "v1.1",
     "title": "CPIC Genotype - Phenotype for CYP2D6 v0.3.0",
     "contributors": "KGRID TEAM",
     "description": "KGrid CPIC guidelines Genotype to Phenotype for CYP2D6",

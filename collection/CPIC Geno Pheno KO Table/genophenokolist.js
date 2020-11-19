@@ -6,4 +6,4 @@ function genophenokolist(inputs){
   return list;
 }
 
-var kolist={"CFTR": "","CYP2C19":"/99999/fk4mc97w0h", "CYP2C9" :"/99999/fk4bv8qb3r","CYP2D6": "/99999/fk49z9gr7p","CYP3A5": "/99999/fk4md04x9z","CYP4F2": "","DPYD": "","G6PD": "", "HLA-A" : "", "HLA-B" : "",  "IFNL3" : "", "SLCO1B1" : "/99999/fk47380j09", "TPMT" : "/99999/fk4vq45s09",  "UGT1A1": "/99999/fk47h1x090",  "VKORC1" : "",  }
+var kolist={"CFTR": "","CYP2C19":"/99999/fk4mc97w0h/1.0", "CYP2C9" :"/99999/fk4bv8qb3r/1.0","CYP2D6": "/99999/fk49z9gr7p/1.0","CYP3A5": "/99999/fk4md04x9z/1.0","CYP4F2": "","DPYD": "","G6PD": "", "HLA-A" : "", "HLA-B" : "",  "IFNL3" : "", "SLCO1B1" : "/99999/fk47380j09/1.0", "TPMT" : "/99999/fk4vq45s09/1.0",  "UGT1A1": "/99999/fk47h1x090/1.0",  "VKORC1" : "",  }
