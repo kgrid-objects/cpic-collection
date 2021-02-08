@@ -4,7 +4,7 @@
   "devDependencies": {
     "file-exists": "^5.0.1",
     "jest": "^25.5.4",
-    "jsonpath": "^1.0.2",
+    "jsonpath": "^1.1.0",
     "mocha": "^8.1.3",
     "rewire": "^4.0.1",
     "vuepress": "^1.6.0"
@@ -31,7 +31,7 @@
   },
   "dependencies": {
     "await-sleep": "0.0.1",
-    "axios": "^0.18.1",
+    "axios": "^0.21.1",
     "firstline": "^2.0.2",
     "fs-extra": "^7.0.0",
     "jest-junit": "^7.0.0"
