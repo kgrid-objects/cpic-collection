@@ -1,5 +1,5 @@
 const rewire = require('rewire');
-const script = rewire('../../collection/CPIC SLCO1B1 Phenotype/phenotype');
+const script = rewire('../../collection/CPIC_Phenotype_SLCO1B1/phenotype');
 
 var phenotype = script.__get__("phenotype");
 

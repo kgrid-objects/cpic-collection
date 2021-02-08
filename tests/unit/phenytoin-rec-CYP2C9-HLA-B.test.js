@@ -1,5 +1,5 @@
 const rewire = require('rewire');
-const script = rewire('../../collection/CPIC Phenytoin Rec based on CYP2C9 and HLA-B/recommendation');
+const script = rewire('../../collection/CPICRec_phenytoin_CYP2C9_HLA-B/recommendation');
 
 var recommendation = script.__get__("dosingrecommendation");
 

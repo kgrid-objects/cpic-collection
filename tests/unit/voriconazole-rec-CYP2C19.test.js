@@ -1,5 +1,5 @@
 const rewire = require('rewire');
-const script = rewire('../../collection/CPIC CYP2C19 voriconazole rec/recommendation');
+const script = rewire('../../collection/CPICRec_voriconazole_CYP2C19/recommendation');
 var recommendation = script.__get__("dosingrecommendation");
 
 describe('Give correct voriconazole recommendations', () => {

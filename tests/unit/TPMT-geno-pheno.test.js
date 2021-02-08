@@ -1,5 +1,5 @@
 const rewire = require('rewire');
-const script = rewire('../../collection/CPIC Genotype - Phenotype for TPMT/phenotype');
+const script = rewire('../../collection/CPIC_Phenotype_TPMT/phenotype');
 
 var phenotype = script.__get__("phenotype");
 

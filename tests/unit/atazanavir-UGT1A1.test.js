@@ -1,5 +1,5 @@
 const rewire = require('rewire');
-const script = rewire('../../collection/CPIC - Atazanavir Guideline for UGT1A1/recommendation');
+const script = rewire('../../collection/CPICRec_atazanavir_UGT1A1/recommendation');
 
 var recommendation = script.__get__("dosingrecommendation");
 

@@ -1,5 +1,5 @@
 const rewire = require('rewire');
-const script = rewire('../../collection/CPIC SLCO1B1 simvastatin/recommendation');
+const script = rewire('../../collection/CPICRec_simvastatin_SLCO1B1/recommendation');
 
 var recommendation = script.__get__("dosingrecommendation");
 

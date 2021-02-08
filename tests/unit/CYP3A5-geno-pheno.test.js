@@ -1,5 +1,5 @@
 const rewire = require('rewire');
-const script = rewire('../../collection/CPIC Genotype - Phenotype for CYP3A5/phenotype');
+const script = rewire('../../collection/CPIC_Phenotype_CYP3A5/phenotype');
 
 var phenotype = script.__get__("phenotype");
 

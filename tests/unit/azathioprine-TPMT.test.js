@@ -1,5 +1,5 @@
 const rewire = require('rewire');
-const script = rewire('../../collection/CPIC TPMT azathioprine rec/recommendation');
+const script = rewire('../../collection/CPICRec_azathioprine_TPMT/recommendation');
 
 var recommendation = script.__get__("dosingrecommendation");
 

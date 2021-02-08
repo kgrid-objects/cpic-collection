@@ -1,5 +1,5 @@
 const rewire = require('rewire');
-const script = rewire('../../collection/CPIC CYP2D6 fluvoxamine/recommendation');
+const script = rewire('../../collection/CPICRec_fluvoxamine_CYP2D6/recommendation');
 var recommendation = script.__get__("dosingrecommendation");
 
 describe('Give correct fluvoxamine recommendations', () => {

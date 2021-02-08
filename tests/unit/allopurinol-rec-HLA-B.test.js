@@ -1,5 +1,5 @@
 const rewire = require('rewire');
-const script = rewire('../../collection/CPIC HLA-B allopurinol recommendations/recommendation');
+const script = rewire('../../collection/CPICRec_allopurinol_HLA-B/recommendation');
 
 var recommendation = script.__get__("dosingrecommendation");
 

@@ -1,5 +1,5 @@
 const rewire = require('rewire');
-const script = rewire('../../collection/CPIC doxepin Rec based on CYP2C19 and CYP2D6/recommendation');
+const script = rewire('../../collection/CPICRec_doxepin_CYP2C19_CYP2D6/recommendation');
 var recommendation = script.__get__("dosingrecommendation");
 
 describe('Give correct doxepin recommendations', () => {

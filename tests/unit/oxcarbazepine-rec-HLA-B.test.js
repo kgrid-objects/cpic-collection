@@ -1,5 +1,5 @@
 const rewire = require('rewire');
-const script = rewire('../../collection/CPIC HLA-B oxcarbazepine rec/recommendation');
+const script = rewire('../../collection/CPICRec_oxcarbazepine_HLA-B/recommendation');
 
 var recommendation = script.__get__("dosingrecommendation");
 

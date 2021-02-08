@@ -1,5 +1,5 @@
 const rewire = require('rewire');
-const script = rewire('../../collection/CPIC desipramine Rec based on CYP2C19 and CYP2D6/recommendation');
+const script = rewire('../../collection/CPICRec_desipramine_CYP2C19_CYP2D6/recommendation');
 var recommendation = script.__get__("dosingrecommendation");
 
 describe('Give correct desipramine recommendations', () => {

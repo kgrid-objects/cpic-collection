@@ -1,5 +1,5 @@
 const rewire = require('rewire');
-const script = rewire('../../collection/CPIC CYP2D6 tropisetron Rec/recommendation');
+const script = rewire('../../collection/CPICRec_tropisetron_CYP2D6/recommendation');
 var recommendation = script.__get__("dosingrecommendation");
 
 describe('Give correct tropisetron recommendations', () => {
