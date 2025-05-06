@@ -2,7 +2,6 @@
     "@context": [
         "https://kgrid.org/koio/2.1/context",
         {
-            "@base": "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/",
             "Purpose": "http://purl.obolibrary.org/obo/NCIT_C25634"
         }
     ],
