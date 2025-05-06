@@ -1,0 +1,127 @@
+{
+    "@context": [
+        "https://kgrid.org/koio/2.1/context",
+        {
+            "@base": "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/",
+            "Purpose": "http://purl.obolibrary.org/obo/NCIT_C25634"
+        }
+    ],
+    "@id": "cpic-kb",
+    "KOIOVersion": "2.1",
+    "@type": "koio:KnowledgeBase",
+    "dc:title": "cpic-kb",
+    "dc:identifier": "ark:cpic-kb",
+    "dc:version": "v1.0",
+    "dc:date": "2025-05-06",
+    "dc:description": "A sample knowledgebase that uses CPIC collection (KnowledgeSet).",
+    "ncit:Purpose": "To compute patient specific drug selection and dosing recommendations.",
+    "schema:creator": {
+        "@id": "https://kgrid.org",
+        "@type": "schema:Organization",
+        "schema:name": "KGrid team",
+        "schema:affiliation": "University of Michigan",
+        "schema:email": "kgrid-developers@umich.edu"
+    },
+    "dc:publisher": "KGrid team",
+    "dc:license": {
+        "@id": "license.md"
+    },
+    "hasKnowledge": [
+        {
+            "@id": "ks1",
+            "@type": "koio:KnowledgeSet",
+            "dc:description": "Drug gene recommendation",
+            "koio:hasKnowledgeObject": [
+                {
+                    "@id": "../collection/CPICRec_abacavir_HLA-B/"
+                },
+                {
+                    "@id": "../collection/CPICRec_allopurinol_HLA-B/"
+                }
+            ]
+        },
+        {
+            "@id": "ks2",
+            "@type": "koio:KnowledgeSet",
+            "dc:description": "Genotype to Phenotype mapping",
+            "koio:hasKnowledgeObject": [
+                {
+                    "@id": "../collection/CPIC_Phenotype_CYP2C9/"
+                },
+                {
+                    "@id": "../collection/CPIC_Phenotype_CYP2C19/"
+                }
+            ]
+        },
+        {
+            "@id": "KO_KnowledgeId",
+            "@type": "Knowledge",
+            "implementedBy": {
+                "@id": "KO_KnowledgeImplementationPath",
+                "@type": [
+                    "Implementation",
+                    "fno:Function"
+                ]
+            },
+            "dc:source": "KO_KnowLedgeSource",
+            "dc:format": "text/html",
+            "dc:date": "KO_KnowledgeCreationDate",
+            "schema:creator": {
+                "@type": "schema:Organization",
+                "schema:name": "KO_KnwoledgeCreatorName"
+            },
+            "hasTest": [
+                {
+                    "@id": "KO_KnowledgeTestId",
+                    "@type": "Test",
+                    "dc:title": "KO_KnowledgeTestTitle",
+                    "dc:description": "KO_KnowledgeTestDescription",
+                    "implementedBy": {
+                        "@id": "KO_KnowledgeTestImplementationPath",
+                        "@type": "Python"
+                    }
+                }
+            ],
+            "hasDocumentation": [
+                {
+                    "@id": "KO_KnowledgeDocumentationPath",
+                    "@type": "InformationArtifact",
+                    "dc:title": "KO_KnowledgeDocumentationTitle",
+                    "dc:description": "KO_KnowledgeDocumentationDescription"
+                }
+            ]
+        }
+    ],
+    "hasService": [
+        {
+            "@type": [
+                "Service"
+            ],
+            "dc:description": "A set of JavaScript functions that provide access to patient specific drug selection and dosing recommendations. Accepts a genetic profile. See sample.profile for example.",
+            "dependsOn": [
+                "ks1",
+                "ks2"
+            ],
+            "implementedBy": {
+                "@id": "src/service1.js",
+                "@type": [
+                    "Implementation"
+                ]
+            }
+        }
+    ],
+    "hasDocumentation": [
+        {
+            "@id": "README.md",
+            "@type": "InformationArtifact",
+            "dc:title": "README.md",
+            "dc:description": "KO readme file."
+        },
+        {
+            "@id": "index.html",
+            "@type": "InformationArtifact",
+            "dc:title": "Knowledge Object Information Page",
+            "dc:description": "Knowledge object information page."
+        }
+    ]
+}

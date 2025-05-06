@@ -1,0 +1,249 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>cpic-kb</title>
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            display: flex;
+            width: 100%;
+        }
+        .left-column {
+            width: 70%;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        /* Right Column */
+        .right-column {
+            width: 30%;
+            background-color: #e9e9e9;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .metadata {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .metadata p {
+            margin: 5px 0;
+        }
+        .doc-section, .test-section {
+            
+            right: 20px;
+            width: 250px;
+            color: black;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 250px;
+            font-size: 16px;
+        }
+        .doc-section {
+            top: 20px;
+            background-color: #97c8ed;
+        }
+        .doc-section h3 {
+            margin-top: 0;
+        }
+        .doc-section a {
+            text-decoration: underline;
+        }
+        .doc-section p {
+            margin-top: 5px;
+        }
+        
+        .test-section {
+            
+            background-color: #96d6b7;
+        }
+        .test-section h3 {
+            margin-top: 0;
+        }
+        
+        .test-section a {
+            text-decoration: underline;
+        }
+        
+        .test-section p {
+            margin-top: 5px;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="container">
+        <div class="left-column">
+            <div class="metadata" id="metadata">
+            <h1>cpic-kb</h1>
+            <p>KO_Description</p>
+            <p><strong>Id:</strong> <a href="https://github.com/kgrid-objects/cpic-collection/blob/master/cpic-kb" target='_blank'> 
+                cpic-kb
+            </a></p>
+            <p><strong>Identifier:</strong> ark:cpic-kb</p>
+            <p><strong>Type:</strong> <a href="https://kgrid.org/koio#KnowledgeObject" target='_blank'>https://kgrid.org/koio#KnowledgeObject</a></p>
+            <p><strong>Version:</strong> v1.0</p>
+            <p><strong>Date:</strong> 2025-05-06</p>
+            
+            <p><strong>License:</strong> 
+                    <a href="https://github.com/kgrid-objects/cpic-collection/blob/master/cpic-kb/license.md" target='_blank'>
+                        license.md
+                    </a></p>
+            
+            
+            <hr>
+            <h2>Creator Information</h2>
+            <p><strong>Name:</strong> 
+                 KO_CreatorName</p>
+            <p><strong>Affiliation:</strong> KO_CreatorAffiliation</p>
+            <p><strong>Email:</strong> 
+                <a href="mailto:KO_CreatorEmail" target='_blank'>
+                    KO_CreatorEmail
+                </a>
+            </p>
+            <p><strong>Website:</strong> 
+                <a href="https://github.com/kgrid-objects/cpic-collection/blob/master/cpic-kb/KO_CreatorWebSite" target='_blank'>
+                    https://github.com/kgrid-objects/cpic-collection/blob/master/cpic-kb/KO_CreatorWebSite
+                </a>
+            </p>
+
+            
+            <hr>
+            <h2>Services</h2>
+            
+                <p><h3> </h3></p>
+                <p><strong>Type:</strong> 
+                        <a href="https://kgrid.org/koio#Service" target='_blank'>
+                            https://kgrid.org/koio#Service
+                        </a>
+                </p>
+                <p><strong>Depends on:</strong> KO_KnowlegeId</p>
+                <p><strong>Implemented by:</strong> 
+                    
+                        <a href="https://github.com/kgrid-objects/cpic-collection/blob/master/cpic-kb/KO_ServicePath" target='_blank'>
+                            KO_ServicePath
+                        </a>                                 
+                                         
+                </p>
+            
+            
+            
+            
+            
+            <hr>
+            <h2>Knowledge</h2>
+            
+                <p><h3> KO_KnowledgeId</h3></p>
+                <p><strong>Type:</strong> 
+                        <a href="https://kgrid.org/koio#Knowledge" target='_blank'>
+                            https://kgrid.org/koio#Knowledge
+                        </a>
+                </p>
+                
+                
+                
+                <p><strong>Implemented by:</strong> 
+                <ul>
+                
+                    <li>
+                    <a href="https://github.com/kgrid-objects/cpic-collection/blob/master/cpic-kb/KO_KnowledgeImplementationPath" target='_blank'>
+                        KO_KnowledgeImplementationPath
+                    </a><br/>(type: 
+                        
+                        <ul>
+                          
+                            <li>
+                                <a href="https://kgrid.org/koio#Implementation" target='_blank'>
+                                    https://kgrid.org/koio#Implementation
+                                </a>
+                            </li>    
+                          
+                            <li>
+                                <a href="https://w3id.org/function/ontology#Function" target='_blank'>
+                                    https://w3id.org/function/ontology#Function
+                                </a>
+                            </li>    
+                        
+                        </ul>
+                        )
+                    </li>
+                
+                </ul>
+                </p>
+                
+                
+                <p><strong>Source:</strong> 
+                    <a href="KO_KnowLedgeSource" target='_blank'>
+                        KO_KnowLedgeSource
+                    </a>
+                </p>
+                
+                
+                <p><strong>Format:</strong> 
+                    text/html
+                </p>
+                
+                
+                <p><strong>Date:</strong> 
+                    KO_KnowledgeCreationDate
+                </p>
+                
+                <b>Creator Information:</b>
+                
+                <p><strong>Name:</strong> 
+                     KO_KnwoledgeCreatorName
+                </p>
+                
+                
+                
+                
+            
+            
+        </div>            
+        </div>
+        <div class="right-column">
+            <div class="doc-section" id="doc-section">
+            
+                <h2>Documentation</h2>
+                
+                    <h3><a href="https://github.com/kgrid-objects/cpic-collection/blob/master/cpic-kb/README.md" target='_blank'>README.md</a></h3>
+                    <p>KO readme file.</p>
+                
+                    <h3><a href="https://github.com/kgrid-objects/cpic-collection/blob/master/cpic-kb/index.html" target='_blank'>Knowledge Object Information Page</a></h3>
+                    <p>Knowledge object information page.</p>
+                
+                    <h3><a href="https://github.com/kgrid-objects/cpic-collection/blob/master/cpic-kb/KO_KnowledgeDocumentationPath" target='_blank'>KO_KnowledgeDocumentationTitle</a></h3>
+                    <p>KO_KnowledgeDocumentationDescription</p>
+                
+            
+        </div>
+
+            <div class="test-section" id="test-section">
+            
+                <h2>Tests</h2>
+                
+                    <h3><a href="https://github.com/kgrid-objects/cpic-collection/blob/master/cpic-kb/KO_KnowledgeTestImplementationPath" target='_blank'>KO_KnowledgeTestTitle</a></h3>
+                    <p>KO_KnowledgeTestDescription</p>
+                
+            
+            </div>
+        </div>
+        </div>
+    </body>
+    </html>
+    
