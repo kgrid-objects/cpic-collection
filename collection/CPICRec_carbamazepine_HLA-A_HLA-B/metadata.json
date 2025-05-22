@@ -1,24 +1,28 @@
 {
+    "@context": "https://kgrid.org/koio/2.1/context",
     "@id": "99999/fk4mw3nw5p/v1.0",
-    "@type": "koio:KnowledgeObject",
-    "identifier": "ark:/99999/fk4mw3nw5p/v1.0",
-    "version": "v1.0",
-    "title": "CPIC HLA-A and HLA-B carbamazepine recommendations",
-    "contributors": "KGRID TEAM",
-    "description": "CPIC recommendations for carbamazepine based on HLA-A and HLA-B phenotypes",
-    "citations": [
-        "https://cpicpgx.org/guidelines/guideline-for-carbamazepine-and-hla-b/"
-    ],
-    "keywords": [
-        "CPIC",
-        "HLA-B",
-        "abacavir",
-        "Recommendation"
-    ],
-    "hasServiceSpecification": "service.yaml",
-    "hasDeploymentSpecification": "deployment.yaml",
-    "hasPayload": "recommendation.js",
-    "@context": [
-        "http://kgrid.org/koio/contexts/knowledgeobject.jsonld"
-    ]
+    "versionInfo": "2.1",
+    "@type": "KnowledgeObject",
+    "dc:title": "CPIC HLA-A and HLA-B carbamazepine recommendations",
+    "dc:identifier": "ark:/99999/fk4mw3nw5p/v1.0",
+    "dc:version": "v1.0",
+    "dc:date": "2025-05-22",
+    "dc:description": "CPIC recommendations for carbamazepine based on HLA-A and HLA-B phenotypes",
+    "schema:creator": {
+        "@id": "https://kgrid.org",
+        "@type": "schema:Organization",
+        "schema:givenName": "Knowledge Systems Lab",
+        "schema:affiliation": "Knowledge Systems Lab, University of Michigan Medical School",
+        "schema:email": "kgrid-developers@umich.edu"
+    },
+    "koio:hasKnowledge": [
+    {
+      "@id": "HLA-A_HLA-B_carbamazepine_recommendations",
+      "@type": "koio:Knowledge",
+      "implementedBy": {
+        "@id": "recommendation.js",
+        "@type": "Function"
+      }      
+    }
+  ]
 }

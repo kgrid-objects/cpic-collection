@@ -1,24 +1,28 @@
 {
+    "@context": "https://kgrid.org/koio/2.1/context",
     "@id": "99999/fk45m7fn9t/v1.0",
-    "@type": "koio:KnowledgeObject",
-    "identifier": "ark:/99999/fk45m7fn9t/v1.0",
-    "version": "v1.0",
-    "title": "CPIC HLA-B abacavir recommendations",
-    "contributors": "KGRID TEAM",
-    "description": "CPIC recommendations for abacavir based on HLA-B phenotype",
-    "citations": [
-        "https://cpicpgx.org/guidelines/guideline-for-abacavir-and-hla-b/"
-    ],
-    "keywords": [
-        "CPIC",
-        "HLA-B",
-        "abacavir",
-        "Recommendation"
-    ],
-    "hasServiceSpecification": "service.yaml",
-    "hasDeploymentSpecification": "deployment.yaml",
-    "hasPayload": "recommendation.js",
-    "@context": [
-        "http://kgrid.org/koio/contexts/knowledgeobject.jsonld"
-    ]
+    "versionInfo": "2.1",
+    "@type": "KnowledgeObject",
+    "dc:title": "CPIC HLA-B abacavir recommendations",
+    "dc:identifier": "ark:/99999/fk45m7fn9t/v1.0",
+    "dc:version": "v1.0",
+    "dc:date": "2025-05-22",
+    "dc:description": "CPIC recommendations for abacavir based on HLA-B phenotype",
+    "schema:creator": {
+        "@id": "https://kgrid.org",
+        "@type": "schema:Organization",
+        "schema:givenName": "Knowledge Systems Lab",
+        "schema:affiliation": "Knowledge Systems Lab, University of Michigan Medical School",
+        "schema:email": "kgrid-developers@umich.edu"
+    },
+    "koio:hasKnowledge": [
+    {
+      "@id": "HLA-B_abacavir_recommendations",
+      "@type": "koio:Knowledge",
+      "implementedBy": {
+        "@id": "recommendation.js",
+        "@type": "Function"
+      }      
+    }
+  ]
 }

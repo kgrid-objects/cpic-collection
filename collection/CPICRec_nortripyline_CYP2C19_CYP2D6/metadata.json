@@ -1,25 +1,28 @@
 {
+    "@context": "https://kgrid.org/koio/2.1/context",
     "@id": "99999/fk44n0ds5c/v1.0",
-    "@type": "koio:KnowledgeObject",
-    "identifier": "ark:/99999/fk44n0ds5c/v1.0",
-    "version": "v1.0",
-    "title": "CPIC nortripyline Recommendations based on CYP2C19 and CYP2D6 phenotypes",
-    "contributors": "KGRID TEAM",
-    "description": "KGrid CPIC guidelines CYP2C19 and CYP2D6 Phenotypes to nortripyline Recommendation",
-    "citations": [
-        "https://cpicpgx.org/guidelines/guideline-for-tricyclic-antidepressants-and-cyp2d6-and-cyp2c19/"
-    ],
-    "keywords": [
-        "CPIC",
-        "CYP2D6",
-        "CYP2C19",
-        "nortripyline",
-        "Recommendation"
-    ],
-    "hasServiceSpecification": "service.yaml",
-    "hasDeploymentSpecification": "deployment.yaml",
-    "hasPayload": "recommendation.js",
-    "@context": [
-        "http://kgrid.org/koio/contexts/knowledgeobject.jsonld"
-    ]
+    "versionInfo": "2.1",
+    "@type": "KnowledgeObject",
+    "dc:title": "CPIC nortripyline Recommendations based on CYP2C19 and CYP2D6 phenotypes",
+    "dc:identifier": "ark:/99999/fk44n0ds5c/v1.0",
+    "dc:version": "v1.0",
+    "dc:date": "2025-05-22",
+    "dc:description": "KGrid CPIC guidelines CYP2C19 and CYP2D6 Phenotypes to nortripyline Recommendation",
+    "schema:creator": {
+        "@id": "https://kgrid.org",
+        "@type": "schema:Organization",
+        "schema:givenName": "Knowledge Systems Lab",
+        "schema:affiliation": "Knowledge Systems Lab, University of Michigan Medical School",
+        "schema:email": "kgrid-developers@umich.edu"
+    },
+    "koio:hasKnowledge": [
+    {
+      "@id": "CYP2C19_CYP2D6_nortripyline_recommendations",
+      "@type": "koio:Knowledge",
+      "implementedBy": {
+        "@id": "recommendation.js",
+        "@type": "Function"
+      }      
+    }
+  ]
 }

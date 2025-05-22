@@ -1,24 +1,28 @@
 {
+    "@context": "https://kgrid.org/koio/2.1/context",
     "@id": "99999/fk4qc17m5z/v1.0",
-    "@type": "koio:KnowledgeObject",
-    "identifier": "ark:/99999/fk4qc17m5z/v1.0",
-    "version": "v1.0",
-    "title": "CPIC HLA-B oxcarbazepine recommendations",
-    "contributors": "KGRID TEAM",
-    "description": "CPIC recommendations for oxcarbazepine based on HLA-B genotype",
-    "citations": [
-        "https://cpicpgx.org/guidelines/guideline-for-carbamazepine-and-hla-b/"
-    ],
-    "keywords": [
-        "CPIC",
-        "HLA-B",
-        "allopurinol",
-        "Recommendation"
-    ],
-    "hasServiceSpecification": "service.yaml",
-    "hasDeploymentSpecification": "deployment.yaml",
-    "hasPayload": "recommendation.js",
-    "@context": [
-        "http://kgrid.org/koio/contexts/knowledgeobject.jsonld"
-    ]
+    "versionInfo": "2.1",
+    "@type": "KnowledgeObject",
+    "dc:title": "CPIC HLA-B oxcarbazepine recommendations",
+    "dc:identifier": "ark:/99999/fk4qc17m5z/v1.0",
+    "dc:version": "v1.0",
+    "dc:date": "2025-05-22",
+    "dc:description": "CPIC recommendations for oxcarbazepine based on HLA-B genotype",
+    "schema:creator": {
+        "@id": "https://kgrid.org",
+        "@type": "schema:Organization",
+        "schema:givenName": "Knowledge Systems Lab",
+        "schema:affiliation": "Knowledge Systems Lab, University of Michigan Medical School",
+        "schema:email": "kgrid-developers@umich.edu"
+    },
+    "koio:hasKnowledge": [
+    {
+      "@id": "HLA-B_oxcarbazepine_recommendations",
+      "@type": "koio:Knowledge",
+      "implementedBy": {
+        "@id": "recommendation.js",
+        "@type": "Function"
+      }      
+    }
+  ]
 }

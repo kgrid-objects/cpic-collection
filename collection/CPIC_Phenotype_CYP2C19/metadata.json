@@ -1,22 +1,29 @@
 {
+    "@context": "https://kgrid.org/koio/2.1/context",
     "@id": "99999/fk4mc97w0h/v1.0",
-    "@type": "koio:KnowledgeObject",
-    "identifier": "ark:/99999/fk4mc97w0h/v1.0",
-    "version": "v1.0",
-    "title": "CPIC Genotype - Phenotype for CYP2C19",
-    "contributors": "KGRID TEAM",
-    "description": "KGrid CPIC guidelines Genotype to Phenotype for CYP2C19",
-    "citations": [],
-    "keywords": [
-        "CPIC",
-        "CYP2C19",
-        "Genotype",
-        "Phenotype"
-    ],
-    "hasServiceSpecification": "service.yaml",
-    "hasDeploymentSpecification": "deployment.yaml",
-    "hasPayload": "phenotype.js",
-    "@context": [
-        "http://kgrid.org/koio/contexts/knowledgeobject.jsonld"
-    ]
+    "versionInfo": "2.1",
+    "@type": "KnowledgeObject",
+    "dc:title": "CPIC Genotype - Phenotype for CYP2C19",
+    "dc:identifier": "ark:/99999/fk4mc97w0h/v1.0",
+    "dc:version": "v1.0",
+    "dc:date": "2025-05-22",
+    "dc:description": "KGrid CPIC guidelines Genotype to Phenotype for CYP2C19",
+    "schema:creator": {
+        "@id": "https://kgrid.org",
+        "@type": "schema:Organization",
+        "schema:givenName": "Knowledge Systems Lab",
+        "schema:affiliation": "Knowledge Systems Lab, University of Michigan Medical School",
+        "schema:email": "kgrid-developers@umich.edu"
+    },
+    "koio:hasKnowledge": [
+    {
+      "@id": "genotype_to_Phenotype_for_CYP2C19",
+      "@type": "koio:Knowledge",
+      "implementedBy": {
+        "@id": "phenotype.js",
+        "@type": "Function"
+      }      
+    }
+  ]
 }
+

@@ -1,24 +1,28 @@
 {
+    "@context": "https://kgrid.org/koio/2.1/context",
     "@id": "99999/fk4t85em9x/v1.0",
-    "@type": "koio:KnowledgeObject",
-    "identifier": "ark:/99999/fk4t85em9x/v1.0",
-    "version": "v1.0",
-    "title": "CPIC CYP3A5 tacrolimus recommendations",
-    "contributors": "KGRID TEAM",
-    "description": "CPIC recommendations for tacrolimus based on CYP3A5 phenotype",
-    "citations": [
-        "https://cpicpgx.org/guidelines/guideline-for-tacrolimus-and-cyp3a5/"
-    ],
-    "keywords": [
-        "CPIC",
-        "CYP3A5",
-        "tacrolimus",
-        "Recommendation"
-    ],
-    "hasServiceSpecification": "service.yaml",
-    "hasDeploymentSpecification": "deployment.yaml",
-    "hasPayload": "recommendation.js",
-    "@context": [
-        "http://kgrid.org/koio/contexts/knowledgeobject.jsonld"
-    ]
+    "versionInfo": "2.1",
+    "@type": "KnowledgeObject",
+    "dc:title": "CPIC CYP3A5 tacrolimus recommendations",
+    "dc:identifier": "ark:/99999/fk4t85em9x/v1.0",
+    "dc:version": "v1.0",
+    "dc:date": "2025-05-22",
+    "dc:description": "CPIC recommendations for tacrolimus based on CYP3A5 phenotype",
+    "schema:creator": {
+        "@id": "https://kgrid.org",
+        "@type": "schema:Organization",
+        "schema:givenName": "Knowledge Systems Lab",
+        "schema:affiliation": "Knowledge Systems Lab, University of Michigan Medical School",
+        "schema:email": "kgrid-developers@umich.edu"
+    },
+    "koio:hasKnowledge": [
+    {
+      "@id": "CYP3A5_tacrolimus_recommendations",
+      "@type": "koio:Knowledge",
+      "implementedBy": {
+        "@id": "recommendation.js",
+        "@type": "Function"
+      }      
+    }
+  ]
 }

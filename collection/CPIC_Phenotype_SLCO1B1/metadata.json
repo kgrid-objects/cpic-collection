@@ -1,24 +1,28 @@
 {
+    "@context": "https://kgrid.org/koio/2.1/context",
     "@id": "99999/fk47380j09/v1.0",
-    "@type": "koio:KnowledgeObject",
-    "identifier": "ark:/99999/fk47380j09/v1.0",
-    "version": "v1.0",
-    "title": "CPIC Genotype - Phenotype for SLCO1B1",
-    "contributors": "KGRID TEAM",
-    "description": "KGrid CPIC guidelines Genotype to Phenotype for SLCO1B1",
-    "citations": [
-        ""
-    ],
-    "keywords": [
-        "CPIC",
-        "SLCO1B1",
-        "Genotype",
-        "Phenotype"
-    ],
-    "hasServiceSpecification": "service.yaml",
-    "hasDeploymentSpecification": "deployment.yaml",
-    "hasPayload": "phenotype.js",
-    "@context": [
-        "http://kgrid.org/koio/contexts/knowledgeobject.jsonld"
-    ]
+    "versionInfo": "2.1",
+    "@type": "KnowledgeObject",
+    "dc:title": "CPIC Genotype - Phenotype for SLCO1B1",
+    "dc:identifier": "ark:/99999/fk47380j09/v1.0",
+    "dc:version": "v1.0",
+    "dc:date": "2025-05-22",
+    "dc:description": "KGrid CPIC guidelines Genotype to Phenotype for SLCO1B1",
+    "schema:creator": {
+        "@id": "https://kgrid.org",
+        "@type": "schema:Organization",
+        "schema:givenName": "Knowledge Systems Lab",
+        "schema:affiliation": "Knowledge Systems Lab, University of Michigan Medical School",
+        "schema:email": "kgrid-developers@umich.edu"
+    },
+    "koio:hasKnowledge": [
+    {
+      "@id": "genotype_to_Phenotype_for_SLCO1B1",
+      "@type": "koio:Knowledge",
+      "implementedBy": {
+        "@id": "phenotype.js",
+        "@type": "Function"
+      }      
+    }
+  ]
 }
