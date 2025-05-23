@@ -72,3 +72,5 @@ var recommendations = {
           'recommendation': 'Avoid codeine use due to lack of efficacy. Alternatives that are not affected by this CYP2D6 phenotype include morphine and nonopioid analgesics. Tramadol and, to a lesser extent, hydrocodone and oxycodone are not good alternatives because their metabolism is affected by CYP2D6 activity; these agents should be avoided',
           'classification': 'Strong'}
         }
+
+module.exports = { dosingrecommendation };

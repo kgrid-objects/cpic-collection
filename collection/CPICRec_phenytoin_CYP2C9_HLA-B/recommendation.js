@@ -82,3 +82,5 @@ var recommendations = {'cyp2c9extensivehla-b15:02carrier':{'implication': 'Incre
     'recommendation': 'Consider 50% reduction of recommended starting maintenance dose. Subsequent maintenance doses should be adjusted according to therapeutic drug monitoring and response',
     'classification': 'Strong'},
 }
+
+module.exports = { dosingrecommendation };

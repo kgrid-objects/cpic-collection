@@ -69,3 +69,5 @@ var recommendations = {
   'hla-b58:01carrier': {'implication': 'Significantly increased risk of allopurinol-induced severe cutaneous adverse reactions',
                   'recommendation': 'Allopurinol is contraindicated',
                   'classification': 'Strong'}}
+
+module.exports = { dosingrecommendation };

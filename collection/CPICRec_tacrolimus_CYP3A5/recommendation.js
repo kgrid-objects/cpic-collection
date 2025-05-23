@@ -70,3 +70,5 @@ var recommendations = {
   'cyp3a5poor': {'implication': 'Higher ("normal") dose-adjusted trough concentrations of tacrolimus and increased chance of achieving target tacrolimus concentrations.',
           'recommendation': 'Initiate therapy with standard recommended dose. Use therapeutic drug monitoring to guide dose adjustments.',
           'classification': 'Strong'}}
+
+module.exports = { dosingrecommendation };

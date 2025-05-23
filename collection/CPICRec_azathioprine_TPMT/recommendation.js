@@ -70,3 +70,5 @@ var recommendations = {
   'tpmtlow': {'implication': '',
           'recommendation': 'Consider alternative agents. If using azathioprine start with drastically reduced doses (reduce daily dose by 10-fold and dose thrice weekly instead of daily) and adjust doses of azathioprine based on  degree of myelosuppression and disease-specific guidelines. Allow 4-6 weeks to reach steady state after each dose adjustment. Azathioprine is the likely cause of myelosuppression.',
           'classification': 'Strong'}}
+
+module.exports = { dosingrecommendation };

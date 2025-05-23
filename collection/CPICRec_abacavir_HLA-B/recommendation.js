@@ -67,3 +67,6 @@ var recommendations = {
   'hla-b57:01carrier': {'implication': 'Significantly increased risk of abacavir hypersensitivity',
                   'recommendation': 'abacavir: Abacavir is not recommended',
                   'classification': 'Strong'}}
+
+
+module.exports = { dosingrecommendation };

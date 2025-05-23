@@ -68,3 +68,5 @@ var recommendations = {
   'hla-b15:02positive': {'implication': 'Greater risk of oxcarbazepine-induced Stevens-Johnson syndrome/toxic epidermal necrolysis',
                   'recommendation': 'Strong: If patient is oxcarbazepine naıve, do not use oxcarbazepine.  Optional: The latency period for drug-induced Stevens-Johnson syndrome/toxic epidermal necrolysis is short with continuous dosing and adherence to therapy (4-28 days), and cases usually occur within three months of dosing; therefore, if the patient has previously used oxcarbazepine consistently for longer than three months without incidence of cutaneous adverse reactions, cautiously consider use of oxcarbazepine in the future.',
                   'classification': 'Strong/Optional'}}
+
+module.exports = { dosingrecommendation };

@@ -74,3 +74,5 @@ var recommendations = {
           'recommendation': 'Strong: If patient is carbamazepine-naıve, do not use carbamazepine. Optional: The latency period for drug-induced Stevens-Johnson syndrome/toxic epidermal necrolysis is short with continuous dosing and adherence to therapy (4-28 days), and cases usually occur within three months of dosing; therefore, if the patient has previously used carbamazepine consistently for longer than three months without incidence of cutaneous adverse reactions, cautiously consider use of carbamazepine in the future.',
           'classification': 'Strong/Optional'}
 }
+
+module.exports = { dosingrecommendation };

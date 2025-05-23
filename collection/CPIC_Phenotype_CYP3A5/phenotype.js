@@ -34,3 +34,5 @@ var dict = ['TBD', 'Poor', 'Intermediate', 'Extensive']
 
 var list = {'*1':'Normal function', '*2':'Unknown/Uncertain function', '*3':'No function', '*4':'Unknown/Uncertain function', '*5':'Unknown/Uncertain function','*6':'No function','*7':'No function',
 '*8':'Unknown/Uncertain function','*9':'Unknown/Uncertain function'}
+
+module.exports = { phenotype };

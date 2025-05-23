@@ -70,3 +70,5 @@ var recommendations = {
   'slco1b1low': {'implication': 'High myopathy risk',
           'recommendation': 'Prescribe a lower dose or consider an alternative statin (e.g., pravastatin or rosuvastatin); consider routine CK surveillance.',
           'classification': 'Strong'}}
+
+module.exports = { dosingrecommendation };

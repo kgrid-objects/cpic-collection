@@ -156,3 +156,5 @@ var recommendations = {
         'recommendation': 'Avoid amitriptyline use',
         'classification': 'Optional'}
 }
+
+module.exports = { dosingrecommendation };

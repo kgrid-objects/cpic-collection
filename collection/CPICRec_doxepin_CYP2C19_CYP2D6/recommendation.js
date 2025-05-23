@@ -156,3 +156,5 @@ var recommendations = {
         'recommendation': 'Avoid doxepin use',
         'classification': 'Optional'}
 }
+
+module.exports = { dosingrecommendation };

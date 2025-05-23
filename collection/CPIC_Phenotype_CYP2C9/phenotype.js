@@ -61,3 +61,7 @@ var list = {"*1": "Normal function", "*2": "Decreased function", "*3": "Decrease
   "*55": "Unknown function/Uncertain function", "*56": "Unknown function/Uncertain function",
   "*57": "Unknown function/Uncertain function", "*58": "Unknown function/Uncertain function",
   "*59": "Unknown function/Uncertain function", "*60": "Unknown function/Uncertain function"}
+
+  module.exports = { phenotype };
+
+

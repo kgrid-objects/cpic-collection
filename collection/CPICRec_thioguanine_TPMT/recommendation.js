@@ -70,3 +70,5 @@ var recommendations = {
   'tpmtlow': {'implication': 'Extremely high concentrations of TGN metabolites; fatal toxicity possible without dose decrease',
           'recommendation': 'Start with drastically reduced doses16 (reduce daily dose by 10-fold and dose thrice weekly instead of daily) and adjust doses of TG based on degree of myelosuppression and disease-specific guidelines. Allow 4-6 weeks to reach steady state after each dose adjustment. In setting of myelosuppression, emphasis should be on reducing TG over other agents. For nonmalignant conditions, consider alternative nonthiopurine immunosuppressant therapy.',
           'classification': 'Strong'}}
+
+module.exports = { dosingrecommendation };

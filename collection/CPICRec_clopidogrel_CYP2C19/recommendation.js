@@ -73,3 +73,5 @@ var recommendations = {
   'cyp2c19poor': {'implication': 'Significantly reduced platelet inhibition; increased residual platelet aggregation; increased risk for adverse cardiovascular events.',
           'recommendation': 'Alternative antiplatelet therapy (if no contraindication), e.g., prasugrel, ticagrelor.',
           'classification': 'Strong'}}
+
+module.exports = { dosingrecommendation };

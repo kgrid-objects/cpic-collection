@@ -70,3 +70,5 @@ var recommendations = {
   'ugt1a1poor': {'implication': 'Markedly decreased UGT1A1 activity; high likelihood of bilirubin-related discontinuation of atazanavir.',
     'recommendation': 'Consider an alternative agent particularly where jaundice would be of concern to the patient. If atazanavir is to be prescribed, there is a high likelihood of developing jaundice that will result in atazanavir discontinuation (at least 20% and as high as 60%).',
     'classification': 'Strong'}}
+
+module.exports = { dosingrecommendation };

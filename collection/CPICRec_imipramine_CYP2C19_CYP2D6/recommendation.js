@@ -156,3 +156,6 @@ var recommendations = {
         'recommendation': 'Avoid imipramine use',
         'classification': 'Optional'}
 }
+
+
+module.exports = { dosingrecommendation };

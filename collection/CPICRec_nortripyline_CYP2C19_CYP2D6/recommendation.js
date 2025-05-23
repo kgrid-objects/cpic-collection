@@ -75,3 +75,5 @@ var recommendations = {
         'recommendation': 'Avoid tricyclic use due to potential for side effects. Consider alternative drug not metabolized by CYP2D6. If a TCA is warranted, consider a 50% reduction of recommended starting dose. Utilize therapeutic drug monitoring to guide dose adjustments',
         'classification': 'Strong'},
 }
+
+module.exports = { dosingrecommendation };

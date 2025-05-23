@@ -72,3 +72,5 @@ var recommendations = {
           'recommendation': 'Consider a 25-50% reduction of recommended starting dose and titrate to response or use an alternative drug not metabolized by CYP2D6.',
           'classification': 'Optional'}
         }
+
+module.exports = { dosingrecommendation };

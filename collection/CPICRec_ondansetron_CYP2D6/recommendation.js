@@ -74,3 +74,5 @@ var recommendations = {
           'recommendation': 'Insufficient evidence demonstrating clinical impact based on CYP2D6 genotype. Initiate therapy with recommended starting dose.',
           'classification': 'No recommendation'}
         }
+
+module.exports = { dosingrecommendation };

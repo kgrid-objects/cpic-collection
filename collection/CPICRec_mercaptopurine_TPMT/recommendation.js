@@ -70,3 +70,5 @@ var recommendations = {
   'tpmtlow': {'implication': 'Extremely high concentrations of TGN metabolites; fatal toxicity possible without dose decrease; no methylTIMP metabolites',
           'recommendation': 'For malignancy, start with drastically reduced doses (reduce daily dose by 10-fold and reduce frequency to thrice weekly instead of daily, e.g., 10mg/ m2/d given just 3 days/week) and adjust doses of MP based on degree of myelosuppression and disease-specific guidelines. Allow 4-6 weeks to reach steady state after each dose adjustment. In setting of myelosuppression, emphasis should be on reducing MP over other agents. For nonmalignant conditions, consider alternative nonthiopurine immunosuppressant therapy.',
           'classification': 'Strong'}}
+
+module.exports = { dosingrecommendation };

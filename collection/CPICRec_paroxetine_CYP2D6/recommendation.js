@@ -72,3 +72,5 @@ var recommendations = {
           'recommendation': 'Select alternative drug not predominantly metabolized by CYP2D6 or if paroxetine use warranted, consider a 50% reduction of recommended starting dose and titrate to response.',
           'classification': 'Optional'}
         }
+
+module.exports = { dosingrecommendation };
