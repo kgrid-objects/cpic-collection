@@ -2,14 +2,22 @@
     "@context": [
         "https://kgrid.org/koio/2.1/context",
         {
+            "@version": 1.1,
+            "hasKnowledgeObject": {
+                "@id": "koio:hasKnowledgeObject",
+                "@container": [
+                    "@id",
+                    "@set"
+                ]
+            },
             "Purpose": "http://purl.obolibrary.org/obo/NCIT_C25634"
         }
     ],
-    "@id": "cpic-kb",
+    "@id": "pgx-kb",
     "KOIOVersion": "2.1",
     "@type": "koio:KnowledgeBase",
-    "dc:title": "cpic-kb",
-    "dc:identifier": "ark:cpic-kb",
+    "dc:title": "pgx knowledgebase",
+    "dc:identifier": "ark:pgx-kb",
     "dc:version": "v1.0",
     "dc:date": "2025-05-06",
     "dc:description": "A sample knowledgebase that uses CPIC collection (KnowledgeSet).",
@@ -29,69 +37,48 @@
         {
             "@id": "ks1",
             "@type": "koio:KnowledgeSet",
-            "dc:description": "Drug gene recommendation",
-            "koio:hasKnowledgeObject": [
-                {
-                    "@id": "../collection/CPICRec_abacavir_HLA-B/"
-                },
-                {
-                    "@id": "../collection/CPICRec_allopurinol_HLA-B/"
-                }
-            ]
-        },
-        {
-            "@id": "ks2",
-            "@type": "koio:KnowledgeSet",
             "dc:description": "Genotype to Phenotype mapping",
-            "koio:hasKnowledgeObject": [
-                {
-                    "@id": "../collection/CPIC_Phenotype_CYP2C9/"
+            "hasKnowledgeObject": {
+                "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPIC_Phenotype_CYP2C19": {
+                    "title": "CPIC Genotype - Phenotype for CYP2C19",
+                    "dc:version": "v1.0"
                 },
-                {
-                    "@id": "../collection/CPIC_Phenotype_CYP2C19/"
+                "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPIC_Phenotype_CYP2C9": {
+                    "title": "CPIC Genotype - Phenotype for CYP2C9",
+                    "dc:version": "v1.0"
+                },
+                "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPIC_Phenotype_CYP2D6-V1": {
+                    "title": "CPIC Genotype - Phenotype for CYP2D6 v0.3.0",
+                    "dc:version": "v1.0"
+                },
+                "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPIC_Phenotype_CYP2D6": {
+                    "title": "CPIC Genotype - Phenotype for CYP2D6 v0.3.0",
+                    "dc:version": "v1.0"
+                },
+                "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPIC_Phenotype_CYP3A5": {
+                    "title": "CPIC Genotype - Phenotype for CYP3A5",
+                    "dc:version": "v1.0"
+                },
+                "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPIC_Phenotype_SLCO1B1": {
+                    "title": "CPIC Genotype - Phenotype for SLCO1B1",
+                    "dc:version": "v1.0"
+                },
+                "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPIC_Phenotype_TPMT": {
+                    "title": "CPIC Genotype - Phenotype for TPMT",
+                    "dc:version": "v1.0"
+                },
+                "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPIC_Phenotype_UGT1A1": {
+                    "title": "CPIC Genotype - Phenotype for UGT1A1",
+                    "dc:version": "v1.0"
                 }
-            ]
+            }
         },
         {
-            "@id": "KO_KnowledgeId",
-            "@type": "Knowledge",
-            "implementedBy": {
-                "@id": "KO_KnowledgeImplementationPath",
-                "@type": [
-                    "Implementation",
-                    "fno:Function"
-                ]
-            },
-            "dc:source": "KO_KnowLedgeSource",
-            "dc:format": "text/html",
-            "dc:date": "KO_KnowledgeCreationDate",
-            "schema:creator": {
-                "@type": "schema:Organization",
-                "schema:name": "KO_KnwoledgeCreatorName"
-            },
-            "hasTest": [
-                {
-                    "@id": "KO_KnowledgeTestId",
-                    "@type": "Test",
-                    "dc:title": "KO_KnowledgeTestTitle",
-                    "dc:description": "KO_KnowledgeTestDescription",
-                    "implementedBy": {
-                        "@id": "KO_KnowledgeTestImplementationPath",
-                        "@type": "Python"
-                    }
-                }
-            ],
-            "hasDocumentation": [
-                {
-                    "@id": "KO_KnowledgeDocumentationPath",
-                    "@type": "InformationArtifact",
-                    "dc:title": "KO_KnowledgeDocumentationTitle",
-                    "dc:description": "KO_KnowledgeDocumentationDescription"
-                }
-            ]
+            "@id": "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/drug_recommendation_knowledge_set/metadata.json",
+            "@type": "koio:KnowledgeSet"
         }
     ],
-    "hasService": [
+    "hasService????": [
         {
             "@type": [
                 "Service"
@@ -109,7 +96,7 @@
             }
         }
     ],
-    "hasDocumentation": [
+    "hasDocumentation????": [
         {
             "@id": "README.md",
             "@type": "InformationArtifact",

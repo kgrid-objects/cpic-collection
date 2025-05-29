@@ -1,0 +1,48 @@
+{
+  "@context": [
+    "https://kgrid.org/koio/2.1/context",
+    {
+      "@version": 1.1,
+      "hasKnowledgeObject": {
+        "@id": "koio:hasKnowledgeObject",
+        "@type": "@id",
+        "@container": [
+          "@set"
+        ]
+      }
+    }
+  ],
+  "@id": "drug_recommendation_collection",
+  "@type": "koio:KnowledgeSet",
+  "dc:description": "Phenotype to recommendation mapping",
+  "hasKnowledgeObject": [
+    "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPICRec_abacavir_HLA-B",
+    "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPICRec_allopurinol_HLA-B",
+    "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPICRec_amitriptyline_CYP2C19_CYP2D6",
+    "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPICRec_atazanavir_UGT1A1",
+    "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPICRec_azathioprine_TPMT",
+    "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPICRec_carbamazepine_HLA-A_HLA-B",
+    "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPICRec_citalopram_CYP2C19",
+    "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPICRec_clomipramine_CYP2C19_CYP2D6",
+    "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPICRec_clopidogrel_CYP2C19",
+    "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPICRec_codeine_CYP2D6",
+    "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPICRec_desipramine_CYP2C19_CYP2D6",
+    "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPICRec_doxepin_CYP2C19_CYP2D6",
+    "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPICRec_escitalopram_CYP2C19",
+    "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPICRec_fluvoxamine_CYP2D6",
+    "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPICRec_imipramine_CYP2C19_CYP2D6",
+    "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPICRec_mercaptopurine_TPMT",
+    "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPICRec_nortripyline_CYP2C19_CYP2D6",
+    "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPICRec_ondansetron_CYP2D6",
+    "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPICRec_oxcarbazepine_HLA-B",
+    "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPICRec_paroxetine_CYP2D6",
+    "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPICRec_phenytoin_CYP2C9_HLA-B",
+    "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPICRec_sertraline_CYP2C19",
+    "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPICRec_simvastatin_SLCO1B1",
+    "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPICRec_tacrolimus_CYP3A5",
+    "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPICRec_thioguanine_TPMT",
+    "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPICRec_trimipramine_CYP2C19_CYP2D6",
+    "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPICRec_tropisetron_CYP2D6",
+    "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPICRec_voriconazole_CYP2C19"
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "@context": [
+    "https://kgrid.org/koio/2.1/context",
+    {
+      "@version": 1.1,
+      "hasKnowledgeObject": {
+        "@id": "koio:hasKnowledgeObject",
+        "@container": [
+          "@id",
+          "@set"
+        ]
+      }
+    }
+  ],
+  "@id": "drug_recommendation_collection",
+  "@type": "koio:KnowledgeSet",
+  "dc:description": "Phenotype to recommendation mapping",
+  "hasKnowledgeObject": {
+    "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPICRec_abacavir_HLA-B": {
+      "dc:title": "CPIC HLA-B abacavir recommendations",
+      "dc:version": "v1.0"
+    },
+    "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPICRec_allopurinol_HLA-B": {
+      "dc:title": "CPIC HLA-B allopurinol recommendations",
+      "dc:version": "v1.0"
+    },
+    "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPICRec_amitriptyline_CYP2C19_CYP2D6": {
+      "dc:title": "CPIC amitriptyline Recommendations based on CYP2C19 and CYP2D6 phenotypes",
+      "dc:version": "v1.0"
+    },
+    "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPICRec_atazanavir_UGT1A1": {
+      "dc:title": "CPIC - Atazanavir Guideline for UGT1A1",
+      "dc:version": "v1.0"
+    },
+    "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPICRec_azathioprine_TPMT": {
+      "dc:title": "CPIC TPMT azathioprine recommendations",
+      "dc:version": "v1.0"
+    },
+    "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPICRec_carbamazepine_HLA-A_HLA-B": {
+      "dc:title": "CPIC HLA-A and HLA-B carbamazepine recommendations",
+      "dc:version": "v1.0"
+    },
+    "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPICRec_citalopram_CYP2C19": {
+      "dc:title": "CPIC CYP2C19 citalopram recommendation",
+      "dc:version": "v1.0"
+    },
+    "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPICRec_clomipramine_CYP2C19_CYP2D6": {
+      "dc:title": "CPIC clomipramine Recommendations based on CYP2C19 and CYP2D6 phenotypes",
+      "dc:version": "v1.0"
+    },
+    "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPICRec_clopidogrel_CYP2C19": {
+      "dc:title": "CPIC CYP2C19 Clopidogrel recommendations",
+      "dc:version": "v1.0"
+    },
+    "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPICRec_codeine_CYP2D6": {
+      "dc:title": "CPIC CYP2D6 Codeine Recommendations",
+      "dc:version": "v1.0"
+    },
+    "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPICRec_desipramine_CYP2C19_CYP2D6": {
+      "dc:title": "CPIC desipramine Recommendations based on CYP2C19 and CYP2D6 phenotypes",
+      "dc:version": "v1.0"
+    },
+    "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPICRec_doxepin_CYP2C19_CYP2D6": {
+      "dc:title": "CPIC doxepin Recommendations based on CYP2C19 and CYP2D6 phenotypes",
+      "dc:version": "v1.0"
+    },
+    "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPICRec_escitalopram_CYP2C19": {
+      "dc:title": "CPIC CYP2C19 escitalopram recommendations",
+      "dc:version": "v1.0"
+    },
+    "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPICRec_fluvoxamine_CYP2D6": {
+      "dc:title": "CPIC CYP2D6 fluvoxamine Recommendations Implementation",
+      "dc:version": "v1.0"
+    },
+    "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPICRec_imipramine_CYP2C19_CYP2D6": {
+      "dc:title": "CPIC imipramine Recommendations based on CYP2C19 and CYP2D6 phenotypes",
+      "dc:version": "v1.0"
+    },
+    "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPICRec_mercaptopurine_TPMT": {
+      "dc:title": "CPIC TPMT mercaptopurine recommendations",
+      "dc:version": "v1.0"
+    },
+    "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPICRec_nortripyline_CYP2C19_CYP2D6": {
+      "dc:title": "CPIC nortripyline Recommendations based on CYP2C19 and CYP2D6 phenotypes",
+      "dc:version": "v1.0"
+    },
+    "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPICRec_ondansetron_CYP2D6": {
+      "dc:title": "CPIC CYP2D6 ondansetron Recommendations",
+      "dc:version": "v1.0"
+    },
+    "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPICRec_oxcarbazepine_HLA-B": {
+      "dc:title": "CPIC HLA-B oxcarbazepine recommendations",
+      "dc:version": "v1.0"
+    },
+    "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPICRec_paroxetine_CYP2D6": {
+      "dc:title": "CPIC CYP2D6 Paroxetine Recommendations Implementation",
+      "dc:version": "v1.0"
+    },
+    "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPICRec_phenytoin_CYP2C9_HLA-B": {
+      "dc:title": "CPIC Phenytoin Recommendations based on CYP2C9 and HLA-B phenotypes",
+      "dc:version": "v1.0"
+    },
+    "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPICRec_sertraline_CYP2C19": {
+      "dc:title": "CPIC CYP2C19 sertraline recommendations",
+      "dc:version": "v1.0"
+    },
+    "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPICRec_simvastatin_SLCO1B1": {
+      "dc:title": "CPIC SLCO1B1 simvastatin recommendations Implementation",
+      "dc:version": "v1.0"
+    },
+    "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPICRec_tacrolimus_CYP3A5": {
+      "dc:title": "CPIC CYP3A5 tacrolimus recommendations",
+      "dc:version": "v1.0"
+    },
+    "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPICRec_thioguanine_TPMT": {
+      "dc:title": "CPIC TPMT thioguanine recommendations",
+      "dc:version": "v1.0"
+    },
+    "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPICRec_trimipramine_CYP2C19_CYP2D6": {
+      "dc:title": "CPIC trimipramine Recommendations based on CYP2C19 and CYP2D6 phenotypes",
+      "dc:version": "v1.0"
+    },
+    "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPICRec_tropisetron_CYP2D6": {
+      "dc:title": "CPIC CYP2D6 tropisetron Recommendations",
+      "dc:version": "v1.0"
+    },
+    "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPICRec_voriconazole_CYP2C19": {
+      "dc:title": "CPIC CYP2C19 voriconazole recommendations",
+      "dc:version": "v1.0"
+    }
+  },
+    "hasDocumentation": [
+        {
+            "@id": "readme.md",
+            "@type": "InformationArtifact",
+            "dc:title": "Drug recommendation knowledge set overview"
+        }
+    ]
+}

@@ -1,0 +1,57 @@
+{
+    "@context": [
+        "https://kgrid.org/koio/2.1/context",
+        {
+            "@version": 1.1,
+            "hasKnowledgeObject": {
+                "@id": "koio:hasKnowledgeObject",
+                "@type": "@id",
+                "@container": [
+                    "@set"
+                ]
+            },
+            "Purpose": "http://purl.obolibrary.org/obo/NCIT_C25634"
+        }
+    ],
+    "@id": "cpic-kb",
+    "KOIOVersion": "2.1",
+    "@type": "koio:KnowledgeBase",
+    "dc:title": "cpic-kb",
+    "dc:identifier": "ark:cpic-kb",
+    "dc:version": "v1.0",
+    "dc:date": "2025-05-06",
+    "dc:description": "A sample knowledgebase that uses CPIC collection (KnowledgeSet).",
+    "ncit:Purpose": "To compute patient specific drug selection and dosing recommendations.",
+    "schema:creator": {
+        "@id": "https://kgrid.org",
+        "@type": "schema:Organization",
+        "schema:name": "KGrid team",
+        "schema:affiliation": "University of Michigan",
+        "schema:email": "kgrid-developers@umich.edu"
+    },
+    "dc:publisher": "KGrid team",
+    "dc:license": {
+        "@id": "license.md"
+    },
+    "hasKnowledge": [
+        {
+            "@id": "ks1",
+            "@type": "koio:KnowledgeSet",
+            "dc:description": "Genotype to Phenotype mapping",
+            "hasKnowledgeObject": [
+                "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPIC_Phenotype_CYP2C19",
+                "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPIC_Phenotype_CYP2C9",
+                "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPIC_Phenotype_CYP2D6-V1",
+                "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPIC_Phenotype_CYP2D6",
+                "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPIC_Phenotype_CYP3A5",
+                "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPIC_Phenotype_SLCO1B1",
+                "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPIC_Phenotype_TPMT",
+                "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/CPIC_Phenotype_UGT1A1"
+            ]
+        },
+        {
+            "@id": "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/drug_recommendation_knowledge_set/metadata.json",
+            "@type": "koio:KnowledgeSet"
+        }
+    ]
+}
