@@ -1,5 +1,5 @@
 {
-    "@context": "https://kgrid.org/koio/2.1/context",
+    "@context": "https://kgrid.org/koio/2.1/context.jsonld",
     "@id": "99999/fk4mc97w0h/v1.0",
     "versionInfo": "2.1",
     "@type": "KnowledgeObject",
