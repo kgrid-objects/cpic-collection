@@ -32,8 +32,24 @@
   "dependencies": {
     "await-sleep": "0.0.1",
     "axios": "^0.21.1",
+    "express": "^5.1.0",
     "firstline": "^2.0.2",
     "fs-extra": "^7.0.0",
-    "jest-junit": "^7.0.0"
-  }
+    "jest-junit": "^7.0.0",
+    "jsonld": "^8.3.3",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1",
+    "yamljs": "^0.3.0"
+  },
+  "name": "cpic-collection",
+  "version": "1.0.0",
+  "description": "Find documentation here:",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

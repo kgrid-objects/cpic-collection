@@ -1,13 +1,3 @@
-Run the service using
-
-```shell
-node src/service.js
-```
-
-from the cpic-kb folder and access the api through swagger editor using `http://localhost:3000/api-docs` or send a post request to `http://localhost:3000/run`.
-
-Here is a sample input
-```json
 {
     "patient": {
         "name": "Hank Hill",
@@ -25,5 +15,3 @@ Here is a sample input
     },
     "prescriptions": "atazanavir codeine abacavir"
   }
-
-```

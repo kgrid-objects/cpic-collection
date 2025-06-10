@@ -1,6 +1,6 @@
 {
     "@context": [
-        "https://kgrid.org/koio/2.1/context",
+        "https://kgrid.org/koio/2.1/context.jsonld",
         {
             "@version": 1.1,
             "hasKnowledgeObject": {
