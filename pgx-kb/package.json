@@ -1,0 +1,19 @@
+{
+  "name": "pgx-kb",
+  "version": "1.0.0",
+  "description": "A sample knowledgebase that uses CPIC collection (KnowledgeSet).",
+  "main": "src/library-service.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kgrid-objects/cpic-collection.git#master"
+  },
+  "author": "",
+  "license": "SEE LICENSE IN license.js",
+  "bugs": {
+    "url": "https://github.com/kgrid-objects/cpic-collection/issues"
+  },
+  "homepage": "https://github.com/kgrid-objects/cpic-collection/tree/master#readme"
+}

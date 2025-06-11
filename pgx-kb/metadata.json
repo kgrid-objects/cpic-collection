@@ -83,13 +83,29 @@
             "@type": [
                 "Service"
             ],
-            "dc:description": "A set of JavaScript functions that a ccepts a genetic profile and provide access to patient specific drug selection and dosing recommendations. See sample.profile for example.",
+            "dc:description": "An API service that accepts a genetic profile and provide access to patient specific drug selection and dosing recommendations. See sample.profile for example.",
             "dependsOn": [
                 "ks1",
                 "https://raw.githubusercontent.com/kgrid-objects/cpic-collection/refs/heads/KB-implementation/collection/drug_recommendation_knowledge_set/metadata.json"
             ],
             "implementedBy": {
-                "@id": "src/service.js",
+                "@id": "src/api-service.js",
+                "@type": [
+                    "Implementation"
+                ]
+            }
+        },
+        {
+            "@type": [
+                "Service"
+            ],
+            "dc:description": "A JavaScript library with a function that accepts a genetic profile and provide access to patient specific drug selection and dosing recommendations. See sample.profile for example.",
+            "dependsOn": [
+                "ks1",
+                "https://raw.githubusercontent.com/kgrid-objects/cpic-collection/refs/heads/KB-implementation/collection/drug_recommendation_knowledge_set/metadata.json"
+            ],
+            "implementedBy": {
+                "@id": "src/library-service.js",
                 "@type": [
                     "Implementation"
                 ]
