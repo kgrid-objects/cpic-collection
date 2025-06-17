@@ -12,7 +12,7 @@
       }
     }
   ],
-  "@id": "drug_recommendation_collection",
+  "@id": "https://raw.githubusercontent.com/kgrid-objects/cpic-collection/refs/heads/KB-implementation/collection/drug_recommendation_knowledge_set/",
   "@type": "koio:KnowledgeSet",
   "dc:description": "Phenotype to recommendation mapping",
   "hasKnowledgeObject": {

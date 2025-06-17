@@ -1,7 +1,4 @@
-const express = require('express');
 const { loadKnowledgeFunctions, loadMetadata, loadKnowledgeSet } = require('./knowledgeLoader');
-const swaggerUi = require('swagger-ui-express');
-const swaggerJSDoc = require('swagger-jsdoc');
 
 const path = require('path');
 

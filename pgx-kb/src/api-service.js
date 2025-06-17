@@ -14,13 +14,16 @@ let knowledgeSet2 = [];
 async function initialize() {
   const mainMeta = await loadMetadata('metadata.json');
   const lnpwledgeSets = mainMeta['https://kgrid.org/koio#hasKnowledge']
+  
+  console.log("loading knowledgeSet 1")
   knowledgeSet1 = await loadKnowledgeSet(lnpwledgeSets[0]);
-  knowledgeSet2 = await loadKnowledgeSet(lnpwledgeSets[1]);
-
   knowledgeSet1 = await loadKnowledgeFunctions(knowledgeSet1, 'phenotype');
   console.log(knowledgeSet1)
+  
+  console.log("loading knowledgeSet 2")
+  knowledgeSet2 = await loadKnowledgeSet(lnpwledgeSets[1]); 
   knowledgeSet2 = await loadKnowledgeFunctions(knowledgeSet2, 'dosingrecommendation');
-  //console.log(knowledgeSet2)
+  console.log(knowledgeSet2)
 }
 
 const swaggerOptions = {
@@ -32,7 +35,7 @@ const swaggerOptions = {
       description: 'API to run knowledge functions on input and return results',
     },
   },
-  apis: ['./src/service.js'], // or wherever your routes are documented
+  apis: ['./src/api-service.js'], // or wherever your routes are documented
 };
 
 const swaggerSpec = swaggerJSDoc(swaggerOptions);
@@ -50,9 +53,31 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
  *           schema:
  *             type: object
  *             properties:
+ *               patient:
+ *                 type: object
+ *                 properties:
+ *                   name:
+ *                     type: string
+ *                     example: "Hank Hill"
+ *                   id:
+ *                     type: string
+ *                     example: "1"
  *               diplotype:
+ *                 type: object
+ *                 additionalProperties:
+ *                   type: string
+ *                 example:
+ *                   CYP2C19: "*1/*11"
+ *                   CYP2C9: ""
+ *                   CYP2D6: "*3/*3"
+ *                   CYP3A5: ""
+ *                   HLA-B: "*1/*1"
+ *                   SLCO1B1: ""
+ *                   TPMT: ""
+ *                   UGT1A1: "*1/*1"
+ *               prescriptions:
  *                 type: string
- *                 example: "*1/*2"
+ *                 example: "atazanavir codeine abacavir"
  *     responses:
  *       200:
  *         description: Results from knowledge functions
