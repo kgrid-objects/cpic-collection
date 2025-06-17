@@ -1,0 +1,5 @@
+/dosingrecommendation:
+  post:
+    engine: javascript
+    artifact: recommendation.js
+    function: dosingrecommendation

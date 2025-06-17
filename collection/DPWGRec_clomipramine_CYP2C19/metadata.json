@@ -1,0 +1,28 @@
+{
+    "@context": "https://kgrid.org/koio/2.1/context.jsonld",
+    "@id": "colmipramineCYP2C19",
+    "versionInfo": "2.1",
+    "@type": "KnowledgeObject",
+    "dc:title": "DPWG clomipramine Recommendations based on CYP2C19 phenotype",
+    "dc:identifier": "ark:colmipramineCYP2C19",
+    "dc:version": "v1.0",
+    "dc:date": "2025-06-17",
+    "dc:description": "KGrid DPWG guidelines CYP2C19 Phenotype to clomipramine Recommendation",
+    "schema:creator": {
+        "@id": "https://kgrid.org",
+        "@type": "schema:Organization",
+        "schema:givenName": "Knowledge Systems Lab",
+        "schema:affiliation": "Knowledge Systems Lab, University of Michigan Medical School",
+        "schema:email": "kgrid-developers@umich.edu"
+    },
+    "koio:hasKnowledge": [
+    {
+      "@id": "CYP2C19_clomipramine_recommendations",
+      "@type": "koio:Knowledge",
+      "implementedBy": {
+        "@id": "recommendation.js",
+        "@type": "Function"
+      }      
+    }
+  ]
+}

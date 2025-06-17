@@ -76,6 +76,25 @@
         {
             "@id": "https://raw.githubusercontent.com/kgrid-objects/cpic-collection/refs/heads/KB-implementation/collection/drug_recommendation_knowledge_set/metadata.json",
             "@type": "koio:KnowledgeSet"
+        },
+        {
+            "@id": "ks3",
+            "@type": "koio:KnowledgeSet",
+            "dc:description": "Phenotype to recommendation mapping",
+            "hasKnowledgeObject": {
+                "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/DPWGRec_amitriptyline_CYP2C19/": {
+                    "title": "DPWG amitriptyline Recommendations based on CYP2C19 phenotype",
+                    "dc:version": "v1.0"
+                },
+                "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/DPWGRec_clomipramine_CYP2C19/": {
+                    "title": "DPWG clomipramine Recommendations based on CYP2C19 phenotype",
+                    "dc:version": "v1.0"
+                },
+                "https://github.com/kgrid-objects/cpic-collection/tree/master/collection/DPWGRec_escitalopram_CYP2C19/": {
+                    "title": "DPWG escitalopram Recommendations based on CYP2C19 phenotype",
+                    "dc:version": "v1.0"
+                }
+            }
         }
     ],
     "hasService": [

@@ -1,0 +1,131 @@
+openapi: 3.0.0
+info:
+  version: '1.0'
+  title: DPWG amitriptyline Recommendations based on CYP2C19 phenotype
+  description: >-
+    KGrid DPWG guidelines CYP2C19 Phenotype to amitriptyline
+    Recommendation
+  license:
+    name: GNU General Public License v3 (GPL-3)
+    url: >-
+      https://tldrlegal.com/license/gnu-general-public-license-v3-(gpl-3)#fulltext
+  contact:
+    name: KGrid Team
+    email: kgrid-developers@umich.edu
+    url: 'http://kgrid.org'
+servers:
+  - url: /amitriptylineCYP2C19
+    description: >-
+      KGrid DPWG guidelines CYP2C19 Phenotype to amitriptyline
+      Recommendation
+tags:
+  - name: KO Endpoints
+    description: >-
+      KGrid DPWG guidelines CYP2C19 Phenotype to amitriptyline
+      Recommendation
+paths:
+  /dosingrecommendation:
+    post:
+      tags:
+        - KO Endpoints
+      description: Retrieve Dosing Recommendation based on the pheno type.
+      operationId: recomm
+      requestBody:
+        description: inputs
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/phenotype'
+      responses:
+        '200':
+          description: response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/dosingrecommendation'
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+components:
+  schemas:
+    phenotype:
+      required:
+        - CYP2C19
+      properties:
+        CYP2C19:
+          type: object
+          required:
+            - diplotype
+            - phenotype
+          properties:
+            diplotype:
+              type: string
+              example: '*1/*1'
+            phenotype:
+              type: string
+              example: Normal metabolizer
+    dosingrecommendation:
+      required:
+        - result
+      properties:
+        result:
+          type: object
+          required:
+            - type
+            - drug
+            - phenotype
+            - recommendation
+          properties:
+            type:
+              type: string
+              example: DPWG Recommendation
+            drug:
+              type: string
+              example: codeine
+            genes:
+              type: object
+              required:
+                - CYP2C19
+              properties:
+                CYP2C19:
+                  type: object
+                  required:
+                    - diplotype
+                    - phenotype
+                  properties:
+                    diplotype:
+                      type: string
+                      example: '*3/*3'
+                    phenotype:
+                      type: string
+                      example: poor metabolizer
+            recommendation:
+              type: object
+              required:
+                - implication
+                - content
+                - classification
+              properties:
+                implication:
+                  type: string
+                  example: ''
+                content:
+                  type: string
+                  example: ''
+                classification:
+                  type: string
+                  example: ''
+    Error:
+      required:
+        - code
+        - message
+      properties:
+        code:
+          type: integer
+          format: int32
+        message:
+          type: string
