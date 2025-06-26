@@ -1,0 +1,10 @@
+{
+  "shelf_url": "./shelf/",
+  "library_url": "https://library.kgrid.org",
+  "user_url": "./",
+  "activator_url":"https://activator.kgrid.org",
+  "genophenolookupko":{"id":"/99999/fk4qj7sz2t/1.0","endpoint":"/genophenokolist"},
+  "druglookupko":{"id":"/99999/fk4qj7sz2s/1.0","endpoint":"/druglist"},
+  "genopheno_endpoint":"/phenotype",
+  "recommendation_endpoint":"/dosingrecommendation"
+}

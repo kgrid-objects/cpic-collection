@@ -1,0 +1,119 @@
+{ "initrequest": {
+    "diplotype": {
+        "CYP2C19":"",
+        "CYP2C9" :"",
+        "CYP2D6": "",
+        "CYP3A5": "",
+        "HLA-A" : "",
+        "HLA-B" : "",
+        "SLCO1B1" : "",
+        "TPMT" : "",
+        "UGT1A1": ""
+      },
+    "prescriptions": {}
+  },
+"patientsamples":[
+  {
+    "patient": {
+      "name": "Hank Hill",
+      "id": "001"
+    },
+    "diplotype": {
+      "CYP2C19":"*1/*1",
+      "CYP2C9" :"*1/*3",
+      "CYP2D6": "*1/*10",
+      "CYP3A5": "*3/*6",
+      "HLA-A" : "",
+      "HLA-B" : "*1/*15:02",
+      "SLCO1B1" : "*1A/*1A",
+      "TPMT" : "*1/*1",
+      "UGT1A1": "*1/*6"
+    },
+    "prescriptions": {
+      "atazanavir": true,
+      "codeine": true
+    }
+  },
+  {
+  "patient": {
+    "name": "Hank Green",
+    "id": "002"
+    },
+    "diplotype": {
+      "CYP2C19":"*17/*17",
+      "CYP2C9" :"*1/*3",
+      "CYP2D6": "*3/*3",
+      "CYP3A5": "*1/*3",
+      "HLA-A" : "",
+      "HLA-B" : "*58:01/*15:02",
+      "SLCO1B1" : "",
+      "TPMT" : "*1/*3",
+      "UGT1A1": "*1/*1"
+    },
+    "prescriptions": {
+      "escitalopram": true,
+      "clopidogrel": true
+    }
+  },
+  {
+    "patient": {
+      "name": "Hank Aaron",
+      "id": "003"
+    },
+    "diplotype": {
+      "CYP2C19":"*1/*48",
+      "CYP2C9" :"*1/*1",
+      "CYP2D6": "*1x2/*9",
+      "CYP3A5": "*3/*3",
+      "HLA-A" : "*31:01/*1",
+      "HLA-B" : "*1/*1",
+      "SLCO1B1" : "*5/*5",
+      "TPMT" : "",
+      "UGT1A1": "*27/*80"
+    },
+    "prescriptions": {
+      "clopidogrel": true
+    }
+  },
+  {
+    "patient": {
+      "name": "Hank White",
+      "id": "004"
+    },
+    "diplotype": {
+      "CYP2C19":"*4A/*10",
+      "CYP2C9" :"*1/*3",
+      "CYP2D6": "*7/*59",
+      "CYP3A5": "*1/*1",
+      "HLA-A" : "",
+      "HLA-B" : "",
+      "SLCO1B1" : "*1A/*17",
+      "TPMT" : "",
+      "UGT1A1": "*6/*36"
+    },
+    "prescriptions": {
+      "clopidogrel": true
+    }
+  },
+  {
+    "patient": {
+      "name": "Hank Brown",
+      "id": "005"
+    },
+    "diplotype": {
+      "CYP2C19":"*14/*34",
+      "CYP2C9" :"*2/*3",
+      "CYP2D6": "*31/*92",
+      "CYP3A5": "*1/*1",
+      "HLA-A" : "",
+      "HLA-B" : "*15:02/*15:02",
+      "SLCO1B1" : "",
+      "TPMT" : "",
+      "UGT1A1": "*36/*60"
+    },
+    "prescriptions": {
+      "clopidogrel": true
+    }
+  }
+]
+}

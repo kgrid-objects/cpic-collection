@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <!-- <link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css"/> -->
+    <link rel="stylesheet" href="static/css/bootstrap.min.css" />
+  <!-- <link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.css"/> -->
+    <link rel="stylesheet" href="static/css/bootstrap-vue.css" />
+  <link rel="stylesheet" href="static/css/ca_style.css" />
+  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="static/css/all.css" />
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script> -->
+  <script src="./static/js/moment.min.js"></script>
+  <!-- <script src="https://unpkg.com/lodash"></script> -->
+  <script src="./static/js/lodash.js"></script>
+  <!-- <script src="https://unpkg.com/vue"></script> -->
+  <script src="./static/js/vue.js"></script>
+  <!-- <script src="https://unpkg.com/babel-polyfill@latest/dist/polyfill.min.js"></script> -->
+  <script src="./static/js/polyfill.min.js"></script>
+  <!-- <script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.js"></script> -->
+  <script src="./static/js/bootstrap-vue.js"></script>
+  <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
+  <script src="./static/js/axios.min.js"></script>
+  <title>CPIC Demo App</title>
+</head>
+<body>
+  <div id='app' style='position:relative;height:100%;'>
+    <header>
+      <div class="container color-scheme pad-l-30 header-title noselect">
+        <h1>PGX Demo App
+          <!-- <div class='float-r'>
+            <i class="fas fa-cog" id='settingicon' @click='showsetting'></i>
+            <a href='https://demo.kgrid.org/cpic-demo#web-demo' target="_blank" style='color:#666;'><i class="fas fa-info-circle" ></i></a>
+          </div> -->
+      </h1>
+      </div>
+    </header>
+    <div class="container">
+      <div class="row gene-row">
+        <div class="col-md-4 pad-l-0 pad-r-0">
+          <div class="ht-g input_div">
+            <div class=" box-header color-scheme">
+              <div class="row">
+                <div class="col-md-12 col-sm-12 noselect" style="line-height:3em;font-weight:500;"><span>Gene Phenotype Panel</span></div>
+                <div class="col-md-12 col-sm-12">
+                  <div class="radio-group">
+                    <input type="radio" id="option-zero" value="0" name="patient" v-model='autofillSelection' > <label class="noselect" for="option-zero">Patient 1</label>
+                    <input type="radio" id="option-one" value="1" name="patient" v-model='autofillSelection' > <label class="noselect" for="option-one">Patient 2</label>
+                    <input type="radio" id="option-two" value="2"  name="patient" v-model='autofillSelection' > <label class="noselect" for="option-two">Patient 3</label>
+                    <input type="radio" id="option-three" value="3" name="patient" v-model='autofillSelection' > <label class="noselect" for="option-three">Patient 4</label>
+                    <input type="radio" id="option-four" value="4" name="patient" v-model='autofillSelection' > <label class="noselect" for="option-four">Patient 5</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <table class='gene-table'>
+              <tbody>
+                <tr class='noselect'>
+                  <th>Gene</th>
+                  <th>Diplotype</th>
+                  <th>Phenotype</th>
+                </tr>
+                <tr class=" " v-for='(value, key) in diplotypePanel'>
+                    <td class='noselect' :class="{active:value!=''}" :id='key' style='width:20%;'>{{key}}</td>
+                    <td :class="{active:value!=''}" style='width:30%;'> <b-form-input  type="text"  v-model='diplotypePanel[key]' ></b-form-input>  </td>
+                    <td  class='pheno noselect' style='width:50%;font-size:85%;text-align:center;' :class="{active:value!=''}"><span v-if='phenotypePanel[key].phenotype!=""'>{{phenotypePanel[key].phenotype}}</span><span v-else>---</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+  <!-- CPIC Recommendations Column -->
+  <div class="col-md-4 col-sm-12 viewtop ht-d noselect">
+    <h4 class="pad-25 align-c">CPIC Recommendations</h4>
+    <div class="tab-pane active">
+      <ul id="reclist" style="list-style:none;width:100%;overflow-y:auto;text-align:left;font-size:18px;padding:0;margin:0;">
+        <li v-for="(rec, index) in recommendationlistks2">
+          <recomtile
+            :recmodel="rec"            
+            :reckey="rec.result.drug"
+            :recindex="index">
+          </recomtile>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- DPWG Recommendations Column -->
+  <div class="col-md-4 col-sm-12 viewtop ht-d noselect">
+    <h4 class="pad-25 align-c">DPWG Recommendations</h4>
+    <div class="tab-pane active">
+      <ul id="reclistdpwg" style="list-style:none;width:100%;overflow-y:auto;text-align:left;font-size:18px;padding:0;margin:0;">
+        <li v-for="(rec, index) in recommendationlistks3">
+          <recomtile
+            :recmodel="rec"
+            :reckey="rec.result.drug"
+            :recindex="index">
+          </recomtile>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+    </div>
+  </div>
+  <div class="container">
+    <div class="row statussec noselect">
+      <b-btn v-b-toggle.collapsestatus > PGX Demo APP LOG  <span style='margin-left:20px;font-weight:400;'> </span> </b-btn>
+      <b-collapse id="collapsestatus">
+        <div id='statuslog'>
+          <ul id='eventlog' style='list-style:none;'>
+            <li v-for='entry in eventlog' :class='entry.key'>{{entry.timestamp}} <span>{{entry.text}}</span> </li>
+          </ul>
+        </div>
+      </b-collapse>
+    </div>
+  </div>
+  <footer class="container-fluid container-car color-scheme text-center">
+    <p>University of Michigan Medical School 2025</p>
+  </footer>
+</div>
+<template id='recomtile-template'>
+		<div v-bind:id="recindex">
+				<div class="row kg-sub">
+					<div class="col-md-11 col-sm-11 col-xs-11 kgl-title kg-fg-color" data-toggle="tooltip"
+							data-placement="top" v-bind:title="recmodel.status"><span>{{reckey}}</span>
+					</div>
+          <a :href='objlink' target="_blank" style='color:#fff;float:right;font-size:80%;'><i class="fas fa-info-circle" ></i></a>
+				</div>
+				<div class="row kg-rec pad-top10" v-for='(value, key,index) in recrender'>
+          <div class="col-md-4 col-sm-4 col-xs-4 ">
+            <span><small>{{reclabel[key]}}</small></span>
+          </div>
+          <div class="col-md-8 col-sm-8 col-xs-8 ">
+            <span>{{value}}</span>
+          </div>
+				</div>
+			</div>
+	</template>
+</body>
+<script src="static/js/cpic.js"> </script>
+</html>
