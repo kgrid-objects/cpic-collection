@@ -10,20 +10,26 @@ app.use(express.json());
 
 let knowledgeSet1 = [];
 let knowledgeSet2 = [];
+let knowledgeSet3 = [];
 
 async function initialize() {
-  const mainMeta = await loadMetadata('metadata.json');
-  const lnpwledgeSets = mainMeta['https://kgrid.org/koio#hasKnowledge']
+  const mainMeta = await loadMetadata(path.join(path.join(__dirname, '..'), 'metadata.json'));
+  const knowledgeSets = mainMeta['https://kgrid.org/koio#hasKnowledge']
   
   console.log("loading knowledgeSet 1")
-  knowledgeSet1 = await loadKnowledgeSet(lnpwledgeSets[0]);
+  knowledgeSet1 = await loadKnowledgeSet(knowledgeSets[0]);
   knowledgeSet1 = await loadKnowledgeFunctions(knowledgeSet1, 'phenotype');
   console.log(knowledgeSet1)
   
   console.log("loading knowledgeSet 2")
-  knowledgeSet2 = await loadKnowledgeSet(lnpwledgeSets[1]); 
+  knowledgeSet2 = await loadKnowledgeSet(knowledgeSets[1]); 
   knowledgeSet2 = await loadKnowledgeFunctions(knowledgeSet2, 'dosingrecommendation');
   console.log(knowledgeSet2)
+
+  console.log("loading knowledgeSet 3")
+  knowledgeSet3 = await loadKnowledgeSet(knowledgeSets[2]); 
+  knowledgeSet3 = await loadKnowledgeFunctions(knowledgeSet3, 'dosingrecommendation');
+  console.log(knowledgeSet3)
 }
 
 const swaggerOptions = {
@@ -67,7 +73,7 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
  *                 additionalProperties:
  *                   type: string
  *                 example:
- *                   CYP2C19: "*1/*11"
+ *                   CYP2C19: "*2/*9"
  *                   CYP2C9: ""
  *                   CYP2D6: "*3/*3"
  *                   CYP3A5: ""
@@ -95,12 +101,16 @@ app.post('/run', async (req, res) => {
     const mergedResults = intermediateResults.reduce((acc, obj) => {
       return { ...acc, ...obj };
     }, {});
-    const finalResults = await Promise.all(
+    const finalResultsKS2 = await Promise.all(
       knowledgeSet2.map(ko => ko.function(mergedResults))
+    );
+    const finalResultsKS3 = await Promise.all(
+      knowledgeSet3.map(ko => ko.function(mergedResults))
     );
     res.json({
       intermediate: mergedResults,
-      final: finalResults
+      finalKS2: finalResultsKS2,
+      finalKS3: finalResultsKS3
     });
   } catch (err) {
     console.error(err);
