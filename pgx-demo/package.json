@@ -11,6 +11,6 @@
   "description": "",
   "dependencies": {
     "express": "^5.1.0",
-    "pgx-kb": "file:../cpic-collection/pgx-kb"
+    "pgx-kb": "file:../pgx-kb"
   }
 }
